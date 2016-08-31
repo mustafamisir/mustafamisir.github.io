@@ -1,0 +1,81 @@
+/* CSS Document */
+
+ 
+body {
+	font: 15px "Palatino Linotype", Palatino, serif; 
+	background-image: url(fig-bg.gif);
+	text-align:justify;
+  
+}
+
+td {
+	font: 16px "Palatino Linotype", Palatino, serif;
+}
+
+p { 
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 34px; 
+	color:#000080;
+}
+
+h2 {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 26px; 
+	color:#000080;
+}
+  
+h3 {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 18px;
+	color:#000080;
+}
+
+a:link, a:visited, a:hover {
+	color: blue;         
+}
+
+.introimage {
+	float: right; 
+        margin-right:  25px; 
+	margin-left:   25px;  
+}
+
+.foot {
+	margin-top:  20px;
+	border-top:  2px solid silver;
+	padding-top: 0px; 
+	font: 14px "Palatino Linotype", Palatino, serif;
+	font-style: italic;
+}
+ 
+ 
+.line-through {
+    text-decoration: line-through;
+}
+ 
+ 
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  background-color: #fff;
+  padding: .5em;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+
