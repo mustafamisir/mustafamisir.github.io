@@ -5451,7 +5451,7 @@ In this paper, we propose a novel method based on hyper-heuristic approach to fi
   author = {Ferreira, Alexandre Silvestre},
   title = {A cross-domain multi-armed bandit hyper-heuristic},
   year = {2016},
-  school = {Master Thesis, University of Parana},
+  institution = {Master Thesis, University of Parana},   
   url={http://acervodigital.ufpr.br/handle/1884/41803},
   note={Many real word optimization problems are very complex with many variables and constraints, and cannot be solved by exact methods in a reasonable computational time. As an alternative, meta-heuristics emerged as an efficient way to solve this type of problems even though they cannot ensure optimal values. The main issue of meta-heuristics is that they are built using domain-specific knowledge, therefore they require a great effort to be used in a new domain. In order to solve this problem, the concept of Hyper-heuristics were proposed. Hyper-heuristics are search methods that aim to solve optimization problems by selecting or generating heuristics. Selection hyper-heuristics choose from a pool of heuristics a good one to be applied at the current stage of the optimization process. The selection mechanism is the main part of a selection hyper-heuristic and has a great impact on its performance. Although there are several works focused on selection hyperheuristics, there is no unanimity about which is the best way to define a selection strategy. In this dissertation, a deterministic selection strategy based on the concepts of the MultiArmed Bandit (MAB) problem is proposed to cross-domain optimization. Multi-armed bandit approaches define a selection function with two components, the first is based on the performance of an operator and the second based on the number of times that the operator was used. These approaches had showed a promising performance over the Adaptive Operator Selection context. However, there are few works on literature that aim the hyper-heuristic context, as proposed here. The proposed approach is integrated into the HyFlex framework, that was developed to facilitate the implementation and comparison of hyper-heuristics. An empirical parameter configuration was performed and the best setup was compared to the top ten CHeSC 2011 algorithms using the same methodology adopted during the competition. The results obtained were good comparable to those attained by the literature. Moreover, it was concluded that the behavior of MAB selection is heavily affected by its parameters. As this is not a desirable behavior to hyper-heuristics, future research will investigate ways to better deal with the parameter setting.},
 }
@@ -5635,12 +5635,15 @@ In this paper, we propose a novel method based on hyper-heuristic approach to fi
   note={The ROADEF/EURO challenge is a contest jointly organized by the French Operational Research and Decision Aid society (ROADEF) and the European Operational Research society (EURO). The contest appears on a regular basis since 1999 and always concerns an industrial optimization problem proposed by an industrial partner. Google proposed a subject for the ROADEF/EURO challenge 2012 (http://challenge.roadef.org/2012/en/), presenting a complex and large-scale machine reassignment problem, where a set of processes assigned to a set of machines have to be reassigned (or moved) while balancing machine usage improvement and moving costs, under resource (more precisely CPU, RAM, disk) and operational constraints. The 2012 challenge edition has been an unprecedented success with 82 registered teams, 48 teams that actually sent a program for qualification, 30 qualified teams and 27 teams that sent a program for the final evaluation. This paper aims at introducing the Annals of Operations Research special issue by presenting the ROADEF/EURO challenge 2012 subject, as well as the methods of the finalist teams and their results.},  
 }
 
-  
-@article{chen2016dynamic,
+    
+@article{chen2017dynamic,
   title={Dynamic optimisation of preventative and corrective maintenance schedules for a large scale urban drainage system},
   author={Chen, Yujie and Cowling, Peter and Polack, Fiona and Remde, Stephen and Mourdjis, Philip},
   journal={European Journal of Operational Research},
-  year={2016},
+  volume={257},
+  number={2},
+  pages={494--510},
+  year={2017},   
   publisher={Elsevier},
   url={http://www.sciencedirect.com/science/article/pii/S0377221716305641},
   note={Gully pots or storm drains are located at the side of roads to provide drainage for surface water. We consider gully pot maintenance as a risk-driven maintenance problem. We explore policies for preventative and corrective maintenance actions, and build optimised routes for maintenance vehicles. Our solutions take the risk impact of gully pot failure and its failure behaviour into account, in the presence of factors such as location, season and current status. The aim is to determine a maintenance policy that can automatically adjust its scheduling strategy in line with changes in the local environment, to minimise the surface flooding risk due to clogged gully pots. We introduce a rolling planning strategy, solved by a hyper-heuristic method. Results show the behaviour and strength of the automated adjustment in a range of real-world scenarios.},  
@@ -5984,10 +5987,10 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
 }
     
   
-  
+    
 @incollection{soria2017iterated,
   title={Iterated VND Versus Hyper-heuristics: Effective and General Approaches to Course Timetabling},
-  author={Soria-Alcaraz, Jorge A and Ochoa, Gabriela and Sotelo-Figueroa, Marco A and Carpio, Mart{\'\i}n and Puga, Hector},
+  author={Soria-Alcaraz, Jorge A and Ochoa, Gabriela and Sotelo-Figueroa, Marco A and Carpio, Martin and Puga, Hector},
   booktitle={Nature-Inspired Design of Hybrid Intelligent Systems},
   pages={687--700},
   year={2017},
@@ -6284,26 +6287,18 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   note={During the last several decades, many kinds of population based Evolutionary Algorithms have been developed and considerable work has been devoted to computational methods which are inspired by biological evolution and natural selection, such as Evolutionary Programming and Clonal Selection Algorithm. The objective of these algorithms is not only to find suitable adjustments to the current population and hence the solution, but also to perform the process efficiently. However, a parameter setting that was optimal at the beginning of the algorithm may become unsuitable during the evolutionary process. Thus, it is preferable to automatically modify the control parameters during the runtime process. The approach required could have a bias on the distribution towards appropriate directions of the search space, thereby maintaining sufficient diversity among individuals in order to enable further ability of evolution. This thesis has offered an initial approach to developing this idea. The work starts from a clear understanding of the literature that is of direct relevance to the aforementioned motivations. The development of this approach has been built upon the basis of the fundamental and generic concepts of evolutionary algorithms. The work has exploited and benefited from a range of representative evolutionary computational mechanisms. In particular, essential issues in evolutionary algorithms such as parameter control, including the general aspects of parameter tuning and typical means for implementing parameter control have been investigated. Both the hyperheuristic algorithm and the memetic algorithm have set up a comparative work for the present development. This work has developed several novel techniques that contribute towards the advancement of evolutionary computation and optimization. One such novel approach is to construct a mixed strategy based on the concept of local fitness landscape. It exploits the concepts of fitness landscape and local fitness landscape. Both theoretical description and experimental investigation of this local fitness landscape-based mixed strategy have been provided, and systematic comparisons with alternative approaches carried out. Another contribution of this thesis is the innovative application of mixed strategy. This is facilitated by encompassing two mutation operators into the mixed strategy, which are borrowed from classical differential evolution techniques. Such an improved method has been shown to be simple and easy for implementation. The work has been utilised to deal with the problem of protein folding in bioinformatics. It is demonstrated that the proposed algorithm possesses an appropriate balance between exploration and exploitation. The use of this improved algorithm is less likely to fall into local optimal, entailing a faster and better convergence in resolving challenging realistic application problems.},  
 }
 
+   
 
 
-@inproceedings{mariani2016grammatical,
-  title={A Grammatical Evolution Hyper-Heuristic for the Integration and Test Order Problem},
-  author={Mariani, Thaina and Guizzo, Giovani and Vergilio, Silvia R and Pozo, Aurora TR},
-  booktitle={GECCO},
-  year={2016},
-  organization={ACM},
-  url={http://dl.acm.org/citation.cfm?id=2908816},
-  note={Search techniques have been successfully applied for solving different software testing problems. However, choosing, implementing and configuring a search technique can be hard tasks. To reduce efforts spent in such tasks, this paper presents an offline hyper-heuristic named GEMOITO, based on Grammatical Evolution (GE). The goal is to automatically generate a Multi-Objective Evolutionary Algorithm (MOEA) to solve the Integration and Test Order (ITO) problem. The MOEAs are distinguished by components and parameters values, described by a grammar. The proposed hyper-heuristic is compared to conventional MOEAs and to a selection hyper-heuristic used in related work. Results show that GEMOITO can generate MOEAs that are statistically better or equivalent to the compared algorithms.},   
-}
-
-
-
+   
 
 @misc{bertels2016automated,
   title={Automated design of boolean satisfiability solvers employing evolutionary computation},
   author={Bertels, Alex Raymond},
   year={2016},
-  institute={Master Thesis, Department of Computer Science, Missouri University of Science and Technology}
+  institution={Master Thesis, Department of Computer Science, Missouri University of Science and Technology},
+  url={http://scholarsmine.mst.edu/masters_theses/7549/},
+  abstract={Modern society gives rise to complex problems which sometimes lend themselves to being transformed into Boolean satisfiability (SAT) decision problems; this thesis presents an example from the program understanding domain. Current conflict-driven clause learning (CDCL) SAT solvers employ all-purpose heuristics for making decisions when finding truth assignments for arbitrary logical expressions called SAT instances. The instances derived from a particular problem class exhibit a unique underlying structure which impacts a solver's effectiveness. Thus, tailoring the solver heuristics to a particular problem class can significantly enhance the solver's performance; however, manual specialization is very labor intensive. Automated development may apply hyper-heuristics to search program space by utilizing problem-derived building blocks. This thesis demonstrates the potential for genetic programming (GP) powered hyper-heuristic driven automated design of algorithms to create tailored CDCL solvers, in this case through custom variable scoring and learnt clause scoring heuristics, with significantly better performance on targeted classes of SAT problem instances. As the run-time of GP is often dominated by fitness evaluation, evaluating multiple offspring in parallel typically reduces the time incurred by fitness evaluation proportional to the number of parallel processing units. The naive synchronous approach requires an entire generation to be evaluated before progressing to the next generation; as such, heterogeneity in the evaluation times will degrade the performance gain, as parallel processing units will have to idle until the longest evaluation has completed. This thesis shows empirical evidence justifying the employment of an asynchronous parallel model for GP powered hyper-heuristics applied to SAT solver space, rather than the generational synchronous alternative, for gaining speed-ups in evolution time. Additionally, this thesis explores the use of a multi-objective GP to reveal the trade-off surface between multiple CDCL attributes.},
 }
 
 
@@ -6372,7 +6367,7 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   title={Genetic Programming Hyper-heuristics for Job Shop Scheduling},
   author={Hunt, Rachel},
   year={2016},     
-  institute={PhD Thesis, School of Mathematics, Statistics and Operations Research, Victoria University of Wellington},
+  institution={PhD Thesis, School of Mathematics, Statistics and Operations Research, Victoria University of Wellington},
   url={http://researcharchive.vuw.ac.nz/handle/10063/5219},
   note={Scheduling problems arise whenever there is a choice of order in which a number of tasks should be performed; they arise commonly, daily and everywhere. A job shop is a common manufacturing environment in which a schedule for processing a set of jobs through a set of machines needs to be constructed. Job shop scheduling (JSS) has been called a fascinating challenge as it is computationally hard and prevalent in the real-world. Developing more effective ways of scheduling jobs could increase profitability through increasing throughput and decreasing costs. Dispatching rules (DRs) are one of the most popular scheduling heuristics. DRs are easy to implement, have low computational cost, and cope well with the dynamic nature of real-world manufacturing environments.  However, the manual development of DRs is time consuming and requires expert knowledge of the scheduling environment. Genetic programming (GP) is an evolutionary computation method which is ideal for automatically discovering DRs. This is a hyper-heuristic approach, as GP is searching the search space of heuristic (DR) solutions rather than constructing a schedule directly.
 
@@ -6389,6 +6384,103 @@ Fourthly, this thesis investigates using multiobjective GP to encourage evolutio
 Through this thesis the following major contributions have been made: (1) the first use of GP to evolve optimal DRs for the static two-machine job shop with makespan objective function; (2) an approach to developing less-myopic DRs through the inclusion of wider looking terminals and the use of local search to provide additional fitness information over an extended decision horizon; (3) the first use of STGP for the automatic discovery of DRs with better interpretability and semantic validity for increased trust; and (4) the first multiobjective GP approach that considers multiple objectives  investigating the trade-off between scheduling behaviour and interpretability. This is also the first work that uses analysis of evolved GP individuals to perform feature selection and construction for JSS.},
 }
 
+
+
+
+@inproceedings{gunawan2016designing,
+  title={Designing and Comparing Multiple Portfolios of Parameter Configurations for Online Algorithm Selection},
+  author={Gunawan, Aldy and Lau, Hoong Chuin and M{\i}s{\i}r, Mustafa},
+  booktitle={Proceedings of the 10th Learning and Intelligent OptimizatioN Conference (LION)},
+  series={LNCS},
+  volume={10079},
+  pages={91--106},   
+  address = {Naples, Italy}, 
+  year={2016},
+  url={http://link.springer.com/chapter/10.1007/978-3-319-50349-3_7},
+  note={Algorithm portfolios seek to determine an effective set of algorithms that can be used within an algorithm selection framework to solve problems. A limited number of these portfolio studies focus on generating different versions of a target algorithm using different parameter configurations. In this paper, we employ a Design of Experiments (DOE) approach to determine a promising range of values for each parameter of an algorithm. These ranges are further processed to determine a portfolio of parameter configurations, which would be used within two online Algorithm Selection approaches for solving different instances of a given combinatorial optimization problem effectively. We apply our approach on a Simulated Annealing-Tabu Search (SA-TS) hybrid algorithm for solving the Quadratic Assignment Problem (QAP) as well as an Iterated Local Search (ILS) on the Travelling Salesman Problem (TSP). We also generate a portfolio of parameter configurations using best-of-breed parameter tuning approaches directly for the comparison purpose. Experimental results show that our approach lead to improvements over best-of-breed parameter tuning approaches.},
+}
+
+
+
+
+@inproceedings{ryser2014review,
+  title={A review of hyper-heuristic frameworks},
+  author={Ryser-Welch, Patricia and Miller, Julian F},
+  booktitle={Proceedings of the Evo20 Workshop, AISB},
+  year={2014},
+  url={http://www.cartesiangp.co.uk/papers/aisb2014-ryser-welch.pdf},
+  note={Hyper-heuristic frameworks have emerged out of the shadows of meta-heuristic techniques. In this very active field, new
+frameworks are developed all the time. Shared common features that help to classify them in different types of hyper-heuristic. Similarly to an iceberg, this large subfield of artificial intelligence hide a substantial amount of bio-inspired solvers and many research communities. In this paper, the tip of the iceberg is reviewed; recent hyper-heuristic frameworks are surveyed and the overall context of the field is presented. We believe its content complements recent reviews and offers another perspective of this important and developing field to the research community. Some hyper-heuristic frameworks tend to be largely constrained and prevent the state-of-the-art algorithms being obtained. We suggest in addition to relaxing constraints together with analysis of the evolved algorithms may lead to human-competitive results.},
+}
+
+
+
+@inproceedings{parkes2015software,
+  title={A Software Interface for Supporting the Application of Data Science to Optimisation},
+  author={Parkes, Andrew J and {\"O}zcan, Ender and Karapetyan, Daniel},
+  booktitle={International Conference on Learning and Intelligent Optimization},
+  pages={306--311},
+  year={2015},
+  series={LNCS},
+  volume={8994},  
+  organization={Springer},
+  url={http://link.springer.com/chapter/10.1007/978-3-319-19084-6_31},
+  note={Many real world problems can be solved effectively by metaheuristics in combination with neighbourhood search. However, implementing neighbourhood search for a particular problem domain can be time consuming and so it is important to get the most value from it. Hyper-heuristics aim to get such value by using a specific API such as 'HyFlex' to cleanly separate the search control structure from the details of the domain. Here, we discuss various longer-term additions to the HyFlex interface that will allow much richer information exchange, and so enhance learning via data science techniques, but without losing domain independence of the search control.},
+}
+
+  
+
+@inproceedings{ryser2014plug,
+  title={Plug-and-Play hyper-heuristics: an extended formulation},
+  author={Ryser-Welch, Patricia and Miller, Julian F},
+  booktitle={2014 IEEE Eighth International Conference on Self-Adaptive and Self-Organizing Systems},
+  pages={179--180},
+  year={2014},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/document/7001016/},
+  note={Hyper-heuristics is a very active field that is developing all the time. This area of bio-inspired intelligent systems covers a wide range of algorithms selection techniques. This type of self-organising mechanism uses heuristics to optimise heuristics. Many discussions focus on the quality of solutions of the problems obtained from the hyper-heuristics, very little discussion concentrates on the generated algorithms themselves. Some hyper-heuristic frameworks tend to be highly constrained, their limited instruction sets prevent the state-of-the-art algorithms from being expressed. In addition, often the generated algorithms are not human-readable. In this paper, we propose a possible extension of some existing hyper-heuristic formulations, so that some of the current open issues can be addressed and it becomes possible to produce self-organizing heuristics that adapt themselves automatically to the environment when the class of problems changes. This together with the analysis of the evolved algorithms, may lead to human-competitive results.}, 
+}
+
+
+
+
+@inproceedings{silva2016online,
+  title={Online Hyper-Evolution of Controllers in Multirobot Systems},
+  author={Silva, Fernando and Correia, Lu{\'\i}s and Christensen, Anders Lyhne},
+  booktitle={Self-Adaptive and Self-Organizing Systems (SASO), 2016 IEEE 10th International Conference on},
+  pages={11--20},
+  year={2016},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7774382/},
+  note={In this paper, we introduce online hyper-evolution (OHE) to accelerate and increase the performance of online evolution of robotic controllers. Robots executing OHE use the different sources of feedback information traditionally associated with controller evaluation to find effective evolutionary algorithms and controllers online during task execution. We present two approaches: OHE-fitness, which uses the fitness score of controllers as the criterion to select promising algorithms over time, and OHE-diversity, which relies on the behavioural diversity of controllers for algorithm selection. Both OHE-fitness and OHE-diversity are distributed across groups of robots that evolve in parallel. We assess the performance of OHE-fitness and of OHE-diversity in two foraging tasks with differing complexity, and in five configurations of a dynamic phototaxis task with varying evolutionary pressures. Results show that our OHE approaches: (i) outperform multiple state-of-the-art algorithms as they facilitate controllers with superior performance and faster evolution of solutions, and (ii) can increase effectiveness at different stages of evolution by combining the benefits of multiple algorithms over time. Overall, our study shows that OHE is an effective new paradigm to the synthesis of controllers for robots.}, 
+}
+  
+   
+
+@inproceedings{adriaensen2015benchmark,
+  title={A benchmark set extension and comparative study for the {HyFlex} framework},
+  author={Adriaensen, Steven and Ochoa, Gabriela and Now{\'e}, Ann},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={784--791},
+  year={2015},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/document/7256971/},
+  note={In this work we conduct a comparative study of several publicly available, state-of-the-art hyper-heuristics for HyFlex in order to assess their generality across domains. To this purpose we extend the HyFlex benchmark set with 3 new problem domains: The 0-1 Knap Sack, Quadratic Assignment and Max-Cut Problem. To our knowledge, this is the first public extension of the benchmark since the CHeSC 2011 competition. In addition, this is the first study testing the Fair-Share Iterated Local Search (FS-ILS) method, designed in prior research, using a semi-automated design approach, on new unseen problem domains. We show that, of the methods compared, Adap-HH (CHeSC 2011 winner) clearly perfoms the most consistently, overall. In addition, we identify a weakness of, as well as a way to further simplify the FS-ILS method. Finally, we found that, overall, the state-of-the-art methods compared, generalized much better than a naive baseline.}, 
+}
+
+
+
+
+@incollection{sotelo2017generating,
+  title={Generating Bin Packing Heuristic Through Grammatical Evolution Based on Bee Swarm Optimization},
+  author={Sotelo-Figueroa, Marco Aurelio and Soberanes, H{\'e}ctor Jos{\'e} Puga and Carpio, Juan Mart{\'\i}n and Huacuja, H{\'e}ctor J Fraire and Reyes, Laura Cruz and Alcaraz, Jorge Alberto Soria and Espinal, Andr{\'e}s},
+  booktitle={Nature-Inspired Design of Hybrid Intelligent Systems},
+  pages={655--671},
+  year={2017},
+  publisher={Springer},
+  url={http://link.springer.com/chapter/10.1007/978-3-319-47054-2_43},
+  note={In the recent years, Grammatical Evolution (GE) has been used as a representation of Genetic Programming (GP). GE can use a diversity of search strategies including Swarm Intelligence (SI). Bee Swarm Optimization (BSO) is part of SI and it tries to solve the main problems of the Particle Swarm Optimization (PSO): the premature convergence and the poor diversity. In this paper we propose using BSO as part of GE as strategies to generate heuristics that solve the Bin Packing Problem (BPP). A comparison between BSO, PSO, and BPP heuristics is performed through the nonparametric Friedman test. The main contribution of this paper is to propose a way to implement different algorithms as search strategy in GE. In this paper, it is proposed that the BSO obtains better results than the ones obtained by PSO, also there is a grammar proposed to generate online and offline heuristics to improve the heuristics generated by other grammars and humans.}, 
+}
 
 
 
