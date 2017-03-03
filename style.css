@@ -1,9 +1,23 @@
 /* CSS Document */
 
 
+div#background
+{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+ }
+
+ div#background img
+ {
+   width: 100%;
+   height: 100%;
+  }
+  
+
 body {
 	font: 16px "Palatino Linotype", Palatino, serif; 
-	background-image: url(fig-bg.gif);
+	background-image: url(a.gif); 
 	text-align:justify;
   
 }
