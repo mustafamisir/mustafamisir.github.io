@@ -347,6 +347,9 @@ Originality/value
 }
 
 
+
+
+
 @article{Monemi2015Solution,
 	author = {Rahimeh Neamatian Monemi and  Kassem Danach and  Wissam Khalil and  Shahin Gelareh and  Francisco C. Lima Jr. and  Dario Jose Aloise},
 	year = {2015},
@@ -637,6 +640,29 @@ Originality/value
 	journal = {Soft Computing},
 	 url = {http://link.springer.com/article/10.1007%2Fs00500-014-1454-y},
 }
+
+
+@techreport{zhang2014empirical,
+  title={An empirical study of meta-and hyper-heuristic search for multi-objective release planning},
+  author={Zhang, Yuanyuan and Harman, Mark and Ochoa, Gabriela and Ruhe, Guenther and Brinkkemper, Sjaak},
+	year = {2014},
+	 type = {UCL Research Note, RN/14/07},
+	 url = {http://www.cs.ucl.ac.uk/fileadmin/UCL-CS/research/Research_Notes/RN_14_07.pdf},
+	note={A variety of meta-heuristic search algorithms have been introduced for optimising software release planning. However, there has been no comprehensive empirical study of different search algorithms across multiple different real world datasets. In this paper we present an empirical study of global, local and hybrid meta- and hyper-heuristic search based algorithms on 10 real world datasets. We find that the hyper-heuristics are particularly effective. For example, the hyper-heuristic genetic algorithm significantly outperformed the other six approaches (and with high effect size) for solution quality 85% of the time, and was also faster than all others 70% of the time. Furthermore, correlation analysis reveals that it scales well as the number of requirements increases.}, 
+}  
+
+
+
+@techreport{jia2013learning,
+  title={Learning combinatorial interaction testing strategies using hyperheuristic search},
+  author={Jia, Yue and Cohen, Myra B and Harman, Mark and Petke, Justyna},
+	year = {2013},
+	 type = {UCL Research Note, RN/13/07},
+	 url = {http://www.cs.ucl.ac.uk/fileadmin/UCL-CS/research/Research_Notes/RN_13_17.pdf},
+	note={Two decades of bespoke Combinatorial Interaction Testing (CIT) algorithm development have left software engineers with a bewildering choice of configurable system testing techniques. This paper introduces a single hyperheuristic algorithm that earns CIT strategies, providing a single generalist approach. We report experiments that show that our algorithm competes with known best solutions across constrained and unconstrained problems. For all 26 real world subjects and 29 of the 30 constrained benchmark problems studied, it equals or improves upon the best known result. We also present evidence that our algorithm's strong generic performance is caused by its effective unsupervised learning. Hyperheuristic search is thus a promising way to relocate CIT design intelligence from human to machine.}, 
+}  
+
+
 
 
 @article{Borgulya2014A,
@@ -5070,7 +5096,7 @@ Originality/value
 @article{kheiri2016hidden,
   title={A Hidden Markov Model Approach to the Problem of Heuristic Selection in Hyper-heuristics with a Case Study in High School Timetabling Problems},
   author={Kheiri, Ahmed and Keedwell, Ed},
-  journal={Evolutionary computation},
+  journal={Evolutionary Computation},   
   year={2016},
   publisher={MIT Press},
   url={http://www.mitpressjournals.org/doi/abs/10.1162/EVCO_a_00186},
@@ -6313,9 +6339,9 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   year={2016},
   institution={Master Thesis, Department of Computer Science, Missouri University of Science and Technology},
   url={http://scholarsmine.mst.edu/masters_theses/7549/},
-  abstract={Modern society gives rise to complex problems which sometimes lend themselves to being transformed into Boolean satisfiability (SAT) decision problems; this thesis presents an example from the program understanding domain. Current conflict-driven clause learning (CDCL) SAT solvers employ all-purpose heuristics for making decisions when finding truth assignments for arbitrary logical expressions called SAT instances. The instances derived from a particular problem class exhibit a unique underlying structure which impacts a solver's effectiveness. Thus, tailoring the solver heuristics to a particular problem class can significantly enhance the solver's performance; however, manual specialization is very labor intensive. Automated development may apply hyper-heuristics to search program space by utilizing problem-derived building blocks. This thesis demonstrates the potential for genetic programming (GP) powered hyper-heuristic driven automated design of algorithms to create tailored CDCL solvers, in this case through custom variable scoring and learnt clause scoring heuristics, with significantly better performance on targeted classes of SAT problem instances. As the run-time of GP is often dominated by fitness evaluation, evaluating multiple offspring in parallel typically reduces the time incurred by fitness evaluation proportional to the number of parallel processing units. The naive synchronous approach requires an entire generation to be evaluated before progressing to the next generation; as such, heterogeneity in the evaluation times will degrade the performance gain, as parallel processing units will have to idle until the longest evaluation has completed. This thesis shows empirical evidence justifying the employment of an asynchronous parallel model for GP powered hyper-heuristics applied to SAT solver space, rather than the generational synchronous alternative, for gaining speed-ups in evolution time. Additionally, this thesis explores the use of a multi-objective GP to reveal the trade-off surface between multiple CDCL attributes.},
+  note={Modern society gives rise to complex problems which sometimes lend themselves to being transformed into Boolean satisfiability (SAT) decision problems; this thesis presents an example from the program understanding domain. Current conflict-driven clause learning (CDCL) SAT solvers employ all-purpose heuristics for making decisions when finding truth assignments for arbitrary logical expressions called SAT instances. The instances derived from a particular problem class exhibit a unique underlying structure which impacts a solver's effectiveness. Thus, tailoring the solver heuristics to a particular problem class can significantly enhance the solver's performance; however, manual specialization is very labor intensive. Automated development may apply hyper-heuristics to search program space by utilizing problem-derived building blocks. This thesis demonstrates the potential for genetic programming (GP) powered hyper-heuristic driven automated design of algorithms to create tailored CDCL solvers, in this case through custom variable scoring and learnt clause scoring heuristics, with significantly better performance on targeted classes of SAT problem instances. As the run-time of GP is often dominated by fitness evaluation, evaluating multiple offspring in parallel typically reduces the time incurred by fitness evaluation proportional to the number of parallel processing units. The naive synchronous approach requires an entire generation to be evaluated before progressing to the next generation; as such, heterogeneity in the evaluation times will degrade the performance gain, as parallel processing units will have to idle until the longest evaluation has completed. This thesis shows empirical evidence justifying the employment of an asynchronous parallel model for GP powered hyper-heuristics applied to SAT solver space, rather than the generational synchronous alternative, for gaining speed-ups in evolution time. Additionally, this thesis explores the use of a multi-objective GP to reveal the trade-off surface between multiple CDCL attributes.},
 }
-
+   
 
 
 @inproceedings{karunakaran2017dynamic,
@@ -6709,6 +6735,56 @@ frameworks are developed all the time. Shared common features that help to class
 	url={http://titancs.ukzn.ac.za/Files/preprint.pdf},  
 	note={Hyper-heuristics is an emergent technology that has proven to be effective at solving real-world problems. The two main categories of hyper-heuristics are selection and generation. Selection hyper-heuristics select existing low-level heuristics while generation hyper-heuristics create new heuristics. At the inception of the field single point searches were essentially employed by selection hyper-heuristics, however as the field progressed evolutionary algorithms are becoming more prominent. Evolutionary algorithms, namely, genetic programming, have chiefly been used for generation hyper-heuristics. Implementing evolutionary algorithm hyper-heuristics can be quite a time-consuming task which is daunting for first time researchers and practitioners who want to rather focus on the application domain the hyper-heuristic will be applied to which can be quite complex. This paper presents a Java toolkit for the implementation of evolutionary algorithm hyper-heuristics, namely, EvoHyp. EvoHyp includes libraries for a genetic algorithm selection hyper-heuristic (GenAlg), a genetic programming generation hyper-heuristic (GenProg), a distributed version of GenAlg (DistrGenAlg) and a distributed version of GenProg (DistrGenProg). The paper describes the libraries and illustrates how they can be used. The ultimate aim is to provide a toolkit which a non-expert in evolutionary algorithm hyper-heuristics can use. The paper concludes with an overview of future extensions of the toolkit.}, 
 }
+
+
+
+
+
+   
+
+
+@article{kumari2017hybrid,
+  title={A Hybrid Approach of Genetic Algorithm and Multi Objective PSO Task Scheduling in Cloud Computing},
+  author={Kumari, K Raja and Sengottuvelan, P and Shanthini, J},
+  journal={Asian Journal of Research in Social Sciences and Humanities},
+  volume={7},
+  number={3},
+  pages={1260--1271},
+  year={2017},
+  publisher={Asian Research Consortium},
+  url={http://www.indianjournals.com/ijor.aspx?target=ijor:ajrssh&volume=7&issue=3&article=088},
+  note={The genetic algorithm is an evolutionary optimization algorithm based upon Initial population, crossover, mutation and Evaluation. On the other side, Multi Objective particle swarm optimization (MOPSO) is a swarm intelligence algorithm functioning by means of inertia weight, learning factors and the mutation probability. In high-performance hyper-heuristic algorithm is used to find better scheduling solutions in cloud computing. To improve the scheduling results in terms of makespan, throughput, cost. Hyper-heuristic algorithm finds better scheduling solutions for cloud computing systems and to further improve the scheduling results in terms of make span. A novel Multi objective particle swarm optimization and Genetic Algorithm based hyper-heuristic resource scheduling algorithm has been designed as the hybrid algorithm. Performance of the proposed algorithm has also been evaluated through the Cloud Sim toolkit. We have compared our hybrid scheduling algorithm with existing common heuristic-based scheduling algorithms. The results thus obtained have shown a better performance by our algorithm than the existing algorithms, in terms of giving reduce cost and improve makespan. The proposed model shows the improved resource utilization, makespan, throughput.},   
+}
+
+
+
+
+   
+   
+@inproceedings{karunakaran2017toward,
+	author = {Deepak Karunakaran, Yi Mei, Gang Chen and Mengjie Zhang},
+	year = {2017},
+	title = {Toward Evolving Dispatching Rules for Dynamic Job Shop Scheduling Under Uncertainty},
+	address = {Berlin, Germany},
+	booktitle = {the 18th Annual Conference on Genetic and Evolutionary Computation (GECCO)},
+	url={http://homepages.ecs.vuw.ac.nz/~yimei/papers/GECCO17-Deepak.pdf},
+	note={Dynamic job shop scheduling (DJSS) is a complex problem which is an important aspect of manufacturing systems. Even though the manufacturing environment is uncertain, most of the existing research works consider merely deterministic problems where the time required for processing any job is known in advance and never changes. However many DJSS problems in practice involve high level of uncertainty that must be explicitly addressed. In this work, we consider DJSS problems with varied uncertainty configurations of machines in terms of processing times. We find that with the varying levels of uncertainty, more and more machines cannot fulfill their duties as scheduled and will become bottlenecks of the job shop. To cope with uncertainties, it is therefore essential to identify these bottleneck machines and schedule the jobs to be performed by them carefully. Driven by this idea, we develop a new effective method to evolve pairs of dispatching rules each for a different bottleneck level on the machines. A clustering approach to classify the bottleneck level of the machines arising in the system due to uncertain processing times is proposed. Then, a cooperative co-evolution technique to evolve pairs of dispatching rules which generalizes well across different uncertainty configurations is presented. We perform empirical analysis to show its generalization characteristic over the different uncertainty configurations and show that the proposed method outperforms the current approaches.}, 
+}
+   
+     
+   
+   
+@inproceedings{grocott2017evolving,
+	author = {Josiah Jacobsen-Grocott, Yi Mei, Gang Chen, Mengjie Zhang},
+	year = {2017},
+	title = {Evolving Heuristics for Dynamic Vehicle Routing with Time Windows Using Genetic Programming},
+	address = {San Sebastian, Spain},
+	booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
+	url={http://homepages.ecs.vuw.ac.nz/~yimei/papers/CEC17-Josiah.pdf},  
+	note={Dynamic vehicle routing problem with time windows is an important combinatorial optimisation problem in many real-world applications. The most challenging part of the problem is to make real-time decisions (i.e. whether to accept the newly arrived service requests or not) during the execution of the routes. It is hardly applicable to use the optimisation methods such as mathematical programming and evolutionary algorithms that are competitive for static problems, since they are usually time consuming, and cannot give real-time responses. In this paper, we consider solving this problem using heuristics. A heuristic gradually builds a solution by adding the requests to the end of the route one by one. This way, it can take advantage of the latest information when making the next decision, and give immediate response. In this paper, we propose a meta-algorithm to generate a solution given any heuristic. The meta-algorithm maintains a set of routes throughout the scheduling horizon. Whenever a new request arrives, it tries to re-generate new routes to include the new request by the heuristic. It accepts the new request if successful, and reject otherwise. Then we manually designed several heuristics, and proposed a genetic programming-based hyper-heuristic to automatically evolve heuristics. The results showed that the heuristics evolved by genetic programming significantly outperformed the manually designed heuristics.}, 
+}
+
+
 
 
 
