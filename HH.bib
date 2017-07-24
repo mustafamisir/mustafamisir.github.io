@@ -1,3 +1,4 @@
+
   
 
 @article{singh2015survey,
@@ -67,7 +68,7 @@ provide an optimum solution for the combinatorial optimization problems. In this
 @inproceedings{sabar2015math,
   title={A math-hyper-heuristic approach for large-scale vehicle routing problems with time windows},
   author={Sabar, Nasser R and Zhang, Xiuzhen Jenny and Song, Andy},
-  booktitle={2015 IEEE Congress on Evolutionary Computation (CEC)},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
   pages={830--837},
   year={2015},
   organization={IEEE},
@@ -1345,6 +1346,7 @@ Originality/value
 	 number = {6},
 	journal = {IEEE Transactions on Evolutionary Computation},
 	 url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&amp;arnumber=6595625},
+	 abstract={Designing generic problem solvers that perform well across a diverse set of problems is a challenging task. In this work, we propose a hyper-heuristic framework to automatically generate an effective and generic solution method by utilizing grammatical evolution. In the proposed framework, grammatical evolution is used as an online solver builder, which takes several heuristic components (e.g., different acceptance criteria and different neighborhood structures) as inputs and evolves templates of perturbation heuristics. The evolved templates are improvement heuristics, which represent a complete search method to solve the problem at hand. To test the generality and the performance of the proposed method, we consider two well-known combinatorial optimization problems: exam timetabling (Carter and ITC 2007 instances) and the capacitated vehicle routing problem (Christofides and Golden instances). We demonstrate that the proposed method is competitive, if not superior, when compared to state-of-the-art hyper-heuristics, as well as bespoke methods for these different problem domains. In order to further improve the performance of the proposed framework we utilize an adaptive memory mechanism, which contains a collection of both high quality and diverse solutions and is updated during the problem solving process. Experimental results show that the grammatical evolution hyper-heuristic, with an adaptive memory, performs better than the grammatical evolution hyper-heuristic without a memory. The improved framework also outperforms some bespoke methodologies, which have reported best known results for some instances in both problem domains.},  
 }
 
 
@@ -1362,7 +1364,7 @@ Originality/value
 
 @article{Allen2013A,
 	author = {Jonathan Allen and  Graham Coates and  Jon Trevelyan},
-	year = {2013},
+	year = {2013},	
 	 title = {A Hyper-heuristic Approach to Aircraft Structural Design Optimization},
 	 publisher = {Springer},
 	 volume = {48},
@@ -6172,6 +6174,7 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   title={A dynamic truck dispatching problem in marine container terminal},
   author={Chen, Jianjun and Bai, Ruibin and Dong, Haibo and Qu, Rong and Kendall, Graham},
   booktitle={IEEE Symposium on Computational Intelligence in Scheduling and Network Design (SSCI)},
+  pages={1--8},    
   year={2016},
   url={http://eprints.nottingham.ac.uk/39207/},  
   note={In this paper, a dynamic truck dispatching problem of a marine container terminal is described and discussed. In this problem, a few containers, encoded as work instructions, need to be transferred between yard blocks and vesselby a fleet of trucks. Both the yard blocks and the quay are equipped with cranes to support loading/unloading operations. In order to service more vessels, any unnecessary idle time between quay crane (QC) operations need to be minimised to speed up the container transfer process. Due to the unpredictable port situations that can affect routing plans and the short calculation time allowed to generate one, static solution methods are not suitable for this problem. In this paper, we introduce a new mathematical model that minimises both the QC makespan and the truck travelling time. Three dynamic heuristics are proposed and a genetic algorithm hyperheuristic (GAHH) under development is also described. Experiment results show promising capabilities the GAHH may offer.},
@@ -6261,24 +6264,14 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
 }
 
 
-  
-
-@inproceedings{masood2017apso,
-  title={A PSO-based Reference Point Adaption Method for Genetic Programming Hyper-heuristic in Many-Objective Job Shop Scheduling},
-  author={Masood, Atiya and Mei, Yi and Chen, Gang and Zhang, Mengjie},
-  booktitle={Australasian Conference on Artificial Life and Computational Intelligence (ACALCI)},
-  address = {Melbourne, Australia},
-  year={2017},
-  url={http://homepages.ecs.vuw.ac.nz/~yimei/papers/acalci2017-atiya.pdf},
-  note={Job Shop Scheduling is an important combinatorial optimisation problem in practice. It usually contains many (four or more) potentially conflicting objectives such as makespan and mean weighted tardiness. On the other hand, evolving dispatching rules using genetic programming has demonstrated to be a promising approach to solving job shop scheduling due to its flexibility and scalability. In this paper, we aim to solve many-objective job shop scheduling with genetic programming and NSGA-III. However, NSGA-III is originally designed to work with uniformly distributed reference points which do not match well with the discrete and non-uniform Pareto front in job shop scheduling problems, resulting in many useless points during evolution. These useless points can significantly affect the performance of NSGA-III and genetic programming. To address this issue and inspired by particle swarm optimisation, a new reference point adaptation mechanism has been proposed in this paper. Experiment results on many-objective benchmark job shop scheduling instances clearly show that prominent improvement in performance can be achieved upon using our reference point adaptation mechanism in NSGA-III and genetic programming.}, 
-}
-
 
 @inproceedings{park2017investigating,
   title={Investigating the Generality of Genetic Programming based Hyper-heuristic Approach to Dynamic Job Shop Scheduling with Machine Breakdown},
   author={Park, John and Mei, Yi and Nguyen, Su and Chen, Gang and Zhang, Mengjie},
-  booktitle={Australasian Conference on Artificial Life and Computational Intelligence (ACALCI)},
-  address = {Melbourne, Australia},
+  booktitle={Australasian Conference on Artificial Life and Computational Intelligence},
+  pages={301--313},
+  year={2017},
+  organization={Springer},  
   year={2017},
   url={http://homepages.ecs.vuw.ac.nz/~yimei/papers/acalci2017-john.pdf},
   note={Dynamic job shop scheduling (DJSS) problems are combinatorial optimisation problems that have been extensively studied in the literature due to their difficulty and their applicability to real-world manufacturing systems, e.g., car manufacturing systems. In a DJSS problem instance, jobs arrive on the shop floor to be processed on specific sequences of machines on the shop floor and unforeseen events such as dynamic job arrivals and machine breakdown occur that affect the properties of the shop floor. Many researchers have proposed genetic programming based hyper-heuristic (GP-HH) approaches to evolve high quality dispatching rules for DJSS problems with dynamic job arrivals, outperforming good man-made rules for the problems. However, no GP-HH approaches have been proposed for DJSS problems with dynamic job arrivals and machine breakdowns, and it is not known how well GP generalises over both DJSS problem instances with no machine breakdown to problem instances with machine breakdown. Therefore, this paper investigates the generality of GP for DJSS problem with dynamic job arrivals and machine breakdowns. To do this, a machine breakdown specific DJSS dataset is proposed, and an analysis procedure is used to observe the differences in the structures of the GP rules when evolved under different machine breakdown scenarios. The results show that performance and the distributions of the terminals for the evolved rules is sensitive to the frequency of machine breakdowns in the training instances used to evolve the rules},
@@ -6291,7 +6284,9 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   title={Community Detection from Biological and Social Networks: A Comparative Analysis of Metaheuristic Algorithms},
   author={Atay, Yilmaz and Koc, Ismail and Babaoglu, Ismail and Kodaz, Halife},
   journal={Applied Soft Computing},
-  year={2016},
+  volume={50}, 
+  pages={194--211},
+  year={2017},
   publisher={Elsevier},
   url={http://www.sciencedirect.com/science/article/pii/S1568494616305944}, 
   note={In order to analyze complex networks to find significant communities, several methods have been proposed in the literature. Modularity optimization is an interesting and valuable approach for detection of network communities in complex networks. Due to characteristics of the problem dealt with in this study, the exact solution methods consume much more time. Therefore, we propose six metaheuristic optimization algorithms, which each contain a modularity optimization approach. These algorithms are the original Bat Algorithm (BA), Gravitational Search Algorithm (GSA), modified Big Bang-Big Crunch algorithm (BB-BC), improved Bat Algorithm based on the Differential Evolutionary algorithm (BADE), effective Hyperheuristic Differential Search Algorithm (HDSA) and Scatter Search algorithm based on the Genetic Algorithm (SSGA). Four of these algorithms (HDSA, BADE, SSGA, BB-BC) contain new methods, whereas the remaining two algorithms (BA and GSA) use original methods. To clearly demonstrate the performance of the proposed algorithms when solving the problems, experimental studies were conducted using nine real-world complex networks - five of which are social networks and the rest of which are biological networks. The algorithms were compared in terms of statistical significance. According to the obtained test results, the HDSA proposed in this study is more efficient and competitive than the other algorithms that were tested.},
@@ -6366,6 +6361,7 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
   url       = {http://link.springer.com/chapter/10.1007/978-3-319-45823-6_4},
   note		= {Software project scheduling plays an important role in reducing the cost and duration of software projects. It is an NP-hard combinatorial optimization problem that has been addressed based on single and multi-objective algorithms. However, such algorithms have always used fixed genetic operators, and it is unclear which operators would be more appropriate across the search process. In this paper, we propose an evolutionary hyper-heuristic to solve the software project scheduling problem. Our novelties include the following: (1) this is the first work to adopt an evolutionary hyper-heuristic for the software project scheduling problem; (2) this is the first work for adaptive selection of both crossover and mutation operators; (3) we design different credit assignment methods for mutation and crossover; and (4) we use a sliding multi-armed bandit strategy to adaptively choose both crossover and mutation operators. The experimental results show that the proposed algorithm can solve the software project scheduling problem effectively.},
 }
+
 
 
 
@@ -6648,46 +6644,44 @@ Through this thesis the following major contributions have been made: (1) the fi
 
  
 
-@inproceedings{gomez2017ahyper-heuristic,
-	author = {Raquel Hernandez Gomez and Carlos Coello Coello},
-	year = {2017},
-	title = {A Hyper-Heuristic of Scalarizing Functions},
-	address = {Berlin, Germany},
-	booktitle = {the 18th Annual Conference on Genetic and Evolutionary Computation (GECCO)},
+@inproceedings{gomez2017hyper,
+  title={A hyper-heuristic of scalarizing functions},
+  author={G{\'o}mez, Raquel Hern{\'a}ndez and Coello, Carlos A Coello},  
+  booktitle={Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)},
+  pages={577--584},
+  year={2017},
+  organization={ACM}
 }
 
-
-@inproceedings{perez2017evolutionary,
-	author = {Alejandro Rosales-Perez and Andres E. Gutierrez-Rodriguez and Jose C. Ortiz-Bayliss and Hugo Terashima-Marin and Carlos A. Coello Coello},
-	year = {2017},
-	title = {Evolutionary Multilabel Hyper-Heuristic Design},
-	address = {San Sebastian, Spain},
-	booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
-	abstract={Nowadays, heuristics represent a commonly used alternative to solve complex optimization problems. This, however, has given rise to the problem of choosing the most effective heuristic for a given problem. In recent years, one of the most used strategies for this task are the hyper-heuristics, which aim at selecting/generating heuristics to solve a wide range of optimization problems. Most of the existing selection hyper-heuristics attempt to recommend only one heuristic for a given instance. However, for some classes of problems, more than one heuristic can be suitable. With this premise, in this paper, we address this issue through an evolutionary multilabel learning approach for building hyper- heuristics. Unlike traditional approaches, in the multilabel formulation, the result could not be a single recommendation, but a set of potential heuristics. Due to the fact that cooperative coevolutionary algorithms allow us to divide the problem into several subproblems, it results in a natural approach for dealing with multilabel classification. The proposed cooperative coevolutionary multilabel approach aims at choosing the most relevant patterns for each heuristic. For the experimental study included in this paper, we have used a set of constraint satisfaction problems as our study case. Our experimental results suggest that the proposed method is able to generate accurate hyper-heuristics that outperform reference methods.} 
-}
 
 
 
 @inproceedings{amaya2017improving,
-	author = {Ivan Amaya and Jose Carlos Ortiz-Bayliss and Andres Eduardo Gutirrez-Rodriguez and Hugo Terashima-Marin and Carlos A. Coello Coello},
-	year = {2017},
-	title = {Improving Hyper-heuristic Performance Through Feature Transformation},
-	address = {San Sebastian, Spain},
-	booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
-	abstract={Hyper-heuristics are powerful search methodologies that can adapt to different kinds of problems. One element of paramount importance, however, is the selection module that they incorporate. Traditional approaches define a set of features for characterizing a problem and, thus, define how to best solve it. However, some features may vary nonlinearly as the solver progresses, requiring higher resolution in specific areas of the feature domain. This work focuses on assessing the advantage of using feature transformations to improve the given resolution and, as a consequence, to improve the overall performance of a hyper-heuristic. We provide evidence that using feature transformations may result in a better discrimination of the problem instance and, as consequence, a better performance of the hyper- heuristics. The feature transformation strategy was applied to an evolutionary-based hyper-heuristic model taken from the literature and tested on constraint satisfaction problems. The proposed strategy increased the median success rate of hyper-heuristics by more than 13% and reduced its standard deviation in about 7%, while reducing the median number of adjusted consistency checks by almost 30%.}, 
+  title={Improving hyper-heuristic performance through feature transformation},
+  author={Amaya, Ivan and Ortiz-Bayliss, Jos{\'e} Carlos and Guti{\'e}rrez-Rodr{\'\i}guez, Andr{\'e}s Eduardo and Terashima-Mar{\'\i}n, Hugo and Coello, Carlos A Coello},
+  booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
+  pages={2614--2621},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969623/},
+  abstract={Hyper-heuristics are powerful search methodologies that can adapt to different kinds of problems. One element of paramount importance, however, is the selection module that they incorporate. Traditional approaches define a set of features for characterizing a problem and, thus, define how to best solve it. However, some features may vary nonlinearly as the solver progresses, requiring higher resolution in specific areas of the feature domain. This work focuses on assessing the advantage of using feature transformations to improve the given resolution and, as a consequence, to improve the overall performance of a hyper-heuristic. We provide evidence that using feature transformations may result in a better discrimination of the problem instance and, as consequence, a better performance of the hyper-heuristics. The feature transformation strategy was applied to an evolutionary-based hyper-heuristic model taken from the literature and tested on constraint satisfaction problems The proposed strategy increased the median success rate of hyper-heuristics by more than 13% and reduced its standard deviation in about 7%, while reducing the median number of adjusted consistency checks by almost 30%.}, 
 }
 
 
 
-@inproceedings{rodriguez2017applying,
-	author = {Andres Eduardo Gutierrez Rodriguez and Jose Carlos Ortiz Bayliss and Alejandro Rosales Perez and Ivan Mauricio Amaya Contreras and Santiago Enrique Conant Pablos and Hugo Terashima Marin and Carlos Artemio Coello Coello},
-	year = {2017},
-	title = {Applying Automatic Heuristic-Filtering to Improve Hyper-heuristic Performance},
-	address = {San Sebastian, Spain},
-	booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
-	abstract={Hyper-heuristics have emerged as an important strategy for combining the strengths of different heuristics into a single method. Although hyper- heuristics have been found to be successful in many scenarios, little attention has been paid to the subsets of heuristics that these methods manage and apply. In several cases, heuristics can interfere with each other and can be harmful for the search. Thus, obtaining information about the differences among heuristics, and how they contribute to the search process is very important. The main contribution of this paper is an automatic heuristic-filtering process that allows hyper-heuristics to exclude heuristics that do not contribute to improving the solution. Based on some previous works in feature selection, two methods are proposed that rank heuristics and sequentially select only suitable heuristics in a hyper- heuristic framework. Our experiments over a set of Constraint Satisfaction Problem instances show that a hyper-heuristic with only selected heuristics obtains significantly better results than a hyper-heuristic containing all heuristics, in terms of running times. In addition, the success rate of solving such instances is better for the hyper-heuristic with the suitable heuristics than for the hyper-heuristic without our proposed filtering process.},  
+
+@inproceedings{gutierrez2017applying,
+  title={Applying automatic heuristic-filtering to improve hyper-heuristic performance},
+  author={Gutierrez-Rodr{\'\i}guez, Andres E and Ortiz-Bayliss, Jos{\'e} C and Rosales-P{\'e}rez, Alejandro and Amaya-Contreras, Ivan M and Conant-Pablos, Santiago E and Terashima-Mar{\'\i}n, Hugo and Coello, Carlos A Coello},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={2638--2644},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969626/},
+  abstract={Hyper-heuristics have emerged as an important strategy for combining the strengths of different heuristics into a single method. Although hyper-heuristics have been found to be successful in many scenarios, little attention has been paid to the subsets of heuristics that these methods manage and apply. In several cases, heuristics can interfere with each other and can be harmful for the search. Thus, obtaining information about the differences among heuristics, and how they contribute to the search process is very important. The main contribution of this paper is an automatic heuristic-filtering process that allows hyper-heuristics to exclude heuristics that do not contribute to improving the solution. Based on some previous works in feature selection, two methods are proposed that rank heuristics and sequentially select only suitable heuristics in a hyper-heuristic framework. Our experiments over a set of Constraint Satisfaction Problem instances show that a hyper-heuristic with only selected heuristics obtains significantly better results than a hyper-heuristic containing all heuristics, in terms of running times. In addition, the success rate of solving such instances is better for the hyper-heuristic with the suitable heuristics than for the hyper-heuristic without our proposed filtering process.}, 
 }
 
+  
 
 
 @incollection{swan2017recharacterizationhh,   
@@ -6787,7 +6781,8 @@ Through this thesis the following major contributions have been made: (1) the fi
 	title = {{EvoHyp} - A Java Toolkit for Evolutionary Algorithm Hyper-Heuristics},
 	address = {San Sebastian, Spain},
 	booktitle = {IEEE Congress on Evolutionary Computation (CEC)},
-	url={http://titancs.ukzn.ac.za/Files/preprint.pdf},  
+	pages={2706--2713},
+	url={http://ieeexplore.ieee.org/abstract/document/7969636/},   
 	note={Hyper-heuristics is an emergent technology that has proven to be effective at solving real-world problems. The two main categories of hyper-heuristics are selection and generation. Selection hyper-heuristics select existing low-level heuristics while generation hyper-heuristics create new heuristics. At the inception of the field single point searches were essentially employed by selection hyper-heuristics, however as the field progressed evolutionary algorithms are becoming more prominent. Evolutionary algorithms, namely, genetic programming, have chiefly been used for generation hyper-heuristics. Implementing evolutionary algorithm hyper-heuristics can be quite a time-consuming task which is daunting for first time researchers and practitioners who want to rather focus on the application domain the hyper-heuristic will be applied to which can be quite complex. This paper presents a Java toolkit for the implementation of evolutionary algorithm hyper-heuristics, namely, EvoHyp. EvoHyp includes libraries for a genetic algorithm selection hyper-heuristic (GenAlg), a genetic programming generation hyper-heuristic (GenProg), a distributed version of GenAlg (DistrGenAlg) and a distributed version of GenProg (DistrGenProg). The paper describes the libraries and illustrates how they can be used. The ultimate aim is to provide a toolkit which a non-expert in evolutionary algorithm hyper-heuristics can use. The paper concludes with an overview of future extensions of the toolkit.}, 
 }
 
@@ -7249,6 +7244,393 @@ In this paper, we explore the application of our newly developed hyperheuristic,
 
 
 
+@inproceedings{martins2017hseda,
+	title={{HSEDA}: A Heuristic Selection Approach Based on Estimation of Distribution Algorithm for the Travelling Thief Problem},
+	author={Martins, Marcella SR and El Yafrani, Mohamed and Delgado, Myriam RBS and Wagner, Markus and Ahiod, Bela{\"\i}d and L{\"u}ders, Ricardo},
+	year={2017},
+	address = {Berlin, Germany},
+	booktitle = {the 18th Annual Conference on Genetic and Evolutionary Computation (GECCO)},
+	url={http://cs.adelaide.edu.au/~markus/pub/2017gecco-ttpeda.pdf},
+	abstract={Hyper-heuristics are high-level search techniques which improve the performance of heuristics operating at a higher heuristic level. Usually, these techniques automatically generate or select new simpler components based on the feedback received during the search. Estimation of Distribution Algorithms (EDAs) have been applied as hyper-heuristics, using a probabilistic distribution model to extract and represent interactions between heuristics and its low-level components to provide high-valued problem solutions. In this paper, we consider an EDA-based hyper-heuristic framework which encompasses a Heuristic Selection approach aiming to find best combinations of different known heuristics. A surrogate assisted model evaluates the new heuristic combinations sampled by the EDA probabilistic model using an approximation function. We compare our proposed approach named Heuristic Selection based on Estimation of Distribution Algorithm (HSEDA) with three state-of-the-art algorithms for the Travelling Thief Problem (TTP). The experimental results show that the approach is competitive, outperforming the other algorithms on most of the medium-sized TTP instances considered in this paper.}, 
+}
+
+
+
+
+@inproceedings{de2017applying,
+  title={Applying Copeland Voting to Design an Agent-Based Hyper-Heuristic},
+  author={de Carvalho, Vinicius Renan and Sichman, Jaime Simao},  
+  booktitle={Proceedings of the 16th Conference on Autonomous Agents and MultiAgent Systems},
+  pages={972--980},
+  year={2017},
+  organization={International Foundation for Autonomous Agents and Multiagent Systems},
+  url={http://dl.acm.org/citation.cfm?id=3091263},
+  abstract={Meta-heuristics are algorithms which are applied to solve problems when conventional algorithms can not find good solutions in reasonable time; evolutionary algorithms are perhaps the most well-known examples of meta-heuristics. As there are many possible meta-heuristics, finding the most suitable meta-heuristic for a given problem is not a trivial task. In order to make this choice, one can design hyper-heuristics. In the literature, one can find some agent-based research whose focus is to propose a framework where meta-heuristics are considered as agents, that solve a given problem in a collaborative or competitive way. Most of these works focus on mono-objective meta-heuristics. Other works focus on how to select multi-objective meta-heuristics, but not using an agent-based approach. We present in this work an agent-based hyper-heuristic for choosing the most suitable evolutionary meta-heuristic for a given problem. Our approach performs a cooperative Copeland voting procedure, considering five different metrics, to define which one of three competitive evolutionary meta-heuristics should execute during a certain processing time. We use the Walking Fish Problem (WFG) suite with two and three objectives to analyse the proposed approach performance. The obtained results showed that in all cases our strategy found the most indicated evolutionary algorithm and gets competitive results against the state of art.}, 
+}
+
+
+
+
+
+
+
+
+
+
+@article{tilahun2017prey,
+  title={Prey predator hyperheuristic},
+  author={Tilahun, Surafel Luleseged},
+  journal={Applied Soft Computing},
+  volume={59},
+  pages={104--114},
+  year={2017},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S1568494617302260},
+  abstract={Prey predator algorithm is a population based metaheuristic algorithm inspired by the interaction between a predator and its prey. In the algorithm, a solution with a better performance is called best prey and focuses totally on exploitation whereas the solution with least performance is called predator and focuses totally on exploration. The remaining solutions are called ordinary prey and either exploit promising regions by following better performing solutions or explore the solution space by randomly running away from the predator. Recently, it has been shown that by increasing the number of best prey or predator, it is possible to adjust the degree of exploitation and exploration. Even though, this tuning has the advantage of easily controlling these search behaviors, it is not an easy task. As any other metaheuristic algorithm, the performance of prey predator algorithm depends on the proper degree of exploration and exploitation of the decision space. In this paper, the concept of hyperheuristic is employed to balance the degree of exploration and exploitation of the algorithm. So that it learns and decides the best search behavior for the problem at hand in iterations. The ratio of the number of the best prey and the predators are used as low level heuristics. From the simulation results the balancing of the degree of exploration and exploitation by using hyperheuristic mechanism indeed improves the performance of the algorithm. Comparison with other algorithms shows the effectiveness of the proposed approach.}, 
+}
+
+ 
+
+ 
+
+@inproceedings{sabar2017optimising,
+  title={Optimising Deep Belief Networks by hyper-heuristic approach},
+  author={Sabar, Nasser R and Turky, Ayad and Song, Andy and Sattar, Abdul},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={2738--2745},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969640/},
+  abstract={Deep Belief Networks (DBN) have been successful in classification especially image recognition tasks. However, the performance of a DBN is often highly dependent on settings in particular the combination of runtime parameter values. In this work, we propose a hyper-heuristic based framework which can optimise DBNs independent from the problem domain. It is the first time hyper-heuristic entering this domain. The framework iteratively selects suitable heuristics based on a heuristic set, apply the heuristic to tune the DBN to better fit with the current search space. Under this framework the setting of DBN learning is adaptive. Three well-known image reconstruction benchmark sets were used for evaluating the performance of this new approach. Our experimental results show this hyper-heuristic approach can achieve high accuracy under different scenarios on diverse image sets. In addition state-of-the-art meta-heuristic methods for tuning DBN were introduced for comparison. The results illustrate that our hyper-heuristic approach can obtain better performance on almost all test cases.}, 
+}
+
+
+
+
+
+@article{li2015hyper,
+  title={A hyper-heuristic methodology to generate adaptive strategies for games},
+  author={Li, Jiawei and Kendall, Graham},
+  journal={IEEE Transactions on Computational Intelligence and AI in Games},
+  year={2015},
+  publisher={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7017583/},
+  abstract={Hyperheuristics have been successfully applied in solving a variety of computational search problems. In this paper, we investigate a hyperheuristic methodology to generate adaptive strategies for games. Based on a set of low-level heuristics (or strategies), a hyperheuristic game player can generate strategies which adapt to both the behavior of the co-players and the game dynamics. By using a simple heuristic selection mechanism, a number of existing heuristics for specialized games can be integrated into an automated game player. As examples, we develop hyperheuristic game players for three games: iterated prisoner's dilemma, repeated Goofspiel and the competitive traveling salesmen problem. The results demonstrate that a hyperheuristic game player outperforms the low-level heuristics, when used individually in game playing and it can generate adaptive strategies even if the low-level heuristics are deterministic. This methodology provides an efficient way to develop new strategies for games based on existing strategies.}, 
+}
+
+
+   
+@misc{alanazi2017reinforcement-PhDThesis,
+	author = {Alanazi, Fawaz},
+	year = {2017},
+	title={Reinforcement learning hyper-heuristics for optimisation}, 
+	 institution = {PhD Thesis, School of Computer Science, University of Nottingham},
+	url={http://eprints.nottingham.ac.uk/42204/},
+	abstract={Hyper-heuristics are search algorithms which operate on a set of heuristics with the goal of solving a wide range of optimisation problems. It has been observed that different heuristics perform differently between different optimisation problems. A hyper-heuristic combines a set of predefined heuristics, and applies a machine learning technique to predict which heuristic is the most suitable to apply at a given point in time while solving a given problem. A variety of machine learning techniques have been proposed in the literature. Most of the existing machine learning techniques are reinforcement learning mechanisms interacting with the search environment with the goal of adapting the selection of heuristics during the search process. The literature on the theoretical foundation of reinforcement learning hyper-heuristics is almost nonexisting. This work provides theoretical analyses of reinforcement learning hyper-heuristics. The goal is to shed light on the learning capabilities and limitations of reinforcement learning hyper-heuristics. This improves our understanding of these hyper-heuristics, and aid the design of better reinforcement learning hyper-heuristics. It is revealed that the commonly used additive reinforcement learning mechanism, under a mild assumption, chooses asymptotically heuristics uniformly at random. This thesis also proposes the problem of identifying the most suitable heuristic with a given error probability. We show a general lower bound on the time that "every" reinforcement learning hyper-heuristic needs to identify the most suitable heuristic with a given error probability. The results reveal a general limitation to learning achieved by this computational approach. Following our theoretical analysis, different reusable and easyto-implement reinforcement learning hyper-heuristics are proposed in this thesis. The proposed hyper-heuristics are evaluated on well-known combinatorial optimisation problems. One of the proposed reinforcement learning hyper-heuristics outperformed a state-of-the-art algorithm on several benchmark problems of the well-known CHeSC 2011.}, 
+}
+
+
+
+    
+
+@article{el2017hyperheuristic,
+  title={A hyperheuristic approach based on low-level heuristics for the travelling thief problem},
+  author={El Yafrani, Mohamed and Martins, Marcella and Wagner, Markus and Ahiod, Bela{\"\i}d and Delgado, Myriam and L{\"u}ders, Ricardo},
+  journal={Genetic Programming and Evolvable Machines},
+  pages={1--30},
+  publisher={Springer},
+  year={2017},  
+  url={https://link.springer.com/article/10.1007/s10710-017-9308-x},
+  abstract={In this paper, we investigate the use of hyper-heuristics for the travelling thief problem (TTP). TTP is a multi-component problem, which means it has a composite structure. The problem is a combination between the travelling salesman problem and the knapsack problem. Many heuristics were proposed to deal with the two components of the problem separately. In this work, we investigate the use of automatic online heuristic selection in order to find the best combination of the different known heuristics. In order to achieve this, we propose a genetic programming based hyper-heuristic called GPHS*, and compare it to state-of-the-art algorithms. The experimental results show that the approach is competitive with those algorithms on small and mid-sized TTP instances.}, 
+}
+
+
+
+
+@inproceedings{chuang2017study,
+  title={A study of agnostic hyper-heuristics based on sampling solution chains},
+  author={Chuang, Chung-Yao and Smith, Stephen F},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={271--278},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969323/},
+  abstract={In this paper, we study a simple hyper-heuristic that functions by sampling solution chains. A solution chain in this algorithm is formed by successively applying a randomly chosen heuristic to the previous solution to generate the next solution. Operating in this way, the algorithm can benefit from the accumulated effect of applying multiple heuristics. A key factor in this algorithm is the strategy for choosing the sampling length. We discuss a balanced strategy in a setting that contains two agnostic assumptions: First, we do not have detailed knowledge about the problem domain being solved except that we have access to the objective function and a set of predefined heuristics. Secondly, we have no information about the amount of time allocated for running our algorithm. We present a theoretical guarantee on using this strategy to choose the sampling lengths and derive some variants based on this strategy. Empirical results also confirm that these strategies deliver desired behavior. Finally, we briefly discuss the extension of incorporating a learning mechanism into the algorithm.}, 
+}
+
+
+
+@inproceedings{ferreira2017multi,
+  title={A Multi-Armed Bandit selection strategy for Hyper-heuristics},
+  author={Ferreira, Alexandre Silvestre and Gon{\c{c}}alves, Richard Aderbal and Pozo, Aurora},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={525--532},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969356/},
+  abstract={Meta-heuristics have emerged as an efficient way to solve NP-hard problems even without the guaranteed of optimal values. The main issue of meta-heuristics is that they are built using domain-specific knowledge. Therefore, they require a great effort to be adapted to a new domain. The concept of Hyper-heuristic was proposed to solve this problem. Hyper-heuristics are search methods that aim to solve optimization problems by selecting or generating heuristics. Selection hyper-heuristics choose from a pool of heuristics a good one to be applied at the current stage of the optimization process. Although there are several works focused on selection hyper-heuristics, there is no consensus about which is the best way to define a selection strategy. In this work, a deterministic selection strategy based on the concepts of the Multi-Armed Bandit (MAB) problem is proposed for combinatorial optimization. Multi-armed bandit approaches define a selection function with two components; the first is based on the performance of an operator and the second based on the number of times that the operator was used. In this work, three MAB algorithms were implemented using the HyFlex framework. An empirical parameter configuration was performed to each algorithm, and the best setup was compared to the top ten CHeSC 2011 algorithms using the same methodology adopted during the competition. The results obtained were comparable to those attained by the literature. Moreover, it was concluded that the behavior of MAB selection is heavily affected by its parameters. As this is not a desirable behavior for hyper-heuristics, future research will investigate ways to better deal with the parameter setting.}, 
+}
+
+
+
+
+
+@inproceedings{fontoura2017automated,
+  title={Automated design of hyper-heuristics components to solve the PSP problem with HP model},
+  author={Fontoura, Vidal D and Pozo, Aurora TR and Santana, Roberto},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={1848--1855},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969526/},
+  abstract={The Protein Structure Prediction (PSP) problem is one of the modern most challenging problems from science. Simplified protein models are usually applied to simulate and study some characteristics of the protein folding process. Hence, many heuristic strategies have been applied in order to find simplified protein structures in which the protein configuration has the minimal energy. However, these strategies have difficulties in finding the optimal solutions to the longer sequences of amino-acids, due to the complexity of the problem and the huge amount of local optima. Hyper heuristics have proved to be useful in this type of context since they try to combine different heuristics strengths into a single framework. However, there is lack of work addressing the automated design of hyper-heuristics components. This paper proposes GEHyPSP, an approach which aims to achieve generation, through grammatical evolution, of selection mechanisms and acceptance criteria for a hyper-heuristic framework applied to PSP problem. We investigate the strengths and weaknesses of our approach on a benchmark of simplified protein models. GEHyPSP was able to reach the best known results for 7 instances from 11 that composed the benchmark set used to evaluate the approach.}, 
+}
+
+
+
+
+
+
+@inproceedings{rosales2017evolutionary,
+  title={Evolutionary multilabel hyper-heuristic design},
+  author={Rosales-P{\'e}rez, Alejandro and Guti{\'e}rrez-Rodr{\'\i}guez, Andr{\'e}s E and Ortiz-Bayliss, Jos{\'e} C and Terashima-Mar{\'\i}n, Hugo and Coello, Carlos A Coello},
+  booktitle={Evolutionary Computation (CEC), 2017 IEEE Congress on},
+  pages={2622--2629},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969624/},
+  abstract={Nowadays, heuristics represent a commonly used alternative to solve complex optimization problems. This, however, has given rise to the problem of choosing the most effective heuristic for a given problem. In recent years, one of the most used strategies for this task are the hyper-heuristics, which aim at selecting/generating heuristics to solve a wide range of optimization problems. Most of the existing selection hyper-heuristics attempt to recommend only one heuristic for a given instance. However, for some classes of problems, more than one heuristic can be suitable. With this premise, in this paper, we address this issue through an evolutionary multilabel learning approach for building hyper- heuristics. Unlike traditional approaches, in the multilabel formulation, the result could not be a single recommendation, but a set of potential heuristics. Due to the fact that cooperative coevolutionary algorithms allow us to divide the problem into several subproblems, it results in a natural approach for dealing with multilabel classification. The proposed cooperative coevolutionary multilabel approach aims at choosing the most relevant patterns for each heuristic. For the experimental study included in this paper, we have used a set of constraint satisfaction problems as our study case. Our experimental results suggest that the proposed method is able to generate accurate hyper-heuristics that outperform reference methods.} 
+}
+
+
+
+
+@article{miranda2017generation,
+  title={Generation of Particle Swarm Optimization algorithms: An experimental study using Grammar-Guided Genetic Programming},
+  author={Miranda, P{\'e}ricles BC and Prud{\^e}ncio, Ricardo BC},
+  journal={Applied Soft Computing},
+  year={2017},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S1568494617303836},
+  abstract={Particle Swarm Optimization (PSO) is largely used to solve optimization problems effectively. Nonetheless, the PSO performance depends on the fine tuning of different parameters. To make the algorithm design process more independent from human intervention, some researchers have treated this task as an optimization problem. Grammar-Guided Genetic Programming (GGGP) algorithms, in particular, have been widely studied and applied in the context of algorithm optimization. GGGP algorithms produce customized designs based on a set of production rules defined in the grammar, differently from methods that simply select designs in a pre-defined limited search space. Although GGGP algorithms have been largely used in other contexts, they have not been deeply investigated in the generation of PSO algorithms. Thus, this work applies GGGP algorithms in the context of PSO algorithm design problem. Herein, we performed an experimental study comparing different GGGP approaches for the generation of PSO algorithms. The main goal is to perform a deep investigation aiming to identify pros and cons of each approach in the current task. In the experiments, a comparison between a tree-based GGGP approach and commonly used linear GGGP approaches for the generation of PSO algorithms was performed. The results showed that the tree-based GGGP produced better algorithms than the counterparts. We also compared the algorithms generated by the tree-based technique to state-of-the-art optimization algorithms, and it achieved competitive results.}, 
+}
+
+
+
+
+@article{ingimundardottir2017discovering,
+  title={Discovering dispatching rules from data using imitation learning: A case study for the job-shop problem},
+  author={Ingimundardottir, Helga and Runarsson, Thomas Philip},
+  journal={Journal of Scheduling},
+  pages={1--16},
+  year={2017},
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s10951-017-0534-0},
+  abstract={Dispatching rules can be automatically generated from scheduling data. This paper will demonstrate that the key to learning an effective dispatching rule is through the careful construction of the training data, (i) features of partially constructed schedules  xixi  should necessarily reflect the induced data distribution  DD  for when the rule is applied. This is achieved by updating the learned model in an active imitation learning fashion; (ii)  yiyi  is labelled optimally using a MIP solver; and (iii) data need to be balanced, as the set is unbalanced with respect to the dispatching step k. Using the guidelines set by our framework the design of custom dispatching rules, for a particular scheduling application, will become more effective. In the study presented three different distributions of the job-shop will be considered. The machine learning approach considered is based on preference learning, i.e. which dispatch (post-decision state) is preferable to another.}, 
+}
+
+
+
+@inproceedings{damavsevivcius2017state,
+  title={State Flipping Based Hyper-Heuristic for Hybridization of Nature Inspired Algorithms},
+  author={Dama{\v{s}}evi{\v{c}}ius, Robertas and Wo{\'z}niak, Marcin},
+  booktitle={International Conference on Artificial Intelligence and Soft Computing},
+  pages={337--346},
+  year={2017},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-319-59063-9_30},
+  abstract={The paper presents a novel hyper-heuristic strategy for hybridization of nature inspired algorithms. The strategy is based on switching the state of agents using a logistic probability function, which depends upon the fitness rank of an agent. A case study using two nature inspired algorithms (Artificial Bee Colony (ABC) and Krill Herding (KH)) and eight optimization problems (Ackley Function, Bukin Function N.6, Griewank Function, Holder Table Function, Levy Function, Schaffer Function N.2, Schwefel Function, Shubert Function) is presented. The results show a superiority of the proposed hyper-heuristic (mean end-rank for hybrid algorithm is 1.435 vs. 2.157 for KH and 2.408 for ABC).}, 
+}
+
+
+
+
+@article{miranda2017h3ad,
+  title={{H3AD}: A Hybrid Hyper-Heuristic for Algorithm Design},
+  author={Miranda, P{\'e}ricles BC and Prud{\^e}ncio, Ricardo BC and Pappa, Gisele L},
+  journal={Information Sciences},
+  year={2017},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S0020025516314323},
+  abstract={Designing an algorithm to solve a given problem is a challenging task due to the variety of possible design choices and the lack of clear guidelines on how to choose and/or combine them. Optimization and machine learning techniques have been used to make the algorithm design process more independent on human intervention. Hyper-heuristic approaches, in particular, have been proposed to search the space of algorithms/heuristics and/or their components, and iteratively combine and adapt them for specific problems. Although flexible to produce customized algorithms, hyper-heuristics can be extremely costly procedures. This paper proposes a novel hybrid hyper-heuristic (H3AD), which combines an automated algorithm selection approach with a generative hyper-heuristic. This combination intends to reduce the cost of providing an algorithm for a new input problem by reusing algorithms previously built by hyper-heuristics to solve similar problems. H3AD was evaluated in a case study to optimize the design of Particle Swarm Optimization algorithms in unconstrained continuous optimization problems. The results showed that H3AD provided appropriate recommendations of algorithms, reusing the algorithms generated by the hyper-heuristic to new input problems. Besides, H3AD drastically reduced the time of providing a customized algorithm when compared to generative hyper-heuristics, without a significant loss of optimization performance.},
+}
+
+
+
+
+@inproceedings{wang2017hyper,
+  title={A Hyper-Heuristic Method for UAV Search Planning},
+  author={Wang, Yue and Zhang, Min-Xia and Zheng, Yu-Jun},
+  booktitle={International Conference in Swarm Intelligence},
+  pages={454--464},
+  year={2017},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-319-61833-3_48},
+  abstract={Motivated by the wide use of unmanned aerial vehicles (UAV) in search-and-rescue operations, we consider a problem of planning the search sequence and search modes of UAV, the aim of which is to maximize the probability of finding the target in a complex environment with probabilistic belief of target location. We design five meta-heuristic algorithm for solving the complex problem, but find that none of them can always obtain satisfactory solutions on a variety of instances. To overcome this obstacle, we integrate these meta-heuristics into a hyper-heuristic framework, which adaptively manage the low-level heuristics (LLH) by using feedback of their real-time performance in problem solving, and thus can find the most suitable LLH or their combination that can outperform any single LLH on each given instance. Experiments show that the overall performance of the hyper-heuristic is significantly better than any individual heuristic on the test instances.},
+}
+
+
+
+@inproceedings{gonzalez2017parameterized,
+  title={A parameterized scheme of metaheuristics with exact methods for determining the Principle of Least Action in Data Envelopment Analysis},
+  author={Gonz{\'a}lez, Mart{\'\i}n and L{\'o}pez-Esp{\'\i}n, Jose J and Aparicio, Juan and Gim{\'e}nez, Domingo and Talbi, El-Ghazali},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={588--595},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969364/},
+  abstract={Data Envelopment Analysis (DEA) is a nonparametric methodology for estimating technical efficiency of a set of Decision Making Units (DMUs) from a dataset of inputs and outputs. This paper is devoted to computational aspects of DEA models under the application of the Principle of Least Action. This principle guarantees that the efficient closest targets are determined as benchmarks for each assessed unit. Usually, these models have been addressed in the literature by applying unsatisfactory techniques, based fundamentally on combinatorial NP-hard problems. Recently, some heuristics have been developed to partially solve these DEA models. This paper improves the heuristic methods used in previous works by applying a combination of metaheuristics and an exact method. Also, a parameterized scheme of metaheuristics is developed in order to implement metaheuristics and hybridations/combinations, adapting them to the particular problem proposed here. In this scheme, some parameters are used to study several types of metaheuristics, like Greedy Random Adaptative Search Procedure, Genetic Algorithms or Scatter Search. The exact method is included inside the metaheuristic to solve the particular model presented in this paper. A hyperheuristic is used on top of the parameterized scheme in order to search, in the space of metaheuristics, for metaheuristics that provide solutions close to the optimum. The method is competitive with exact methods, obtaining fitness close to the optimum with low computational time.}, 
+}
+
+
+
+@inproceedings{nguyen2017pso,
+  title={A {PSO}-based hyper-heuristic for evolving dispatching rules in job shop scheduling},
+  author={Nguyen, Su and Zhang, Mengjie},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={882--889},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7969402/},
+  abstract={Automated heuristic design for job shop scheduling has been an interesting and challenging research topic in the last decade. Various machine learning and optimising techniques, usually referred to as hyper-heuristics, have been applied to facilitate the design task. Two main approaches are either to utilise a general structure for dispatching rules and optimise its parameters or to simultaneously search for suitable structures and their parameters. Each approach has its own advantages and disadvantages. In this paper, we focus on the first approach and develop new representations that are flexible enough to represent diverse rules and powerful enough to cope with complex shop conditions. Particle swarm optimisation is used in the proposed hyper-heuristic to find optimal rules based on the representations. The results suggest that the new representations are effective for different shop conditions and obtained rules are very competitive as compared to those evolved by genetic programming. Analyses also show that the proposed hyper-heuristic is significantly faster than genetic programming based hyper-heuristic.}, 
+}
+
+
+@article{gokce2017hyperheuristic,
+  title={A Hyperheuristic Approach for Dynamic Multilevel Capacitated Lot Sizing with Linked Lot Sizes for APS implementations},
+  author={GOKCE, Mahmut Ali and BEYGO, Berkay and EMEKCI, Turgut},
+  journal={Journal of Yasar University},
+  volume={12},
+  number={45},
+  pages={14--31},
+  year={2017},
+  url={http://dergipark.ulakbim.gov.tr/jyasar/article/view/5000168850},
+  abstract={This study is concerned with solving real-life sized APS problems practically. Specifically, the problem of Multilevel Capacitated Lot Sizing Problem with linked lot sizes (MLCLSP-L) is considered. The problem is a classical, practical and notoriously hard problem. We propose a new modeling technique for MLCLSP-L based on a GA-driven hyperheuristic, which enables modeling of some issues previously not modeled. Proposed model uses an indirect representation by allowing GA search through a space of low level heuristics. Each one of the low level heuristics is simple and determines the detailed production plan of a machine in a period. The solution is constructed through combination of these low level heuristics. New model is demonstrated by solving moderate size test problem along with software developed.}, 
+}
+
+
+
+
+@article{lin2017backtracking,
+  title={A backtracking search hyper-heuristic for the distributed assembly flow-shop scheduling problem},
+  author={Lin, Jian and Wang, Zhou-Jing and Li, Xiaodong},
+  journal={Swarm and Evolutionary Computation},
+  year={2017},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S2210650216305028},
+  abstract={Distributed assembly permutation flow-shop scheduling problem (DAPFSP) is recognized as an important class of problems in modern supply chains and manufacturing systems. In this paper, a backtracking search hyper-heuristic (BS-HH) algorithm is proposed to solve the DAPFSP. In the BS-HH scheme, ten simple and effective heuristic rules are designed to construct a set of low-level heuristics (LLHs), and the backtracking search algorithm is employed as the high-level strategy to manipulate the LLHs to operate on the solution space. Additionally, an efficient solution encoding and decoding scheme is proposed to generate a feasible schedule. The effectiveness of the BS-HH is evaluated on two typical benchmark sets and the computational results indicate the superiority of the proposed BS-HH scheme over the state-of-the-art algorithms.}, 
+}
+
+
+
+
+
+@article{ferreira2017hyper,
+  title={Hyper-Heuristic Based Product Selection for Software Product Line Testing},
+  author={Ferreira, Thiago N and Lima, Jackson A Prado and Strickler, Andrei and Kuk, Josiel N and Vergilio, Silvia R and Pozo, Aurora},
+  journal={IEEE Computational Intelligence Magazine},
+  volume={12},
+  number={2},
+  pages={34--45},
+  year={2017},
+  publisher={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7895294/},
+  abstract={A Software Product Line (SPL) is defined as a set of software systems that share a common and managed set of features satisfying specific needs of a particular market segment or domain [1]. The SPL offers a number of common artifacts for building products, including mandatory and variable elements. SPL approaches have been adopted by many software companies1 to ease reuse and reduce time and production costs. A feature represents a functionality that is visible to the user and can be designed as a variability, which represents a variable functionality that may or may not be present in a product. On the other hand, mandatory features are common to all SPL products. To facilitate feature management, most SPL methodologies use the Feature Model (FM) to represent all the SPL variabilities and commonalities.}, 
+}
+
+
+
+
+
+
+@misc{danach2016hyperheuristics,
+  title={Hyperheuristics in Logistics},
+  author={Danach, Kassem},
+  year={2016},
+  institution={PhD Thesis, Automation, Computer Engineering, Signal and Image Processing, Ecole Centrale de Lille},
+  url={https://tel.archives-ouvertes.fr/tel-01485160/},
+  abstract={Success in using exact methods for large scale combinatorial optimization is still limited to certain problems or to specific classes of instances of problems. The alternative way is either using metaheuristics or matheuristics that rely on exact methods in some ways. In the context of combinatorial optimization, we are interested in heuristics to choose heuristics invoked to solve the addressed problem. In this thesis, we focus on hyperheuristic optimization in logistic problems. We focus on proposing a hyperheuristic framework that carries out a search in the space of heuristic algorithms and learns how to change the incumbent heuristic in a systematic way along the process in such a way that a good sequence of heuristics produces high quality solutions. We propose HHs for two problems in logistics: the workover rig scheduling problem and the hub location routing problem. Then, we compare the performances of several HHs described in the literature for the latter problem, which embed different heuristic selection methods such as a random selection, a choice function, a Q-Learning approach, and an ant colony based algorithm. The computational results prove the efficiency of HHs for the two problems in hand, and the relevance of including Lagrangian relaxation information for the second problem.}
+}
+
+
+
+@article{imbernonexploiting,
+  title={Exploiting Multi-level Parallelism on a Many-core System for the Application of Hyperheuristics to a Molecular Docking Problem},
+  author={Imbern{\'o}n, Baldomero},
+  journal={The Journal of Supercomputing},
+  year={2017}, 
+  publisher={Springer}, 
+  url={https://link.springer.com/article/10.1007/s11227-017-1989-7}, 
+  abstract={The solution of Protein-Ligand Docking Problems can be approached through metaheuristics, and satisfactory metaheuristics can be obtained with hyperheuristics searching in the space of metaheuristics implemented inside a parameterized schema. These hyperheuristics apply several metaheuristics, resulting in high computational costs. To reduce execution times, a shared-memory schema of hyperheuristics is used with four levels of parallelism, two for the hyperheuristic and two for the metaheuristics. The parallel schema is executed in a many-core system in "native mode", and the four-level parallelism allows us to take full advantage of the massive parallelism offered by this architecture and obtain satisfactory fitness and an important reduction of the execution time.},
+}
+
+
+
+
+
+@article{lassouaoui2017multilevel,
+  title={A multilevel hyper-heuristic for solving Max-SAT},
+  author={Lassouaoui, Mourad and Boughaci, Dalila and Benhamou, Belaid},
+  journal={International Journal of Metaheuristics},
+  volume={6},
+  number={3},
+  pages={133--159},
+  year={2017},
+  publisher={Inderscience Publishers (IEL)},
+  url={http://www.inderscienceonline.com/doi/abs/10.1504/IJMHEUR.2017.085123},
+  abstract={A hyper-heuristic is a high-level method that manages a set of low-level heuristics to solve various problems in a problem-independent manner. In this paper, we propose a new selection hyper-heuristic with the multilevel paradigm. The multilevel paradigm refers to the process of dividing large problems into sub-problems. Each sub-problem is being solved to reach an optimal solution by using the resulting solution from a previous level as a starting solution at the next level. The selection strategy chooses the adequate low-level heuristic at any iteration during the search. For analysis purposes, several variants of hyper-heuristics are implemented and Max-SAT is used as the test bed. The experimental results revealed that the multilevel paradigm together with a new hybrid-heuristic selection mechanism provides a substantial performance improvement. A comparison with two known state of the art algorithms that are GSAT and WALKSAT is given to further show the efficiency of our method.},
+}
+
+
+
+@misc{chen2017optimisation,
+  author={Chen, Yujie},
+	year = {2017},
+	title={Optimisation for Large-scale Maintenance, Scheduling and Vehicle Routing Problems}, 
+	 institution = {PhD Thesis, Department of Computer Science, University of York},
+	url={http://etheses.whiterose.ac.uk/16107/},
+	abstract={Solving real-world combinatorial problems is involved in many industry fields to minimise operational cost or to maximise profit, or both. Along with continuous growth in computing power, many asset management decision-making processes that were originally solved by hand now tend to be based on big data analysis. Larger scale problem can be solved and more detailed operation instructions can be delivered.
+ 
+ In this thesis, we investigate models and algorithms to solve large scale Geographically Distributed asset Maintenance Problems (GDMP). Our study of the problem was motivated by our business partner, Gaist solutions Ltd., to optimise scheduling of maintenance actions for a drainage system in an urban area. The models and solution methods proposed in the thesis can be applied to many similar issues arising in other industry fields.
+ 
+ The thesis contains three parts. We firstly built a risk driven model considering vehicle routing problems and the asset degradation information. A hyperheuristic method embedded with customised low-level heuristics is employed to solve our real-world drainage maintenance problem in Blackpool. Computational results show that our hyperheuristic approach can, within reasonable CPU time, produce much higher quality solutions than the scheduling strategy currently implemented by Blackpool council.
+ 
+ We then attempt to develop more efficient solution approaches to tackle our GDMP. We study various hyperheuristics and propose efficient local search strategies in part II. We present computational results on standard periodic vehicle routing problem instances and our GDMP instances. Based on manifold experimental evidences, we summarise the principles of designing heuristic based solution approaches to solve combinatorial problems.
+ 
+ Last bu not least, we investigate a related decision making problem from highway maintenance, that is again of interest to Gaist solutions Ltd. We aim to make a strategical decision to choose a cost effective method of delivering the road inspection at a national scale. We build the analysis based on the Chinese Postman Problem and theoretically proof the modelling feasibility in real-world road inspection situations. We also propose a novel graph reduction process to allow effective computation over very large data sets.}
+}
+
+
+
+
+
+
+@article{visheratin2016automatic,
+  title={Automatic Workflow Scheduling Tuning for Distributed Processing Systems},
+  author={Visheratin, Alexander A and Melnik, Mikhail and Nasonov, Denis},
+  journal={Procedia Computer Science},
+  volume={101},
+  pages={388--397},
+  year={2016},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S1877050916327144},
+  abstract={Modern scientific applications are composed of various methods, techniques and models to solve complicated problems. Such composite applications commonly are represented as workflows. Workflow scheduling is a well-known optimization problem, for which there is a great amount of solutions. Most of the algorithms contain parameters, which affect the result of a method. Thus, for the efficient scheduling it is important to tune parameters of the algorithms. Moreover, performance models, which are used for the estimation of obtained solutions, are crucial parts of workflow scheduling. In this work we present a combined approach for automatic parameters tuning and performance models construction in the background of the WMS lifecycle. Algorithms tuning is provided by hyper-heuristic genetic algorithm, whereas models construction is performed via symbolic regression methods. Developed algorithm was evaluated using CLAVIRE platform and is applicable for any distributed computing systems to optimize the execution of composite applications.}, 
+}
+
+
+
+
+
+@inproceedings{masood2017pso,
+  title={A PSO-Based Reference Point Adaption Method for Genetic Programming Hyper-Heuristic in Many-Objective Job Shop Scheduling},
+  author={Masood, Atiya and Mei, Yi and Chen, Gang and Zhang, Mengjie},
+  booktitle={Australasian Conference on Artificial Life and Computational Intelligence},
+  pages={326--338},
+  year={2017},
+  organization={Springer},
+  url={https://link.springer.com/chapter/10.1007/978-3-319-51691-2_28},
+  abstract={Job Shop Scheduling is an important combinatorial optimisation problem in practice. It usually contains many (four or more) potentially conflicting objectives such as makespan and mean weighted tardiness. On the other hand, evolving dispatching rules using genetic programming has demonstrated to be a promising approach to solving job shop scheduling due to its flexibility and scalability. In this paper, we aim to solve many-objective job shop scheduling with genetic programming and NSGA-III. However, NSGA-III is originally designed to work with uniformly distributed reference points which do not match well with the discrete and non-uniform Pareto front in job shop scheduling problems, resulting in many useless points during evolution. These useless points can significantly affect the performance of NSGA-III and genetic programming. To address this issue and inspired by particle swarm optimisation, a new reference point adaptation mechanism has been proposed in this paper. Experiment results on many-objective benchmark job shop scheduling instances clearly show that prominent improvement in performance can be achieved upon using our reference point adaptation mechanism in NSGA-III and genetic programming.}, 
+}
 
 
 
