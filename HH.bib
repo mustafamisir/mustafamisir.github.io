@@ -1,3 +1,20 @@
+@article{raad2010multiobjective,
+  title={Multiobjective optimization for water distribution system design using a hyperheuristic},
+  author={Raad, Darian and Sinske, Alexander and van Vuuren, Jan},
+  journal={Journal of Water Resources Planning and Management},
+  volume={136},
+  number={5},
+  pages={592--596},
+  year={2010},
+  publisher={American Society of Civil Engineers},
+  url = {http://ascelibrary.org/wro/resource/1/jwrmd5/v136/i5/p592_s1},
+  abstract={Several modern multiobjective algorithms are compared with respect to the biobjective optimization of water distribution systems' design, considering the objectives of cost minimization and reliability maximization. A new unbiased algorithmic comparison strategy is suggested using hypervolume convergence. A recent hyperheuristic named AMALGAM, which dynamically combines the strengths of multiple metaheuristics, is applied to this problem for the first time, demonstrating superior performance. The shortcomings of a novel multiobjective greedy algorithm are also demonstrated.}, 
+}
+
+
+ 
+
+
 
   
 
@@ -617,8 +634,18 @@ Originality/value
 	title = {Adapting a Hyper-heuristic to Respond to Scalability Issues in Combinatorial Optimisation},
 	institution = {MSc Thesis, School of Mathematics, Statistics and Operations Research, Victoria University of Wellington},
 	url = {http://researcharchive.vuw.ac.nz/handle/10063/4242?show=full},
-}
+	abstract={The development of a heuristic to solve an optimisation problem in a new domain, or a specific variation of an existing problem domain, is often beyond the means of many smaller businesses. This is largely due to the task normally needing to be assigned to a human expert, and such experts tend to be scarce and expensive. One of the aims of hyper-heuristic research is to automate all or part of the heuristic development process and thereby bring the generation of new heuristics within the means of more organisations. A second aim of hyper-heuristic research is to ensure that the process by which a domain specific heuristic is developed is itself independent of the problem domain. This enables a hyper-heuristic to exist and operate above the combinatorial optimisation problem "domain barrier" and generalise across different problem domains.  
 
+A common issue with heuristic development is that a heuristic is often designed or evolved using small size problem instances and then assumed to perform well on larger problem instances. The goal of this thesis is to extend current hyper-heuristic research towards answering the question: How can a hyper-heuristic efficiently and effectively adapt the selection, generation and manipulation of domain specific heuristics as you move from small size and/or narrow domain problems to larger size and/or wider domain problems? In other words, how can different hyperheuristics respond to scalability issues?
+
+Each hyper-heuristic has its own strengths and weaknesses. In the context of hyper-heuristic research, this thesis contributes towards understanding scalability issues by firstly developing a compact and effective heuristic that can be applied to other problem instances of differing sizes in a compatible problem domain. We construct a hyper-heuristic for the Capacitated Vehicle Routing Problem domain to establish whether a heuristic for a specific problem domain can be developed which is compact and easy to interpret. The results show that generation of a simple but effective heuristic is possible.
+
+Secondly we develop two different types of hyper-heuristic and compare their performance across different combinatorial optimisation problem domains. We construct and compare simplified versions of two existing hyper-heuristics (adaptive and grammar-based), and analyse how each handles the trade-off between computation speed and quality of the solution. The performance of the two hyper-heuristics are tested on seven different problem domains compatible with the HyFlex (Hyper-heuristic Flexible) framework. The results indicate that the adaptive hyper-heuristic is able to deliver solutions of a pre-defined quality in a shorter computational time than the grammar-based hyper-heuristic.
+
+Thirdly we investigate how the adaptive hyper-heuristic developed in the second stage of this thesis can respond to problem instances of the same size, but containing different features and complexity. We investigate how, with minimal knowledge about the problem domain and features of the instance being worked on, a hyper-heuristic can modify its processes to respond to problem instances containing different features and problem domains of different complexity. In this stage we allow the adaptive hyper-heuristic to select alternative vectors for the selection of problem domain operators, and acceptance criteria used to determine whether solutions should be retained or discarded. We identify a consistent difference between the best performing pairings of selection vector and acceptance criteria, and those pairings which perform poorly.
+
+This thesis shows that hyper-heuristics can respond to scalability issues, although not all do so with equal ease. The flexibility of an adaptive hyper-heuristic enables it to perform faster than the more rigid grammar-based hyper-heuristic, but at the expense of losing a reusable heuristic.}
+}
 
 
 
@@ -701,6 +728,7 @@ Originality/value
 	 volume = {29},
 	journal = {Procedia Computer Science},
 	 url = {www.sciencedirect.com/science/article/pii/S1877050914001793},
+	 abstract={This paper studies the auto-tuning of shared-memory hyperheuristics developed on top of a unified shared-memory metaheuristic scheme. A theoretical model of the execution time of the unified scheme is empirically adapted for particular metaheuristics and hyperheuristics through experimentation. The model is used to decide at running time the number of threads to obtain a reduced execution time. The number of threads is different for the different basic functions in the scheme, and depends on the problem to be solved, the metaheuristic scheme, the implementation of the basic functions and the computational system where the problem is solved. The applicability of the proposal is shown with a problem of minimization of electricity consumption in exploitation of wells. Experimental results show that satisfactory execution times can be achieved with auto-tuning techniques based on theoretical-empirical models of the execution time.}, 
 }
 
 
@@ -1216,8 +1244,12 @@ Originality/value
 	title = {A Genetic Programming-based Hyper-heuristic Approach for Storage Location Assignment Problem},
 	address = {Beijing, China},
 	booktitle = {the IEEE Congress of Evolutionary Computation (CEC14)},
-	 url = {http://goanna.cs.rmit.edu.au/~e04499/Papers/CEC14-JingMeiErnstLiSong.pdf},
+  url={http://ieeexplore.ieee.org/abstract/document/6900604/},
+  abstract={This study proposes a method for solving real-world warehouse Storage Location Assignment Problem (SLAP) under grouping constraints by Genetic Programming (GP). Integer Linear Programming (ILP) formulation is used to define the problem. By the proposed GP method, a subset of the items is repeatedly selected and placed into the available current best location of the shelves in the warehouse, until all the items have been assigned with locations. A heuristic matching function is evolved by GP to guide the selection of the subsets of items. Our comparison between the proposed GP approach and the traditional ILP approach shows that GP can obtain near-optimal solutions on the training data within a short period of time. Moreover, the evolved heuristics can achieve good optimization results on unseen scenarios, comparable to that on the scenario used for training. This shows that the evolved heuristics have good reusability and can be directly applied for slightly different scenarios without any new search process.},
 }
+
+
+
 
 
 @inproceedings{Yarimcam2014Heuristic,
@@ -2079,7 +2111,8 @@ Originality/value
 	 volume = {119},
 	 number = {1},
 	journal = {Fundamenta Informaticae},
-	 url = {http://iospress.metapress.com/content/026600475kt66708/},
+  url={http://content.iospress.com/articles/fundamenta-informaticae/fi119-1-03},
+  abstract={We present a self-adaptive hyper-heuristic capable of solving static and dynamic instances of the capacitated vehicle routing problem. The hyper-heuristic manages a generic sequence of constructive and perturbative low-level heuristics, which are gradually applied to construct or improve partial routes. We present some design considerations to allow the collaboration among heuristics, and to find the most promising sequence. The search process is carried out by applying a set of operators which constructs new sequences of heuristics, i.e., solving strategies. We have used a general and low-computational cost parameter control strategy, based on simple reinforcement learning ideas, to assign non-arbitrary reward/penalty values and guide the selection of operators. Our approach has been tested using some standard state-of-the-art benchmarks, which present different topologies and dynamic properties, and we have compared it with previous hyper-heuristics and several well-known methods proposed in the literature. The experimental results have shown that our approach is able to attain quite stable and good quality solutions after solving various problems, and to adapt to dynamic scenarios more naturally than other methods. Particularly, in the dynamic case we have obtained high-quality solutions when compared with other algorithms in the literature. Thus, we conclude that our self-adaptive hyper-heuristic is an interesting approach for solving vehicle routing problems as it has been able (1) to guide the search for appropriate operators, and (2) to adapt itself to particular states of the problem by choosing a suitable combination of heuristics.},
 }
 
 
@@ -2129,6 +2162,19 @@ Originality/value
 	journal = {International Journal of Applied Information Systems},
 	 url = {http://research.ijais.org/volume5/number6/ijais13-450925.pdf},
 }
+
+
+@inproceedings{kumari2013software,
+  title={Software module clustering using a hyper-heuristic based multi-objective genetic algorithm},
+  author={Kumari, A Charan and Srinivas, K and Gupta, MP},
+  booktitle={IEEE 3rd International on Advance Computing Conference (IACC)},
+  pages={813--818},
+  year={2013},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/6514331/},
+  abstract={This paper presents a Fast Multi-objective Hyper-heuristic Genetic Algorithm (MHypGA) for the solution of Multi-objective Software Module Clustering Problem. Multi-objective Software Module Clustering Problem is an important and challenging problem in Software Engineering whose main goal is to obtain a good modular structure of the Software System. Software Engineers greatly emphasize on good modular structure as it is easier to comprehend, develop and maintain such software systems. In recent times, the problem has been converted into a Search-based Software Engineering Problem with multiple objectives. This problem is NP hard as it is an instance of Graph Partitioning and hence cannot be solved using traditional optimization techniques. The MHypGA is a fast and effective metaheuristic search technique for suggesting software module clusters in a software system while maximizing cohesion and minimizing the coupling of the software modules. It incorporates twelve low-level heuristics which are based on different methods of selection, crossover and mutation operations of Genetic Algorithms. The selection mechanism to select a low-level heuristic is based on reinforcement learning with adaptive weights. The efficacy of the algorithm has been studied on six real-world module clustering problems reported in the literature and the comparison of the results prove the superiority of the MHypGA in terms of quality of solutions and computational time.}, 
+}
+
 
  
 @article{Narayanaswamy2012Analysis,
@@ -3588,16 +3634,6 @@ Originality/value
 }
 
 
-@article{Raad2010Multiobjective,
-	author = {Darian Raad and  Alexander Sinske and  Jan van Vuuren},
-	year = {2010},
-	 title = {Multiobjective Optimization for Water Distribution System Design Using a Hyperheuristic},
-	 publisher = {ASCE},
-	 volume = {136},
-	 number = {5},
-	journal = {Journal of Water Resources Planning and Management},
-	 url = {http://ascelibrary.org/wro/resource/1/jwrmd5/v136/i5/p592_s1},
-}
 
 
 @article{Castrillon2010Design,
@@ -4094,8 +4130,11 @@ Originality/value
 	title = {Stable solving of CVRPs using hyperheuristics},
 	address = {Montreal, Canada},
 	booktitle = {the 11th Annual Conference on Genetic and Evolutionary Computation (GECCO09)},
-	 url = {http://dl.acm.org/citation.cfm?id=1569938},
+  url={https://dl.acm.org/citation.cfm?id=1569938},
+  abstract={In this paper we present a hill-climbing based hyperheuristic which is able to solve instances of the capacitated vehicle routing problem. The hyperheuristic manages a sequence of constructive-perturbative pairs of low-level heuristics which are applied sequentially in order to construct and improve partial solutions. We present some design considerations that we have taken into account to find the most promising sequence and allow the collaboration among low-level heuristics. Our approach has been tested using some standard state-of-the-art benchmarks and we have compared them with several well-known methods proposed in the literature. We have obtained, on average, stable and good quality solutions after solving various types of problems. Thus, we conclude that our collaborative framework is an interesting approach as it has proved to be: (1) able to adapt itself to different problem instances by choosing a suitable combination of low-level heuristics and (2) capable of preserving stability when solving different types of problems.},
 }
+
+
 
 
 @inproceedings{Leon2009A,
@@ -4565,8 +4604,10 @@ Originality/value
 	title = {Collaboration Between Hyperheuristics to Solve Strip-Packing Problems},
 	address = {LNCS vol.4529/2007, Cancun, Mexico},
 	booktitle = {the 12th International Fuzzy Systems Association World Congress (IFSA07)},
-	 url = {http://www.springerlink.com/content/b757n852t1010p67/},
+  url={https://link.springer.com/book/10.1007/978-3-540-72950-1#page=706},
+  abstract={In this paper we introduce a collaboration framework for hyperheuristics to solve hard strip packing problems. We have designed a genetic based hyperheuristic to cooperate with a hill-climbing based hyperheuristic. Both of them use the most recently proposed low-level heuristics in the literature. REVAC, which has recently been proposed for tuning, has been used to find the best operators parameter values. The results obtained are very encouraging and have improved the results from both the single heuristics and the single hyperheuristics' tests. Thus, we conclude that the collaboration among hyperheuristics is a good way to solve hard strip packing problems.}, 
 }
+
 
 
 @inproceedings{Terashima-Marin2007Comparing,
@@ -6275,19 +6316,6 @@ tree search algorithms, like Monte Carlo Tree Search, perform relatively well on
 
 
 
-@article{visheratin2016automatic,
-  title={Automatic Workflow Scheduling Tuning for Distributed Processing Systems},
-  author={Visheratin, Alexander A and Melnik, Mikhail and Nasonov, Denis},
-  journal={Procedia Computer Science},
-  volume={101},
-  pages={388--397},
-  year={2016},
-  publisher={Elsevier},
-  url={http://www.sciencedirect.com/science/article/pii/S1877050916327144},
-  note={Modern scientific applications are composed of various methods, techniques and models to solve complicated problems. Such composite applications commonly are represented as workflows. Workflow scheduling is a well-known optimization problem, for which there is a great amount of solutions. Most of the algorithms contain parameters, which affect the result of a method. Thus, for the efficient scheduling it is important to tune parameters of the algorithms. Moreover, performance models, which are used for the estimation of obtained solutions, are crucial parts of workflow scheduling. In this work we present a combined approach for automatic parameters tuning and performance models construction in the background of the WMS lifecycle. Algorithms tuning is provided by hyper-heuristic genetic algorithm, whereas models construction is performed via symbolic regression methods. Developed algorithm was evaluated using CLAVIRE platform and is applicable for any distributed computing systems to optimize the execution of composite applications.},
-}
-
-
 
 @inproceedings{park2017investigating,
   title={Investigating the Generality of Genetic Programming based Hyper-heuristic Approach to Dynamic Job Shop Scheduling with Machine Breakdown},
@@ -7185,7 +7213,7 @@ In this paper, we explore the application of our newly developed hyperheuristic,
   journal={Applied Soft Computing},
   year={2017},
   volume={56},
-  pages={331–-344},
+  pages={331--344},
   publisher={Elsevier},
   url={http://www.sciencedirect.com/science/article/pii/S1568494617301357},
   abstract={The field of Search-Based Software Engineering (SBSE) has widely utilized Multi-Objective Evolutionary Algorithms (MOEAs) to solve complex software engineering problems. However, the use of such algorithms can be a hard task for the software engineer, mainly due to the significant range of parameter and algorithm choices. To help in this task, the use of Hyper-heuristics is recommended. Hyper-heuristics can select or generate low-level heuristics while optimization algorithms are executed, and thus can be generically applied. Despite their benefits, we find only a few works using hyper-heuristics in the SBSE field. Considering this fact, we describe HITO, a Hyper-heuristic for the Integration and Test Order Problem, to adaptively select search operators while MOEAs are executed using one of the selection methods: Choice Function and Multi-Armed Bandit. The experimental results show that HITO can outperform the traditional MOEAs NSGA-II and MOEA/DD. HITO is also a generic algorithm, since the user does not need to select crossover and mutation operators, nor adjust their parameters.}, 
@@ -7580,17 +7608,6 @@ In this paper, we explore the application of our newly developed hyperheuristic,
 
 
 
-@article{imbernonexploiting,
-  title={Exploiting Multi-level Parallelism on a Many-core System for the Application of Hyperheuristics to a Molecular Docking Problem},
-  author={Imbern{\'o}n, Baldomero},
-  journal={The Journal of Supercomputing},
-  year={2017}, 
-  publisher={Springer}, 
-  url={https://link.springer.com/article/10.1007/s11227-017-1989-7}, 
-  abstract={The solution of Protein-Ligand Docking Problems can be approached through metaheuristics, and satisfactory metaheuristics can be obtained with hyperheuristics searching in the space of metaheuristics implemented inside a parameterized schema. These hyperheuristics apply several metaheuristics, resulting in high computational costs. To reduce execution times, a shared-memory schema of hyperheuristics is used with four levels of parallelism, two for the hyperheuristic and two for the metaheuristics. The parallel schema is executed in a many-core system in "native mode", and the four-level parallelism allows us to take full advantage of the massive parallelism offered by this architecture and obtain satisfactory fitness and an important reduction of the execution time.},
-}
-
-
 
 
 
@@ -7672,13 +7689,6 @@ In this paper, we explore the application of our newly developed hyperheuristic,
  
 
  
-@inproceedings{fakhrud2017aparameter,
-  title={A Parameter Free Choice Function Based HyperHeuristic Strategy for Pairwise Test Generation},
-  author={Fakhrud Din, Abdul Rahman A. Alsewari, and Kamal Z. Zamli},
-  booktitle={Proceeedings of the IEEE International Conference on Software Security and Reliability) (QRS)},
-  year={2017},
-  organization={IEEE},
-}  
 
 
 
@@ -7712,13 +7722,15 @@ In this paper, we explore the application of our newly developed hyperheuristic,
 
 
 @inproceedings{guizzo2017ahyper-heuristic,
-  title={A Hyper-heuristic for Multi-Objective Integration and Test Ordering in Google Guava},
-  author={Giovani Guizzo and Mosab Bazargani and Matheus Paixao and John Drake},
-  booktitle={Proceeedings of the 9th Symposium on Search-Based Software Engineering (SSBSE)},
+  title={A Hyper-heuristic for Multi-objective Integration and Test Ordering in Google Guava},
+  author={Guizzo, Giovani and Bazargani, Mosab and Paixao, Matheus and Drake, John H},
+  booktitle={International Symposium on Search Based Software Engineering},
+  pages={168--174},
   year={2017},
-  series={LNCS}, 
   organization={Springer},
-}  
+  url={http://dl.acm.org/citation.cfm?id=3131152},
+  abstract={}, 
+}
 
 
 @inproceedings{guizzo2017ahyper-heuristic,
@@ -7768,6 +7780,260 @@ In this paper, we explore the application of our newly developed hyperheuristic,
   url={http://dl.acm.org/citation.cfm?id=3082056},
   abstract={Fuzzy Adaptive Resonance Theory (ART) is a classic unsupervised learning algorithm. Its performance on a particular clustering problem is sensitive to the suitability of the category function for said problem. However, classic Fuzzy ART employs a fixed category function and thus is unable to benefit from the potential to adjust its category function. This paper presents an exploration into employing evolutionary computation for the automated design of category functions to obtain significantly enhanced Fuzzy ART performance through tailoring to specific problem classes. We employ a genetic programming powered hyper-heuristic approach where the category functions are constructed from a set of primitives constituting those of the original Fuzzy ART category function as well as additional hand-selected primitives. Results are presented for a set of experiments on benchmark classification tasks from the UCI Machine Learning Repository demonstrating that tailoring Fuzzy ART's category function can achieve statistically significant superior performance on the testing datasets in stratified 10-fold cross-validation procedures. We conclude with discussing the results and placing them in the context of being a first step towards automating the design of entirely new forms of ART.}, 
 }
+   
+   
+   
+@inproceedings{frankola2008evolutionary,
+  title={Evolutionary algorithms for the resource constrained scheduling problem},
+  author={Frankola, Toni and Golub, Marin and Jakobovic, Domagoj},
+  booktitle={Information Technology Interfaces, 2008. ITI 2008. 30th International Conference on},
+  pages={715--722},
+  year={2008},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/4588499/},
+  abstract={This paper investigates the use of evolutionary algorithms for solving resource constrained scheduling problem which belongs to the class of NP complete problems. The problem involves finding optimal sequence of activities with given resource constraints. Evolutionary algorithms used in this paper are genetic algorithms and genetic programming, for which adequate scheduling mechanisms are defined. Presented solutions are compared with existing heuristics or optimal results.}, 
+}
+
+
+
+   
+
+
+@misc{vsivsejkovic2016evolution,
+  title={Evolution of scheduling heuristics for the resource constrained scheduling problem},
+  author={{\v{S}}i{\v{s}}ejkovi{\'c}, Dominik},
+  year={2016},
+  institution = {Master Thesis, Faculty of Electrical Engineering and Computing, University of Zagreb},
+  url={http://bib.irb.hr/datoteka/845388.Final_0036466662_54.pdf},
+  abstract={In this thesis the problem of scheduling tasks is addressed by means of genetic programming with focus on the resource constrained scheduling problem as a mathematical model. As part of a very large body of research called machine learning, genetic programming is used to learn and evolve suitable scheduling heuristics to be applied efficiently to generate feasible schedules for a larger set of problem instances taking performance and solution reusability into account.},
+}
+
+
+
+
+
+@article{cutillas2015modelling,
+  title={Modelling parallel metaheuristics and hyperheuristics for auto-tuning},
+  author={Cutillas-Lozano, Jos{\'e}-Mat{\'\i}as and C{\'a}novas, Domingo Gim{\'e}nez},
+  journal={Annals of Multicore and GPU Programming},
+  volume={3},
+  number={1},
+  pages={32--54},
+  year={2015},
+  url={http://revistaseug.ugr.es/index.php/amgp/article/view/2970},
+  abstract={This paper studies the auto-tuning of parallel metaheuristics and hyperheuristics. The modelling of the shared-memory scheme is considered for both types of algorithms, and a first study of message-passing metaheuristic schemes is introduced. A theoretical model of the execution time of a parametrized metaheuristic scheme is empirically adapted for a particular metaheuristic through experimentation. The parallelization of the shared-memory scheme is achieved through the independent parallelization of the basic functions in the metaheuristic scheme. The model is used to decide at running time the number of threads to obtain a reduced execution time. The number of threads is different for the different basic functions in the scheme, and depends on the problem to be solved, the metaheuristic or hyperheuristic scheme, the implementation of the basic functions and the computational system where the problem is solved. The auto-tuning methodology for shared-memory parametrized metaheuristic schemes can in turn be applied to shared-memory hyperheuristics developed on top of them. In the case of the message-passing scheme, an island model implemented with the master-slave scheme is used, and new metaheuristic-parallelism parameters representing the migration frequency, the size of the migration and the number of processes are introduced. The applicability of the proposal is shown with a minimization of electricity consumption in exploitation of wells problem and with the problem of obtaining satisfactory metaheuristics for that problem. Experimental results with these two problems show that satisfactory execution times can be achieved in metaheuristics with auto-tuning techniques based on theoretical-empirical models of the execution time.}, 
+}
+
+
+
+
+
+@article{cecilia2017exploiting,
+  title={Exploiting multilevel parallelism on a many-core system for the application of hyperheuristics to a molecular docking problem},
+  author={Cecilia, Jose M and Cutillas-Lozano, Jose-Matias and Gimenez, Domingo and Imbernon, Baldomero},
+  journal={The Journal of Supercomputing},
+  pages={1--12},
+  year={2017},     
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s11227-017-1989-7},
+  abstract={The solution of Protein-Ligand Docking Problems can be approached through metaheuristics, and satisfactory metaheuristics can be obtained with hyperheuristics searching in the space of metaheuristics implemented inside a parameterized schema. These hyperheuristics apply several metaheuristics, resulting in high computational costs. To reduce execution times, a shared-memory schema of hyperheuristics is used with four levels of parallelism, two for the hyperheuristic and two for the metaheuristics. The parallel schema is executed in a many-core system in "native mode" and the four-level parallelism allows us to take full advantage of the massive parallelism offered by this architecture and obtain satisfactory fitness and an important reduction in the execution time.}, 
+}
+
+
+
+
+
+
+@article{cutillas2014using,
+  title={Using hyperheuristics to improve the determination of the kinetic constants of a chemical reaction in heterogeneous phase},
+  author={Cutillas-Lozano, Jos{\'e}-Mat{\'\i}as and Gim{\'e}nez, Domingo},
+  journal={Procedia Computer Science},
+  volume={29},
+  pages={1345--1355},
+  year={2014},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S1877050914002981},
+  abstract={The reaction in the human stomach when neutralizing acid with an antacid tablet is simu- lated and the evolution over time of the concentration of all chemical species present in the reaction medium is obtained. The values of the kinetic parameters of the chemical reaction can be determined by integrating the equation of the reaction rate. This is a classical opti- mization problem that can be approached with metaheuristic methods. The use of a parallel, parameterized scheme for metaheuristics facilitates the development of metaheuristics and their application. The unified scheme can also be used to implement hyperheuristics on top of pa- rameterized metaheuristics, so selecting appropriate values for the metaheuristic parameters, and consequently the metaheuristic itself. The hyperheuristic approach provides satisfactory values for the metaheuristic parameters and, consequently, satisfactory metaheuristics for the problem of determining the kinetic constants.}, 
+}
+
+
+
+
+
+@article{baykasoglu2017evolutionary,   
+	title = {Evolutionary and population-based methods versus constructive search strategies in dynamic combinatorial optimization},
+	author = {Adil Baykasoglu and Fehmi B. Ozsoydan},  
+	journal = {Information Sciences},
+	year = {2017},
+	publisher={Elsevier},
+	url = {http://www.sciencedirect.com/science/article/pii/S0020025517309064},
+	abstract={Optimization in dynamic environments is a hot research area that has attracted a notable attention in the past decade. It is clear from the dynamic optimization literature that most of the effort is devoted to continuous dynamic optimization problems although majority of the real-life problems are combinatorial. Additionally, in comparison to evolutionary or population-based approaches, constructive search strategy, which is shown to be successful in stationary combinatorial optimization problems, is commonly ignored by the dynamic optimization community. In the present work, a constructive and multi-start search strategy is proposed to solve dynamic multi-dimensional knapsack problem, which has numerous applications in real world. Making use of constructive and multi-start features, the aim here is to test the performance of such a strategy and to observe its behavior in dynamically changing environments. In this regard, this strategy is compared to the well-known evolutionary and population-based approaches, including a Genetic Algorithm-based memetic algorithm, Differential Evolution algorithm, Firefly Algorithm and a hyper-heuristic, which employs these population-based algorithms as low-level heuristics in accordance with their individual contributions. Furthermore, in order to improve their performances in dynamic environments, the mentioned evolutionary algorithms are enhanced by using triggered random immigrants and adaptive hill climbing strategies. As one can see from the comprehensive experimental analysis, while the proposed approach outperforms most of the evolutionary-based approaches, it is outperformed by firefly and hyper-heuristic algorithms in some of the instances. This points out competiveness of the proposed approaches. Finally, according to the statistical results of non-parametric tests, one can conclude that the proposed approach can be considered as a promising and a competitive algorithm in dynamic environments.}, 
+}
+
+
+
+
+
+@inproceedings{din2017parameter,
+  title={A Parameter Free Choice Function Based Hyper-Heuristic Strategy for Pairwise Test Generation},
+  author={Din, Fakhrud and Alsewari, Abdul Rahman A and Zamli, Kamal Z},
+  booktitle={IEEE International Conference on Software Quality, Reliability and Security Companion (QRS-C)},
+  pages={85--91},
+  year={2017},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/8004298/},
+  abstract={Hyper-heuristics are advanced high-level search methodologies that solve hard computational problems indirectly via low-level heuristics. Choice function based hyper-heuristics are selection and acceptance hyper-heuristics that use statistical information to rank low-level heuristics for selection. In this paper, we describe a choice function based hyper-heuristic called Pairwise Choice Function based Hyper-heuristic (PCFHH) for the pairwise test generation problem. PCFHH uses a combination of three measures to select and apply an effective low-level heuristic from a set of four low-level heuristics at any stage of the search. Our experimental results have been encouraging as PCFHH outperforms most of pairwise test generation strategies on many of the problem instances.}, 
+}
+
+
+
+
+@inproceedings{grobler2016multi,
+  title={A Multi-objective Hyper-Heuristic for the Flexible Job Shop Scheduling Problem with Additional Constraints},
+  author={Grobler, Jacomine},
+  booktitle={3rd International Conference on Soft Computing \& Machine Intelligence (ISCMI)},
+  pages={58--62},
+  year={2016},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/8057439/},
+  abstract={This paper proposes a multi-objective hyperheuristic (MOO-HMHH) algorithm for the flexible job shop scheduling problem (FJSP) with sequence-dependent set-up times, auxiliary resources and machine down time. Two variations of the algorithm were implemented and evaluated on real customer datasets. The hyper-heuristic algorithms compared well to their constituent algorithms and promising results were obtained with respect to the increased generality of the hyperheuristics.},  
+}
+
+
+
+
+@article{pour2017choice,
+  title={A choice function hyper-heuristic framework for the allocation of maintenance tasks in Danish railways},
+  author={Pour, Shahrzad M and Drake, John H and Burke, Edmund K},
+  journal={Computers \& Operations Research},
+  year={2017},
+  publisher={Elsevier},
+  url={http://www.sciencedirect.com/science/article/pii/S0305054817302423},
+  abstract={A new signalling system in Denmark aims at ensuring fast and reliable train operations, however imposes very strict time limits on recovery plans in the event of failure. As a result, it is necessary to develop a new approach to the entire maintenance scheduling process. In the largest region of Denmark, the Jutland peninsula, there is a decentralised structure for maintenance planning, whereby the crew start their duties from their home locations rather than starting from a single depot. In this paper, we allocate a set of maintenance tasks in Jutland to a set of maintenance crew members, defining the sub-region that each crew member is responsible for. Two key considerations must be made when allocating tasks to crew members. Firstly a fair balance of workload must exist between crew members and secondly, the distance between two tasks in the same sub-region must be minimised, in order to facilitate quick response in the case of unexpected failure. We propose a perturbative selection hyper-heuristic framework to improve initial solutions by reassigning outliers, those tasks that are far away, to another crew member at each iteration, using one of five low-level heuristics. Results of two hyper-heuristics, using a number of different initial solution construction methods are presented over a set of 12 benchmark problem instances.}, 
+}
+
+
+
+
+@inproceedings{lima2017automatic,
+  title={Automatic Generation of Search-Based Algorithms Applied to the Feature Testing of Software Product Lines},
+  author={Lima, Jackson A Prado and Vergilio, Silvia R and others},
+  booktitle={Proceedings of the 31st Brazilian Symposium on Software Engineering},
+  pages={114--123},
+  year={2017},
+  organization={ACM},
+  url={https://dl.acm.org/citation.cfm?id=3131152},
+  abstract={The selection of products for the variability testing of Feature Models (FMs) is a complex task impacted by many factors. To solve this problem, Multi-Objective Evolutionary Algorithms (MOEAs) have been successfully used in the field known as Search-Based Software Engineering (SBSE). However, the design of a search-based approach is not an easy task for the software engineer, who can find some difficulties such as: the choice and configuration of the best MOEAs, the choice of the best search operators to be implemented, and so on. In addition to this, existing approaches are dependent on the problem domain and do not allow reuse. In this way the use of Hyper-Heuristic (HH) can help to obtain more generic and reusable search-based approaches, and because of this is considered a trend in the SBSE field. Following this trend and to contribute to reduce the software engineer's efforts, this work explores the use of a hyper-heuristic for automatic generation of MOEAs to select test products from the FM, considering three factors: pairwise coverage, mutation score and cost, given by the number of products. The HH is based on a grammar that represents the elements, parameters and components of existing MOEAs and implements evolutionary operators, such as crossover and mutation, suitable for selection problems. In this way, it can be reused for other similar software engineering problems. Evaluation results show that the proposed approach obtains results that are better or statistically equivalent than similar approaches found in the literature.}, 
+}
+
+
+
+@article{pillay2017automated,
+  title={Automated generation of constructive ordering heuristics for educational timetabling},
+  author={Pillay, Nelishia and {\"O}zcan, Ender},
+  journal={Annals of Operations Research},
+  pages={1--28},
+  year={2017},
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s10479-017-2625-x},
+  abstract={Construction heuristics play an important role in solving combinatorial optimization problems. These heuristics are usually used to create an initial solution to the problem which is improved using optimization techniques such as metaheuristics. For examination timetabling and university course timetabling problems essentially graph colouring heuristics have been used for this purpose. The process of deriving heuristics manually for educational timetabling is a time consuming task. Furthermore, according to the no free lunch theorem different heuristics will perform well for different problems and problem instances. Hence, automating the induction of construction heuristics will reduce the man hours involved in creating such heuristics, allow for the derivation of problem specific heuristics and possibly result in the derivation of heuristics that humans have not thought of. This paper presents generation construction hyper-heuristics for educational timetabling. The study investigates the automatic induction of two types of construction heuristics, namely, arithmetic heuristics and hierarchical heuristics. Genetic programming is used to evolve arithmetic heuristics. Genetic programming, genetic algorithms and the generation of random heuristic combinations is examined for the generation of hierarchical heuristics. The hyper-heuristics generating both types of heuristics are applied to the examination timetabling and the curriculum based university course timetabling problems. The evolved heuristics were found to perform much better than the existing graph colouring heuristics used for this domain. Furthermore, it was found that the while the arithmetic heuristics were more effective for the examination timetabling problem, the hierarchical heuristics produced better results than the arithmetic heuristics for the curriculum based course timetabling problem. Genetic algorithms proved to be the most effective at inducing hierarchical heuristics.},
+}
+
+
+
+@inproceedings{lima2017multi,
+  title={A Multi-objective optimization approach for selection of second order mutant generation strategies},
+  author={Lima, Jackson A Prado and Vergilio, Silvia R},
+  booktitle={Proceedings of the 2nd Brazilian Symposium on Systematic and Automated Software Testing},
+  pages={6},
+  year={2017},
+  organization={ACM},
+  url={https://dl.acm.org/citation.cfm?id=3128479},
+  abstract={The use of Higher-Order Mutants (HOMs) presents some advantages concerning the traditional use of First-Order Mutants (FOMs). HOMs can better simulate real and subtle faults, reduce the number of generated mutants and test cases, and so on. However, the HOM space is potentially huge, and an efficient strategy to generate the best HOMs is fundamental. In the literature different strategies were proposed and evaluated, mainly to generate Second-Order Mutants (SOMs), but none has been proved to perform better in different situations. Due to this, the selection of the best strategy is an important task. Most times a lot of experiments need to be conducted. To help the tester in this task and to allow the use of HOMs in practice, this paper proposes a hyper-heuristic approach. Such approach is based on NSGA-II and uses the selection method Choice Function to automatically choose among different Low-Level Heuristics (LLHs), which, in this case, are search-operators related to existing SOM generation strategies. The performance of each LLH is related to some objectives such as the number of SOMs generated, the capacity to capture subtler faults and replace the constituent FOMs. In comparison with existing strategies, our approach obtained better results considering the used objectives, and statistically equivalent results considering mutation score with respect to the FOMs.}, 
+}
+
+
+
+@incollection{swiercz2017hyper,
+  title={Hyper-Heuristics and Metaheuristics for Selected Bio-Inspired Combinatorial Optimization Problems},
+  author={Swiercz, Aleksandra},
+  booktitle={Heuristics and Hyper-Heuristics-Principles and Applications},
+  year={2017},
+  publisher={InTech},
+  url={https://www.intechopen.com/books/heuristics-and-hyper-heuristics-principles-and-applications/hyper-heuristics-and-metaheuristics-for-selected-bio-inspired-combinatorial-optimization-problems},
+  abstract={Many decision and optimization problems arising in bioinformatics field are time demanding, and several algorithms are designed to solve these problems or to improve their current best solution approach. Modeling and implementing a new heuristic algorithm may be time-consuming but has strong motivations: on the one hand, even a small improvement of the new solution may be worth the long time spent on the construction of a new method; on the other hand, there are problems for which good-enough solutions are acceptable which could be achieved at a much lower computational cost. In the first case, specially designed heuristics or metaheuristics are needed, while the latter hyper-heuristics can be proposed. The paper will describe both approaches in different domain problems.}, 
+}
+ 
+
+@incollection{maashi2017multi,
+  title={Multi-Objective Hyper-Heuristics},
+  author={Maashi, Mashael Suliaman},
+  booktitle={Heuristics and Hyper-Heuristics-Principles and Applications},
+  year={2017},
+  publisher={InTech},
+  url={https://www.intechopen.com/books/heuristics-and-hyper-heuristics-principles-and-applications/multi-objective-hyper-heuristics},
+  abstract={Multi-objective hyper-heuristics is a search method or learning mechanism that operates over a fixed set of low-level heuristics to solve multi-objective optimization problems by controlling and combining the strengths of those heuristics. Although numerous papers on hyper-heuristics have been published and several studies are still underway, most research has focused on single-objective optimization. Work on hyper-heuristics for multi-objective optimization remains limited. This chapter draws attention to this area of research to help researchers and PhD students understand and reuse these methods. It also provides the basic concepts of multi-objective optimization and hyper-heuristics to facilitate a better understanding of the related research areas, in addition to exploring hyper-heuristic methodologies that address multi-objective optimization. Some design issues related to the development of hyper-heuristic framework for multi-objective optimization are discussed. The chapter concludes with a case study of multi-objective selection hyper-heuristics and its application on a real-world problem.}, 
+}
+
+
+
+
+
+
+
+
+@inproceedings{choong2017anartificial,
+  title={An Artificial Bee Colony Algorithm with a Modified Choice Function for the Traveling Salesman Problem},
+  author={Shin Siang Choong and Li-Pei Wong and Chee Peng Lim},
+  booktitle={IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  year={2017},
+  organization={IEEE},
+  url={http://www.smc2017.org/SMC2017_Papers/media/files/0602.pdf},
+  abstract={The Artificial Bee Colony (ABC) algorithm is a swarm intelligence approach which has initially been proposed to solve optimization of mathematical test functions with a unique neighbourhood search mechanism. However, this neighbourhood search mechanism could not be directly applied to combinatorial discrete optimization problems. The employed and onlooker bees need to be equipped with problem-specific perturbative heuristics in order to tackle combinatorial discrete optimization problems. However, there is a large variety of available problem-specific heuristics. In this paper, a hyper-heuristic method, namely a Modified Choice Function (MCF), is applied such that it can regulate the selection of the neighbourhood search heuristics adopted by the employed and onlooker bees automatically. The proposed MCF-based ABC model is implemented using the Hyper-heuristic Flexible Framework (HyFlex). To demonstrate the  effectiveness of the proposed model, ten Traveling Salesman Problem (TSP) instances available in HyFlex have been evaluated. The empirical results show that the proposed model is able to statistically outperform four out of five ABC variants throughout the optimization process.}, 
+}
+
+
+
+@article{gonzalez-ramirez2017aGRASP,
+  title={A GRASP-Tabu heuristic approach to territory design for pickup and delivery operations for large scale instances},
+  author={Rosa G. Gonzalez-Ramirez and Neale R. Smith and Ronald G. Askin and Jose-Fernando Camacho-Vallejo and Jose Luis Gonzalez-Velarde}, 
+  journal={Mathematical Problems in Engineering},
+  year={2017},
+  publisher={Hindawi},   
+  url={https://www.hindawi.com/journals/mpe/aip/4708135/}, 
+  abstract={In this article, we address a logistics districting problem faced by a parcel company whose operations consists of picking up and delivering packages over a service region. The districting process aims to find a partition of the service region into delivery and collection zones that may be served by a single vehicle that departs from a central depot. Criteria to be optimized are to balance workload content among the districts and to create districts of compact shape. A solution approach based on a hybrid procedure that combines elements of GRASP and Tabu Search (TS) is proposed to solve large scale instances. Numerical experimentation is performed considering different instance sizes and types. Results show that the proposed solution approach is able to solve large scale instances in reasonable computational times with good quality of the solutions obtained. To determine the quality of the solutions, results are compared with CPLEX solutions and with the current real solution to highlight the benefits of the proposed approach. Conclusions and recommendations for further research are provided.}, 
+} 
+
+
+
+
+
+@inproceedings{toledo2015hophs,
+  title={{HOPHS}: A hyperheuristic that solves orienteering problem with hotel selection},
+  author={Toledo, Alan and Riff, Mar{\'\i}a Cristina},
+  booktitle={Digital Information Processing and Communications (ICDIPC), 2015 Fifth International Conference on},
+  pages={148--152},
+  year={2015},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/7323021/},
+  abstract={We present a hyperheuristic approach designed to solve a real world problem: the Orienteering Problem with Hotel Selection (OPHS). This problem has recently been introduced as an extension of the well-known Orienteering Problem. In this problem, hotels must be selected from a pool of available hotels. Each trip starts and ends in one of the hotels. The goal is to maximize the total score computed by the sum of the score of the trips to the visit points of interest. We propose a hyperheuristic that is based on a hill-climbing procedure. The low-level heuristics have been selected focused on the different constraints of the problem. We have put special attention on the collaboration among the low-level heuristics, in order to guide the algorithm to the most promising areas, considering both the time constraints and the improvement of the score. We use the benchmarks instances including the hardest ones of the problem for testing. The results show that our technique is a very effective one in terms of the design and the quality of the solution found.}, 
+}
+
+
+
+
+
+
+
+@misc{xie2017ontheinvestigation,
+  title={On the investigation of the large-scale grouping constrained storage location assignment problem},
+  author={Xie, J.},
+  year={2017}, 
+  institution = {PhD Thesis, School of Science, College of Science, Engineering and Health, RMIT University},
+  url={https://researchbank.rmit.edu.au/view/rmit:162142},   
+  abstract={The primary focus of this study is a novel optimisation problem, namely Storage Location Assignment Problem with Grouping Constraint (SLAP-GC). The problem stems from real-world applications and is significant in theoretical values and applicability in resource allocation tasks where groupings must be considered. The aim of this problem is to minimize the total operational cost in a warehouse through stock rearrangement. The problem consists of two interdependent subproblems, grouping same product items and assigning items to minimize picking distance. The interactions between these two subproblems make this problem significantly different from previous Storage Location Assignment Problems (SLAP), a well-studied field in logistics. Existing approaches for SLAP are not directly applicable for SLAP-GC. This dissertation lays a foundation for research on grouping constraints and other optimisation problems with similar interactions between subproblems. Firstly this study presents a formal definition of SLAP-GC. Then it offers a formal proof of NP-completeness of SLAP-GC by reducing from a well-known 3-Partition problem to SLAP-GC. This suggests that the real-world instances of SLAP-GC should not be tackled with exact approaches, but with approximation and heuristic approaches. Then, we explored decomposition and modelling techniques for SLAP-GC and developed three types of promising heuristic approaches: a hyperheuristic approach, a metaheuristic approach and a matheuristic approach. Comprehensive experimental studies are conducted on both synthetic benchmark instances and real-world instances to examine their efficiency, efficacy, and scalability. Through the analysis of the experimental results, the suitability of proposed methods is verified on various SLAP-GC scenarios. In addition, we demonstrate in this study that with the proposed decomposition, large-scale SLAP-GC can be handled efficiently by the three proposed heuristic-based approaches.},
+}
+
 
 
 
