@@ -1,3 +1,35 @@
+@INPROCEEDINGS{burke07automatic,
+  author = {E.K. Burke and M. Hyde and G. Kendall and John Woodward},
+  title = {Automatic heuristic generation with genetic programming: Evolving a jack-of-all-trades or a master of one},
+  booktitle = {Proceedings of Genetic and Evolutionary Computation Conference (GECCO)},
+  year = {2007},
+  address = {London, England},
+  month = {July 12--16},
+  pages = {1559--1565}
+}
+
+
+@inproceedings{burke2007scalability,
+  title={The scalability of evolved on line bin packing heuristics},
+  author={E. K. Burke and M. R. Hyde and G. Kendall and J. R. Woodward},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)}, 
+  pages={2530--2537},
+  year={2007},
+  organization={IEEE}
+}
+
+
+
+
+
+@inproceedings{adriaensen2014designing,
+  title={Designing reusable metaheuristic methods: A semi-automated approach},
+  author={Adriaensen, Steven and Brys, Tim and Now{\'e}, Ann},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={2969--2976},
+  year={2014},
+  organization={IEEE}
+}
 
 
 
@@ -355,7 +387,7 @@ The performance of different selection hyper-heuristics with various components 
 	 publisher = {Elsevier},
 	 volume = {300},
 	journal = {Information Sciences},
-	 url = {http://www.sciencedirect.com/science/article/pii/S0020025514010822},
+	 url = {https://www.sciencedirect.com/science/article/pii/S0020025514010822},   
 	 note={This paper expands on the concept of heuristic space diversity and investigates various strategies for the management of heuristic space diversity within the context of a meta-hyper-heuristic algorithm in search of greater performance benefits. Evaluation of various strategies on a diverse set of floating-point benchmark problems shows that heuristic space diversity has a significant impact on hyper-heuristic performance. An exponentially increasing strategy (EIHH) obtained the best results. The value of a priori information about constituent algorithm performance on the benchmark set in question was also evaluated. Finally, EIHH demonstrated good performance when compared to a popular population based algorithm portfolio algorithm and the best performing constituent algorithm.},   
 }
 
@@ -462,11 +494,11 @@ Originality/value
 	 url = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824192},
 	 note={Hyper-heuristics are search methodologies that aim to provide high-quality solutions across a wide variety of problem domains, rather than developing tailor-made methodologies for each problem instance/domain. A traditional hyper-heuristic framework has two levels, namely, the high level strategy (heuristic selection mechanism and the acceptance criterion) and low level heuristics (a set of problem specific heuristics). Due to the different landscape structures of different problem instances, the high level strategy plays an important role in the design of a hyper-heuristic framework. In this paper, we propose a new high level strategy for a hyper-heuristic framework. The proposed high-level strategy utilizes a dynamic multiarmed bandit-extreme value-based reward as an online heuristic selection mechanism to select the appropriate heuristic to be applied at each iteration. In addition, we propose a gene expression programming framework to automatically generate the acceptance criterion for each problem instance, instead of using human-designed criteria. Two well-known, and very different, combinatorial optimization problems, one static (exam timetabling) and one dynamic (dynamic vehicle routing) are used to demonstrate the generality of the proposed framework. Compared with state-of-the-art hyper-heuristics and other bespoke methods, empirical results demonstrate that the proposed framework is able to generalize well across both domains. We obtain competitive, if not better results, when compared to the best known results obtained from other methods that have been presented in the scientific literature. We also compare our approach against the recently released hyper-heuristic competition test suite. We again demonstrate the generality of our approach when we compare against other methods that have utilized the same six benchmark datasets from this test suite.},
 }
+  
 
 
 
-
-@article{Sabar2015Automatic,
+@article{sabar2015automatic,
 	author = {Nasser R. Sabar and  Masri Ayob and  Graham Kendall and  Rong Qu},
 	year = {2015},
 	 title = {Automatic Design of a Hyper-Heuristic Framework With Gene Expression Programming for Combinatorial Optimization Problems},
@@ -1104,7 +1136,7 @@ This thesis shows that hyper-heuristics can respond to scalability issues, altho
 }
 
 
-@inproceedings{Asta2014An,
+@inproceedings{Asta2014AnApprenticeship,
 	author = {Shahriar Asta and  Ender Ozcan},
 	year = {2014},
 	title = {An Apprenticeship Learning Hyper-Heuristic for Vehicle Routing in HyFlex},
@@ -1180,7 +1212,7 @@ This thesis shows that hyper-heuristics can respond to scalability issues, altho
 }
 
 
-@inproceedings{Grobler2014The,
+@inproceedings{Grobler2014TheEntity,
 	author = {Jacomine Grobler and  Andries P. Engelbrecht and  Graham Kendall and  V.S.S. Yadavalli},
 	year = {2014},
 	title = {The Entity-to-Algorithm Allocation Problem: Extending the Analysis},
@@ -1667,7 +1699,7 @@ This thesis shows that hyper-heuristics can respond to scalability issues, altho
 }
 
 
-@article{Misir2013A,
+@article{Misir2013Anew,
 	author = {Mustafa Misir and  Katja Verbeeck and  Patrick De Causmaecker and  Greet Vanden Berghe},
 	year = {2013},
 	 title = {A New Hyper-heuristic as a General Problem Solver: an Implementation in HyFlex},
@@ -1679,14 +1711,17 @@ This thesis shows that hyper-heuristics can respond to scalability issues, altho
 }
 
 
-@article{Misir2013An,
+@article{Misir2013AnInvestigation,
 	author = {Mustafa Misir and  Katja Verbeeck and  Patrick De Causmaecker and  Greet Vanden Berghe},
 	year = {2013},
 	 title = {An Investigation on the Generality Level of Selection Hyper-heuristics under Different Empirical Conditions},
 	 publisher = {Elsevier},
-	 volume = {Elsevier},
+	 volume = {13},
+	 number={7},
+	 pages={3335--3353},
 	journal = {Applied Soft Computing},
 	 url = {http://www.sciencedirect.com/science/article/pii/S1568494613000604},
+	 abstract={The present study concentrates on the generality of selection hyper-heuristics across various problem domains with a focus on different heuristic sets in addition to distinct experimental limits. While most hyper-heuristic research employs the term generality in describing the potential for solving various problems, the performance changes across different domains are rarely reported. Furthermore, a hyper-heuristic's performance study purely on the topic of heuristic sets is uncommon. Similarly, experimental limits are generally ignored when comparing hyper-heuristics. In order to demonstrate the effect of these generality related elements, nine heuristic sets with different improvement capabilities and sizes were generated for each of three target problem domains. These three problem domains are home care scheduling, nurse rostering and patient admission scheduling. Fourteen hyper-heuristics with varying intensification/diversification characteristics were analysed under various settings. Empirical results indicate that the performance of selection hyper-heuristics changes significantly under different experimental conditions.}, 
 }
    
 
@@ -5061,7 +5096,7 @@ Originality/value
 	year = {2002},
 	title = {Hyper-heuristics: Learning To Combine Simple Heuristics In Bin-packing Problems},
 	address = {New York, USA},
-	booktitle = {the 4th Annual Conference on Genetic and Evolutionary Computation (GECCO02)},
+	booktitle = {the 4th Annual Conference on Genetic and Evolutionary Computation (GECCO)},
 	 url = {http://homepages.inf.ed.ac.uk/v1sschul/bp.pdf},
 }
 
@@ -5071,7 +5106,7 @@ Originality/value
 	year = {2002},
 	title = {Knowledge Discovery in a Hyper-heuristic for Course Timetabling Using Case-Based Reasoning},
 	address = {Gent, Belgium},
-	booktitle = {the 4th International Conference on the Practice and Theory of Automated Timetabling (PATAT02)},
+	booktitle = {the 4th International Conference on the Practice and Theory of Automated Timetabling (PATAT)},
 	 url = {http://eprints.nottingham.ac.uk/356/1/rxqPATAT02.pdf},
 }
 
@@ -7892,9 +7927,9 @@ In this paper, we explore the application of our newly developed hyperheuristic,
    
 
 
-@misc{vsivsejkovic2016evolution,
+@misc{sivsejkovic2016evolution,
   title={Evolution of scheduling heuristics for the resource constrained scheduling problem},
-  author={{\v{S}}i{\v{s}}ejkovi{\'c}, Dominik},
+  author={Sisejkovic, Dominik},
   year={2016},
   institution = {Master Thesis, Faculty of Electrical Engineering and Computing, University of Zagreb},
   url={http://bib.irb.hr/datoteka/845388.Final_0036466662_54.pdf},
@@ -8422,8 +8457,11 @@ In this paper, we explore the application of our newly developed hyperheuristic,
   booktitle={Proceedings of the Genetic and Evolutionary Computation Conference},
   pages={849--856},
   year={2017},
-  organization={ACM}
+  organization={ACM},
+  url={https://dl.acm.org/citation.cfm?id=3071288},
+  abstract={Selection hyper-heuristics are randomised search methodologies which choose and execute heuristics from a set of low-level heuristics. Recent time complexity analyses for the LeadingOnes benchmark function have shown that the standard simple random, permutation, random gradient, greedy and reinforcement learning selection mechanisms show no effects of learning. The idea behind the learning mechanisms is to continue to exploit the currently selected heuristic as long as it is successful. However, the probability that a promising heuristic is successful in the next step is relatively low when perturbing a reasonable solution to a combinatorial optimisation problem. In this paper we generalise the classical selection-perturbation mechanisms so success can be measured over some fixed period of length r, rather than in a single iteration. We present a benchmark function where it is necessary to learn to exploit a particular low-level heuristic, rigorously proving that it makes the difference between an efficient and an inefficient algorithm. For LeadingOnes we prove that the generalised random gradient mechanism approaches optimal performance while generalised greedy, although not as fast, still outperforms random local search. An experimental analysis shows that combining the two generalised mechanisms leads to even better performance.},
 }
+
 
 
 
@@ -8446,7 +8484,9 @@ In this paper, we explore the application of our newly developed hyperheuristic,
   booktitle={IEEE Congress on Evolutionary Computation (CEC)},
   pages={2515--2523},
   year={2014},
-  organization={IEEE}
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/document/6900602/},
+  abstract={The term selection hyper-heuristics refers to a randomised search technique used to solve computational problems by choosing and executing heuristics from a set of pre-defined low-level heuristic components. Selection hyper-heuristics have been successfully employed in many problem domains. Nevertheless, a theoretical foundation of these heuristics is largely missing. Gaining insight into the behaviour of selection hyper-heuristics is challenging due to the complexity and random design of these heuristics. This paper is one of the initial studies to analyse rigorously the runtime of selection hyper-heuristics with a number of the most commonly used learning mechanisms; namely, simple random, random gradient, greedy, and permutation. We derive the runtime of selection hyper-heuristic with these learning mechanisms not only on a classical example problem, but also on a general model of fitness landscapes. This in turn helps in understanding the behaviour of hyper-heuristics. Our results show that all the considered selections hyper-heuristics have roughly the same performance. This suggests that the learning mechanisms do not necessarily improve the performance of hyper-heuristics. A new learning mechanism that improves the performance of hyper-heuristic on our example problem is presented.}, 
 }
 
 
@@ -8564,6 +8604,189 @@ In this paper, we explore the application of our newly developed hyperheuristic,
   abstract={In this paper, we study a mobile indoor visible light communication system that can be used for the creation of the indoor network infrastructure for sending information besides serving its main purpose of illumination. It uses visible light communication technology where the light-emitting diodes (LEDs) are deployed on the ceiling of the room and the receiver is kept mobile at a certain height from the ground level. This paper focuses on the optimal deployment of the LEDs with an objective to achieve the requisite level of communication performance without any transmission error while maintaining ubiquitous receiver mobility. The hyperheuristic evolutionary algorithm (HypEA) has been implemented to analyze and optimize the energy consumption through optimal placement of LEDs under variation of semiangle values. Furthermore, the implemented optimization algorithm investigates the other system related parameters including average outage area ratio, signal-to-noise ratio, and root mean square delay for a given threshold average bit error ratio. Finally, The obtained results are illustrated through numerical plots, which reveal that the HypEA is efficient in optimizing the system to minimize the overall power consumption under maximum receiver mobility.}, 
 }
 
+
+
+
+
+
+@inproceedings{parkes2012matrix,
+  title={Matrix analysis of genetic programming mutation},
+  author={Parkes, Andrew J and {\"O}zcan, Ender and Hyde, Matthew R},
+  booktitle={European Conference on Genetic Programming},
+  pages={158--169},
+  year={2012},
+  organization={Springer}
+}
+
+
+
+
+@inproceedings{diocsan2006evolving,
+  title={Evolving crossover operators for function optimization},
+  author={Dio{\c{s}}an, Laura and Oltean, Mihai},
+  booktitle={European Conference on Genetic Programming},
+  pages={97--108},
+  year={2006},
+  organization={Springer}
+}
+
+
+
+@inproceedings{elhag2018data,
+	author = {A. Elhag and E. Ozcan},
+	year = {2018},
+	title = {Data Clustering Using Grouping Hyper-heuristics},
+	address = {Parma, Italy}, 
+	booktitle = {the 18th European Conference on Evolutionary Computation in Combinatorial Optimisation (EvoCOP)},
+	 url = {http://www.cs.nott.ac.uk/~pszeo/docs/publications/groupingDC.pdf},   
+	 abstract={Grouping problems represent a class of computationally hard to solve problems requiring optimal partitioning of a given set of items with respect to multiple criteria varying dependent on the domain. A recent work proposed a general-purpose selection hyper-heuristic search framework with reusable components, designed for rapid development of grouping hyper-heuristics to solve grouping problems. The framework was tested only on the graph colouring problem domain. Extending the previous work, this study compares the performance of selection hyperheuristics implemented using the framework, pairing up various heuristic/operator selection and move acceptance methods for data clustering. The selection hyper-heuristic performs the search processing a single solution at any decision point and controls a fixed set of generic low level heuristics specifically designed for the grouping problems based on a biobjective formulation. An archive of high quality solutions, capturing the trade-off between the number of clusters and overall error of clustering, is maintained during the search process. The empirical results verify the effectiveness of a successful selection hyper-heuristic, winner of a recent hyper-heuristic challenge for data clustering on a set of benchmark problem instances.},
+}
+  
+  
+
+@inproceedings{masood2018reference,
+	author = {A. Masood and G. Chen and Y. Mei and M. Zhang },
+	year = {2018},
+	title = {Reference Point Adaption Method for Genetic Programming Hyper-heuristic in Many-Objective Job Shop Scheduling},
+	address = {Parma, Italy},
+	booktitle = {the 18th European Conference on Evolutionary Computation in Combinatorial Optimisation (EvoCOP)},
+	 url = {http://www.evostar.org/2018/cfp_evocop.php#abstracts},   
+	 abstract={Job Shop Scheduling (JSS) is considered to be one of the most significant combinatorial optimization problems in practice. It is widely evidenced in the literature that JSS usually contains many (four or more) potentially conflicting objectives. One of the promising and successful approaches to solve the JSS problem is Genetic Programming Hyper-Heuristic (GP-HH). This approach automatically evolves dispatching rules for solving JSS problems. This paper aims to evolve a set of effective dispatching rules for many-objective JSS with genetic programming and NSGA-III. NSGA-III originally defines uniformly distributed reference points in the objective space. Thus, there will be few reference points with no Pareto optimal solutions associated with them; especially, in the cases with discrete and non-uniform Pareto front, resulting in many useless reference points during evolution. In other words, these useless reference points adversely affect the performance of NSGA-III and genetic programming. To address the above issue, in this paper a new reference point adaptation mechanism is proposed based on the distribution of the candidate solutions. We evaluated the performance of the proposed mechanism on many-objective benchmark JSS instances. Our results clearly show that the proposed strategy is promising in adapting reference points and outperforms the existing state-of-the-art algorithms for many-objective JSSP.},
+}
+
+
+
+
+@article{li2018alearning,
+  title={A Learning Automata based Multiobjective Hyper-heuristic},
+  author={W. Li and E. Ozcan and R. John},
+  journal={IEEE Transactions on Evolutionary Computation},
+  year={2018},
+  publisher={IEEE},
+  url={http://ieeexplore.ieee.org/document/8231198/},
+  abstract={Metaheuristics, being tailored to each particular domain by experts, have been successfully applied to many computationally hard optimisation problems. However, once implemented, their application to a new problem domain or a slight change in the problem description would often require additional expert intervention. There is a growing number of studies on reusable cross-domain search methodologies, such as, selection hyper-heuristics, which are applicable to problem instances from various domains, requiring minimal expert intervention or even none. This study introduces a new learning automata based selection hyper-heuristic controlling a set of multiobjective metaheuristics. The approach operates above three well-known multiobjective evolutionary algorithms and mixes them, exploiting the strengths of each algorithm. The performance and behaviour of two variants of the proposed selection hyper-heuristic, each utilising a different initialisation scheme are investigated across a range of unconstrained multiobjective mathematical benchmark functions from two different sets and the real-world problem of vehicle crashworthiness. The empirical results illustrate the effectiveness of our approach for cross-domain search, regardless of the initialisation scheme, on those problems when compared to each individual multiobjective algorithm. Moreover, both variants perform signicantly better than some previously proposed selection hyper-heuristics for multiobjective optimisation, thus signicantly enhancing the opportunities for improved multiobjective optimisation.}, 
+}
+
+
+   
+
+@misc{grobler2015heterogeneous,
+  title={The heterogeneous meta-hyper-heuristic: from low level heuristics to low level meta-heuristics},
+  author={Grobler, Jacomine},
+  year={2015},
+  institution = {PhD Thesis, Faculty of Engineering, Built Environment and Information Technology, University of Pretoria},
+  url={https://repository.up.ac.za/handle/2263/43789},
+  abstract={Meta-heuristics have already been used extensively for the successful solution of a wide range of real world problems. A few industrial engineering examples include inventory optimization, production scheduling, and vehicle routing, all areas which have a significant impact on the economic success of society. Unfortunately, it is not always easy to predict which meta-heuristic from the multitude of algorithms available, will be best to address a specific problem. Furthermore, many algorithm development options exist with regards to operator selection and parameter setting. Within this context, the idea of working towards a higher level of automation in algorithm design was born. Hyper-heuristics promote the design of more generally applicable search methodologies and tend to focus on performing relatively well on a large set of different types of problems.
+ 
+ This thesis develops a heterogeneous meta-hyper-heuristic algorithm (HMHH) for single-objective unconstrained continuous optimization problems. The algorithm development process focused on investigating the use of meta-heuristics as low level heuristics in a hyper-heuristic context. This strategy is in stark contrast to the problem-specific low level heuristics traditionally employed in a hyper-heuristic framework. Alternative low level meta-heuristics, entity-to-algorithm allocation strategies, and strategies for incorporating local search into the HMHH algorithm were evaluated to obtain an algorithm which performs well against both its constituent low level meta-heuristics and four state- of-the-art multi-method algorithms.
+ 
+ Finally, the impact of diversity management on the HMHH algorithm was investigated. Hyper-heuristics lend themselves to two types of diversity management, namely solution space diversity (SSD) management and heuristic space diversity (HSD) management. The concept of heuristic space diversity was introduced and a quantitative metric was defined to measure heuristic space diversity. An empirical evaluation of various solution space diversity and heuristic space diversity intervention mechanisms showed that the systematic control of heuristic space diversity has a significant impact on hyper-heuristic performance.}, 
+}
+
+
+
+@inproceedings{grobler2013multi,
+  title={Multi-method algorithms: Investigating the entity-to-algorithm allocation problem},
+  author={Grobler, Jacomine and Engelbrecht, Andries P and Kendall, Graham and Yadavalli, VSS},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={570--577},
+  year={2013},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/6557619/},
+  abstract={This paper investigates the algorithm selection problem, otherwise referred to as the entity-to-algorithm allocation problem, within the context of three recent multi-method algorithm frameworks. A population-based algorithm portfolio, a meta-hyper-heuristic and a bandit based operator selection method are evaluated under similar conditions on a diverse set of floating-point benchmark problems. The meta-hyper heuristic is shown to outperform the other two algorithms.},
+}
+
+
+
+@inproceedings{grobler2013solution,
+  title={Solution space diversity management in a meta-hyperheuristic framework},
+  author={Grobler, Jacomine and Engelbrecht, Andries P},
+  booktitle={BRICS Congress on Computational Intelligence and 11th Brazilian Congress on Computational Intelligence (BRICS-CCI \& CBIC)},
+  pages={270--276},
+  year={2013},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/6855860/},
+  abstract={}, 
+}
+
+
+
+@inproceedings{grobler2011investigating,
+  title={Investigating the impact of alternative evolutionary selection strategies on multi-method global optimization},
+  author={Grobler, Jacomine and Engelbrecht, Andries P and Kendall, Graham and Yadavalli, VSS},
+  booktitle={IEEE Congress on Evolutionary Computation (CEC)},
+  pages={2337--2344},
+  year={2011},
+  organization={IEEE},
+  url={http://ieeexplore.ieee.org/abstract/document/5949906/},
+  abstract={Algorithm selection is an important consideration in multi-method global optimization. This paper investigates the use of various algorithm selection strategies derived from well known evolutionary selection mechanisms. Selection strategy performance is evaluated on a diverse set of floating point benchmark problems and meaningful conclusions are drawn with regard to the impact of selective pressure on algorithm selection in a multi-method environment.}, 
+}
+
+
+
+
+
+
+
+@inproceedings{pavlidis2006human,
+  title={Human designed vs. genetically programmed differential evolution operators},
+  author={Pavlidis, Nicos G and Plagianakos, Vassilis P and Tasoulis, Dimitris K and Vrahatis, Michael N},
+  booktitle={Evolutionary Computation, 2006. CEC 2006. IEEE Congress on},
+  pages={1880--1886},
+  year={2006},
+  organization={IEEE}
+}
+
+
+
+@inproceedings{de2013automatic,
+  title={Automatic generation of evolutionary operators: a study with mutation strategies for the differential evolution},
+  author={de Melo, Vin{\'\i}cius V and Carosio, Grazieli LC},
+  booktitle={Proceedings of the 28th Annual ACM Symposium on Applied Computing},
+  pages={188--193},
+  year={2013},
+  organization={ACM}
+}
+
+
+
+
+@inproceedings{hong2013automated,
+  title={Automated design of probability distributions as mutation operators for evolutionary programming using genetic programming},
+  author={Hong, Libin and Woodward, John and Li, Jingpeng and {\"O}zcan, Ender},
+  booktitle={European Conference on Genetic Programming},
+  pages={85--96},
+  year={2013},
+  organization={Springer}
+}
+
+
+
+
+
+
+   
+ 
+
+@article{nikpour2018htss,
+  title={{HTSS}: a hyper-heuristic training set selection method for imbalanced data sets},
+  author={Nikpour, Bahareh and Nezamabadi-pour, Hossein},
+  journal={Iran Journal of Computer Science},
+  pages={1--20},
+  year={2018},
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s42044-018-0009-2},
+  abstract={Imbalanced data sets are those in which data samples have uneven distribution amongst the classes. When classifying such data, classical classifiers encounter problem; hence, this problem has become a challenging issue in the field of machine learning. To weaken this problem, we propose a novel hyper-heuristic algorithm, called HTSS, to select the best training samples in this paper. In other words, the best training sample subset is chosen with the goal of enhancing the performance of classifier when confronting imbalanced data. To do so, some local search algorithms and a choice function are incorporated with a global search algorithm to improve its effectiveness. The global search used in this paper is binary quantum inspired gravitational search algorithm (BQIGSA) which is a recently proposed meta-heuristic search for optimization of binary encoded problems. Experiments are performed on 75 imbalanced data sets, and G-mean and AUC measures are employed for evaluation. The results of comparing the proposed method with other state of the art algorithms show the superiority of the proposed HTSS method.}, 
+}
+
+
+
+@inproceedings{tyasnurita2015improving,
+  title={Improving performance of a hyper-heuristic using a multilayer perceptron for vehicle routing},
+  author={Tyasnurita, Raras and {\"O}zcan, Ender and Shahriar, Asta and John, Robert},
+  booktitle = {the 15th UK Workshop on Computational Intelligence (UKCI)},
+  year={2015}
+}
 
 
 
