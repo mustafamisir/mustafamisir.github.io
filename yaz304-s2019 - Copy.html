@@ -1,0 +1,160 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [YAZ304] Neural Networks and Machine Learning @ Spring 2019-2020</title></head>
+
+
+
+<body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  
+       
+
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="780">
+
+<tbody><tr><td align="right">   
+</td></tr> 
+     
+<tr><td style="text-align:justify;">
+<h1>Sinir Aglari ve Makine Ogrenmesi (YAZ304)</h1>  
+<h2>Bahar 2019-2020 (14 hafta, 56 saat)</h2>   
+				  
+	<strong>Carsamba @ 15:50-18:25 (1 &#x21A3; 14 hafta: T-129), Persembe @ 12:10-13:50 (1 &#x21A3; 14 hafta: UNIX Lab)</strong><br>
+	<strong>19 Subat - 28 Mayis, 2020</strong>   
+	<br> 
+	<br>
+	<strong>Egitmen</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (Ofis: 203/G @ ISU Topkapi Kampusu), <a href="mailto:mustafa.misir [at] istinye.edu.tr">mustafa.misir [at] istinye.edu.tr</a> </h2> 
+	<br/>   <br/> 
+  
+Makine Ogrenmesi ile ilgili teorik altyapiyi saglamak suretiyle ogrenme problemleri, karsilasilan zorluklar ve cozum yontemleri islenecektir. Python ile uygulama odakli yurutulecek olan ders kapsaminda, bilinen Makine Ogrenmesi algoritmalarindan biri olan Yapay Sinir Aglari ayrica detaylandirilacktir. 
+
+<br><br> 
+   
+
++++ &nbsp;&nbsp;&nbsp; <i>Duyurular ve tartismalar icin <a href="https://piazza.com" target="_blank">Piazza</a>'ya <font color="#FF3300">katilin</font></i>
+<br><br>  
+		 
+ 
+ 	
+
+		<hr/>	 
+		   
+		  
+					  
+	<h2>Ders Kitabi</h2>
+	<a href="https://www.bounyayin.com/yayin/yapay-ogrenme/" target="_blank">Yapay Ogrenme</a>, Ethem Alpaydin (4. Baski), 2018, Bogazici Universitesi Yayinevi 
+	<br>
+	<br>  
+	<strong><font color="#FF3300">Yardimci Kitaplar</font></strong>: 
+	  
+	<ul>
+	<li><a href="https://mitpress.mit.edu/books/introduction-machine-learning-third-edition" target="_blank">Introduction to Machine Learning</a>, Ethem Alpaydin (3. Baski), 2014, MIT Yayinlari</li>
+	<li><a href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html" target="_blank">Understanding Machine Learning: From Theory to Algorithms</a>, Ehai Shalev-Shwartz, Shai Ben-David (1. Baski), 2014, Cambridge Universitesi Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>	
+	<li><a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher Bishop (1. Baski), 2006, Springer (<font color="#FF3300">Ucretsiz Kitap</font>)</li>	
+	<li><a href="http://amlbook.com/" target="_blank">Learning from Data</a>, Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin (1. Baski), 2012, AMLBook</li>		
+	<li><a href="https://seat.massey.ac.nz/personal/s.r.marsland/MLBook.html" target="_blank">Machine Learning - an Algorithmic Perspective</a>, Stephen Marshland (2. Baski), 2015, CRC Yayinlari</li>	
+	<li><a href="https://www.cambridge.org/core/books/machine-learning-refined/4C67BE1614871170CBCAF4DADE81A5D1" target="_blank">Machine Learning Refined: Foundations, Algorithms, and Applications</a>, Jeremy Watt, Reza Borhani, Aggelos K. Katsaggelos (1. Baski), 2016, Cambridge Universitesi Yayinlari</li>	
+	<li><a href="https://cs.nyu.edu/~mohri/mlbook/" target="_blank">Foundations of Machine Learning</a>, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar (2. Baski), 2018, MIT Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>	
+	<li><a href="https://www.cs.ubc.ca/~murphyk/MLbook/" target="_blank">Machine Learning: a Probabilistic Perspective</a>, Kevin P. Murphy (1. Baski), 2012, MIT Yayinlari</li>	
+	<li><a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell (1. Baski), 1997, McGraw Hill Yayinlari</li>
+	<li><a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning</a>, Hal Daume III  (2. Baski), 2017 (<font color="#FF3300">Ucretsiz Kitap</font>)</li>
+	<li><a href="https://alex.smola.org/drafts/thebook.pdf" target="_blank">Introduction to Machine Learning</a>, Alex Smola, S.V.N. Vishwanathan (1. Baski), 2008, Cambridge Universitesi Yayinlari</li>
+	<li><a href="http://themlbook.com/" target="_blank">The Hundred-Page Machine Learning Book</a>, Andriy Burkov, 2019 (<font color="#FF3300">Ucretsiz Kitap - Taslak Surumu</font>)</li>		
+	<li><a href="https://machinelearningmastery.com/machine-learning-with-python/" target="_blank">Machine Learning Mastery With Pytho</a>, Jason Brownlee, 2016</li>			
+	<li><a href="https://mitpress.mit.edu/books/reinforcement-learning-second-edition" target="_blank">Reinforcement Learning: an Introduction</a>, Richard S. Sutton ve Andrew G. Barto (2. Baski), 2018, MIT Yayinlari</li> 
+	<li><a href="https://www.crcpress.com/Artificial-Intelligence-With-an-Introduction-to-Machine-Learning-Second/Neapolitan-Jiang/p/book/9781138502383" target="_blank">Artificial Intelligence - With an Introduction to Machine Learning</a>, Richard E. Neapolitan, Xia Jiang (2. Baski), 2018, CRC Yayinlari</li>
+	<li><a href="https://www.deeplearning.ai/machine-learning-yearning/" target="_blank">Machine Learning Yearning</a>, Andrew Ng (1. Baski), 2020, deeplearning.ai (<font color="#FF3300">Ucretsiz Kitap - Taslak Surumu</font>)</li>	    		 
+	<li><a href="https://mitpress.mit.edu/books/machine-learning" target="_blank">Machine Learning - The New AI</a>,  Ethem Alpaydin (1. Baski), 2016, MIT Yayinlari</li>
+	<li><a href="https://www.manning.com/books/deep-learning-with-python" target="_blank">Deep Learning with Python</a>, Francois Chollet (2. Baski), Manning Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>
+	<li><a href="http://buzdagiyayinevi.com/derin-ogrenme/" target="_blank">Derin Ogrenme</a>, Ian Goodfellow, Yoshua Bengio, Aaron Courville (1. Baski), 2018, Buzdagi Yayinevi</li>   
+	<li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank">Neural Networks and Deep Learning</a>, Michael Nielsen, 2019(<font color="#FF3300">Ucretsiz Kitap</font>)</li>	   
+	<li><a href="https://www.springer.com/gp/book/9783319944623" target="_blank">Neural Networks and Deep Learning: A Textbook</a>, Charu C. Aggarwal (1. Baski), 2018, Springer</li>  
+	<li><a href="https://www.springer.com/gp/book/9789811367939" target="_blank">Advances in Deep Learning</a>, M. Arif Wani, Farooq Ahmad Bhat, Saduf Afzal ve Asif Iqbal Khan, 2020, Springer</li>  
+	<li><a href="https://www.manning.com/books/grokking-deep-learning" target="_blank">Grokking Deep Learning</a>, Andrew W. Trask (1. Baski), 2019, Manning</li>
+	<li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" target="_blank">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</a>, Aurelien Geron (2. Baski), 2019, O'Reilly</li>	
+	<li><a href="http://shop.oreilly.com/product/0636920030515.do" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. MUller, Sarah Guido (1. Baski), 2017, O'Reilly</li>
+	<li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</a>, Trevor Hastie, Robert Tibshirani, Jerome Friedman (2. Baski), 2009, Springer (<font color="#FF3300">Ucretsiz Kitap</font>)</li>   
+	<li><a href="https://mml-book.github.io/" target="_blank">Mathematics for Machine Learning</a>, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong (1. Baski), 2020, Cambridge Universitesi Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>        
+	<li><a href="https://www.springer.com/gp/book/9783030403430" target="_blank">Linear Algebra and Optimization for Machine Learning: A Textbook</a>, Charu C. Aggarwal (1. Baski), 2020, Springer</li>	       
+	<li><a href="https://mitpress.mit.edu/books/optimization-machine-learning" target="_blank">Optimization for Machine Learning</a>, Suvrit Sra, Sebastian Nowozin, Stephen J. Wright (DUzenlenmiS -- 1. Baski), 2011, MIT Yayinlari</li>  
+	<li><a href="https://web.stanford.edu/~boyd/cvxbook/" target="_blank">Convex Optimization</a>, Stephen Boyd, Lieven Vandenberghe (1. Baski), 2004, Cambridge Universitesi Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>  
+	<li><a href="https://www.sciencedirect.com/book/9780123814791/data-mining-concepts-and-techniques" target="_blank">Data Mining: Concepts and Techniques</a>, Jiawei Han, Micheline Kamber, Jian Pei (3. Baski), 2012, Morgan Kaufmann</li>
+	<li><a href="http://www.dataminingbook.info/" target="_blank">Data Mining and Analysis: Fundamental Concepts and Algorithms</a>, Mohammed J. Zaki ve Wagner Meira, Jr. (1. Baski), 2014, Cambridge Universitesi Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>	
+	<li><a href="https://www.cs.waikato.ac.nz/ml/weka/book.html" target="_blank">Data Mining: Practical Machine Learning Tools and Techniques</a>, Ian H. Witten, Eibe Frank, Mark A. Hall, Christopher J. Pal (4. Baski), 2016, Morgan Kaufmann Yayinlari</li>
+	<li><a href="https://www.springer.com/gp/book/9783319141411" target="_blank">Data Mining: The Textbook</a>, Charu C. Aggarwal (1. Baski), 2015, Springer Yayinlari</li>
+	<li><a href="http://charuaggarwal.net/clusterbook.pdf" target="_blank">Data Clustering</a>, Chandan K. Reddy, Charu C. Aggarwal  (1. Baski - Ed.), 2014, CRC Yayinlari (<font color="#FF3300">Ucretsiz Kitap</font>)</li>   
+	</ul>
+
+
+
+	<br>  
+				<hr/> 
+			
+			
+		<h2>Ders Notlari / Slaytlar</h2>
+		
+				<ul style="margin-left : -13px;">					  
+					<li><strong>D0</strong> + <strong>D1</strong>: <a href="courses/pai-s2019/COE206-L0-L1-Introduction.pdf" target="_blank">Introduction to Artificial Intelligence</a>: a general discussion on the course together with an introduction to AI with real-world applications from a historical perspective</li> 
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+					<li><strong>L2</strong>: <a href="courses/nnml-s2019/" target="_blank">TBA</a>: TBA</li>
+  
+    
+
+   				</li>      
+				
+		
+				
+				</ul>  
+
+	<br>
+	
+		<hr/>  
+		
+		
+		<br>
+				<h2>Notlandirma</h2>
+		
+		<ul>   
+		<li><strong>Laboratuvarlar / Odevler</strong>: 30%</li>
+		<li><strong>Arasinav / Ara-donem Odevi</strong>: 30%</li> 
+		<li><strong>Final Sinavi / Final Odevi</strong>: 40%</li> 		
+		</ul> 
+		
+  
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
