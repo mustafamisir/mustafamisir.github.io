@@ -1,0 +1,596 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [STATS 302] Principles of Machine Learning @ Fall 2021-2022 (Session 1)</title></head>
+
+  
+
+<body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  
+            
+          
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="80%">
+      
+<tbody><tr><td align="right">   
+</td></tr> 
+         
+<tr><td style="text-align:justify;">    
+             
+<img src="DKU_Logo_whitebackdrop-perc15-v2.png" style="width:25%" align="right">  
+
+<h1>Principles of Machine Learning (STATS 302)</h1>       
+<h2>Fall 2021-2022 / Session 1 (7 weeks, 35 + 14 hours)</h2>     
+
+        
+
+
+
+				       
+	<strong><font color="#FF3300">Course Period</font>: August 23 - October 14, 2021</strong><br> 
+	<ul style="margin-left : -13px;">	
+		<li><strong>Lectures</strong>: Monday / Tuesday / Wednesday / Thursday @ 13:15-14:30 (Classroom: TBA)</li>
+		<li><strong>Recitations (+ Labs)</strong>: Monday / Wednesday @ 07:15-08:15 (Classroom: TBA)</li>   
+	</ul>   
+          
+	   
+	<strong>Instructor</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (Office: TBA), <a href="mailto:mustafa.misir [at] dukekunshan.edu.cn">mustafa.misir [at] dukekunshan.edu.cn</a> </br>
+	   
+	<strong>Teaching Assistant</strong>: TBA</a> 
+	
+	</h2> 
+	<br/><br/>   
+      
+<a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">Machine Learning</a> (ML) is a popular field with interdisciplinary characteristics relating to various fields including Computer Science, Mathematics and Statistics. ML aims at learning without being explicitly programmed, through data and experience. The target applications are the complex tasks which are challenging, impractical or unrealistic to program. ML can be used to address those sophisticated activities that humans or animals can routinely do such as speech recognition, image understanding and driving. The other functions to learn that ML concentrates on, are concerned with the ones requiring capabilities beyond human capacities, in terms of speed and memory.
+
+<br/><br/>  
+  
+This course will identify the major ML problems while introducing the fundamental ML algorithms to solve them. To be specific, the topics to be covered are maximum likelihood estimation, linear discriminant analysis, logistic regression, support vector machines, decision trees, linear regression, Bayesian inference, unsupervised learning, and semi-supervised learning. The course will require basic programming skills (<a href="https://www.python.org/" target="_blank">Python</a>) and introductory level knowledge on probability and statistics besides benefiting from certain linear algebra concepts. 
+      
+
+<br/><br/>  
+                  
+<font color="blue"><u>By the end of this course, <strong>you will be able to</strong></u></font>:
+
+<ol style="margin-left : -13px;">	     
+	<li><font color="#FF3300"><strong>specify</strong></font> a given learning task as a ML problem</li>
+	<li><font color="#FF3300"><strong>determine</strong></font> the appropriate ML algorithms for addressing an ML problem</li>
+	<li><font color="#FF3300"><strong>manipulate</strong></font> the given data concerned with a learning task so that the preferred ML algorithm can be effectively applied</li>
+	<li><font color="#FF3300"><strong>construct</strong></font> generalizable ML models that can address a given ML problem of unseen data</li>
+	<li><font color="#FF3300"><strong>analyze</strong></font> the performance of the ML algorithms while revealing their shortcomings referring to the nature of the data</li>
+	<li><font color="#FF3300"><strong>build</strong></font> complete ML workflows in <a href="https://www.python.org/" target="_blank">Python</a> together with the relevant libraries / frameworks / tools besides effectively communicating your methods and results using <a href="https://jupyter.org/" target="_blank">Jupyter</a> notebooks</li>    
+</ol>         
+              
+
+     
+   
++++ <i><font color="#FF3300">Follow</font></i> <a href="https://sakai.duke.edu" target="_blank"><strong>Sakai</strong></a> for <strong>announcements</strong> and <strong>discussions</strong>
+<br>   
+		 
+		    
+<h3>Pre-requisites</h3>
+	<ul style="margin-left : -13px;">
+		<li>COMPSCI 201: Introduction to Programming and Data Structures</li>
+		<li>STATS 210: Probability, Random Variables and Stochastic Processes</li>
+	</ul>
+<h3>Co/Pre-requisites</h3>
+	<ul style="margin-left : -13px;">
+		<li>MATH 304: Numerical Analysis and Optimization</li>
+		<li>MATH 305: Advanced Linear Algebra</li>	
+	</ul>  
+     
+		          
+	      
+	 
+	The following chart shows how STATS 302 fits to the DKU curriculum, where the abbreviations indicate the course types, i.e. D: <i>Divisional</i>, DF: <i>Divisional Foundation</i>, ID: <i>Interdisciplinary</i> and E: <i>Elective</i>. Refer to the <a href="https://undergrad.dukekunshan.edu.cn/en/undergraduate-bulletin" target="_blank">DKU Undergraduate Bulletin</a> for more details.       
+	
+	<br><br>     
+	       
+	<img src="STATS302-Principles-ML-Course-Map-v2.png" style="width:100%">
+
+	    
+	<br><br>   
+	
+		<hr/>
+
+			
+	<br>	    
+	There is <font color="#FF3300"><u>no textbook</u></font> for this course. Still, the following books can be used as references.   
+		  
+					     
+	<h2>Reference Books</h2>   
+               
+	        
+	<ul style="margin-left : -13px;">	    
+	<li><a href="https://www.statlearning.com/" target="_blank">Introduction to Statistical Learning</a>, Gareth James, Daniela Witten, Trevor Hastie, Rob Tibshirani (1st / 2nd Edition), 2017 (Corrected 7th Printing) / 2021, Springer (<font color="#FF3300">Free Book</font>)</li> 
+	<li><a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher Bishop (1st Edition), 2006, Springer (<font color="#FF3300">Free Book</font>)</li>
+	<ul>
+	<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/05/prml-web-sol-2009-09-08.pdf" target="_blank"><font color="#FF3300">Solution Manual</font></a> (2009)</li>    
+	</ul>
+	<li><a href="https://probml.github.io/pml-book/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy (1st Edition), 2021, MIT Press (<font color="#FF3300">Free Book</font>)</li>          
+	<li><a href="https://probml.github.io/pml-book/" target="_blank">Machine Learning: A Probabilistic Perspective</a>, Kevin P. Murphy (1st Edition), 2012, MIT Press (<font color="#FF3300">Free Book</font>)</li> 
+	<li><a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Carl Edward Rasmussen, Christopher K. I. Williams (1st Edition), 2006, MIT Press (<font color="#FF3300">Free Book</font>)</li>                 
+	<li><a href="https://mitpress.mit.edu/books/introduction-machine-learning-third-edition" target="_blank">Introduction to Machine Learning</a>, Ethem Alpaydin (3rd Edition), 2014, MIT Press</li>
+	<li><a href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html" target="_blank">Understanding Machine Learning: From Theory to Algorithms</a>, Ehai Shalev-Shwartz, Shai Ben-David (1st Edition), 2014, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>		
+	<li><a href="http://amlbook.com/" target="_blank">Learning from Data</a>, Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin (1st Edition), 2012, AMLBook</li>		
+	<li><a href="https://seat.massey.ac.nz/personal/s.r.marsland/MLBook.html" target="_blank">Machine Learning: an Algorithmic Perspective</a>, Stephen Marshland (2nd Edition), 2015, CRC Press</li>	   
+	<li><a href="https://www.cambridge.org/core/books/machine-learning-refined/4C67BE1614871170CBCAF4DADE81A5D1" target="_blank">Machine Learning Refined: Foundations, Algorithms, and Applications</a>, Jeremy Watt, Reza Borhani, Aggelos K. Katsaggelos (1st Edition), 2016, Cambridge University Press</li>	
+	<li><a href="https://cs.nyu.edu/~mohri/mlbook/" target="_blank">Foundations of Machine Learning</a>, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar (2nd Edition), 2018, MIT Press (<font color="#FF3300">Free Book</font>)</li>	
+	<li><a href="https://www.cs.ubc.ca/~murphyk/MLbook/" target="_blank">Machine Learning: a Probabilistic Perspective</a>, Kevin P. Murphy (1st Edition), 2012, MIT Press</li>	
+	<li><a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell (1st Edition), 1997, McGraw Hill Press</li>
+	<li><a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning</a>, Hal Daume III  (2nd Edition), 2017 (<font color="#FF3300">Free Book</font>)</li>
+	<li><a href="https://alex.smola.org/drafts/thebook.pdf" target="_blank">Introduction to Machine Learning</a>, Alex Smola, S.V.N. Vishwanathan (1st Edition), 2008, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>
+	<li><a href="http://themlbook.com/" target="_blank">The Hundred-Page Machine Learning Book</a>, Andriy Burkov, 2019 (<font color="#FF3300">Free Book - Draft Version</font>)</li>		
+	<li><a href="https://machinelearningmastery.com/machine-learning-with-python/" target="_blank">Machine Learning Mastery With Python</a>, Jason Brownlee, 2016</li>			
+	<li><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Reinforcement Learning: an Introduction</a>, Richard S. Sutton ve Andrew G. Barto (2nd Edition), 2020, MIT Press (<font color="#FF3300">Free Book</font>)</li>       
+	<li><a href="https://www.crcpress.com/Artificial-Intelligence-With-an-Introduction-to-Machine-Learning-Second/Neapolitan-Jiang/p/book/9781138502383" target="_blank">Artificial Intelligence - With an Introduction to Machine Learning</a>, Richard E. Neapolitan, Xia Jiang (2nd Edition), 2018, CRC Press</li>
+	<li><a href="https://www.deeplearning.ai/machine-learning-yearning/" target="_blank">Machine Learning Yearning</a>, Andrew Ng (1st Edition), 2020, deeplearning.ai (<font color="#FF3300">Free Book - Draft Version</font>)</li>	        
+	<li><a href="https://mitpress.mit.edu/books/machine-learning" target="_blank">Machine Learning - The New AI</a>,  Ethem Alpaydin (1st Edition), 2016, MIT Press</li>
+	<li><a href="https://www.manning.com/books/deep-learning-with-python" target="_blank">Deep Learning with Python</a>, Francois Chollet (2nd Edition), Manning Press (<font color="#FF3300">Free Book</font>)</li>           
+	<li><a href="https://www.deeplearningbook.org/" target="_blank">Deep Learning</a>, Ian Goodfellow, Yoshua Bengio, Aaron Courville (1st Edition), 2016, MIT Press (<font color="#FF3300">Free Book</font>)</li>       
+	<li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank">Neural Networks and Deep Learning</a>, Michael Nielsen, 2019 (<font color="#FF3300">Free Book</font>)</li>	     
+	<li><a href="https://www.springer.com/gp/book/9783319944623" target="_blank">Neural Networks and Deep Learning: A Textbook</a>, Charu C. Aggarwal (1st Edition), 2018, Springer</li>  
+	<li><a href="https://www.springer.com/gp/book/9789811367939" target="_blank">Advances in Deep Learning</a>, M. Arif Wani, Farooq Ahmad Bhat, Saduf Afzal ve Asif Iqbal Khan, 2020, Springer</li>  
+	<li><a href="https://www.manning.com/books/grokking-deep-learning" target="_blank">Grokking Deep Learning</a>, Andrew W. Trask (1st Edition), 2019, Manning</li>
+	<li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" target="_blank">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</a>, Aurelien Geron (2nd Edition), 2019, O'Reilly</li>	
+	<!--<li><a href="http://shop.oreilly.com/product/0636920030515thdo" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. MUller, Sarah Guido (1st Edition), 2017, O'Reilly</li>-->   
+	<li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</a>, Trevor Hastie, Robert Tibshirani, Jerome Friedman (2nd Edition), 2009, Springer (<font color="#FF3300">Free Book</font>)</li>   
+	<li><a href="https://mml-book.github.io/" target="_blank">Mathematics for Machine Learning</a>, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong (1st Edition), 2020, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>        
+	<li><a href="https://www.springer.com/gp/book/9783030403430" target="_blank">Linear Algebra and Optimization for Machine Learning: A Textbook</a>, Charu C. Aggarwal (1st Edition), 2020, Springer</li>	       
+	<li><a href="https://mitpress.mit.edu/books/optimization-machine-learning" target="_blank">Optimization for Machine Learning</a>, Suvrit Sra, Sebastian Nowozin, Stephen J. Wright (Edited -- 1st Edition), 2011, MIT Press</li>  
+	<li><a href="https://web.stanford.edu/~boyd/cvxbook/" target="_blank">Convex Optimization</a>, Stephen Boyd, Lieven Vandenberghe (1st Edition), 2004, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>  
+	<li><a href="https://www.sciencedirect.com/book/9780123814791/data-mining-concepts-and-techniques" target="_blank">Data Mining: Concepts and Techniques</a>, Jiawei Han, Micheline Kamber, Jian Pei (3rd Edition), 2012, Morgan Kaufmann</li>
+	<li><a href="http://www.dataminingbook.info/" target="_blank">Data Mining and Analysis: Fundamental Concepts and Algorithms</a>, Mohammed J. Zaki ve Wagner Meira, Jr. (1st Edition), 2014, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>	
+	<li><a href="https://www.cs.waikato.ac.nz/ml/weka/book.html" target="_blank">Data Mining: Practical Machine Learning Tools and Techniques</a>, Ian H. Witten, Eibe Frank, Mark A. Hall, Christopher J. Pal (4th Edition), 2016, Morgan Kaufmann Press</li>
+	<li><a href="https://www.springer.com/gp/book/9783319141411" target="_blank">Data Mining: The Textbook</a>, Charu C. Aggarwal (1st Edition), 2015, Springer Press</li>
+	<li><a href="http://charuaggarwal.net/clusterbook.pdf" target="_blank">Data Clustering</a>, Chandan K. Reddy, Charu C. Aggarwal  (1st Edition - Ed.), 2014, CRC Press (<font color="#FF3300">Free Book</font>)</li>   
+	</ul>
+      
+       
+
+  
+    
+	<br>         
+		<hr/>       
+			 
+			
+		<h2>Lecture Notes / Slides</h2>    
+		  
+				<ul style="margin-left : -13px;">		  	  		  
+					<li><strong>Week 1</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>History</i>, <i>Terminology and Basics</i>; <i>Supervised Learning</i>; <i>Regression Problem</i>; <i>Gradient Descent</i>)</li>
+					<ul>   
+					<li>About STATS 302</li>                         
+					<li>Introduction to Machine Learning</li>
+					<ul style="margin-left : -15px;">           
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I., 2019. <a href="https://hdsr.mitpress.mit.edu/pub/wot7mkc1/" target="_blank">Artificial intelligence—the revolution hasn’t happened yet</a>. Harvard Data Science Review, 1(1)
+					</i>   
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I. and Mitchell, T.M., 2015. <a href="https://science.sciencemag.org/content/349/6245/255.abstract" target="_blank">Machine learning: Trends, perspectives, and prospects</a>. Science, 349(6245), pp.255-260  
+					</i>					
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Breiman, L., 2001. <a href="https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full" target="_blank">Statistical modeling: The two cultures</a>. Statistical science, 16(3), pp.199-231     
+					</i>     
+					</li>					       
+					</ul>
+					  
+					   
+					
+					
+					
+					<li>Learning Problem</li>        
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Video</font>:
+					<i>CS156: Learning Systems (Yaser Abu-Mostafa, Caltech) - <a href="https://www.youtube.com/watch?v=mbyG85GZ0PI" target="_blank">Learning Problem</a>
+					</i>          
+					</li>					       
+					</ul>
+					
+					
+					
+					<li>Linear Regression</li>
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) [Part I] - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes1.pdf" target="_blank">Linear Regression</a>
+					</i>       
+					</li>		
+					<li><font color="blue">External Video</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="https://www.youtube.com/watch?v=4b4MUYve_U8" target="_blank">Linear Regression</a>
+					</i>       
+					</li>						    
+					</ul>
+					      
+					
+					<li><font color="#FF3300">Lab</font>: <a href="https://colab.research.google.com" target="_blank">Google Colab</a>, <a href="https://www.python.org/" target="_blank">Python</a> (+ <a href="https://numpy.org/" target="_blank">NumPy</a>), <a href="https://scikit-learn.org/" target="_blank">scikit-learn</a> and <a href="https://pandas.pydata.org/" target="_blank">pandas</a></li>     
+					</ul>     
+					
+					      
+					
+					
+					
+					    
+					
+					<br>   
+					<li><strong>Week 2</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Classification Problem</i>; <i>Regression Problem</i>)</li>
+					<ul>     
+					<li>Logistic Regression</li>
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) [Part II] - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes1.pdf" target="_blank">Logistic Regression</a>
+					</i>       
+					</li>		
+					<li><font color="blue">External Video</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="https://www.youtube.com/watch?v=het9HFqo1TQ" target="_blank">Logistic Regression</a>
+					</i>          
+					</li>
+					</ul>					
+					       
+					<li>Linear Discriminant Analysis (LDA)</li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Probabilistic Machine Learning: An Introduction by Kevin P. Murphy (2021), Chapter 9 - <a href="https://probml.github.io/pml-book/book1.html" target="_blank">LDA</a>
+					</i>     
+					</li>
+					</ul> 
+					    
+					
+					<li>k-Nearest Neighbors (kNN)</li>   
+					<li>Naive Bayes</li>    
+					<ul style="margin-left : -15px;">      
+					<li><font color="blue">Review</font>:  
+					<i>Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville, Chapter 3 - <a href="https://www.deeplearningbook.org/contents/prob.html" target="_blank">Probability</a>
+					</i> 					
+					<li><font color="blue">Article</font>:
+					<i>Hand, D.J. and Yu, K., 2001. <a href="https://www.jstor.org/stable/1403452" target="_blank">Idiot's Bayes—not so stupid after all?</a>. International statistical review, 69(3), pp.385-398
+					</i>   
+					</li>					       
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS4780: Machine Learning for Intelligent Systems (Kilian Weinberger, Cornell U) - <a href="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html" target="_blank">Bayes Classifier and Naive Bayes</a>
+					</i>       
+					</li>		
+					<li><font color="blue">External Video</font>:
+					<i>CS4780: Machine Learning for Intelligent Systems (Kilian Weinberger, Cornell U) - <a href="https://www.youtube.com/watch?v=pDHEX2usCS0" target="_blank">Naive Bayes</a>
+					</i>          
+					</li>
+					</ul>           
+					
+				
+					
+					<li><font color="#FF3300">Lab</font>: Linear Regression, Logistic Regression, LDA, kNN</li>
+					<li><font color="#FF3300">Homework 1</font>: TBA</li>
+					</ul>  
+					
+					
+				   	
+	   
+					
+					<br>
+					<li><strong>Week 3</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Feed-forward Neural Networks</i>; <i>Regression Problem</i>; <i>Classification Problem</i>)</li>
+					<ul>
+					<li>Perceptrons</li>
+					<ul style="margin-left : -15px;">          
+					<li><font color="blue">Article (Optional / Historical)</font>:   
+					<i>McCulloch, W.S. and Pitts, W., 1943. <a href="https://link.springer.com/article/10.1007%2FBF02478259" target="_blank">A logical calculus of the ideas immanent in nervous activity</a>. The bulletin of mathematical biophysics, 5(4), pp.115-133    
+					</i> 
+					<li><font color="blue">Article (Optional / Historical)</font>:   
+					<i>Rosenblatt, F., 1958. <a href="https://psycnet.apa.org/record/1959-09865-001" target="_blank">The perceptron: a probabilistic model for information storage and organization in the brain</a>. Psychological review, 65 (6), p. 386
+					</i> 
+					</li>					
+					</li>
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Neural Networks and Deep Learning by Michael Nielsen (2019), Chapter 1 - <a href="http://neuralnetworksanddeeplearning.com/chap1.html#perceptrons" target="_blank">Perceptrons</a>
+					</i> 
+					</li>
+					</ul>   
+					<li>Multi-layer Perceptrons (MLPs)</li>
+					<ul style="margin-left : -15px;">          
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/deep_learning_notes.pdf" target="_blank">Backpropagation</a>
+					</i>           
+					</li>
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes5.pdf" target="_blank">Regularization and Model Selection</a>
+					</i>           
+					</li>					     
+					</ul> 
+					
+					
+					
+					   
+					<!--<li>Feed-forward Neural Networks</li> -->
+					  
+				
+					<li><font color="#FF3300">Lab</font>: Introduction to <a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow</a>, Neural Networks</li> 	
+					<li><font color="#FF3300">Homework 2</font>: TBA</li>	   				
+					</ul>
+					
+					   
+					
+					   
+					<br>
+					<li><strong>Week 4</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Regression Problem</i>; <i>Classification Problem</i>)</li>
+					<ul>  
+					<li>Decision Trees</li>
+					<li>Ensembles: Bagging and Boosting</li>      
+					<li>Support Vector Machines (SVM)</li>   
+					<ul style="margin-left : -15px;">           
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) [Part VI] - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes3.pdf" target="_blank">SVM</a>
+  					</i>       
+					</li>						
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS4780: Machine Learning for Intelligent Systems (Kilian Weinberger, Cornell U) - <a href="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html" target="_blank">SVM</a>
+					</i>       
+					</li>		
+					<li><font color="blue">External Video</font>:
+					<i>CS4780: Machine Learning for Intelligent Systems (Kilian Weinberger, Cornell U) - <a href="https://www.youtube.com/watch?v=xpHQ6UhMlx4" target="_blank">SVM</a>   
+					</i>          
+					</li>
+					</ul> 
+					
+					     
+					
+					<li><font color="#FF3300">Lab</font>: Decision Trees, Forests</li>	
+					<li><font color="#FF3300">Homework 3</font>: TBA</li>					
+					</ul>
+					
+					
+					
+					
+					<br>   
+					<li><strong>Week 5</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Unsupervised Learning</i>; <i>Dimensionality Reduction</i>; <i>Clustering (+ Evaluation and Analysis)</i>)</li>      
+					<ul>
+					<li>Principal Component Analysis (PCA)</li>  
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="http://cs229.stanford.edu/notes2020spring/cs229-notes10.pdf" target="_blank">PCA</a>
+  					</i>       
+					</li>    
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS4786: Machine Learning for Data Science (Karthik Sridharan, Cornell U) - <a href="https://www.cs.cornell.edu/courses/cs4786/2020sp/lectures/lec03.pdf" target="_blank">PCA</a>
+					</i>       
+					</li>      
+					</ul>
+					
+			
+					
+					<li><i>k</i>-means Clustering</li>  
+					
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">External Colab Practice</font>:
+					<i>Google ML Crash Course with TensorFlow: <a href="https://developers.google.com/machine-learning/clustering/programming-exercise" target="_blank">Clustering Programming Exercise</a>
+  					</i>    
+					</li>
+					<li><font color="blue">External Demo</font>:
+					<i>Andrey A. Shabalin (U Utah): <a href="http://shabal.in/visuals/kmeans/1.html" target="_blank"><i>k</i>-means Clustering</a>
+  					</i>      
+					</li>					
+					
+					   
+					</ul> 
+					
+					
+					
+				   
+					
+					
+					<li><font color="#FF3300">Lab</font>: PCA, <i>k</i>-means</li>	   
+					<li><font color="#FF3300">Homework 4</font>: TBA</li>	
+					<li><font color="#FF3300"><strong>MIDTERM</strong></font> (Date: TBA)</li>	
+					</ul>   
+					
+					
+					<br>   
+					<!-- Bishop Book - Chapter 8 -->      
+					<li><strong>Week 6</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Graphical Models</i>)</li>   
+					<ul>    
+					<li>Bayesian Networks</li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:        
+					<i>Pattern Recognition and Machine Learning by Christopher Bishop (2006), Chapter 8.1 - <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Bayesian Networks</a>
+					</i> 
+					</li>					
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS228 - Probabilistic Graphical Models (Stefano Ermon, Stanford U) - <a href="https://ermongroup.github.io/cs228-notes/representation/directed/" target="_blank">Bayesian Networks</a>
+  					</i>  
+					</li>
+					</ul>
+					
+					
+					<li>Markov Random Fields (MRF)</li>
+					<ul style="margin-left : -15px;">        
+					<li><font color="blue">Book Chapter</font>:        
+					<i>Pattern Recognition and Machine Learning by Christopher Bishop (2006), Chapter 8.3 - <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Bayesian Networks</a>
+					</i> 
+					</li>					
+					<li><font color="blue">External Lecture Notes</font>:
+					<i>CS228 - Probabilistic Graphical Models (Stefano Ermon, Stanford U) - <a href="https://ermongroup.github.io/cs228-notes/representation/directed/" target="_blank">MRF</a>       
+  					</i> 
+					</li>
+					</ul>
+									
+					
+					<li>Factor Graphs</li>   
+					<ul style="margin-left : -15px;">      
+					<li><font color="blue">Book Chapter</font>:           
+					<i>Pattern Recognition and Machine Learning by Christopher Bishop (2006), Chapter 8.4.3 - <a href="#">Factor Graphs</a>
+					</i> 
+					</li>
+					</ul>
+					
+					<li><font color="#FF3300">Lab</font>: Graphical Models</li>	   
+					<li><font color="#FF3300">Homework 5</font>: TBA</li>	
+					</ul> 
+    
+       
+					<br>        
+					<li><strong>Week 7</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Data</i>)</li>   
+					<ul>      
+					<li>Sequential Data</li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Pattern Recognition and Machine Learning by Christopher Bishop (2006), Chapter 13 - <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Sequential Data</a>
+					</i> 
+					</li>
+					</ul> 					
+					<li>Hidden Markov Models (HMMs)</li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:         
+					<i>Pattern Recognition and Machine Learning by Christopher Bishop (2006), Chapter 13.2 - <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">HMMs</a>
+					</i> 
+					</li>   
+					</ul> 					
+					<li>Generative Models</li>     
+					<li>Semi-supervised Learning</li>         
+					<li><font color="#FF3300">Lab</font>: HMMs</li>	   
+					<li><font color="#FF3300">Homework 6</font>: TBA</li>	 
+					<li><font color="#FF3300">Project Presentations</font> (Date: TBA)</li>	 
+					</ul>    
+   				</li>        
+				     
+		   
+				
+				</ul>  
+
+	<br>
+	
+		<hr/>    
+		       
+	
+		<h2>Grading</h2>  
+		    
+		<ul>   
+		<li><strong>Homework</strong>: 20%</li>
+		<ul>    
+		<li>Mathematical, Conceptual, or Programming related</li>
+		<li>Submit on Sakai; 6 in total, the lowest score dropped</li>   
+		</ul> 
+		
+		
+		<li><strong>Weekly Journal</strong>: 10%</li> 
+		<ul>    
+		<li>Each week, write a page or so about what you have learned</li>
+		<li>Submit on Sakai; 2 points off for each missing journal, capped at 10</li>
+		</ul> 
+		  
+		<li><strong>Midterm</strong>: 20%</li> 		
+		<li><strong>Final</strong>: 30%</li> 	
+		<li><strong>Project</strong>: 20%</li> 	
+		<ul>    
+		<!-- example report + presentation rubricks for ML: https://www.cs.toronto.edu/~huang/courses/csc2515_2020f/Lectures.html -->
+		<li>Report Rubrick (TBA)</li>
+		<li>Presentation Rubrick (TBA)</li> 
+		</ul> 
+	
+		
+		</ul> 
+		
+  	<br>
+	  
+		<hr/>    
+		
+	
+	<h2>Other Books</h2>
+	
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>				
+	</ul>
+				
+			    
+	<strong><font color="#FF3300">Python Programming for Data Science / Analytics</font></strong>: 
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">Python Data Science Handbook: Essential Tools for Working with Data</a>, Jake VanderPlas (1st Edition), 2017, O'Reilly Press</li>			
+		<li><a href="http://shop.oreilly.com/product/0636920050896.do" target="_blank">Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython</a>, Wes McKinney (2nd Edition), 2017, O'Reilly Press</li>		
+		<li><a href="http://shop.oreilly.com/product/0636920179337.do" target="_blank">Data Science from Scratch: First Principles with Python</a>, Joel Grus (2nd Edition), 2019, O'Reilly Press</li>		
+		<li><a href="https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. Muller, Sarah Guido (1st Edition), 2017, O'Reilly Press</li>
+	</ul>
+
+
+	<strong><font color="#FF3300">Data Visualization</font></strong>:     
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://kieranhealy.org/publications/dataviz/" target="_blank">Data Visualization: A Practical Introduction</a>, Kieran Healy (1st Edition), 2019, Princeton University Press</li>			
+		<li><a href="https://www.cs.ubc.ca/~tmm/vadbook/" target="_blank">Visualization Analysis and Design</a>,Tamara Munzner (1st Edition), 2014, CRC Press</li>		
+		<li><a href="https://www.edwardtufte.com/tufte/books_vdqi" target="_blank">The Visual Display of Quantitative Information</a>, Edward R. Tufte (2nd Edition), 2001, Graphics Press</li>		
+		<li><a href="https://serialmentor.com/dataviz/index.html" target="_blank">Fundamentals of Data Visualization - A Primer on Making Informative and Compelling Figures</a>, Claus O. Wilke (1st Edition), 2019, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="http://shop.oreilly.com/product/0636920041320.do" target="_blank">Making Data Visual - A Practical Guide to Using Visualization for Insight</a>, Danyel Fisher, Miriah Meyer (1st Edition), 2018, O'Reilly Press</li>		
+	</ul>
+
+   
+	<br>
+		<hr/>      
+		
+	
+      
+	<h2>Other Materials to Check</h2>
+	
+	<ul style="margin-left : -13px;">	 				
+<!--		<li>Philip W. L. Fong, 2004. <a href="http://www.mathcs.emory.edu/~lxiong/papers/fong04how.pdf" target="_blank">How to Read a CS Research Paper?</a> + 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140.	
+		</li>		      
+		-->
+		
+		<li>Google <a href="https://developers.google.com/machine-learning/glossary" target="_blank">Machine Learning Glossary</a>
+		</li>
+		<li>Philip W. L. Fong, 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140  	
+		</li>	
+		<li>An Online LaTeX Editor: <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>   
+		</li>	
+		
+	</ul>
+	   
+	<br>   
+
+
+<!--   
+  	<br>
+	     
+		<hr/>    
+		
+	
+	<h2>Cevrimici Kaynaklar (Online Resources)</h2>		      
+	
+	<ul style="margin-left : -13px;">	 			
+		<li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>: Machine Learning by Andrew Ng</li>	
+		<li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF" target="_blank">Youtube</a>: DeepMind x UCL | Deep Learning Lecture Series 2020</li>	
+	</ul>	
+-->       		  
+		   
+		  
+		
+		
+
+				
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
