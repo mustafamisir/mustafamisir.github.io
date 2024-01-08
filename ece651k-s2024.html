@@ -1,0 +1,1687 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [ ECE 651K ] Software Engineering @ Spring 2023-2024, Duke Kunshan University</title></head>
+    
+  
+
+<body>      
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GK222RBJ36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GK222RBJ36');
+</script>
+  
+            
+          
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="80%">
+      
+<tbody><tr><td align="right">   
+</td></tr> 
+         
+<tr><td style="text-align:justify;">    
+             
+<img src="DKU_Logo_whitebackdrop-perc15-v2.png" style="width:25%" align="right">  
+
+<h1>Software Engineering (ECE 651K)</h1>       
+<h2>Spring 2023-2024 (14 weeks, 35 hours)</h2>     
+    
+                     
+        
+                             
+				                   
+	<h3><font color="#FF3300">Course Period</font>: January 8 - April 25, 2024</h3>   
+	<ul style="margin-left : -13px;">	 
+		<!--<li><strong>Lectures</strong>: Tuesday / Thursday @ 10:30-11:45 (Classroom: WDR 1003 + Zoom)</li>-->
+		<li><strong>Lectures</strong>: Tuesday / Thursday @ 10:30-11:45 (Classroom: WDR 1003)</li>
+		<li><strong>Office Hours</strong>: Thursday @ 09:00-10:00 (Office: WDR 2106)</li>
+		<!--<li><strong>Recitations / Labs</strong>: Monday / Wednesday @ 20:10-21:10 (Classroom: IB 1056 + Zoom)</li>   -->  
+	</ul>            
+                
+	   
+	<strong>Instructor</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (Office: WDR 2106), <a href="mailto:mustafa.misir [at] dukekunshan.edu.cn">mustafa.misir [at] dukekunshan.edu.cn</a> </br>
+	    
+	<strong>Teaching Assistant</strong> (DKU / On-Campus): <a href="#" target="_blank">Zhibo Jia</a> (Office/Desk: IB2072-2B25), <a href="mailto:zhibo.jia [at] duke.edu">zhibo.jia [at] duke.edu</a>   
+	<ul style="margin-left : -13px;  margin-top:3px;  margin-bottom:2px">	                   
+		<li><strong>Office Hours</strong>: Monday / Tuesday / Wednesday / Thursday @ 16:00-17:00 (IB2072-2B25)</li>
+	</ul>          
+	<!--<br>-->  
+	<strong>Teaching Assistant</strong> (Duke U. / Remote): <a href="#" target="_blank">Jing Wang</a> (Office: Zoom), <a href="mailto:jing.wang [at] duke.edu">jing.wang [at] duke.edu</a> 
+	<ul style="margin-left : -13px;  margin-top:3px">		
+		<li><strong>Office Hours</strong>: Monday / Tuesday / Wednesday / Thursday / Friday @ 11:00-12:00 (Zoom)</li>
+	</ul> 	               
+	    
+	<!--<strong>Lab Instructor</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA <br>
+	
+	<strong>Teaching Assistant</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA      -->    
+	
+	</h2>           
+	<!--<br/><br/>-->      
+      
+   
+          
+                   
+     
+<!-- SRC: Software Engineering, Ian Sommerville (10th Edition), 2015, Pearson 
+Software products may be developed for a particular customer or may be developed for a general market. 
+-->  
+<a href="https://en.wikipedia.org/wiki/Software" target="_blank">Software</a> refers to <a href="https://en.wikipedia.org/wiki/Computer_program" target="_blank">computer programs</a> and associated documentation. There are many different types of software systems, ranging from simple embedded systems to complex, worldwide information systems. 
+<!-- SRC: Software Engineering: A Practitioners Approach, Roger Pressman, Bruce Maxim (9th Edition), 2020, McGraw-Hill -->
+Whether it resides within a mobile device, on the desktop, in the cloud, or within a mainframe computer or autonomous machine, software is an <font color="red">information transformer</font>-<i>producing</i>, <i>managing</i>, <i>acquiring</i>, <i>modifying</i>, <i>displaying</i>, or <i>transmitting</i> information that can be as simple as a single bit or as complex as an augmented reality representation derived from data acquired from dozens of independent sources and then overlaid on the real world.
+         
+Software systems are abstract and intangible. They are not constrained by the properties of materials, nor are they governed by physical laws or by manufacturing processes. This simplifies software engineering, as there are no natural limits to the potential of software. However, because of the lack of physical constraints, software systems can quickly become extremely complex, difficult to understand, and expensive to change. 
+    
+Software engineering is an engineering discipline that is concerned with all aspects of software production from initial conception to operation and maintenance. Software engineering is essential for the functioning of government, society, and national and international businesses and institutions. 
+
+
+
+  
+
+<br/><br/>  
+
+This course focuses on software skills required to move to larger scale projects: design, testing, and teamwork. The class is built around learning fundamental design principles, and then seeing how they appear at different scales. The class begins with the small scale, i.e., a few classes, and we explore design patterns and revisit testing. We move to larger and larger scales, until we are considering system architecture, and revisit similar principles throughout.                
+
+      
+<br/><br/>  
+           
+      
+The course is <i><font color="#FF3300">aligned with</font></i> <a href="https://adhilton.pratt.duke.edu/teaching/ece-651" target="_blank">ECE 651</a> at <a href="https://duke.edu/" target="_blank">Duke University</a> [ <a href="https://adhilton.pratt.duke.edu/sites/adhilton.pratt.duke.edu/files/u37/syl_6.pdf" target="_blank">Syllabus</a> ] 
+      
+        
+    
+
+   
+
+<br/>
+<!-- 
+<br/>           
+<font color="blue"><u>By the end of this course, <strong>you will be able to</strong></u></font>:
+
+<ol style="margin-left : -13px;">	     
+	<li><font color="#FF3300"><strong>analyze</strong></font> TBA
+</ol> 
+-->            
+                      
+			  
+
+        
+
+                    
+</br>   
+<!--+++ -->    
+<i><font color="#FF3300">Follow</font></i> <a href="https://canvas.duke.edu" target="_blank"><strong>Canvas</strong></a> for <strong>announcements</strong> and <strong>discussions</strong>
+            
+		 
+		            
+     
+	      
+	     
+
+</br>    
+<style>   
+.wrapingimage  
+{       
+float: right;                 
+margin: 30px 0px 3px 40px;   
+border: 0px;    
+width:50%; 
+}                             
+</style> 
+
+
+    
+  
+   
+
+	<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        		
+	<br><br><br><br><br>-->
+	<br>       
+	
+		<hr/>
+
+	    	   
+	<h2>Reference Books</h2>      	
+	<!--There is <font color="#FF3300"><u>no official textbook</u></font> for this course. Still, the following books can be used as references.  -->
+	
+	   
+	There is <font color="#FF3300"><u>no official textbook</u></font> for this course. Still, the following books can be used as references.   
+		  
+					
+			         
+		          
+				  
+	    			  
+	<br/><br/>  			         
+	<strong><font color="#FF3300">Supplementary Books</font></strong>:   
+               
+	                   
+	<ul style="margin-left : -13px;">	    
+	
+     
+	
+      	
+		<li>
+		<a href="https://www.amazon.com/Software-Engineering-10th-Ian-Sommerville/dp/0133943038/" target="_blank">Software Engineering</a>, Ian Sommerville (10th Edition), 2015, Pearson
+		</li>
+		
+		<li>
+		<a href="https://www.mheducation.com/highered/product/software-engineering-practitioner-s-approach-pressman-maxim/M9781259872976.html" target="_blank">Software Engineering: A Practitioners Approach</a>, Roger Pressman, Bruce Maxim (9th Edition), 2020, McGraw-Hill
+		</li> 	
+		      
+		
+		<li>
+		<a href="https://www.pearson.com/en-us/subject-catalog/p/software-engineering-theory-and-practice/P200000003228/9780136061694" target="_blank">Software Engineering: Theory and Practice</a>, Shari Lawrence Pfleeger, Joanne M. Atlee (4th Edition), 2010, Pearson
+		</li> 	  
+	        
+
+		
+		
+		<li>
+		<a href="https://www.amazon.com/Engineering-Software-Products-Ian-Sommerville/dp/013521064X" target="_blank">Engineering Software Products: An Introduction to Modern Software Engineering</a>, Ian Sommerville (1st Edition), 2019, Pearson
+		</li>    
+		    		
+		
+		<li>
+		<a href="https://www.pearson.com/en-us/subject-catalog/p/software-architecture-in-practice/P200000000111/9780137468218" target="_blank">Software Architecture in Practice</a>, Len Bass, Paul Clements, Rick Kazman  (4th Edition), 2021/2022, Pearson
+		</li>			
+		
+		<li>
+		<a href="https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/" target="_blank">Modern Software Engineering: Doing What Works to Build Better Software Faster</a>, David Farley (1st Edition), 2021, Addison-Wesley
+		</li>  		
+
+
+		
+		<li>
+		<a href="https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8/" target="_blank">Design Patterns: Elements of Reusable Object-Oriented Software</a>, Gamma Erich, Helm Richard, Johnson Ralph, Vlissides John, Grady Booch (1st Edition), 1994, Addison-Wesley
+		</li>		
+
+      		
+		<li>
+		<a href="https://www.pearson.com/en-us/subject-catalog/p/object-oriented-software-engineering-using-uml-patterns-and-java/P200000003319" target="_blank">Object-Oriented Software Engineering Using UML, Patterns, and Java</a>, Bernd Bruegge, Allen H. Dutoit  (3rd Edition), 2011/2014, Pearson
+		</li>			
+  
+		<li>
+		<a href="https://www.amazon.com/Object-Oriented-Modeling-Design-James-Rumbaugh-ebook/dp/B00AU0JUIS/" target="_blank">Object-Oriented Modeling and Design with UML</a>, Michael R. Blaha, James Rumbaugh  (2nd Edition), 2012, Pearson
+		</li>  
+   
+ 
+  
+		<li>
+		<a href="https://www.amazon.com/Object-Oriented-Classical-Software-Engineering-Stephen/dp/0073376183/" target="_blank">Object-Oriented and Classical Software Engineering</a>, Stephen Schach (8th Edition), 2010, McGraw Hill
+		</li> 	        
+	          
+ 
+	
+		<li>
+		<a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG/" target="_blank">Domain-Driven Design: Tackling Complexity in the Heart of Software</a>, Evans Eric (1st Edition), 2003, Addison-Wesley
+		</li>    
+		
+		
+  
+		<li>
+		<a href="https://www.amazon.com/Beginning-Software-Engineering-Rod-Stephens-dp-1119901707/dp/1119901707/" target="_blank">Beginning Software Engineering</a>, Rod Stephens (2nd Edition), 2022, Wiley
+		</li> 	  
+
+      
+
+    
+    
+  
+
+		
+  
+
+      
+		<li>
+		<a href="https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/" target="_blank">Clean Architecture: A Craftsman's Guide to Software Structure and Design</a>, Robert C. Martin (1st Edition), 2017, Pearson / Prentice Hall      
+		</li>
+		
+               
+		<li>
+		<a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/" target="_blank">Clean Code: A Handbook of Agile Software Craftsmanship</a>, Robert C. Martin (1st Edition), 2008, Pearson
+		</li>
+
+
+
+		
+         
+
+ 
+		<li>
+		<a href="https://www.microsoftpressstore.com/store/code-complete-9780735619678" target="_blank">Code Complete: A Practical Handbook of Software Construction</a>, Steve McConnell (2nd Edition), 2004, Microsoft Press [ <a href="https://www.construx.com/online-courses/code-complete-essentials/" target="_blank">Online Course</a> ]
+		</li>      
+	
+
+		<li>
+		<a href="https://www.amazon.com/PSP-Self-Improvement-Process-Software-Engineers/dp/0321305493" target="_blank">PSP: A Self-Improvement Process for Software Engineers</a>, Watts S. Humphrey(1st Edition), 2005, Addison-Wesley     
+		</li> 	
+		
+
+		
+		
+		
+		<li>
+		<a href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/" target="_blank">The Pragmatic Programmer: Your Journey to Mastery</a>, David Thomas, Andrew Hunt (2nd Edition), 2019, Addison-Wesley
+		</li> 	
+
+
+
+
+
+
+        
+		<li>
+		<a href="https://www.computer.org/education/bodies-of-knowledge/software-engineering/" target="_blank">Software Engineering Body of Knowledge (SWEBOK)</a>, Pierre Bourque, Richard E. Fairley (Ed. - Version 3.0), 2014, IEEE Computer Society (<font color="#FF3300">Free Book</font>)
+		</li> 
+
+
+
+
+      
+		<li>
+		<a href="https://www.oreilly.com/library/view/making-software/9780596808310/" target="_blank">Making Software: What Really Works, and Why We Believe</a>, Andy Oram, Greg Wilson (1st Edition), 2010, O'Reilly
+		</li> 	  
+	  
+	      
+
+		
+
+     		
+	  
+		<li>
+		<a href="https://www.amazon.com/Philosophy-Software-Design-2nd-ebook/dp/B09B8LFKQL/" target="_blank">A Philosophy of Software Design</a>, John K. Ousterhout (2nd Edition), 2021
+		</li> 	  	  
+	  
+          
+	      
+     
+		<li>
+		<a href="https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/" target="_blank">Mythical Man-Month, The: Essays on Software Engineering</a>, Frederick Brooks Jr. (Anniversary Edition), 1995, Addison-Wesley   
+		</li>    	  
+	  	 
+		 
+		 
+		<li>
+		<a href="https://www.amazon.com/Fundamentals-Software-Architecture-Engineering-Approach-ebook/dp/B0849MPK73/" target="_blank">Fundamentals of Software Architecture: An Engineering Approach</a>, Mark Richards, Neal Ford (1st Edition), 2020, O'Reilly
+		</li>		 
+		
+		<li>
+		<a href="https://www.amazon.com/Design-Programmer-Architect-Pragmatic-Programmers/dp/1680502093/" target="_blank">Design It!: From Programmer to Software Architect</a>, Michael Keeling (1st Edition), 2017, Programatic Bookshelf       
+		</li>			
+
+         
+		      
+		<li>
+		<a href="https://www.amazon.com/Fundamentals-Software-Architecture-Engineering-Approach-ebook/dp/B0849MPK73/" target="_blank">Deployment and Operations for Software Engineers: A DevOps Engineering Textbook</a>, Len Bass, John Klein (2nd Edition), 2023 (<font color="#FF3300">Free Book</font>) [ <a href="https://www.youtube.com/user/lenjbass/videos" target="_blank">Lecture Videos</a> / <a href="https://github.com/len-bass/dosebook" target="_blank">Slides</a> (CMU: <a href="https://mse.isri.cmu.edu/0_documents/syllabi/fa2021/17646-devops.pdf" target="_blank">Syllabus</a>) ]      
+		</li>			   
+        
+	      
+         
+		<li>
+		<!-- : How to Create World-Class Agility, Reliability, & Security in Technology Organizations -->        
+		<a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B09G2GS39R/" target="_blank">The DevOps Handbook</a>, Gene Kim, Jez Humble, Patrick Debois, John Willis, Nicole Forsgren (2nd Edition), 2021, IT Revolution      
+		</li>  
+
+		 
+		<li>
+		<a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/" target="_blank">Software Engineering at Google: Lessons Learned from Programming Over Time</a>, Titus Winters, Tom Manshreck, Hyrum Wright (1st Edition), 2020, O'Reilly      
+		</li>    	 
+   
+	  
+	        
+
+
+
+		
+	</ul> 
+   
+          
+
+	<strong><font color="#FF3300">Java Programming</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+      		   
+	<li><a href="https://deitel.com/java-how-to-program-11-e-early-objects-version/" target="_blank">Java - How to Program: Early Objects</a>, Paul Deitel, Harvey Deitel (11th Edition), 2018, Pearson</li> 		
+
+	<li><a href="https://www.pearson.com/en-us/subject-catalog/p/starting-out-with-java-from-control-structures-through-objects/P200000003261/9780134802817" target="_blank">Starting Out with Java: From Control Structures through Objects</a>, Tony Gaddis (7th Edition), 2019, Pearson</li> 
+
+
+	<li><a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/" target="_blank">Effective Java</a>, Joshua Bloch (3rd Edition), 2017, Addison-Wesley</li> 
+
+	<li><a href="https://www.amazon.com/Java-Complete-Reference-Herbert-Schildt/dp/1260463419/" target="_blank">Java: The Complete Reference</a>, Herbert Schildt (12th Edition), 2021, McGraw Hill</li>          
+	
+	<li><a href="https://www.amazon.com/Java-Performance-Depth-Advice-Programming/dp/1492056111/" target="_blank">Java Performance: In-Depth Advice for Tuning and Programming Java 8, 11, and Beyond</a>, Scott Oaks (2nd Edition), 2020, O'Reilly</li>  	
+  
+	
+	<li><a href="https://www.amazon.com/Core-Java-Fundamentals-Oracle-Press-dp-0137673620/dp/0137673620/" target="_blank">Core Java: Volume 1 - Fundamentals</a>, Cay Horstmann (12th Edition), 2021, Oracle</li>  	
+	    
+      
+	</ul>    
+	
+	
+	
+	       
+
+	<strong><font color="#FF3300">Software Testing</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+      		
+	<li><a href="https://www.amazon.com/Introduction-Software-Testing-Paul-Ammann/dp/1107172012/" target="_blank">Introduction to Software Testing</a>, Paul Ammann, Jeff Offutt (2nd Edition), 2016, Cambridge University</li> 	
+	
+	<li><a href="https://www.amazon.com/Software-Testing-Craftsmans-Approach-Fifth/dp/0367767627/" target="_blank">Software Testing: A Craftsman’s Approach</a>, Paul C. Jorgensen, Byron DeVries (5th Edition), 2022, Auerbach / CRC</li> 		
+	
+
+	<li><a href="https://www.amazon.com/Essentials-Software-Testing-Ralf-Bierig-ebook/dp/B09B3WXPBL/" target="_blank">Essentials of Software Testing</a>, Ralf Bierig, Stephen Brown, Edgar Galvan, Joe Timoney (1st Edition), 2021, Cambridge University</li> 		
+
+ 	<li><a href="https://www.amazon.com/Unit-Testing-Principles-Practices-Patterns/dp/1617296279/" target="_blank">Unit Testing Principles, Practices, and Patterns</a>, Vladimir Khorikov  (1st Edition), 2020, Manning</li> 	  
+	
+	
+                
+	</ul> 
+
+	
+
+
+
+	<strong><font color="#FF3300">Refactoring & Technical Debt</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+	
+	<li>
+	<a href="https://martinfowler.com/books/refactoring.html" target="_blank">Refactoring: Improving the Design of Existing Code</a>, Martin Fowler (2nd Edition), 2018, Addison-Wesley
+	</li>
+	
+
+	<li>
+	<a href="https://www.amazon.com/Refactoring-Software-Design-Smells-Technical-ebook/dp/B00PIREN5I/" target="_blank">Refactoring for Software Design Smells: Managing Technical Debt</a>, Girish Suryanarayana, Ganesh Samarthyam, Tushar Sharma (1st Edition), 2014, Morgan Kaufmann
+	</li>			 	
+	      
+	<li>
+	<a href="https://mitpress.mit.edu/9780262542111/technical-debt-in-practice/" target="_blank">Technical Debt in Practice: How to Find It and Fix It</a>, Neil Ernst, Rick Kazman, Julien Delange (1st Edition), 2021, MIT Press      
+	</li>
+	
+
+	<li>
+	<a href="https://www.amazon.com/Managing-Technical-Debt-Development-Engineering/dp/013564593X/" target="_blank">Managing Technical Debt: Reducing Friction in Software Development</a>, Philippe Kruchten, Robert Nord, Ipek Ozkaya (1st Edition), 2019, Addison-Wesley     
+	</li>
+		      
+		               
+	</ul> 
+	
+	
+    
+	
+	<strong><font color="#FF3300">Agile Software Development</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+	
+	<li>
+	<a href="https://www.oreilly.com/library/view/clean-agile-back/9780135782002/" target="_blank">Clean Agile: Back to Basics</a>, Robert C. Martin (1st Edition), 2008, Pearson
+	</li>
+	
+	      
+	<li>
+	<a href="https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364/" target="_blank">Succeeding with Agile: Software Development Using Scrum</a>, Mike Cohn (1st Edition), 2009, Addison-Wesley
+	</li>			  
+		  
+     
+	<li>
+	<a href="https://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685/" target="_blank">User Stories Applied: For Agile Software Development</a>, Mike Cohn (1st Edition), 2004, Addison-Wesley
+	</li>			 
+	
+	<li>
+	<a href="https://www.amazon.com/Essential-Scrum-Practical-Addison-Wesley-Signature-ebook/dp/B008NAKA5O/" target="_blank">Essential Scrum: A Practical Guide to the Most Popular Agile Process</a>, Rubin Kenneth S. (1st Edition), 2012, Addison-Wesley
+	</li>	
+	
+      
+      
+		               
+	</ul> 
+
+   
+
+	<strong><font color="#FF3300">User Interface (UI) / User Experience (UX) Design</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+	      
+	
+  
+	<li><a href="https://www.amazon.com/User-Interface-Design-Engineering-Perspective/dp/0321181433/" target="_blank">User Interface Design: A Software Engineering Perspective</a>, Soren Lauesen (1st Edition), 2004, Addison-Wesley</li>	
+	  
+	<li><a href="https://www.amazon.com/Designing-Mind-Understanding-Interface-Guidelines/dp/0128182024/" target="_blank">Designing with the Mind in Mind</a>, Jeff Johnson (3rd Edition), 2020, Morgan Kaufman</li>	
+	
+
+	<li><a href="https://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571/" target="_blank">About Face: The Essentials of Interaction Design</a>, Alan Cooper, Robert Reimann, David Cronin, Christopher Noessel	 (4th Edition), 2014, Wiley</li>    	
+	       	
+	
+	
+	<li><a href="https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654/" target="_blank">The Design Of Everyday Things</a>, Don Norman (1st Edition), 2013, Basic Books</li>    
+
+
+	<li><a href="https://www.amazon.com/Measuring-User-Experience-Interactive-Technologies/dp/0128180803/" target="_blank">Measuring the User Experience: Collecting, Analyzing, and Presenting UX Metrics</a>, Bill Albert, Tom Tullis (3rd Edition), 2022, Interactive Technologies</li>     	
+
+ 	<li><a href="https://www.amazon.com/Observing-User-Experience-Practitioners-Research/dp/0123848695/" target="_blank">Observing the User Experience: A Practitioner's Guide to User Research</a>, Elizabeth Goodman, Mike Kuniavsky, Andrea Moed (2nd Edition), 2012, Morgan Kaufmann</li>     	   
+      
+ 	<li><a href="https://www.amazon.com/Observing-User-Experience-Practitioners-Research/dp/0123848695/" target="_blank">The User Experience Team of One: A Research and Design Survival Guide</a>, Leah Buley (1st Edition), 2013, Rosenfeld </li>     			 
+			 
+       
+             
+	</ul>     
+	
+	                
+	
+	<strong><font color="#FF3300">Microservices</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+	
+	<li><a href="https://www.manning.com/books/microservices-patterns" target="_blank">Microservices Patterns: With Examples in Java</a>, Chris Richardson (1st Edition), 2018, Manning</li>     	
+	
+	
+	<li><a href="https://www.amazon.com/Strategic-Monoliths-Microservices-Innovation-Architecture-ebook/dp/B09D2YW2HG/" target="_blank">Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture</a>, Vaughn Vernon, Tomasz Jaskula (1st Edition), 2021, Addison-Wesley</li>   	
+   
+   
+   	<li><a href="https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/" target="_blank">Building Microservices: Designing Fine-Grained Systems</a>, Sam Newman (2nd Edition), 2021, O'Reilly</li> 
+	
+	<li><a href="https://www.oreilly.com/library/view/monolith-to-microservices/9781492047834/" target="_blank">Monolith to Microservices</a>, Sam Newman (1st Edition), 2019, O'Reilly</li> 		   
+		     
+             
+	</ul>      
+           	          
+	            
+	
+	      
+	
+	<strong><font color="#FF3300">Computer Security</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+	
+	
+       
+
+	<li><a href="https://www.amazon.com/Computer-Security-Principles-Practice-4th/dp/0134794109/" target="_blank">Computer Security: Principles and Practice</a>, William Stallings, Lawrie Brown (4th Edition), 2017, Pearson</li>     	
+	
+	<li><a href="https://www.amazon.com/Security-Engineering-Building-Dependable-Distributed-ebook/dp/B08P69FT4Q/rossandersshomep" target="_blank">Security Engineering: A Guide to Building Dependable Distributed Systems</a>, Ross Anderson (3rd Edition), 2020, Wiley</li>     	
+
+	</ul>      
+           	    	
+	
+	      
+  
+   
+
+		 
+		         
+	           
+             
+       
+	   </br>    
+    
+             
+		<hr/>             
+			 
+			
+		<h2>Lecture Notes / Slides</h2>          
+		    
+				
+				<ul style="margin-left : -13px;">	
+
+				    <!--         
+					<li><strong>Week 0</strong> (<font color="#FF3300">Reviews</font>)</li>  
+					<ul>  
+					<li><strong>Linear Algebra</strong></li>     
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Review</font>:
+					<i>CS229: Machine Learning (Zico Kolter++ Stanford U) - <a href="http://cs229.stanford.edu/summer2020/cs229-linalg.pdf" target="_blank">Linear Algebra</a>
+					</i>   
+					<li><font color="blue">External Review (+ Lecture Videos)</font>:						
+					<i>Linear Algebra Review (Zico Kolter, CMU) - <a href="https://www.cs.cmu.edu/~zkolter/course/linalg/index.html" target="_blank">Linear Algebra</a>
+					</i> 					  
+					</li>	
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016), Chapter 2 - <a href="https://www.deeplearningbook.org/" target="_blank">Linear Algebra</a>
+					</i> 
+					</li>					
+					</ul>
+					
+    
+					<li><strong>Probability & Statistics</strong></li>      
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Course</font>:
+					<i>CS109: <a href="https://web.stanford.edu/class/cs109/" target="_blank">Probability for Computer Scientists</a> (Alex Tsun and Tim Gianitsos, Stanford U)
+					</i> 
+					</li>   
+					<ul><li>
+					<i><font color="#FF3300">Free Book</font>: <a href="http://www.alextsun.com/files/Prob_Stat_for_CS_Book.pdf" target="_blank">Probability & Statistics with Applications to Computing</a> by Alex Tsun 
+					</i></li></ul>
+					<li><font color="blue">External Review</font>:
+					<i>CS229: Machine Learning (Arian Maleki and Tom Do, Stanford U) - <a href="http://cs229.stanford.edu/section/cs229-prob.pdf" target="_blank">Probability Theory</a>
+					</i>
+					</li>  	   
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016), Chapter 3 - <a href="https://www.deeplearningbook.org/" target="_blank">Probability</a>
+					</i>        
+					</li> 					
+					</ul>  
+					
+					
+					</ul> 					
+					<br>      
+					-->        
+		                    
+				    
+					<li><strong>Week 1</strong> &nbsp;&nbsp;[08/01 - 11/01] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Course Policies</i>; <i>History</i>; <i>Terminology and Basics</i>; <i>Introduction to Software Engineering</i>; <i>Design Principles</i>)</li>
+					<ul>         
+					<li><strong>About ECE 651K</strong></li>                           
+					<!--<li><strong>Introduction</strong>: Data, Databases, Database Systems, Database Management Systems</li>-->     <!-- to Data, Databases, Database Systems and Database Management Systems-->      
+					<li><strong>Introduction to Sofware Engineering</strong></li>
+					<ul style="margin-left : -15px;">           
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 1 - <a href="#">Introduction</a>
+					</i>					    
+					</li> 
+            
+					<!--<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     -->
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Engineering: A Practitioners Approach by Roger Pressman, Bruce Maxim (9th Ed., 2020), Chapter 1 - <a href="#">Software and Software Engineering</a>
+					</i>					
+					</li> 		  
+		        
+					<!--<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     -->
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering: Theory and Practice by Shari Lawrence Pfleeger, Joanne M. Atlee (4th Ed., 2010), Chapter 1 - <a href="#">Why Software Engineering?</a>
+					</i>					
+					</li>          
+        
+					
+					</ul>      
+					      
+					       
+					   
+					      
+					<!-- : TBA -->      
+					<li><strong>Design Principles</strong></li>        
+					<ul style="margin-left : -15px;">       
+					<!--<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     -->
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Engineering: A Practitioners Approach by Roger Pressman, Bruce Maxim (9th Ed., 2020)</a>
+						<ul>
+						<li>Chapter 9 - <a href="#">Design Concepts</a></li>
+						<li>Chapter 11 - <a href="#">Component-Level Design</a></li>        		
+						</ul> 
+					</i>					    
+					</li> 		
+					        
+					<!--<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     -->
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Clean Architecture: A Craftsman's Guide to Software Structure and Design by Robert C. Martin (1st Ed., 2017), <strong> <font color="red">SOLID</font></strong> 
+						<ul>
+						<li>Chapter 7 - <a href="#">SRP: The Single Responsibility Principle</a></li>
+						<li>Chapter 8 - <a href="#">OCP: The Open-Closed Principle</a></li>
+						<li>Chapter 9 -	 <a href="#">LSP: The Liskov Substitution Principle</a></li>   
+						<li>Chapter 10 - <a href="#">ISP: The Interface Segregation Principle</a></li>   
+						<li>Chapter 11 - <a href="#">DIP: The Dependency Inversion Principle</a></li>         		
+						</ul> 
+					</i>	    				        
+					</li>  				
+
+
+		    
+
+ 					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Code Complete: A Practical Handbook of Software Construction by Steve McConnell (2nd Ed., 2004), Chapter 2 - <a href="#">Creating High Quality Code</a>
+					</i>					    
+					</li>  
+					
+					</ul>    
+					
+		  			
+									
+					</i> 
+					
+					  
+					</ul>            
+					      
+					
+					        
+					          
+ 					         
+					<br>   
+					<li><strong>Week 2</strong> &nbsp;&nbsp;[15/01 - 18/01] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Object-Oriented Programming (OOP)</i>, <i>Java Programming</i>, <i>C++ vs. Java</i>)</li>
+					<ul>       
+					<li><strong>Java Programming: From C++ to Java</strong></li> <!--: Join, Views, Integrity Constraints and Data Types and Schemas-->
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Book</font>:     
+					<i>Java - How to Program: Early Objects by Paul Deitel, Harvey Deitel (11th Ed., 2018)</a>
+					</i>					    
+					</li>
+			
+					
+					         
+					</ul>					
+          
+          
+					<li><strong>Object-Oriented (OO) Design Fundamentals</strong> (<font color="#FF3300">Review</font>)</li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Java - How to Program: Early Objects by Paul Deitel, Harvey Deitel (11th Ed., 2018), Chapter 8 - <a href="#">Classes and Objects</a>
+					</i>							
+					</li> 
+	
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Java - How to Program: Early Objects by Paul Deitel, Harvey Deitel (11th Ed., 2018), Chapter 9 - <a href="#">Inheritance</a>
+					</i>							
+					</li> 	
+
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Java - How to Program: Early Objects by Paul Deitel, Harvey Deitel (11th Ed., 2018), Chapter 10 - <a href="#">Polymorphism</a>
+					</i>							
+					</li> 	
+					
+					</ul>	
+					
+	        			    
+						  
+					    
+
+      
+					
+			
+				      
+					
+					<!--<li><font color="#FF3300">Recitation / Lab</font>: <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, Logistic Regression, kNN, Naive Bayes</li>-->    
+					<!--<li><font color="#FF3300">Homework 1</font>: TBA</li>-->    
+					</ul>  
+					
+					
+					  
+					    
+		              
+    					                    
+					<br>     <!--  <strong>Software Design Process</strong> -->
+					<li><strong>Week 3</strong> &nbsp;&nbsp;[22/01 - 25/01] &nbsp;(<font color="#FF3300">Keywords</font>: <i>Software Design Process</i>; <i>Requirements Specification</i>)</li>
+					<ul>
+					
+					<li><strong>Software Design Process</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 2 - <a href="#">Software Processes</a>
+					</i>					          
+					</li> 	        
+					
+					</ul>
+  
+  
+  
+					<li><strong>Requirements Definition</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 4 - <a href="#">Requirements Engineering</a>
+					</i>					          
+					</li> 
+					</ul>
+					      
+				       
+					<li><strong>Software Process Models: Waterfall vs. Agile</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 2.1 - <a href="#">Software Process Models</a>
+					</i>					                
+					</li>     
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 3 - <a href="#">Agile Software Development</a>
+					</i>					                      
+					</li>   					
+					</ul>
+					    
+					
+					<li><strong>Task Breakdown & Estimating Work</strong></li> 
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Beginning Software Engineering by Rod Stephens (2nd Ed., 2022), Chapter 4 - <a href="#">Project Management</a>
+					</i>					
+					</li>  			     		      
+					</ul>
+					
+				
+					  
+					  <!--   
+					<li><strong>Estimating Work</strong></li> 
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 5.3 - <a href="#">Triggers</a>
+					</i>					
+					</li>  			     		
+					</ul>	
+					-->      
+					    
+        
+
+
+    					
+					<!--<li><font color="#FF3300">Homework 2</font>: TBA</li>	   -->    
+					</ul>
+					
+					
+					    
+					
+					             
+					   
+					
+					                 
+					<br>   
+					<li><strong>Week 4</strong> &nbsp;&nbsp;[29/01 - 01/02] &nbsp;(<font color="#FF3300">Keywords</font>: <i>Software Testing</i>; <i>Unified Modelling Language (UML)</i>; <i>Class-Responsibility-Collaboration (CRC) Cards</i>; <i>Structural Patterns</i>)</li>
+					<ul>          
+					<li><strong>Software Testing: Black-box</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:          
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 8.1 - <a href="#">Development Testing</a>
+					</i>					    
+					</li> 					
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022) <!--, Chapter 5 - <a href="#">Boundary Value Testing</a>-->  
+						<ul>
+						<li>Chapter 5 - <a href="#">Boundary Value Testing</a></li>
+						<li>Chapter 6 - <a href="#">Equivalence Testing</a></li>
+						</ul>
+					</i>						
+					</li>      
+					<!--<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Chapter 6 - <a href="#">Equivalence Testing</a>
+					</i>					
+					</li>     			-->     
+
+
+					</ul>
+					    
+					
+					<li><strong>Software Testing: White-box</strong></li> 
+					<ul style="margin-left : -15px;">         
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Chapter 8 - <a href="#">Code-Based Testing</a>
+					</i>					
+					</li>    			     		
+					</ul>
+					    
+					  
+					      
+					<li><strong>Software Testing: Mutation</strong></li> 
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Introduction to Software Testing by Paul Ammann, Jeff Offutt (2nd Ed., 2016), Chapter 9 - <a href="#">Syntax-Based Testing</a>
+					</i>				      	
+					</li>  		
+					</ul>
+					
+	
+	
+    
+					<li><strong>Unified Modeling Language (UML)</strong></li> 
+					<ul style="margin-left : -15px;">  
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 7.1 - <a href="#">Object-Oriented Design using the UML</a>
+					</i>					        
+					</li> 
+					</ul>    
+
+
+					<li><strong>Design Patterns</strong></li> 
+					<ul style="margin-left : -15px;">  
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Design Patterns: Elements of Reusable Object-Oriented Software by Grady Booch (1st Ed., 1994), Chapter 4 - <a href="#">Structural Patterns</a>
+					</i>					        
+					</li> 
+
+					
+					
+
+
+					
+					</ul>					
+					
+					    
+					<!--<li><font color="#FF3300">Homework 3</font>: TBA</li>	
+					<li><font color="#FF3300"><strong>MIDTERM</strong></font> (Date: TBA)</li>	
+					-->
+					</ul>
+					    
+					
+					       
+					
+					   
+					               
+					<br>   
+					<li><strong>Week 5</strong> &nbsp;&nbsp;[05/02 - 08/02] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Object-Oriented Design</i>; <i>Design Patterns</i>; <i>Creational Patterns</i>; <i>Behavioral Patterns</i>)</li>      
+					<ul>   
+					<li><strong>Design Patterns (cont.)</strong></li>  
+					<ul style="margin-left : -15px;">   
+ 					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Engineering: Theory and Practice by Shari Lawrence Pfleeger, Joanne M. Atlee (4th Ed., 2010), Chapter 6.5 - <a href="#">OO Design Patterns</a>
+					</i>					
+					</li>  
+ 					<li><font color="blue">Book Chapter</font>:     
+					<i>Object-Oriented Software Engineering Using UML, Patterns, and Java (3rd Ed., 2011/2014), Chapter 8 - <a href="#">Object Design: Reusing Pattern Solutions</a>
+					</i>					
+					</li> 
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Design Patterns: Elements of Reusable Object-Oriented Software by Grady Booch (1st Ed., 1994), Chapter 3 - <a href="#">Creational Patterns</a>
+					</i>					        
+					</li> 					
+					</ul>
+					
+          
+					
+    
+					<!--<li><font color="#FF3300">Homework 4</font>: TBA</li>	-->    
+					</ul>   
+					
+					 
+					        
+					
+					<br>              
+		
+					<!--
+					<li><strong><font color="#FF3300">Holiday</font></strong> [09/02 - 18/02]: Spring Festival / <font color="green">Chinese New Year</font> (<font color="#FF3300">NO CLASSES</font>)</li>
+					-->
+					            
+					    
+					<p style="border-width:5px; border-style:solid; border-color:#EC7063; padding: 0.5em;">
+					<strong><font color="#FF3300">HOLIDAY</font></strong> [09/02 - 18/02]: Spring Festival / <font color="green">Chinese New Year</font> (<font color="#FF3300">NO CLASSES</font>)
+					</p>
+					        
+					    
+					                  
+					<br>   
+					<!-- Bishop Book - Chapter 8 -->      
+					<li><strong>Week 6</strong> &nbsp;&nbsp;[19/02 - 22/02] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Bad Design</i>; <i>Code Smells</i>; <i>Technical Debt</i>; <i>Refactoring</i>; <i>Regression Testing</i>)</li>   
+					<ul>    
+	
+
+					<li><strong>Bad Design: Technical Debt</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Refactoring for Software Design Smells: Managing Technical Debt by Girish Suryanarayana, Ganesh Samarthyam, Tushar Sharma (1st Ed., 2014), Chapter 1 - <a href="#">Technical Debt</a>
+					</i>					
+					</li>    
+					<li><font color="blue">External Source</font>:         
+					<i>Martin Fowler - <a href="https://martinfowler.com/bliki/TechnicalDebt.html" target="_blank">Technical Debt</a>
+					</i>					            
+					</li> 
+				    
+					</ul>          
+					
+					    
+				
+				
+					<li><strong>Bad Design: Code Smells</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Refactoring: Improving the Design of Existing Code by Martin Fowler (2nd Ed., 2018), Chapter 3 - <a href="#">Bad Smells in Code</a>
+					</i>					
+					</li>  	
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin (1st Ed., 2008), Chapter 17 - <a href="#">Smells and Heuristics</a>
+					</i>					
+					</li>     
+		
+					</ul>        
+					        
+        
+					  
+					<li><strong>Bad Design: Fix - Refactoring</strong></li>
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Refactoring: Improving the Design of Existing Code by Martin Fowler (2nd Ed., 2018)
+						<ul>
+						<li>Chapter 1 - <a href="#">Refactoring: A First Example</a></li>
+						<li>Chapter 2 - <a href="#">Principles in Refactoring</a></li>
+						</ul>
+					</i>					
+					</li>        
+					<li><font color="blue">External Source</font>:         
+					<i>Refactoring.com (Martin Fowler) - <a href="https://refactoring.com/catalog/" target="_blank">Online Refactoring Catalog</a>
+					</i>					        
+					</li> 
+					  
+					
+					</ul>   
+
+
+    
+    
+					<li><strong>Bad Design: Detection - Regression Testing</strong></li>
+					<ul style="margin-left : -15px;">       					
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 8 - <a href="#">Software Testing</a>
+					</i>					    
+					</li> 	    
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Introduction to Software Testing by Paul Ammann, Jeff Offutt (2nd Ed., 2016), Chapter 13 - <a href="#">Regression Testing for Evolving Software</a>
+					</i>				      	
+					</li>  					
+					</ul>        
+					    					
+					    
+					
+					<!--<li><font color="#FF3300">Recitation / Lab</font>: HMMs</li>-->      
+					<!--<li><font color="#FF3300">Homework 5</font>: TBA</li>		-->
+					</ul> 
+      
+       
+					<!--<br>     
+		
+					<li><strong><font color="#FF3300">Holiday</font></strong> [01/05 - 05/05]: International Labor Day</li>
+					-->
+														          
+					    
+	                           
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 7</strong> &nbsp;&nbsp;[26/02 - 29/02] (<font color="#FF3300">Keywords</font>: <i>Team Development</i>; <i>DevOps</i>; <i>CI/CD</i>; <i>Blue/Green Development</i>; <i>Canary Release</i>; <i>Scrum</i>)</li>             
+					<ul>          
+					<li><strong>Team Development</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Beginning Software Engineering by Rod Stephens (2nd Ed., 2022), Chapter 3 - <a href="#">The Team</a>
+					</i>					      
+					</li> 
+		
+		          
+					
+					</ul>
+					
+				    
+      
+      
+					<li><strong>Software Development (Dev) and IT Operations (Ops): DevOps</strong></li>
+					<ul style="margin-left : -15px;"> 		
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Engineering Software Products: An Introduction to Modern Software Engineering by Ian Sommerville (1st Ed., 2019), Chapter 10 - <a href="#">DevOps and Code Management</a></i>					        
+					</li> 										
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Deployment and Operations for Software Engineers, Len Bass, John Klein (2nd Ed., 2023)
+						<ul>
+						<li>Chapter 8 - <a href="#">DevOps Preliminaries</a></li>
+						<li>Chapter 9 - <a href="#">What is DevOps?</a></li>
+						</ul> 
+					</i>					      
+					</li> 
+		
+					    					
+					</ul>
+					  
+
+
+					<li><strong>Continuous Integration (CI) / Continuous Delivery/Deployment (CD)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Engineering Software Products: An Introduction to Modern Software Engineering by Ian Sommerville (1st Ed., 2019), Chapter 10.2 - <a href="#">DevOps Automation</a></i>					        
+					</li> 	
+		
+					<li><font color="blue">External Tutorial</font> (<font color="red">Optional</font>):     
+					<i>RedHat - <a href="https://www.redhat.com/en/topics/devops/what-is-ci-cd" target="_blank">What is CI/CD?</a>
+					</i>					        
+					</li> 
+					
+					</ul>
+					
+					
+					    
+
+					<li><strong>Blue / Green Deployment</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<!--<li><font color="blue">Book Chapter</font>:     
+					<i>TBA
+					</i>					
+					</li>--> 
+		
+					<!-- (<font color="red">Optional</font>)-->
+					<li><font color="blue">External Tutorial</font>:     
+					<i>Martin Fowler (Thoughtworks) - <a href="https://martinfowler.com/bliki/BlueGreenDeployment.html" target="_blank">Blue / Green Deployment</a>
+					</i>					        
+					</li> 
+					
+					</ul>
+					
+					
+
+					<li><strong>Canary Release</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<!--<li><font color="blue">Book Chapter</font>:     
+					<i>TBA
+					</i>					
+					</li>--> 
+		
+					<!-- (<font color="red">Optional</font>)-->
+					<li><font color="blue">External Tutorial</font>:      
+					<i>Martin Fowler (Thoughtworks) - <a href="https://martinfowler.com/bliki/CanaryRelease.html" target="_blank">Canary Release</a>
+					</i>					        
+					</li> 
+					
+					</ul>         
+					    
+					    
+					<li><strong>Scrum</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 3 - <a href="#">Agile Software Development</a>
+					</i>					          
+					</li> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Engineering Software Products: An Introduction to Modern Software Engineering by Ian Sommerville (1st Ed., 2019), Chapter 2.3 - <a href="#">Scrum</a></i>					        
+					</li> 					
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Software Engineering: A Practitioners Approach by Roger Pressman, Bruce Maxim (9th Ed., 2020), Chapter 3.4 - <a href="#">Scrum</a>
+					</i>					
+					</li> 	
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Essential Scrum: A Practical Guide to the Most Popular Agile Process (1st Ed., 2012)
+						<ul>
+						<li>Chapter 1 - <a href="#">Introduction to Scrum</a></li>
+						<li>Chapter 2 - <a href="#">Scrum Framework</a></li>
+						</ul>      
+					</i>					
+					</li> 						
+	
+	    
+					
+					</ul>    					
+					
+					
+				
+	       
+					
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>       
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 8</strong> &nbsp;&nbsp;[04/03 - 07/03] &nbsp;&nbsp; <strong>Software Testing (<font color="#FF3300">Revisited</font>)</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Stubs</i>; <i>Spikes</i>; <i>Mocking</i>; <i>Unit Testing</i>; <i>Integration Testing</i>; <i>System Testing</i>)</li>       
+					<ul>          
+     
+
+					<li><strong>Stubs</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Introduction to Software Testing by Paul Ammann, Jeff Offutt (2nd Ed., 2016), Section 12.2 - <a href="#">Test Doubles</a>
+					</i>				      	
+					</li>       
+					</ul>  
+					
+					 
+					<li><strong>Spies</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Unit Testing Principles, Practices, and Patterns by Vladimir Khorikov  (1st Ed., 2020)
+						<ul>
+						<li>Chapter 5 - <a href="#">Mocks and Test Fragility</a></li>
+						<li>Chapter 9 - <a href="#">Mocking Best Practices</a></li>
+						</ul> 
+					</i>						
+					</li>       
+					</ul>     
+					
+					
+					<li><strong>Mocks</strong></li>
+					<ul style="margin-left : -15px;">     
+					<!--<li><font color="blue">Book Chapter</font>:     
+					<i>TBA
+					</i>						
+					</li>  -->
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Section 9.2 - <a href="#">Mock Objects and Automated Object Mocking</a>
+					</i>						
+					</li>
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Introduction to Software Testing by Paul Ammann, Jeff Offutt (2nd Ed., 2016), Section 12.2 - <a href="#">Test Doubles</a>
+					</i>				      	
+					</li>      					
+					</ul>  
+
+
+					<li><strong>Unit Testing</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Part 2 - <a href="#">Unit Testing</a>
+					</i>						
+					</li>       
+					</ul>  
+
+					
+					
+					<li><strong>Integration Testing</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Chapter 12 - <a href="#">Integration Testing</a>
+					</i>						
+					</li>     
+					</ul>   
+					
+					
+					<li><strong>System Testing</strong></li>    
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Software Testing: A Craftsman’s Approach by Paul C. Jorgensen, Byron DeVries (5th Ed., 2022), Chapter 13 - <a href="#">System Testing</a>
+					</i>					
+					</li> 
+					    
+			       
+					
+					 </ul>        
+			          
+					
+					<!--<li><font color="#FF3300">Homework 3</font>: TBA</li>	
+					<li><font color="#FF3300"><strong>MIDTERM EXAM</strong></font> (<strong>Date</strong>: 21/03 - Thursday)</li>   
+					-->  					
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>       
+					    
+						    
+						
+					</br>     
+					
+					<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<strong><font color="#FF3300">MIDTERM EXAM</font></strong> [07/03, Thursday] (<font color="#FF3300">NO LECTURE</font>)
+					</p>
+					
+					
+					</br>
+					    
+					
+					    				  
+					         
+					
+					
+								    
+					<p style="border-width:5px; border-style:solid; border-color:#2ECC71; padding: 0.5em;">
+					<strong><font color="#FF3300">HOLIDAY</font></strong> [11/03 - 15/03]: Spring recess for graduate programs (<font color="#FF3300">NO CLASSES</font>)
+					</p>
+					
+
+					
+					  
+					      
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->              
+					<li><strong>Week 9</strong> [18/03 - 21/03] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Designing Modules</i>; <i>Interfaces</i>; <i>Model–View–Controller (MVC)</i>; <i>User Interfaces (UIs)</i>)</li>           
+					<ul>          
+					<li><strong>Designing Modules and Interfaces</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Domain-Driven Design: Tackling Complexity in the Heart of Software by Evans Eric (1st Ed., 2003), Chapter 5 - <a href="#">A Model Expressed in Software</a>
+					</i>		   			        
+					</li>       
+					
+					</ul>
+					
+					
+					<li><strong>Model–View–Controller (MVC) Design Pattern</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Section 6.3 - <a href="#">Architectural Patterns</a>
+					</i>					    
+					</li> 	
+					</ul>
+					  
+					    
+					
+					<li><strong>User Interfaces (UIs)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book</font>:     
+					<i>User Interface Design: A Software Engineering Perspective by Soren Lauesen (1st Ed., 2004)
+					</i>					
+					</li> 
+					<li><font color="blue">Book</font>:     
+					<i>Designing with the Mind in Mind by Jeff Johnson (3rd Ed., 2020)
+					</i>					
+					</li>     					
+			
+					    
+					 </ul>    
+			      
+					    
+					
+	      
+					
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>     
+
+
+
+
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 10</strong> &nbsp;&nbsp;[25/03 - 28/03] &nbsp;&nbsp; </strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>User Interfaces (UIs)</i>; <i>User Experience (UX)</i>)</li>       
+					<ul>          
+					<li><strong>User Interfaces (UIs) (cont.)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book</font>:     
+					<i>User Interface Design: A Software Engineering Perspective by Soren Lauesen (1st Ed., 2004)
+					</i>					
+					</li> 
+					<li><font color="blue">Book</font>:     
+					<i>Designing with the Mind in Mind by Jeff Johnson (3rd Ed., 2020)
+					</i>					
+					</li> 
+		  
+  
+					
+					</ul>
+					
+					
+					<li><strong>User Experience (UX)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book</font>:     
+					<i>Measuring the User Experience: Collecting, Analyzing, and Presenting UX Metrics by Bill Albert, Tom Tullis (3rd Ed., 2022)  
+					</i>					
+					</li> 
+					<li><font color="blue">Book</font>:     
+					<i>Observing the User Experience: A Practitioner's Guide to User Research by Elizabeth Goodman, Mike Kuniavsky, Andrea Moed (2nd Ed., 2012)
+					</i>					
+					</li> 					
+						     					
+			
+					
+					 </ul>    
+			      
+					
+					
+			
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>  
+					
+					
+					
+					
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 11</strong> &nbsp;&nbsp;[01/04 - 04/04] &nbsp;&nbsp; <strong>System Architecture</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>3-Tier</i>; <i>Monolith</i>; <i>Event-Driven</i>)</li>       
+					<ul>   
+					<li><strong>User Interface (UI) / User Experience (UX) Testing</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Object-Oriented Software Engineering Using UML, Patterns, and Java by Bernd Bruegge, Allen H. Dutoit (3rd Ed., 2014), Section 11.4.2  - <a href="#">Usability Testing</a>
+					</i>					
+					</li> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>User Interface Design: A Software Engineering Perspective by Soren Lauesen (1st Ed., 2004)
+						<ul>
+						<li>Chapter 1 - <a href="#">Usability (+ Functionality)</a></li>
+						<li>Chapter 13 - <a href="#">More on Usability (+ Functionality) Testing</a></li>
+						</ul>     
+					</i>					    
+					</li>     
+					</ul>    
+      
+				      
+					
+					<li><strong>System Architecture: 3-Tier</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Fundamentals of Software Architecture: An Engineering Approach by Mark Richards, Neal Ford (1st Ed., 2020), Chapter 9 - <a href="#">Foundations</a>
+					</i>					
+					</li>     
+					</ul>
+					
+					
+					<li><strong>System Architecture: Monolith</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Fundamentals of Software Architecture: An Engineering Approach by Mark Richards, Neal Ford (1st Ed., 2020), Chapter 9 - <a href="#">Foundations</a>
+					</i>					
+					</li> 
+					</ul>
+					
+					  
+					<li><strong>System Architecture: Event-Driven</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Fundamentals of Software Architecture: An Engineering Approach by Mark Richards, Neal Ford (1st Ed., 2020), Chapter 14 - <a href="#">Event-Driven Architecture Style</a>
+					</i>					
+					</li> 
+					</ul>
+			
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>
+
+
+
+					
+					
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 12</strong> &nbsp;&nbsp;[08/04 - 11/04] &nbsp;&nbsp; <strong>System Components</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Frameworks</i>; <i>Object Relational Mappers (ORMs)</i>; <i>Micro-services</i>)</li>       
+					<ul>          
+					<li><strong>Frameworks and Object Relational Mappers (ORMs)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">External Web Source</font>:     
+					<i>Wikipedia: <a href="https://en.wikipedia.org/wiki/Object–relational_mapping" target="_blank">Object–Relational Mapping</a>
+					</i>					    
+					</li> 
+					</ul>
+					
+					<!--<li><strong>Object Relational Mappers (ORMs)</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>TBA
+					</i>					
+					</li> 
+					</ul>-->  					
+	    
+
+					<li><strong>Software Architecture - Modern Architectures: Micro-services</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Microservices Patterns: With Examples in Java by Chris Richardson (1st Ed., 2018), 2018, Chapter 1 - <a href="#">Escaping Monolithic Hell</a></i>  
+					</i>					    
+					</li> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Engineering Software Products: An Introduction to Modern Software Engineering by Ian Sommerville (1st Ed., 2019), Chapter 6 - <a href="#">Microservices Architecture</a></i>					        
+					</li> 					      
+					</ul>		
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>
+
+
+	    
+
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->              
+					<li><strong>Week 13</strong> &nbsp;&nbsp;[15/04 - 18/04] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Security</i>; <i>Confidentiality</i>; <i>Integrity</i>; <i>Accountability</i>; <i>Authenticity</i>; <i>Design Metrics</i>; <i>Maintenance Metrics</i>)</li>       
+					<ul>              
+					<li><strong>Software Security</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Software Engineering by Ian Sommerville (10th Ed., 2015), Chapter 13 - <a href="#">Security Engineering</a>
+					</i>				
+					</li> 
+					<li><font color="blue">Book Chapter</font>:      
+					<i>Computer Security: Principles and Practice by William Stallings, Lawrie Brown (4th Ed., 2017), Chapter 1 - <a href="#">Overview</a>
+					</i>				
+					</li> 					
+				 
+    				 
+					<li><font color="blue">External Lecture Slides</font>:
+					<i>ECE 560: Computer and Information Security (Tyler Bletsch, Duke U) - <a href="https://people.duke.edu/~tkb13/courses/ece560-2020fa/slides/02-overview.pdf" target="_blank">Computer Security Overview</a>
+					</i>   
+					    
+			     
+					</li>	
+		   				
+					</ul>    
+		        
+          
+					<li><strong>Software Design & Maintenance Metrics</strong></li>
+					<ul style="margin-left : -15px;">     
+					<!--<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     -->
+					<li><font color="blue">Book Chapter</font>:    
+					<i>Software Engineering: A Practitioners Approach by Roger Pressman, Bruce Maxim (9th Ed., 2020), Chapter 23 - <a href="#">Software Metrics and Analytics</a>
+					</i>					    
+					</li> 		
+			     
+			     
+					</li>	
+		   				
+					</ul>
+		         
+				    
+
+					<!--li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>	-->				
+					</ul>
+
+
+
+					<br>                      
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 14</strong> &nbsp;&nbsp;[22/04 - 25/04] </li>       
+  
+    
+    
+					<!--</br>     -->   
+					
+					<p style="border-width:5px; border-style:solid; border-color:#F39C12 ; padding: 0.5em;">
+					<strong><font color="#FF3300">PROJECT DEMOS</font></strong> [23-25/04, Tuesday + Thursday] (<font color="#FF3300">NO LECTURE</font>)
+					</p>
+
+
+					<!--</br>     -->  
+						</br>        
+					
+					<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<!--<strong><font color="#FF3300">FINAL EXAM</font></strong> [25/04, Thursday (3 Hours)] (<font color="#FF3300">NO LECTURE</font>)-->
+					<strong><font color="#FF3300">FINAL EXAM</font></strong> [06-08/05, TBA (3 Hours)]    
+					</p>
+					    
+					
+					
+					    
+					    
+   				</li>        
+				               
+		   
+				
+				</ul>  
+
+	<br>
+	
+		<hr/>    
+		       
+	   
+		<h2>Grading</h2>  
+		        
+		<ul>   
+		<li><strong>Class Participation</strong>: 5%</li>
+		<li><strong>Assignments</strong>: 20%</li>
+		<ul>    
+		<li><i>Assignment 1</i> - Programming: 10%</li>
+		<li><i>Assignment 2</i> - Interviews: 10%</li>  
+		</ul>              
+      
+		<li><strong>Team Project</strong>: 35%</li> 	
+		<ul>    
+		<li>Phase 1: 10%</li>
+		<li>Phase 2: 10%</li>   
+		<li>Phase 3: 15%</li>   
+		</ul> 
+		<li><strong>Midterm</strong>: 15%</li> 		
+		<li><strong>Final</strong>: 20%</li> 	
+		
+		
+		<!--<ul>  -->   
+		<!-- example report + presentation rubricks for ML: https://www.cs.toronto.edu/~huang/courses/csc2515_2020f/Lectures.html -->
+		<!--<li>Report Rubric (TBA)</li>
+		<li>Presentation Rubric (TBA)</li> 
+		      
+		</ul> --> 
+	        
+		      
+		</ul> 
+		
+		
+		<!--
+		<br>            
+	
+		<hr/>    
+		       
+	   
+		<h2>Reference Courses</h2>  
+		    
+		<ul>    
+
+		
+		<li><strong>COMPSCI 316</strong>: <a href="https://courses.cs.duke.edu/fall22/compsci316d/" target="_blank">Introduction to Databases</a> by Sudeepa Roy (Duke U.) [ <a href="https://courses.cs.duke.edu/fall22/compsci316d/#resources" target="_blank">Lecture Slides</a> ]</li>
+		
+		
+		
+		<li><strong>CMU 15-445/645</strong>: <a href="https://15445.courses.cs.cmu.edu/spring2023/" target="_blank">Database Systems</a> by Charlie Garrod (CMU)</li>
+		
+		<li><strong>CS 44800</strong>: <a href="https://www.cs.purdue.edu/homes/bb/cs448s23/index.html" target="_blank">Introduction to Database Systems</a> by Bharat Bhargava (Purdue U.)</li>
+			
+			
+		        
+			
+		</ul>          
+		-->        
+		         
+		      
+		
+  	<br>
+	     
+		<hr/>    
+		
+	           
+	<h2>Other Reading Resources</h2>
+	             
+	     
+		       
+		 
+	<strong><font color="#FF3300">Quick / Easy Reads</font></strong>: 
+	<ul style="margin-left : -13px;">	
+	
+		
+	      
+		<li>
+		<i><a href="https://media.pragprog.com/articles/may_04_oo1.pdf" target="_blank">OO in One Sentence: Keep it Dry, Shy, and Tell the Other Guy</a>. Hunt, A., Thomas, D., 2004. IEEE Software, 21(3)
+		</i>        
+		</li>  
+  
+		<li>
+		<i><a href="https://dl.acm.org/doi/abs/10.1145/2160718.2160733" target="_blank">Managing Technical Debt</a>. Allman, E., 2012. Communications of the ACM, 55(5)
+		</i>              
+		</li>        
+  
+
+  
+
+		
+	
+
+                  
+   
+				        
+	</ul>	
+	          
+ 
+
+
+
+				
+    	
+
+   
+   
+   
+       
+
+	
+   
+   
+	<br>      
+		<hr/>      
+		
+	   
+      
+	<h2>Other Materials / Resources</h2>
+	
+	<ul style="margin-left : -13px;">	 				
+<!--		<li>Philip W. L. Fong, 2004. <a href="http://www.mathcs.emory.edu/~lxiong/papers/fong04how.pdf" target="_blank">How to Read a CS Research Paper?</a> + 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140.	
+		</li>		      
+		-->  
+		        
+
+		 
+		<li>IEEE Standard <a href="https://ieeexplore.ieee.org/document/159342" target="_blank">Glossary of Software Engineering</a> Terminology, 1990
+
+
+		
+		<li>Philip W. L. Fong, 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a Computer Science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140  	
+		</li>	   
+		<li><a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html" target="_blank">You and Your Research</a> by Richard Hamming (Bell Labs / NPS). Bell Communications Research Colloquium Seminar, 7 March 1986  
+		</li>				
+		<li>An Online LaTeX Editor: <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>   
+		</li>	
+		<li>LaTeX Tutorial (Overleaf): <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a>   
+		</li>	
+		<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank">The Not So Short Introduction to LaTeX</a> by Tobias Oetiker, Hubert Partl, Irene Hyna, Elisabeth Schlegl, 2021 
+		</li>	
+		<li>LaTeX Handwritten Symbol Recognition: <a href="http://detexify.kirelabs.org/classify.html" target="_blank">Detexify</a>	
+		</li>         
+		<li>     
+		<a href="https://www.youtube.com/watch?v=Unzc731iCUY" target="_blank">How To Speak</a> / Present (Video) by Patrick Winston (MIT)
+		</li>       
+		    
+		        
+	</ul>
+	   
+	<br>   
+
+
+<!--   
+  	<br>
+	     
+		<hr/>    
+		
+	
+	<h2>Cevrimici Kaynaklar (Online Resources)</h2>		      
+	
+	<ul style="margin-left : -13px;">	 			
+		<li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>: Machine Learning by Andrew Ng</li>	
+		<li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF" target="_blank">Youtube</a>: DeepMind x UCL | Deep Learning Lecture Series 2020</li>	
+	</ul>	
+-->       		  
+		   
+		  
+		
+		
+
+				
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
