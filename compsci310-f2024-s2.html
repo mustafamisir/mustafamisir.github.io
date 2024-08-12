@@ -1,0 +1,1096 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [ COMPSCI 310 ] Introduction to Databases @ Fall 2024-2025 (Session 2), Duke Kunshan University</title></head>
+    
+  
+
+<body>      
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GK222RBJ36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GK222RBJ36');
+</script>
+  
+            
+          
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="80%">
+      
+<tbody><tr><td align="right">   
+</td></tr> 
+         
+<tr><td style="text-align:justify;">    
+             
+<img src="DKU_Logo_whitebackdrop-perc15-v2.png" style="width:25%" align="right">  
+
+<h1>Introduction to Databases (COMPSCI 310)</h1>       
+<h2>Fall 2024-2025 / Session 2 (7 weeks, 35 hours)</h2>     
+
+                 
+		 
+                           
+                   
+				               
+	<h3><font color="#FF3300">Course Period</font>: October 21 - December 5, 2024</h3>   
+	<ul style="margin-left : -13px;">	
+		<li><strong>Lectures</strong>: Monday / Tuesday / Wednesday / Thursday @ 16:15-17:30 (Classroom: IB 1010 + Zoom)</li>
+		<!--<li><strong>Recitations / Labs</strong>: Monday / Wednesday @ 20:10-21:10 (Classroom: IB 1056 + Zoom)</li>   -->  
+	</ul>            
+                
+	   
+	<strong>Instructor</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (Office: WDR 2106), <a href="mailto:mustafa.misir [at] dukekunshan.edu.cn">mustafa.misir [at] dukekunshan.edu.cn</a> </br>
+	
+	<!--<strong>Lab Instructor</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA <br>
+	
+	<strong>Teaching Assistant</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA      -->    
+	
+	</h2>           
+	<br/><br/>   
+      
+In computing, a <a href="https://en.wikipedia.org/wiki/Database" target="_blank">database</a> is an organized collection of data stored and accessed electronically. Small databases can be stored on a file system, while large databases are hosted on computer clusters or cloud storage. The design of databases spans formal techniques and practical considerations, including data modeling, efficient data representation and storage, query languages, security and privacy of sensitive data, and distributed computing issues, including supporting concurrent access and fault tolerance.
+
+	  
+
+<br/><br/>  
+
+This course focuses on data modeling, database design theory, data definition and manipulation languages, storage and indexing techniques, query processing and optimization, concurrency control and recovery, database programming interfaces. <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">Structured Query Language (SQL)</a> will be additionally introduced to build and maintain databases for real applications.                  
+
+      
+<br/><br/>  
+                  
+<font color="blue"><u>By the end of this course, <strong>you will be able to</strong></u></font>:
+
+<ol style="margin-left : -13px;">	     
+	<li><font color="#FF3300"><strong>analyze</strong></font> and <font color="#FF3300"><strong>evaluate</strong></font> an existing database design</li>
+	<li><font color="#FF3300"><strong>design</strong></font> and <font color="#FF3300"><strong>build</strong></font> databases from scratch</li>
+	<li><font color="#FF3300"><strong>deliver</strong></font> data-driven software designs</li>
+	<li><font color="#FF3300"><strong>manipulate</strong></font> any given relational database</li>
+	<li><font color="#FF3300"><strong>utilize</strong></font> the basic theoretical and algorithmic concepts behind databases in real-world applications</li> 
+</ol>         
+                  
+			  
+
+        
+
+          
+   
++++ <i><font color="#FF3300">Follow</font></i> <a href="https://sakai.duke.edu" target="_blank"><strong>Sakai</strong></a> for <strong>announcements</strong> and <strong>discussions</strong>
+<br>             
+		 
+		            
+     
+	      
+	 
+
+<br>    
+<style>   
+.wrapingimage  
+{       
+float: right;                 
+margin: 30px 0px 3px 40px;   
+border: 0px;    
+width:50%; 
+}                             
+</style> 
+
+
+	<div class="wrapingimage">   
+	<!--<p style="text-align:center;">   -->  
+	<!--<img src="COMPSCI309-Elements-of-Machine-Learning-Course-Map-v3.png" style="width:70%">-->
+	<img src="COMPSCI310-Introduction-to-Databases-Course-Map.png" style="width:100%">
+    <!--</p> -->     
+	</div>    
+
+	
+    <p>  
+
+         
+		        
+                
+	<br>
+	The chart, on the right, shows how <strong>COMPSCI 310</strong> fits to the DKU curriculum, where the abbreviations indicate the course types, i.e. <strong>D</strong>: <i>Divisional</i>, <strong>DF</strong>: <i>Divisional Foundation</i>, <strong>ID</strong>: <i>Interdisciplinary</i> and <strong>E</strong>: <i>Elective</i>. Refer to the <a href="https://undergrad.dukekunshan.edu.cn/en/undergraduate-bulletin" target="_blank">DKU Undergraduate Bulletin</a> for more details.    
+
+	<br>
+	     
+	<h3>Pre-requisite(s)</h3>
+	<ul style="margin-left : -13px;">
+		<!--<li>MATH 201: Multivariable Calculus</li>      
+		<li>MATH 202: Linear Algebra</li>
+		<li>MATH 205 / 206: Probability and Statistics</li>-->
+		<li>COMPSCI 201: Introduction to Programming and Data Structures</li>
+	</ul>    
+
+     
+<h3>Anti-requisite(s)</h3>
+	<ul style="margin-left : -13px;">
+		<li>COMPSCI 301: Algorithms and Databases</li>      
+	</ul>  
+	  
+	</p>   
+	<!--<br><br>     -->   
+
+
+<!-- https://blog.hubspot.com/website/css-float -->     	 
+<style> 	     
+.clear-wrapingimage 
+{
+  clear: right;    
+}
+</style> 	 
+<div class="clear-wrapingimage"> 
+</div>
+     
+  
+   
+
+	<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        		
+	<br><br><br><br><br>-->
+	<br>       
+	
+		<hr/>
+
+	    	   
+	<h2>Reference Books</h2>      	
+	<!--There is <font color="#FF3300"><u>no official textbook</u></font> for this course. Still, the following books can be used as references.  -->
+	
+	   
+	<a href="https://www.db-book.com/" target="_blank">Database Systems</a>, Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Edition), 2019, McGraw-Hill (<font color="#FF3300">Free Access</font>: <a href="https://ebookcentral.proquest.com/lib/duke/reader.action?docID=6328107" target="_blank">ProQuest - Duke U.</a>) [ <a href="https://www.db-book.com/slides-dir/index.html" target="_blank">Lecture Slides</a> ] [ <a href="https://www.db-book.com/university-lab-dir/sqlite-tips.html" target="_blank">SQLite</a>	]
+	           
+			         
+		          
+				  
+	    			  
+	<br/><br/>  			         
+	<strong><font color="#FF3300">Supplementary Books</font></strong>:   
+               
+	                   
+	<ul style="margin-left : -13px;">	    
+	
+	<li><a href="https://www.amazon.com/Database-Systems-Design-Implementation-Management/dp/1337627909" target="_blank">Database Systems: Design, Implementation, & Management</a>, Carlos Coronel, Steven Morris (13th Edition), 2018, Cengage Learning</li> 
+	
+	<li><a href="https://www.amazon.com/Fundamentals-Database-Systems-Ramez-Elmasri/dp/0133970779" target="_blank">Fundamentals of Database Systems</a>, Ramez Elmasri, Shamkant B. Navathe (7th Edition), 2015, Pearson</li> 	    
+
+
+	<li><a href="https://www.amazon.com/Database-Systems-Practical-Implementation-Management/dp/0132943263" target="_blank">Database Systems: a Practical Approach to Design, Implementation, and Management</a>, Thomas Connolly, Carolyn Begg (6th Edition), 2014, Pearson</li> 
+
+
+	<li><a href="https://www.amazon.com/Fundamentals-Database-Management-Systems-Gillenson/dp/0470624701" target="_blank">Fundamentals of Database Management Systems</a>, Mark L. Gillenson (2nd Edition), 2011, John Wiley & Sons</li> 
+
+
+	<li><a href="https://pages.cs.wisc.edu/~dbbook/" target="_blank">Database Management Systems</a>, Raghu Ramakrishnan, Johannes Gehrke (3rd Edition), 2003, McGraw-Hill [ <a href="https://pages.cs.wisc.edu/~dbbook/openAccess/thirdEdition/supporting_material.htm" target="_blank">Supporting Materials</a> ]</li> 	
+	
+	<li><a href="http://infolab.stanford.edu/~ullman/dscb.html" target="_blank">Database Systems: The Complete Book</a>, Hector Garcia-Molina, Jeffrey Ullman, Jennifer Widom (2nd Edition), 2008/2013, Pearson</li>      
+	
+	<li><a href="https://www.pearson.com/store/p/database-design-for-mere-mortals-25th-anniversary-edition/P200000000317/9780137459667" target="_blank">Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design</a>, Michael J. Hernandez (4th Edition), 2020, Addison-Wesley</li>  	             
+		   
+		   
+		   
+	<li><a href="https://www.pearson.com/en-us/subject-catalog/p/database-concepts/P200000009797" target="_blank">Database Concepts</a>, David M. Kroenke, David J. Auer, Scott L. Vandenberg, Robert C. Yoder (10th Edition), 2023, Pearson</li>  
+	
+	
+	<li><a href="https://www.pearson.com/store/p/modern-database-management-ebook-global-edition/GPROG_A102001578451_learnerau-availability/9781292263410" target="_blank">Modern Database Management</a>, Heikki Topi, Venkataraman Ramesh, Jeffrey A. Hoffer (13th Edition), 2019, Pearson</li>  
+	      
+
+	<li><a href="https://www.oreilly.com/library/view/relational-database-design/9780128499023/" target="_blank">Relational Database Design and Implementation</a>, Jan L. Harrington (4th Edition), 2016, Morgan Kaufmann</li> 
+	
+
+	<li><a href="https://www.oreilly.com/library/view/databases-illuminated-4th/9781284231595/" target="_blank">Databases Illuminated</a>, Catherine M. Ricardo, Susan D. Urban, Karen C. Davis (4th Edition), 2022/2023, Jones & Bartlett Learning</li> 
+	     
+	
+	
+	
+	<li><a href="https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php" target="_blank">Database Design with UML and SQL</a>, Alvaro Monge (4th Edition), 2019, Pearson (<font color="#FF3300">Free Book</font>)</li> 
+	      
+
+	<li><a href="https://link.springer.com/book/10.1007/978-3-030-33836-7" target="_blank">Database Design and Implementation</a>, Edward Sciore (2nd Edition), 2020, Springer (+ Java)</li> 		  
+	
+	<li><a href="https://open.umn.edu/opentextbooks/textbooks/354" target="_blank">Database Design</a>, Adrienne Watt, Nelson Eng (2nd Edition), 2014 (<font color="#FF3300">Free Book</font>)</li> 	
+	
+		                
+   
+
+	
+	
+	</ul>    
+	
+	    
+	      
+	
+	       			         
+	<strong><font color="#FF3300">SQL, XML & JSON</font></strong>:   
+	
+    <ul style="margin-left : -13px;">	
+      		   
+	<li><a href="https://www.practicalsql.com/" target="_blank">Practical SQL: A Beginner's Guide to Storytelling with Data</a>, Anthony DeBarros (2nd Edition), 2022, No Starch Press</li> 		   
+		         
+				 
+	<li><a href="https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/" target="_blank">Learning SQL: Generate, Manipulate, and Retrieve Data</a>, Alan Beaulieu (3rd Edition), 2020, O'Reilly</li> 					 
+	
+
+				 
+	<li><a href="https://www.dummies.com/book/technology/programming-web-design/sql/sql-for-dummies-9th-edition-281871/" target="_blank">SQL For Dummies</a>, Allen G. Taylor (9th Edition), 2018, For Dummies</li> 		
+	
+              
+	
+      
+	<li><a href="https://www.amazon.com/Python-Programming-Step-Step-Hands/dp/B0C2RW1XGV/" target="_blank">Python Programming and SQL</a>, Philip Robbins (1st Edition), 2023</li> 	
+	
+
+	<li><a href="https://www.oreilly.com/library/view/using-sqlite/9781449394592/" target="_blank">Using SQLite</a>, Jay Kreibich (1st Edition), 2010, O'Reilly</li> 		
+	
+	<li><a href="https://www.amazon.com/Learn-SQLite-Python-hours-Beginners-ebook/dp/B095HC3X27/" target="_blank">Learn SQLite with Python in 24 hours For Beginners</a>, S. Basu (1st Edition), 2021</li> 
+
+	
+	<!--
+	</ul>
+
+	
+      
+
+	<strong><font color="#FF3300">XML & JSON</font></strong>:   
+	
+    <ul style="margin-left : -13px;">
+	-->	       
+      		   
+      		   
+	<li><a href="https://www.wiley.com/en-us/XML+For+Dummies%2C+4th+Edition-p-9780764588457" target="_blank">XML For Dummies</a>, Lucinda Dykes, Ed Tittel (4th Edition), 2005, For Dummies</li> 
+	
+	<li><a href="https://www.oreilly.com/library/view/xml-in-a/0596007647/" target="_blank">XML in a Nutshell</a>, Elliotte Rusty Harold, W. Scott Means (3rd Edition), 2004, O'Reilly</li> 
+      
+	
+	<li><a href="https://www.oreilly.com/library/view/learning-xml-2nd/0596004206/" target="_blank">Learning XML</a>, Erik T. Ray (2nd Edition), 2003, O'Reilly</li> 
+				
+	<li><a href="https://www.oreilly.com/library/view/mysql-and-json/9781260135459/" target="_blank">MySQL and JSON: a Practical Programming Guide</a>, David Stokes (1st Edition), 2018, McGraw-Hill / Oracle Press</li>
+
+	<li><a href="https://www.oreilly.com/library/view/json-at-work/9781491982389/" target="_blank">JSON at Work</a>, Tom Marrs (1st Edition), 2017, O'Reilly</li>	
+	
+	<li><a href="https://www.oreilly.com/library/view/introduction-to-javascript/9781491929476/" target="_blank">Introduction to JavaScript Object Notation</a>, Lindsay Bassett (1st Edition), 2015, O'Reilly</li>	
+         
+			          
+              
+				 
+<!--		
+	<li><a href="https://www.pearson.com/en-us/subject-catalog/p/nosql-distilled-a-brief-guide-to-the-emerging-world-of-polyglot-persistence/P200000009587/9780133036121" target="_blank">NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence</a>, Pramod J. Sadalage, Martin Fowler (1st Edition), 2013, Addison-Wesley</li> 
+	
+	<li><a href="https://www.oreilly.com/library/view/nosql-for-mere/9780134029894/" target="_blank">NoSQL for Mere Mortals</a>, Dan Sullivan Sullivan (1st Edition), 2015, Addison-Wesley</li> 		   
+-->		   
+
+	<br>
+
+		  
+		  
+
+	
+	<!--
+	<br>		
+	SQL: 3 books 1 - The Ultimate Beginner, Intermediate & Expert Guides To Master SQL Programming Quickly with Practical Exercises		
+	-->
+	      
+
+	<!--<br>
+	Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker - Readings in Database Systems (2015).pdf
+	-->      
+	
+		 
+		         
+	</ul>      
+             
+       
+    
+             
+		<hr/>             
+			 
+			
+		<h2>Lecture Notes / Slides</h2>          
+		    
+				
+				<ul style="margin-left : -13px;">	
+
+				    <!--         
+					<li><strong>Week 0</strong> (<font color="#FF3300">Reviews</font>)</li>  
+					<ul>  
+					<li><strong>Linear Algebra</strong></li>     
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Review</font>:
+					<i>CS229: Machine Learning (Zico Kolter++ Stanford U) - <a href="http://cs229.stanford.edu/summer2020/cs229-linalg.pdf" target="_blank">Linear Algebra</a>
+					</i>   
+					<li><font color="blue">External Review (+ Lecture Videos)</font>:						
+					<i>Linear Algebra Review (Zico Kolter, CMU) - <a href="https://www.cs.cmu.edu/~zkolter/course/linalg/index.html" target="_blank">Linear Algebra</a>
+					</i> 					  
+					</li>	
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016), Chapter 2 - <a href="https://www.deeplearningbook.org/" target="_blank">Linear Algebra</a>
+					</i> 
+					</li>					
+					</ul>
+					
+    
+					<li><strong>Probability & Statistics</strong></li>      
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">External Course</font>:
+					<i>CS109: <a href="https://web.stanford.edu/class/cs109/" target="_blank">Probability for Computer Scientists</a> (Alex Tsun and Tim Gianitsos, Stanford U)
+					</i> 
+					</li>   
+					<ul><li>
+					<i><font color="#FF3300">Free Book</font>: <a href="http://www.alextsun.com/files/Prob_Stat_for_CS_Book.pdf" target="_blank">Probability & Statistics with Applications to Computing</a> by Alex Tsun 
+					</i></li></ul>
+					<li><font color="blue">External Review</font>:
+					<i>CS229: Machine Learning (Arian Maleki and Tom Do, Stanford U) - <a href="http://cs229.stanford.edu/section/cs229-prob.pdf" target="_blank">Probability Theory</a>
+					</i>
+					</li>  	   
+					<li><font color="blue">Book Chapter</font>:   
+					<i>Deep Learning by Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016), Chapter 3 - <a href="https://www.deeplearningbook.org/" target="_blank">Probability</a>
+					</i>        
+					</li> 					
+					</ul>  
+					
+					
+					</ul> 					
+					<br>      
+					-->
+		                
+				    
+					<li><strong>Week 1</strong> &nbsp;&nbsp;[21/10 - 24/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>History</i>, <i>Terminology and Basics</i>; <i>Data</i>; <i>Databases</i>; ; <i>Database Systems</i>;  <i>Database Management Systems</i>)</li>
+					<ul>         
+					<li><strong>About COMPSCI 310</strong></li>                           
+					<!--<li><strong>Introduction</strong>: Data, Databases, Database Systems, Database Management Systems</li>-->     <!-- to Data, Databases, Database Systems and Database Management Systems-->      
+					<li><strong>Databases: Basics</strong></li>
+					<ul style="margin-left : -15px;">           
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 1 - <a href="#">Introduction</a>
+					</i>					
+					</li> 
+          
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 1 - <a href="#">Database Systems</a>
+					</i>					
+					</li> 		  
+		        
+ 					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 2 - <a href="#">Data Models</a>
+					</i>					
+					</li>      
+    
+					
+					</ul>
+					
+					
+  				
+					      
+					
+					<li><strong>Relational Model</strong>: Relational Databases, Database Schema, Keys, Relational Algebra</li>        
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 2 - <a href="#">Introduction to the Relational Model</a>
+					</i>					
+					</li> 	
+
+ 					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 3 - <a href="#">Relational Database Model</a>
+					</i>					
+					</li>  
+					
+					</ul>    
+					
+		  			
+									
+					</i> 
+					
+					  
+					</ul>            
+					      
+					
+					  
+					<br>	  
+					<p style="border-width:5px; border-style:solid; border-color:#D35400; padding: 0.5em;">
+					<strong><font color="#FF3300">REMINDER</font></strong> [24/10, Thursday]: Drop/add ends for second 7-week undergraduate session. &nbsp;&nbsp; 
+					{ <i>Source</i>: <a href="https://www.dukekunshan.edu.cn/about/academic-calendar/" target="_blank">Academic Calendar</a> } 
+					</p>
+
+    					
+					        
+					    
+					        
+					                
+					<br>   
+					<li><strong>Week 2</strong> &nbsp;&nbsp;[28/10 - 31/10] <strong>SQL Basics</strong> &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Structured Query Language (SQL)</i>)</li>
+					<ul>     
+					<li><strong>Introduction to Structured Query Language (SQL)</strong></li> <!--: Join, Views, Integrity Constraints and Data Types and Schemas-->
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 3.1 - <a href="#">Overview of SQL</a>
+					</i>					
+					</li>
+					
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 7 - <a href="#">Introduction to SQL</a>
+					</i>					
+					</li>  
+					
+					
+					</ul>					
+  
+      
+					<li><strong>Data Definition</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 3.2 - <a href="#">SQL Data Definition</a>
+					</i>					
+					</li>  
+					</ul>	
+					
+					<li><strong>Basic Structure and Operations</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 3.3 - <a href="#">Basic Structure of SQL Queries</a>
+					</i>					
+					</li>			
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 3.2 - <a href="#">SQL Data Definition</a>
+					</i>					
+					</li>						
+					      
+					
+					</ul>  
+					    
+						  
+					    
+
+      
+					
+			
+				      
+					
+					<!--<li><font color="#FF3300">Recitation / Lab</font>: <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, Logistic Regression, kNN, Naive Bayes</li>-->    
+					<li><font color="#FF3300">Homework 1</font>: TBA</li>
+					</ul>  
+					
+					
+					  
+					    
+		  
+    					                        
+					<br>     
+					<li><strong>Week 3</strong> &nbsp;&nbsp;[04/11 - 07/11] <strong>Intermediate SQL</strong> &nbsp;(<font color="#FF3300">Keywords</font>: <i>Join</i>; <i>Views</i>; <i>Integrity Constraints</i>; <i>Data Types</i>; <i>Schemas</i>)</li>
+					<ul>
+					
+					<li><strong>JOIN Expressions</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 4.1 - <a href="#">Join Expressions</a>
+					</i>					
+					</li>   
+					<li><font color="blue">External Tutorial</font>:
+					<i>W3 Schools - <a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">SQL Joins</a>
+					</i>       
+					</li>	    
+					
+					</ul>
+  
+  
+  
+					<li><strong>Views</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 4.2 - <a href="#">Views</a>
+					</i>					
+					</li>  
+					<li><font color="blue">External Tutorial</font>:
+					<i>W3 Schools - <a href="https://www.w3schools.com/sql/sql_view.asp" target="_blank">SQL Views</a>
+					</i>       
+					</li>
+					
+					</ul>  
+					    
+						
+
+								
+						
+  
+  
+					<li><strong>Integrity Constraints</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 4.4 - <a href="#">Integrity Constraints</a>
+					</i>					
+					</li>       
+					</ul>  
+					
+
+					<li><strong>Data Types and Schemas</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 4.5 - <a href="#">SQL Data Types and Schemas</a>
+					</i>					
+					</li>  
+					<li><font color="blue">External Tutorial</font>:
+					<i>W3 Schools - <a href="https://www.w3schools.com/sql/sql_datatypes.asp" target="_blank">SQL Data Types</a>
+					</i>       
+					</li>						
+					</ul> 
+
+
+    					
+					<li><font color="#FF3300">Homework 2</font>: TBA</li>	   				
+					</ul>
+					
+					
+					
+					
+					
+					        
+					   
+					
+					   
+					<br>   
+					<li><strong>Week 4</strong> &nbsp;&nbsp;[11/11 - 14/11] <strong>Advanced SQL</strong> &nbsp;(<font color="#FF3300">Keywords</font>: <i>SQL Programming Interfaces</i>; <i>Functions</i>; <i>Procedures</i>; <i>Triggers</i>)</li>
+					<ul>  
+					<li><strong>Database Programming Interfaces</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 5.1 - <a href="#">Accessing SQL from a Programming Language</a>
+					</i>					
+					</li>      
+					</ul>
+					    
+					
+					<li><strong>Functions and Procedures</strong></li> 
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 5.2 - <a href="#">Functions and Procedures</a>
+					</i>					
+					</li>  			     		
+					</ul>
+					    
+					
+					<li><strong>Triggers</strong></li> 
+					<ul style="margin-left : -15px;">     
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 5.3 - <a href="#">Triggers</a>
+					</i>					
+					</li>  			     		
+					</ul>					
+					
+					    
+					<li><font color="#FF3300">Homework 3</font>: TBA</li>	
+					<!--<li><font color="#FF3300"><strong>MIDTERM</strong></font> (Date: TBA)</li>-->      
+					</ul>
+					
+					
+					   
+					
+					</br>
+					<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<!--<strong><font color="#FF3300">FINAL EXAM</font></strong> [25/04, Thursday (3 Hours)] (<font color="#FF3300">NO LECTURE</font>)-->
+					<strong><font color="#FF3300">MIDTERM EXAM</font></strong> [TBA, (TBA Hours)]    
+					</p>
+					
+					   
+					           
+					<br>   
+					<li><strong>Week 5</strong> &nbsp;&nbsp;[18/11 - 21/11] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Relational Database Design</i>; <i>XML</i>; <i>JSON</i>)</li>      
+					<ul>   
+					<li><strong>Relational Database Design</strong></li>  
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 7 - <a href="#">Relational Database Design</a>
+					</i>					
+					</li>       
+					</ul>
+					
+
+					<li><strong>Complex Data Types</strong></li>  
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 8.1 - <a href="#">Semi-structured Data</a>
+					</i>					
+					</li> 
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 15.3 - <a href="#">Extensible Markup Language (XML)</a>
+					</i>					      
+					</li> 
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Fundamentals of Database Systems by Ramez Elmasri, Shamkant B. Navathe (7th Ed., 2015), Chapter 13 - <a href="#">XML: Extensible Markup Language</a>
+					</i>					      
+					</li> 					      
+		
+						        
+					
+					<li><font color="blue">External Tutorial</font> (<font color="red">Optional</font>):  <i>W3 Schools - <a href="https://www.w3schools.com/xml/" target="_blank">XML Tutorial</a></i>
+					<i>
+					</i>					    
+					</li>	
+					<li><font color="blue">External Tutorial</font>:  (<font color="red">Optional</font>):  <i>W3 Schools - <a href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">JSON Tutorial</a></i>   
+					<i>    
+					</i>					
+					</li>
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 8.2 - <a href="#">Object Orientation</a>
+					</i>					
+					</li>  
+					
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Fundamentals of Database Systems by Ramez Elmasri, Shamkant B. Navathe (7th Ed., 2015), Chapter 12 - <a href="#">Object and Object-Relational Databases</a>
+					</i>					      
+					</li> 	      
+				      
+					   
+					</ul>  
+					
+    
+					<li><font color="#FF3300">Homework 4</font>: TBA</li>	
+					</ul>   
+					
+					
+					
+					        
+					    
+				<br>	  
+					<p style="border-width:5px; border-style:solid; border-color:#D35400; padding: 0.5em;">
+					<strong><font color="#FF3300">REMINDER</font></strong> [21/11, Saturday]: Last day to withdraw with a W grade of second 7-week classes; Last day to change grading basis of second 7-week classes. &nbsp;&nbsp; 
+					{ <i>Source</i>: <a href="https://www.dukekunshan.edu.cn/about/academic-calendar/" target="_blank">Academic Calendar</a> } 
+					</p>    
+					
+					
+					    
+					                  
+					<br>       
+					<!-- Bishop Book - Chapter 8 -->      
+					<li><strong>Week 6</strong> &nbsp;&nbsp;[25/11 - 28/11] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Data Storage Structures</i>; <i>Indexing</i>)</li>   
+					<ul>    
+					          
+					<li><strong>Storage Structures</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 13 - <a href="#">Data Storage Structures</a>
+					</i>					
+					</li>  					      				
+					</ul>      
+					    
+						
+				      
+			      
+					
+					<li><strong>Indexing</strong></li>
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 14 - <a href="#">Indexing</a>
+					</i>					
+					</li>  	
+					</ul>      
+					    
+					
+					<!--<li><font color="#FF3300">Recitation / Lab</font>: HMMs</li>-->      
+					<li><font color="#FF3300">Homework 5</font>: TBA</li>	
+					</ul> 
+      
+           
+					<!--<br>     
+		
+					<li><strong><font color="#FF3300">Holiday</font></strong> [01/05 - 05/05]: International Labor Day</li>
+					-->
+														          
+					    
+	                       
+					<br>              
+<!--					<li><strong>Week 7</strong> &nbsp;&nbsp;[10/10 - 13/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Sequential Decision Making</i>; <i>Generative Models</i>; <i>Semi-supervised Learning</i>)</li>   
+-->          
+					<li><strong>Week 7</strong> &nbsp;&nbsp;[02/12 - 05/12] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Query Optimization</i>; <i>Concurrency Control</i>; ; <i>Recovery System</i>)</li>   
+					<ul>          
+					<li><strong>Query Optimization</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 16 - <a href="#">Query Optimization</a>
+					</i>					
+					</li> 
+		
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 11 - <a href="#">Database Performance Tuning and Query Optimization</a>
+					</i>					        
+					</li> 
+					
+					</ul>
+					
+					
+					<li><strong>Concurrency Control</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 18 - <a href="#">Concurrency Control</a>
+					</i>					
+					</li> 
+					
+					<li><font color="blue">Book Chapter</font> (<font color="red">Optional</font>):     
+					<i>Database Systems - Design, Implementation, & Management by Carlos Coronel, Steven Morris (13th Ed., 2018), Chapter 10 - <a href="#">Transaction Management and Concurrency Control</a>
+					</i>					    
+					</li> 
+					
+					 </ul>    
+					
+					<li><strong>Recovery System</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="blue">Book Chapter</font>:     
+					<i>Database System Concepts by Avi Silberschatz, Henry F. Korth, S. Sudarshan (7th Ed., 2019), Chapter 19 - <a href="#">Recovery System</a>
+					</i>					
+					</li> 
+					
+					 </ul>        
+					
+
+					<!--<li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>					-->
+					</ul>   
+
+
+
+					</br>
+					<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<!--<strong><font color="#FF3300">FINAL EXAM</font></strong> [25/04, Thursday (3 Hours)] (<font color="#FF3300">NO LECTURE</font>)-->
+					<strong><font color="#FF3300">FINAL EXAM</font></strong> [TBA, (TBA Hours)]    
+					</p>
+
+					
+   				</li>        
+				               
+		   
+				
+				</ul>  
+
+	<br>
+	
+		<hr/>    
+		       
+	   
+		<h2>Grading</h2>  
+		    
+		<ul>   
+		<li><strong>Homework</strong>: 20%</li>
+		<ul>    
+		<li>Mathematical, Conceptual, or Programming related</li>
+		<li>Submit on Sakai; 6 in total, the lowest score is dropped</li>   
+		</ul>      
+		
+		
+		<li><strong>Weekly Journal</strong>: 10%</li> 
+		<ul>    
+		<li>Each week, write a page or so about what you have learned</li>
+		<li>Submit on Sakai; 2 points off for each missing journal, capped at 10</li>
+		</ul> 
+		  
+		<li><strong>Midterm</strong>: 20%</li> 		
+		<li><strong>Final</strong>: 30%</li> 	
+		<li><strong>Project</strong>: 20%</li> 	
+		<ul>    
+		<!-- example report + presentation rubricks for ML: https://www.cs.toronto.edu/~huang/courses/csc2515_2020f/Lectures.html -->
+		<li>Report Rubric (TBA)</li>
+		<li>Presentation Rubric (TBA)</li> 
+		</ul> 
+	        
+		
+		</ul> 
+		
+		
+		
+		<br>            
+	
+		<hr/>    
+		       
+	   
+		<h2>Reference Courses</h2>  
+		    
+		<ul>    
+
+		
+		<li><strong>COMPSCI 316</strong>: <a href="https://courses.cs.duke.edu/fall22/compsci316d/" target="_blank">Introduction to Databases</a> by Sudeepa Roy (Duke U.) [ <a href="https://courses.cs.duke.edu/fall22/compsci316d/#resources" target="_blank">Lecture Slides</a> ]</li>
+		
+		
+		
+		<li><strong>CMU 15-445/645</strong>: <a href="https://15445.courses.cs.cmu.edu/spring2023/" target="_blank">Database Systems</a> by Charlie Garrod (CMU)</li>
+		
+		<li><strong>CS 44800</strong>: <a href="https://www.cs.purdue.edu/homes/bb/cs448s23/index.html" target="_blank">Introduction to Database Systems</a> by Bharat Bhargava (Purdue U.)</li>
+			
+			
+		        
+			
+		</ul>          
+		    
+		         
+		      
+		
+  	<br>
+	     
+		<hr/>    
+		
+	           
+	<h2>Other Books</h2>
+	     
+	     
+		       
+		 
+	<strong><font color="#FF3300">Quick / Easy Reads</font></strong>: 
+	<ul style="margin-left : -13px;">	
+	
+		
+		<li><a href="http://www.redbook.io/" target="_blank">Readings in Database Systems</a>, Peter Bailis, Joseph M. Hellerstein, Michael Stonebraker (5th Edition - Eds.), 2015 (<font color="#FF3300">Free Book</font>)</li>
+
+		<li><a href="https://nostarch.com/mg_databases.htm" target="_blank">The Manga Guide to Databases</a>, Mana Takahashi, Shoko Azuma (1st Edition), 2009, No Starch Press</li> 		  
+		  
+      
+              
+   
+				        
+	</ul>	
+	          
+    			        
+	     
+<!--	<br/>
+	
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://deitel.com/intro-to-python-for-computer-science-and-data-science/" target="_blank">Introducing Python for Computer Science and Data Scientists</a>, Paul Deitel, Harvey Deitel (1st Edition), 2020, Pearson  
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>				
+	</ul>
+-->
+
+
+
+	<!--<br/>     -->  
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://deitel.com/intro-to-python-for-computer-science-and-data-science/" target="_blank">Introducing Python for Computer Science and Data Scientists</a>, Paul Deitel, Harvey Deitel (1st Edition), 2020, Pearson   
+		<li><a href="https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-third-edition" target="_blank">Introduction to Computation and Programming Using Python: With Application to Computational Modeling and Understanding Data</a>, John V. Guttag (3rd Edition), 2021, MIT Press [ <a href="https://github.com/guttag/Intro-to-Computation-and-Programming" target="_blank">Source Code in Python</a> ]</li>
+		
+		<li><a href="https://www.pearson.com/us/higher-education/program/Gaddis-My-Lab-Programming-with-Pearson-e-Text-Access-Card-for-Starting-out-with-Python-5th-Edition/PGM2889368.html" target="_blank">Starting out with Python</a>, Tony Gaddis (5th Edition), 2021, Pearson</li>	
+        
+		<li><a href="https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html" target="_blank">Python Programming and Numerical Methods: A Guide for Engineers and Scientists </a>, Qingkai Kong, Timmy Siauw, Alexandre Bayen (1st Edition), 2020, Academic Press (<font color="#FF3300">Free  Book</font>)</li>    
+		    	
+		
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		
+		
+		
+		<li><a href="https://www.amazon.com/Programmers-Guide-Computer-Science-self-taught/dp/195120400X/" target="_blank">A Programmer's Guide to Computer Science (Vol. 1)</a>,  William M. Springer II (1st Edition), 2019, Jaxson Media</li>		
+		
+		<li><a href="https://www.amazon.com/Programmers-Guide-Computer-Science-Vol/dp/1951204042/" target="_blank">A Programmer's Guide to Computer Science (Vol. 2)</a>,  William M. Springer II (1st Edition), 2020, Jaxson Media</li>	    
+      		
+		
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		
+		<li><a href="https://automatetheboringstuff.com/" target="_blank">Automate The Boring Stuff With Python</a>, Al Sweigart (2nd Edition), 2019, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	
+		
+		<li><a href="https://inventwithpython.com/beyond/" target="_blank">Beyond the Basic Stuff with Python</a>, Al Sweigart (1st Edition), 2020, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	       		
+     		
+				
+		<li><a href="https://www.amazon.com/Python-Programming-Context-Bradley-Miller/dp/1284175553/" target="_blank">Python Programming in Context</a>, Bradley N. Miller, David L. Ranum, Julie Anderson (3rd Edition), 2019, Jones & Bartlett Learning</li>		
+               
+		<li><a href="https://mcsp.wartburg.edu/zelle/python/ppics3/index.html" target="_blank">Python Programming: An Introduction to Computer Science</a>, John Zelle (3rd Edition), 2016, Franklin, Beedle & Associates</li>	
+      		
+			       
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>		
+		<li><a href="https://www.packtpub.com/product/clean-code-in-python-second-edition/9781800560215" target="_blank">Clean Code in Python: Develop Maintainable and Efficient Code</a>, Mariano Anaya (2nd Edition), 2021, Packt</li>	
+
+		<li><a href="https://www.amazon.com/Self-Taught-Computer-Scientist-Beginners-Science/dp/1119724414/" target="_blank">The Self-Taught Computer Scientist: The Beginner's Guide to Data Structures & Algorithms</a>, Cory Althoff (1st Edition), 2021, Wiley</li>	
+		    
+
+		<li><a href="https://nostarch.com/big-book-small-python-projects" target="_blank">The Big Book of Small Python Projects: 81 Easy Practice Programs</a>, Al Sweigart (1st Edition), 2021, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+		
+		<li><a href="https://inventwithpython.com/invent4thed/" target="_blank">Invent Your Own Computer Games with Python</a>, Al Sweigart (4th Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+
+		<li><a href="https://inventwithpython.com/cracking/" target="_blank">Cracking Codes with Python: An Introduction to Building and Breaking Ciphers</a>, Al Sweigart (1st Edition), 2018, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	      
+
+      		
+			
+			
+	</ul>      
+	      
+				
+		
+	<!--<br/>     -->  	
+	<strong><font color="#FF3300">Python Programming for Data Science / Analytics</font></strong>: 
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">Python Data Science Handbook: Essential Tools for Working with Data</a>, Jake VanderPlas (1st Edition), 2017, O'Reilly Press</li>			
+		<li><a href="http://shop.oreilly.com/product/0636920050896.do" target="_blank">Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython</a>, Wes McKinney (2nd Edition), 2017, O'Reilly Press</li>		
+		<li><a href="http://shop.oreilly.com/product/0636920179337.do" target="_blank">Data Science from Scratch: First Principles with Python</a>, Joel Grus (2nd Edition), 2019, O'Reilly Press</li>		
+		<li><a href="https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. Muller, Sarah Guido (1st Edition), 2017, O'Reilly Press</li>
+	</ul>
+  
+	
+	<!--<br/>     -->    
+	<strong><font color="#FF3300">Data Visualization</font></strong>:     
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://kieranhealy.org/publications/dataviz/" target="_blank">Data Visualization: A Practical Introduction</a>, Kieran Healy (1st Edition), 2019, Princeton University Press</li>			
+		<li><a href="https://www.cs.ubc.ca/~tmm/vadbook/" target="_blank">Visualization Analysis and Design</a>,Tamara Munzner (1st Edition), 2014, CRC Press</li>	
+      
+		<li><a href="https://cup.columbia.edu/book/better-data-visualizations/9780231193115" target="_blank">Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks</a>, Jonathan Schwabish (1st Edition), 2021, Columbia University Press</li>	
+    		
+		<li><a href="https://www.edwardtufte.com/tufte/books_vdqi" target="_blank">The Visual Display of Quantitative Information</a>, Edward R. Tufte (2nd Edition), 2001, Graphics Press</li>		
+		<li><a href="https://serialmentor.com/dataviz/index.html" target="_blank">Fundamentals of Data Visualization - A Primer on Making Informative and Compelling Figures</a>, Claus O. Wilke (1st Edition), 2019, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="http://shop.oreilly.com/product/0636920041320.do" target="_blank">Making Data Visual - A Practical Guide to Using Visualization for Insight</a>, Danyel Fisher, Miriah Meyer (1st Edition), 2018, O'Reilly Press</li>	
+
+		<li><a href="https://www.storytellingwithdata.com/books" target="_blank">Storytelling with Data: A Data Visualization Guide for Business Professionals</a>, Cole Nussbaumer Knaflic (1st Edition), 2015, Wiley</li>		
+	</ul>
+
+   
+   
+   
+       
+   
+   
+       
+	<!--<br/>     -->      
+	<strong><font color="#FF3300">Beyond the Course Scope - Big Data</font></strong>:     
+	<ul style="margin-left : -13px;">	 				
+	
+	
+	
+	<li><a href="https://www.oreilly.com/library/view/nosql-for-mere/9780134029894/" target="_blank">Big Data Fundamentals: Concepts, Drivers & Techniques</a>, Thomas Erl, Wajid Khattak, Paul Buhler (1st Edition), 2016, Pearson</li> 
+	
+	
+	<li><a href="https://www.oreilly.com/library/view/nosql-for-mere/9780134029894/" target="_blank">Big Data For Dummies</a>, Judith Hurwitz, Alan Nugent, Fern Halper, Marcia Kaufman (1st Edition), 2013, Wiley</li> 	
+	
+	
+	<li><a href="http://sethsd.com/everybodylies" target="_blank">Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are</a>, Seth Stephens-Davidowitz (1st Edition), 2018, Dey Street Books</li> 
+
+	<li><a href="https://bernardmarr.com/books/" target="_blank">Big Data in Practice: How 45 Successful Companies Used Big Data Analytics to Deliver Extraordinary Results</a>, Bernard Marr (1st Edition), 2016, Wiley</li> 
+	
+	
+      
+
+	<!--
+	<br>
+	Big Data - A Primer by Eds. Hrushikesha Mohanty, Prachet Bhuyan, Deepak Chenthati - 2015 - Springer.pdf  
+	-->      
+       
+	        	
+	
+       
+   
+   	<li><a href="https://www.pearson.com/en-us/subject-catalog/p/nosql-distilled-a-brief-guide-to-the-emerging-world-of-polyglot-persistence/P200000009587/9780133036121" target="_blank">NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence</a>, Pramod J. Sadalage, Martin Fowler (1st Edition), 2013, Addison-Wesley</li> 
+	
+	<li><a href="https://www.oreilly.com/library/view/nosql-for-mere/9780134029894/" target="_blank">NoSQL for Mere Mortals</a>, Dan Sullivan Sullivan (1st Edition), 2015, Addison-Wesley</li> 		   
+		    
+	<li><a href="https://www.oreilly.com/library/view/high-performance-spark/9781098145842/" target="_blank"> High Performance Spark</a>, Holden Karau, Anya Bida, Rachel Warren (2nd Edition), 2024, O'Reilly</li> 	   
+   
+      
+   
+   
+   
+	</ul>
+	
+	
+	      
+         
+   
+   	<!--<br/>     -->  
+	<strong><font color="#FF3300">Miscellaneous</font></strong>:     
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://mitpress.mit.edu/9780262528511/metadata/" target="_blank">Metadata</a>, Jeffrey Pomerantz (1st Edition), 2015, MIT Press</li>			
+		<!--TBA?? <li><a href="https://direct.mit.edu/books/book/4983/Data-ActionUsing-Data-for-Public-Good" target="_blank">Data Action: Using Data for Public Good</a>, Sarah Williams (1st Edition), 2020, MIT Press</li> -->		
+
+            
+    
+
+
+	</ul>
+	     
+	      
+	
+   
+   
+	<br>      
+		<hr/>      
+		
+	   
+      
+	<h2>Other Materials / Resources</h2>
+	
+	<ul style="margin-left : -13px;">	 				
+<!--		<li>Philip W. L. Fong, 2004. <a href="http://www.mathcs.emory.edu/~lxiong/papers/fong04how.pdf" target="_blank">How to Read a CS Research Paper?</a> + 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140.	
+		</li>		      
+		-->  
+		    
+		<li><a href="https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=glossary.php&imgsize=&arange=all" target="_blank">Database Design Glossary</a> from the <a href="https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php" target="_blank">Database Design with UML and SQL</a> book
+		</li>
+				        
+		<li>An overview of <a href="https://pyviz.org/" target="_blank">Python Data Visualization libraries</a>
+		
+		<li>Philip W. L. Fong, 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a Computer Science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140  	
+		</li>	   
+		<li><a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html" target="_blank">You and Your Research</a> by Richard Hamming (Bell Labs / NPS). Bell Communications Research Colloquium Seminar, 7 March 1986  
+		</li>				
+		<li>An Online LaTeX Editor: <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>   
+		</li>	
+		<li>LaTeX Tutorial (Overleaf): <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a>   
+		</li>	
+		<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank">The Not So Short Introduction to LaTeX</a> by Tobias Oetiker, Hubert Partl, Irene Hyna, Elisabeth Schlegl, 2021 
+		</li>	
+		<li>LaTeX Handwritten Symbol Recognition: <a href="http://detexify.kirelabs.org/classify.html" target="_blank">Detexify</a>	
+		</li>         
+		<li>     
+		<a href="https://www.youtube.com/watch?v=Unzc731iCUY" target="_blank">How To Speak</a> / Present (Video) by Patrick Winston (MIT)
+		</li>       
+		    
+		        
+	</ul>
+	   
+	<br>   
+
+
+<!--   
+  	<br>
+	     
+		<hr/>    
+		
+	
+	<h2>Cevrimici Kaynaklar (Online Resources)</h2>		      
+	
+	<ul style="margin-left : -13px;">	 			
+		<li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>: Machine Learning by Andrew Ng</li>	
+		<li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF" target="_blank">Youtube</a>: DeepMind x UCL | Deep Learning Lecture Series 2020</li>	
+	</ul>	
+-->       		  
+		   
+		  
+		
+		
+
+				
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
