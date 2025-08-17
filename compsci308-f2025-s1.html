@@ -1,0 +1,1415 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [ COMPSCI 308 ] Design and Analysis of Algorithms @ Fall 2025-2026 (Session 1), Duke Kunshan University</title></head>
+    
+       
+
+<body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GK222RBJ36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GK222RBJ36');
+</script>
+
+
+
+  
+            
+          
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="80%">
+      
+<tbody><tr><td align="right">   
+</td></tr> 
+         
+<tr><td style="text-align:justify;">    
+             
+<img src="DKU_Logo_whitebackdrop-perc15-v2.png" style="width:25%" align="right">  
+
+<h1>Design and Analysis of Algorithms (COMPSCI 308)</h1>       
+<h2>Fall 2025-2026 / Session 1 (7 weeks, 35 hours)</h2>     
+     
+                  
+      
+                    
+                               
+				                     
+	<h3><font color="#FF3300">Course Period</font>: August 18 - October 10, 2025</h3>     
+	<ul style="margin-left : -13px;">	    
+		<!--<li><strong>Lectures</strong>: Monday / Wednesday @ 14:45-17:15 (<font color="green"><strong>Classroom</strong></font>: <font color="#FF3300">IB 1051</font> + Zoom)</li> -->
+		<li><strong>Lectures</strong>: Monday / Wednesday / Tuesday / Thursday @ 08:30-09:45 (Classroom: WDR 1005)</li> 
+	</ul>                 
+            
+	   
+	<strong>Instructor</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (<font color="green"><strong>Office</strong></font>: <font color="#FF3300">WDR 2106</font>), <a href="mailto:mustafa.misir [at] dukekunshan.edu.cn">mustafa.misir [at] dukekunshan.edu.cn</a> &nbsp; / &nbsp; <a href="mailto:mm940 [at] duke.edu">mm940 [at] duke.edu</a> </br>
+	       
+	<!--<strong>Teaching Assistant</strong>: <a href="#" target="_blank">TBA</a> (<font color="green"><strong>Office</strong></font>: TBA), TBA-->    
+	     
+	</h2>             
+	<br/><br/>   
+          
+	  
+	  
+	An <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">algorithm</a> is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output. An algorithm is thus a sequence of computational steps that transform the input into the output. An algorithm can also be viewed as a tool for solving a well-specified computational problem. The statement of the problem specifies in general terms the desired input/output relationship. The algorithm describes a specific computational procedure for achieving that input/output relationship.
+
+<br/><br/>     
+
+	After having a target problem, the next step is to design an algorithm that can address the target problem. Algorithm design is a coherent discipline-one needs a specific set of concepts to define, a computational problem and a specific set of tools to design an optimal algorithm to solve it. Designing the right algorithm for a given application is a major creative act-that of taking a problem and pulling a solution out of the ether. The space of choices you can make in algorithm design is enormous, leaving you plenty of freedom.
+
+<br/><br/>
+
+	Solely designing algorithms may not be a proper approach to solve a specific problem. Understanding their behavioral characteristics together with their strengths and weaknesses is critical. Algorithm analysis is investigated for this purpose, in particular, for determining how much of a resource, such as time or memory, an algorithm uses as a function of some characteristic of the input to the algorithm, usually the size of the input.
+
+<br/><br/>
+
+	This course will touch all the major algorithm design and analysis steps while taking data structures into account. All the relevant concepts will be exemplified through existing algorithms and problems besides implementing algorithms in <a href="https://www.python.org/" target="_blank">Python</a>. To be specific, the design and analysis of efficient algorithms including sorting, searching, dynamic programming, graph algorithms, nondeterministic algorithms and computationally hard problems and other related topics will be studied. 
+   
+<br/><br/>
+
+	This course will be carried out in line with the <a href="https://dukekunshan.edu.cn/en/academics/undergraduate-curriculum/principles-description" target="_blank">DKU's animating principles</a>. In particular, Collaborative Problem Solving, Research and Practice and Lucid Communication will be directly involved with this course while touching the Independence and Creativity aspect. The course will be primarily executed through in-class quick quizzes, in-class individual / group discussions and weekly assignments.
+    
+<br/><br/>  
+                  
+<font color="blue"><u>By the end of this course, <strong>you will be able to</strong></u></font>:
+    
+<ol style="margin-left : -13px;">	     	
+	<li><font color="#FF3300"><strong>design</strong></font> efficient and effective algorithms of varying types</li>
+	<li><font color="#FF3300"><strong>implement</strong></font> algorithms in consideration of the problem requirements and computational resources</li>
+	<li><font color="#FF3300"><strong>utilize</strong></font> appropriate data structures while developing algorithms</li>
+	<li><font color="#FF3300"><strong>introduce</strong></font> new algorithmic solutions for new problems</li>
+	<li><font color="#FF3300"><strong>evaluate</strong></font> the theoretical boundaries of given algorithms</li>
+	<li><font color="#FF3300"><strong>analyze</strong></font> the behaviour and performance of given algorithms, referring to their strengths and weaknesses
+	<li><font color="#FF3300"><strong>identify</strong></font> the resemblance between different problems, leading to problem hardness analysis
+</ol>         
+              
+     
+                               
+<font color="#FF3300">Follow</font> <a href="https://canvas.duke.edu" target="_blank"><strong>Canvas</strong></a> and <a href="https://canvas.duke.edu/courses/28936/external_tools/228?display=borderless" target="_blank"><strong>Ed Discussions</strong></a> for <strong>announcements</strong> and <strong>discussions</strong>.  
+<br>   
+		       
+		    
+<h3>Pre-requisites</h3>
+	<ul style="margin-left : -13px;">
+		<li>COMPSCI 201: Introduction to Programming and Data Structures</li>
+		<li>COMPSCI 203: Discrete Math for Computer Science or MATH 205 / 206: Probability and Statistics</li>
+	</ul>  
+         
+     
+<!--<h3>Anti-requisites</h3>
+	<ul style="margin-left : -13px;">        
+		<li>COMPSCI 301: Algorithms and Databases</li>
+	</ul>   -->    
+	         
+	<br/>        
+	The following chart shows how <strong>COMPSCI 308</strong> fits to the <a href="https://ugstudies.dukekunshan.edu.cn/academics/" target="_blank">DKU curriculum</a>, where the abbreviations indicate the course types, i.e. <strong>D</strong>: <i>Divisional</i>, <strong>DF</strong>: <i>Divisional Foundation</i>, <strong>ID</strong>: <i>Interdisciplinary</i> and <strong>E</strong>: <i>Elective</i>. Refer to the <a href="https://duke.app.box.com/s/u6ajvjuo2yocn57rld4ztu6jrrdxfn0n" target="_blank">DKU Undergraduate Bulletin (2024-2025)</a> for more details.     
+	
+	<br><br>     
+	       
+	<center>                 
+	<img src="COMPSCI308-Design-Analysis-Algorithms-Course-Map-v2.png" style="width:85%">
+	</center>                  
+	    
+	<br><br>        
+	
+		<hr/>
+
+			
+	<h2>Reference Books</h2>      
+	<!--There is <font color="#FF3300"><u>no official textbook</u></font> for this course. Still, the following books can be used as references.-->
+
+	<a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition" target="_blank">Introduction to Algorithms</a>, Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein (3rd Edition), 2009, MIT Press (<font color="#FF3300">Free Book</font>: <a href="http://ebookcentral.proquest.com/lib/duke" target="_blank">ProQuest - Duke U.</a>) [ <a href="https://www.cs.virginia.edu/~robins/cs6161/slides/Cormen_Algorithms_Slides.pdf" target="_blank">Lecture Slides</a> ]
+	           
+		         
+		  	  
+	  				     
+	
+                
+	<br/><br/>      
+	<strong><font color="#FF3300">Supplementary Books</font></strong>: 
+	        
+	<ul style="margin-left : -13px;">	 
+
+	<li><a href="https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html" target="_blank">Algorithm Design</a>, John Kleinberg, Eva Tardos (1st Edition), 2005, Pearson - Addison Wesley [ <a href="https://www.cs.princeton.edu/~wayne/kleinberg-tardos/" target="_blank">Lecture Slides & Examples</a> ]</li>
+
+	<li><a href="https://www.mheducation.com/highered/product/algorithms-dasgupta-papadimitriou/M9780073523408.html" target="_blank">Algorithms</a>, Sanjoy Dasgupta, Christos Papadimitriou, Umesh Vazirani (1st Edition), 2006, McGraw-Hill</li>   
+	
+	<li><a href="https://algs4.cs.princeton.edu/" target="_blank">Algorithms</a>, Robert Sedgewick, Kevin Wayne (4th Edition), 2011, Addison-Wesley</li>   
+     
+	<li><a href="https://aofa.cs.princeton.edu/" target="_blank">Introduction to the Analysis of Algorithms</a>, Robert Sedgewick, Philippe Flajolet (2nd Edition), 2013, Addison-Wesley [ <a href="https://aofa.cs.princeton.edu/online/" target="_blank">Lecture Slides & Videos</a> ]</li>   
+  
+	<li><a href="https://www.algorist.com/" target="_blank">The Algorithm Design Manual</a>, Steven Skiena (3rd Edition), 2020, Springer [ Old: <a href="https://www3.cs.stonybrook.edu/~algorith/video-lectures/" target="_blank">Lecture Slides & Videos</a> - <font color="#FF3300">New</font></a>: <a href="https://www3.cs.stonybrook.edu/~skiena/373/videos/" target="_blank">Lecture Slides & Videos</a> ]</li>      
+         
+	<li><a href="https://www.jblearning.com/catalog/productdetails/9781284049190" target="_blank">Foundations of Algorithms</a>, Richard Neapolitan (5th Edition), 2014, Jones & Bartlett Learning</li>   
+	  
+    <li><a href="https://www.pearson.com/us/higher-education/program/Weiss-Data-Structures-and-Algorithm-Analysis-in-C-4th-Edition/PGM148299.html" target="_blank">Data Structures and Algorithm Analysis in C++</a>, Mark A. Weiss (4th Edition), 2014, Pearson [ <a href="http://users.cs.fiu.edu/~weiss/dsaa_c++4/code/" target="_blank">Source Code in C++</a> ]</li>   
+	  
+	<li><a href="https://www.wiley.com/en-us/Algorithm+Design+and+Applications-p-9781118335918" target="_blank">Algorithm Design and Applications</a>, Michael T. Goodrich, Roberto Tamassia (1st Edition), 2015, Wiley</li>   
+    
+	<li><a href="http://www.algorithmsilluminated.org/" target="_blank">Algorithms Illuminated (Part 1): The Basics</a>, Tim Roughgarden (1st Edition), 2017, Soundlikeyourself Publishing [ <a href="http://www.algorithmsilluminated.org/" target="_blank">Lecture Slides & Videos</a> ]</li>   
+
+	<li><a href="http://www.algorithmsilluminated.org/" target="_blank">Algorithms Illuminated (Part 2): Graph Algorithms and Data Structures</a>, Tim Roughgarden (1st Edition), 2018, Soundlikeyourself Publishing [ <a href="http://www.algorithmsilluminated.org/" target="_blank">Lecture Slides & Videos</a> ]</li>   
+    
+	<li><a href="http://www.algorithmsilluminated.org/" target="_blank">Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming</a>, Tim Roughgarden (1st Edition), 2019, Soundlikeyourself Publishing [ <a href="http://www.algorithmsilluminated.org/" target="_blank">Lecture Slides & Videos</a> ]</li>   	
+	
+	<li><a href="http://www.algorithmsilluminated.org/" target="_blank">Algorithms Illuminated (Part 4): Algorithms for NP-Hard Problems</a>, Tim Roughgarden (1st Edition), 2020, Soundlikeyourself Publishing [ <a href="http://www.algorithmsilluminated.org/" target="_blank">Lecture Slides & Videos</a> ]</li>   
+	
+	
+	<li><a href="https://www.pearson.com/en-us/subject-catalog/p/introduction-to-the-design-and-analysis-of-algorithms/P200000003403/9780137541133" target="_blank">Introduction to the Design and Analysis of Algorithms</a>, Anany Levitin (3rd Edition), 2011, Addison-Wesley</li> 	    
+	
+	<li><a href="https://superstudy.guide/algorithms-data-structures/" target="_blank">Super Study Guide: Algorithms and Data Structures</a>, Afshine Amidi, Shervine Amidi (1st Edition), 2022</li> 	
+	
+	      
+	
+	
+	<li><a href="https://www.amazon.com/Design-Analysis-Computer-Algorithms/dp/0201000296/" target="_blank">Design and Analysis of Computer Algorithms</a>, Alfred Aho, John Hopcroft, Jeffrey Ullman  (1st Edition), 1974, Addison-Wesley</li> 
+	      
+	
+	<li><a href="https://www.amazon.com/Data-Structures-Algorithms-Alfred-Aho/dp/0201000237/" target="_blank">Data Structures and Algorithms</a>, Alfred Aho, Jeffrey Ullman (1st Edition), 1983, Pearson</li> 	
+	
+	
+	<li><a href="https://www.amazon.com/Fundamentals-computer-algorithms-Computer-engineering/dp/0914894226/" target="_blank">Fundamentals of Computer Algorithms</a>, Ellis Horowitz, Sartaj Sahni (1st Edition), 1984, CS Press</li>	
+      
+	  
+	
+	<li><a href="https://graal.ens-lyon.fr/~yrobert/algoL3/poly-algo.pdf" target="_blank">A Guide to Algorithm Design: Paradigms, Methods, and Complexity Analysis</a>, Anne Benoit, Yves Robert, Frederic Vivien  (1st Edition), 2014, CRC</li>	
+       
+	<li><a href="https://www.amazon.com/Algorithms-Sequential-Distributed-Kenneth-Berman/dp/0534420575" target="_blank">Algorithms: Sequential, Parallel, and Distributed</a>, Kenneth A. Berman, Jerome L. Paul (1st Edition), 2004, Course Technology</li>		   
+
+             
+	<li><a href="https://link.springer.com/book/10.1007/978-1-4612-4400-4" target="_blank">The Design and Analysis of Algorithms</a>, Dexter C. Kozen (1st Edition), 1992, Springer</li> 
+   	
+	
+	<li><a href="https://jeffe.cs.illinois.edu/teaching/algorithms/" target="_blank">Algorithms</a>, Jeff Erickson (1st Edition), 2019 (<font color="#FF3300">Free Book</font>)</li> 
+	
+	<li><a href="https://nostarch.com/algorithmic-thinking-2nd-edition" target="_blank">Algorithmic Thinking: Learn Algorithms to Level Up Your Coding Skills</a>, Daniel Zingaro (2nd Edition), 2023</li> 
+      
+
+	<li><a href="https://link.springer.com/book/10.1007/978-3-031-17043-0" target="_blank">Problems on Algorithms: A Comprehensive Exercise Book for Students in Software Engineering</a>, Habib Izadkhah (1st Edition), 2022</li> 
+
+     
+	       
+		 
+	
+	
+	<li><a href="https://www.designofapproxalgs.com/" target="_blank">The Design of Approximation Algorithms</a>, David P. Williamson, David B. Shmoys (1st Edition), 2011, Cambridge University (<font color="#FF3300">Free Book</font>)</li> 
+	
+	<li><a href="https://link.springer.com/book/10.1007/978-3-662-04565-7" target="_blank">Approximation Algorithms</a>, Vijay V. Vazirani (1st Edition), 2003, Springer</li> 	      
+        
+	
+   
+	<li><a href="https://www.cengage.com/c/introduction-to-the-theory-of-computation-3e-sipser/" target="_blank">Introduction to the Theory of Computation</a>, Michael Sipser (3rd Edition), 2013, Cengage</li> 	
+	
+	<li><a href="https://whatcanbecomputed.com/" target="_blank">What Can Be Computed?: A Practical Guide to the Theory of Computation</a>, John MacCormick (1st Edition), 2018, Princeton University</li> 
+    
+	<li><a href="https://theory.cs.princeton.edu/complexity/" target="_blank">Computational Complexity: A Modern Approach</a>, Sanjeev Arora, Boaz Barak (1st Edition), 2009, Cambridge University (<font color="#FF3300">Free Draft</font>)</li> 	    
+	
+	
+	<li><a href="https://www.math.ias.edu/avi/book" target="_blank">Mathematics and Computation: A Theory Revolutionizing Technology and Science</a>, Avi Wigderson (1st Edition), 2019, Princeton University (<font color="#FF3300">Free Draft</font>)</li> 		
+       
+
+	
+	<li><a href="https://www.amazon.com/Algorithms-Complexity-Herbert-S-Wilf/dp/1568811780/" target="_blank">Algorithms and Complexity</a>, Herbert S. Wilf (2nd Edition), 2002, CRC</li> 	  	
+	
+	<li><a href="https://www.amazon.com/Complexity-Theory-Exploring-Efficient-Algorithms-ebook/dp/B000QCS2OS/" target="_blank">Complexity Theory: Exploring the Limits of Efficient Algorithms</a>, Ingo Wegener (1st Edition), 2005, Springer</li> 		     
+		 
+      
+
+  
+  
+  	<li><a href="https://www.cs.utexas.edu/~ear/cs341/automatabook/" target="_blank">Automata, Computability and Complexity: Theory and Applications</a>, Elaine A. Rich (1st Edition), 2007, Pearson (<font color="#FF3300">Free Book</font>)</li> 	
+                       
+    </ul>                
+                      
+      
+	          
+ 	<strong><font color="#FF3300">Algorithms + Python</font></strong>: 
+	<ul style="margin-left : -13px;">	 	
+
+		<li><a href="https://www.wiley.com/en-us/Data+Structures+and+Algorithms+in+Python-p-9781118290279" target="_blank">Data Structures and Algorithms in Python</a>, Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser (1st Edition), 2013, Wiley</li>	
+		
+
+		
+		<li><a href="https://runestone.academy/runestone/books/published/pythonds/index.html" target="_blank">Problem Solving with Algorithms and Data Structures using Python</a>, Brad Miller and David Ranum, Franklin (2nd Edition), 2011, Beedle & Associates (<font color="#FF3300">Free Book</font>)</li>    
+			
+		<li><a href="https://greenteapress.com/wp/think-complexity-2e/" target="_blank">Think Complexity</a>, Allen B. Downey (2nd Edition), 2016 / 2018, Green Tea Press / O'Reilly Press (<font color="#FF3300">Free Book</font>) [ <a href="https://allendowney.github.io/ThinkComplexity2/" target="_blank">Source Code in Python</a> ]</li>			   
+       
+		<li><a href="https://nostarch.com/Dive-Into-Algorithms" target="_blank">Dive Into Algorithms: A Pythonic Adventure for the Intrepid Beginner</a>, Bradford Tuckfield (1st Edition), 2021, No Starch Press</li>  	      
+	
+		<li><a href="https://www.oreilly.com/library/view/algorithms-in-a/9781491912973/" target="_blank">Algorithms in a Nutshell: A Practical Guide</a>, George T. Heineman, Gary Pollice, Stanley Selkow (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Partially Python</font>)</li>  	
+        
+        <li><a href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/" target="_blank">A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills</a>, Jay Wengrow (2nd Edition), 2020, Pragmatic Bookshelf [ <a href="https://media.pragprog.com/titles/jwdsal2/code/jwdsal2-code.zip" target="_blank">Source Code in Python, Ruby and JavaScript</a> ]</li>  	
+       
+          	
+	</ul>        
+	
+     
+	
+	
+  
+    
+	<br>         
+		<hr/>             
+			 
+			
+		<h2>Lecture Notes / Slides</h2>          
+		    
+				<ul style="margin-left : -13px;">	
+
+				         
+					<li><strong>Week 0</strong> (<font color="#FF3300">Reviews</font>)</li>  
+					<ul>  
+					<li><strong>Python Programming</strong></li>     
+					<ul style="margin-left : -15px;">     
+
+					   
+					<li><font color="#BA4A00">External Lecture Slides / Videos / Book</font>:
+					<i><a href="https://www.py4e.com/lessons/" target="_blank">Python for Everybody</a> by Charles R. Severance     
+					</i>       
+					</li>				
+
+					<li><font color="#BA4A00">External Course</font>:
+					<i>6.0001 (MIT) - <a href="https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/" target="_blank">Introduction to Computer Science and Programming in Python</a> by Ana Bell, Eric Grimson, John Guttag </i> [ <font color="#FF3300">Fall 2016</font>: <a href="https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA" target="_blank">Lecture Videos</a> ]
+					</i>             
+					</li>	
+					
+					<li><font color="#BA4A00">External Course</font>:
+					<i>CS50 (Harvard U.) - <a href="https://cs50.harvard.edu/x/2022/weeks/" target="_blank">Introduction to Computer Science</a> by David J. Malan</i> [ <font color="#FF3300">Fall 2022</font> (Week 6): <a href="https://cs50.harvard.edu/x/2022/weeks/6/" target="_blank">Lecture Video</a> ]
+					</i>                   
+					</li>			
+					 
+					   					
+					  
+					        
+					</ul>
+					        
+							     
+					<li><strong>Data Structures</strong></li>     
+					<ul style="margin-left : -15px;">     				   
+					<li><font color="#76448A">Book Chapter</font>:
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 10: Elementary Data Structures</a>
+					</i>            
+					</li>				
+					</ul>
+     
+             
+					<li><strong>Discrete Mathematics</strong></li>     
+					<ul style="margin-left : -15px;">     				                   
+					<li><font color="#BA4A00">External Course</font>:
+					<i>6.042J (MIT) - <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/" target="_blank">Mathematics for Computer Science</a> by Albert R. Meyer</i> [ <font color="#FF3300">Fall 2015</font>: <a href="https://www.youtube.com/watch?v=wIq4CssPoO0&list=PLUl4u3cNGP60UlabZBeeqOuoLuj_KNphQ" target="_blank">Lecture Videos</a>, <font color="#FF3300">Free</font> <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/resources/mit6_042js15_textbook/" target="_blank">Textbook</a> ] 
+					             
+					</li>					    
+					</ul>
+					     
+					      
+					
+					
+					
+					</ul> 					
+					<br>  
+				
+		     
+				
+					<li><strong>Week 1</strong> &nbsp;&nbsp;[18/08 - 21/08] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>History</i>, <i>Terminology and Basics</i>; <i>Algorithms</i>; <i>Computation</i>; <i>Asymptotic Notations</i>)</li>
+					<ul>         
+					<li><strong>About COMPSCI 308</strong></li> 
+					<ul style="margin-left : -15px;">   					
+					<li><font color="green">Lecture Slides</font>:			    			
+					<i><a href="#">L1-0: About COMPSCI 308</a>
+					</i> 					  
+					</li>
+					</ul>   
+					   
+					 
+  					
+					<li><strong>Introduction to Algorithms</strong></li>
+					<ul style="margin-left : -15px;">     	   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L1-1: Introduction to Algorithms</a>
+					</i> 					  
+					</li>  		
+					<li><font color="#76448A">Book Chapter</font>:
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 1: The Role of Algorithms in Computing</a>
+					</i>       
+					</li>
+					<li><font color="#76448A">Book Chapter</font>:
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 2: Getting Started</a>       
+					</i>          
+					</li>		  			       
+					<li><font color="#BA4A00">External Lecture Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/eb8055b5-cbd3-4d25-b72e-3bca2362bf2b/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Algorithms and Computation</a>
+					</i>       
+					</li>
+					<li><font color="#BA4A00">External Recitation Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/92c5c4c6-dcb3-4f49-a346-5f7ea916e1e7/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Introduction and Asymptotics</a>
+					</i>     
+					</li>	
+					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Jason Ku (Spring 2020) - <a href="https://www.youtube.com/watch?v=ZA-tUyM_y7s" target="_blank">Algorithms and Computation</a>
+					</i>   
+					</li>
+					     
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Srini Devadas (Fall 2011) - <a href="http://people.csail.mit.edu/costan/mit6006/lectures/09.08.480p.webm" target="_blank">Algorithmic Thinking, Peak Finding</a>
+					</i>   
+					</li>	
+
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Srini Devadas (Fall 2011) - <a href="http://people.csail.mit.edu/costan/mit6006/lectures/09.13.480p.webm" target="_blank">Models of Computation, Python Cost Model, Document Distance</a>
+					</i>   
+					</li>	
+					
+					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine (Spring 2020) - <a href="https://www.youtube.com/watch?v=ZA-tUyM_y7s" target="_blank">Data Structures and Dynamic Arrays</a>
+					</i>          
+					</li>    
+    
+	        
+					</ul>
+					  
+					  
+					  
+					       
+					        
+					    
+					<li><strong>Asymptotic Notations</strong></li>          
+					<ul style="margin-left : -15px;">       
+					<li><font color="blue">Lecture Slides</font>:						
+					<i><a href="#">L1-2: Asymptotic Notations</a>
+					</i> 					  
+					</li> 
+					<li><font color="#76448A">Book Chapter</font>:
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 3: Growth of Functions</a>
+					</i>       
+					</li>					   
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 2: Basics of Algorithm Analysis</a>   
+					</i>       
+					</li>	
+
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/14analysis/" target="_blank">Chapter 1.4: Analysis of Algorithms</a>   
+					</i>                    
+					</li>  					
+				     					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine (Spring 2020) - <a href="https://www.youtube.com/watch?v=CHhwJjR0mZA" target="_blank">Data Structures and Dynamic Arrays</a>
+					</i>          
+					</li>	
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Justin Solomon (Spring 2020) - <a href="https://www.youtube.com/watch?v=oS9aPzUNG-s	" target="_blank">Sets and Sorting</a>
+					</i>          
+					</li>	
+					
+					</ul>
+					      
+					    
+					    
+					
+					
+			
+					      
+					<!--
+					<li><font color="#FF3300">Recitation / Lab</font>: <a href="https://colab.research.google.com" target="_blank">Google Colab</a>, <a href="https://www.python.org/" target="_blank">Python</a> (+ <a href="https://numpy.org/" target="_blank">NumPy</a>, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>), <a href="https://scikit-learn.org/" target="_blank">scikit-learn</a>, Linear Regression 
+					-->     					
+					</ul>       
+
+
+		  
+					<br>	  
+					<p style="border-width:5px; border-style:solid; border-color:#D35400; padding: 0.5em;">
+					<strong><font color="#FF3300">REMINDER</font></strong> [21/08, Thursday]: Drop/add ends for first 7-week undergraduate session. &nbsp;&nbsp; 
+					{ <i>Source</i>: <a href="https://www.dukekunshan.edu.cn/about/academic-calendar/" target="_blank">Academic Calendar</a> } 
+					</p>     
+
+					      
+					
+					         
+					
+					              
+					         
+					<br>       
+					<li><strong>Week 2</strong> &nbsp;&nbsp;[25/08 - 28/08] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Divide and Conquer</i>; <i>Dynamic Programming</i>)</li>
+					<ul>     
+					<li><strong>Divide and Conquer</strong></li>
+					<ul style="margin-left : -15px;">       
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L2-1: Divide and Conquer</a>
+					</i> 					  
+					</li>  			
+					<li><font color="#76448A">Book Chapter</font>:   
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 4: Divide and Conquer</a>   
+					</i>       
+					</li>
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 5: Divide and Conquer</a>   
+					</i>          
+					</li>					
+					<!--<li><font color="blue">External Lecture Notes</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) [Part II] - <a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes1.pdf" target="_blank">Logistic Regression</a>
+					</i>       
+					</li>		
+					<li><font color="blue">External Video</font>:
+					<i>CS229: Machine Learning (Andrew Ng, Stanford U) - <a href="https://www.youtube.com/watch?v=het9HFqo1TQ" target="_blank">Logistic Regression</a>
+					</i>          
+					</li>
+					-->     
+					</ul>					   
+  
+					      
+					
+					<li><strong>Dynamic Programming</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L2-2: Dynamic Programming</a>
+					</i> 					  
+					</li>   
+					<li><font color="#76448A">Book Chapter</font>:
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 15: Dynamic Programming</a>
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 6: Dynamic Programming</a>   
+					</i>          
+					</li>					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine (Spring 2020) - Dynamic Programming: <a href="https://www.youtube.com/watch?v=r4-cftqTcdI" target="_blank">Part 1</a>, <a href="https://www.youtube.com/watch?v=KLBCUx1is2c" target="_blank">Part 2</a>, <a href="https://www.youtube.com/watch?v=TDo3r5M1LNo" target="_blank">Part 3</a>, <a href="https://www.youtube.com/watch?v=i9OAOk0CUQE" target="_blank">Part 4</a>
+					</i>          
+					</li>           
+					</ul>
+
+					      
+					             
+					
+				      
+					<!--
+					<li><font color="#FF3300">Recitation / Lab</font>: <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, Logistic Regression, kNN, Naive Bayes</li>
+					<li><font color="#FF3300">Homework 1</font>: TBA</li>
+					-->    
+					</ul>  
+					
+					
+					
+					  
+					<br>           
+		  
+					<!--<li><strong><font color="#FF3300">Holiday</font></strong> [04/04, Thursday]: Qing Ming-Tomb Sweeping Day; <u>Thursday classes will take place on 05/04, Friday</u></li>-->
+					
+					<!--
+					<p style="border-width:5px; border-style:solid; border-color:#2ECC71; padding: 0.5em;">
+					<strong><font color="#FF3300">HOLIDAY</font></strong> [04/04, Friday - 06/04, Sunday]: Qing Ming - Tomb Sweeping Day
+					-->
+					<!--(<font color="#FF3300">NO CLASSES</font>) - Continue on [05/04, Friday]-->      
+					<!--</p> -->
+				   	    
+	                  
+					         
+					<br> 
+					<li><strong>Week 3</strong> &nbsp;&nbsp;[01/09 - 04/09] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Greedy Algorithms</i>; <i>Graphs</i>; <i>Graph Algorithms</i>)</li>
+					<ul>
+					<li><strong>Greedy Algorithms</strong></li>
+					<ul style="margin-left : -15px;">        
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L3-1: Greedy Algorithms</a>
+					</i> 					      
+					</li>
+					<li><font color="#76448A">Book Chapter</font>:      
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 16: Greedy Algorithms</a>   
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 4: Greedy Algorithms</a>   
+					</i>          
+					</li>					
+					<!--<li><font color="blue">External Video</font>:
+					<i>CS4780: Machine Learning for Intelligent Systems (Kilian Weinberger, Cornell U) - <a href="https://www.youtube.com/watch?v=BbYV8UfMJSA&t=2180s" target="_blank">Perceptrons</a>    
+					</i>                
+					</li>-->    	    
+					</ul>      
+					 
+					<li><strong>Graph Algorithms</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L3-2: Graph Algorithms</a>
+					</i> 					          
+					</li>	    
+					<li><font color="#76448A">Book Chapter</font>:      
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 22: Elementary Graph Algorithms</a>   
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 3: Graphs</a>   
+					</i>          
+					</li>					
+
+					<li><font color="#BA4A00">External Lecture Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/9e94c2ee-5dc3-40af-8e79-fb46a01e123b/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Breadth-First Search (BFS)</a>, <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/ad9daeca-2b0b-458d-950c-893d8a356458/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Depth-First Search (DFS)</a>    
+					</i>         
+					</li>
+					
+					<!--<li><font color="#BA4A00">External Lecture Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/ad9daeca-2b0b-458d-950c-893d8a356458/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Depth-First Search (DFS)</a>
+					</i>           
+					</li>-->					
+					
+				    
+					
+					<li><font color="#BA4A00">External Recitation Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/a1c26ed8-d7a0-4a99-b542-607335b625ba/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Breadth-First Search (BFS)</a>, <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/0fe8baa9-cf0a-450e-b1b7-b470f0a8b4a7/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Depth-First Search (DFS)</a>
+					</i>     
+					</li>	
+					
+					<!--<li><font color="#BA4A00">External Recitation Notes</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Jason Ku, and Justin Solomon (Spring 2020) - <a href="https://learning-modules.mit.edu/service/materials/groups/276921/files/0fe8baa9-cf0a-450e-b1b7-b470f0a8b4a7/link?errorRedirect=%2Fmaterials%2Findex.html&download=true" target="_blank">Depth-First Search (DFS)</a>
+					</i>     
+					</li>-->						
+					      
+					
+					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Srini Devadas (Fall 2011) - <a href="http://people.csail.mit.edu/costan/mit6006/lectures/10.27.480p.webm" target="_blank">Breadth-First Search (BFS)</a>, <a href="http://people.csail.mit.edu/costan/mit6006/lectures/11.01.480p.webm" target="_blank">Depth-First Search (DFS)</a>
+					</i>   
+					</li>
+    
+					<!--<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine, Srini Devadas (Fall 2011) - <a href="http://people.csail.mit.edu/costan/mit6006/lectures/11.01.480p.webm" target="_blank">Depth-First Search (DFS)</a>
+					</i>   
+					</li>-->    
+					
+					
+					<li><font color="#e59866">Visualization / Animation</font>:   
+					<i>
+					<a href="https://www.cs.usfca.edu/~galles/visualization/BFS.html" target="_blank">BFS</a>, 
+					<a href="https://www.cs.usfca.edu/~galles/visualization/DFS.html" target="_blank">DFS</a> by David Galles (U. San Francisco)
+					</i>                                    
+					</li>    
+					    
+					</ul>        
+					
+					
+		
+					
+					
+					   
+					<!--<li>Feed-forward Neural Networks</li> -->
+					  
+				   <!--
+					<li><font color="#FF3300">Recitation / Lab</font>: <a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow</a>, Neural Networks</li> 	
+					<li><font color="#FF3300">Homework 2</font>: TBA</li>	   			
+					-->					     
+					</ul>
+					
+					   
+					         
+					           
+					<br>
+					<li><strong>Week 4</strong> &nbsp;&nbsp;[08/09 - 11/09] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Minimum Spanning Trees</i>; <i>Shortest Path Algorithms</i>)</li>
+					<ul>    
+					<li><strong>Minimum Spanning Trees</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L4-1: Minimum Spanning Trees</a>
+					</i> 					          
+					</li>					
+					<li><font color="#76448A">Book Chapter</font>:   
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 23: Minimum Spanning Trees</a>       
+					</i>          
+					</li>   
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 4.5: The Minimum Spanning Tree Problem</a>   
+					</i>           
+					</li>
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/43mst/" target="_blank">Chapter 4.3: Minimum Spanning Trees</a>   
+					</i>                
+					</li>
+					
+					<!--<li><font color="#e59866">Exercise / Animation</font>:   
+					<i><a href="https://opendsa-server.cs.vt.edu/embed/KruskalPE" target="_blank">Kruskal's Algorithm</a> by OpenDSA (Virginia Tech)
+					</i>                       
+					</li>  	   
+					-->    
+					
+					<li><font color="#e59866">Visualization / Animation</font>:   
+					<i><a href="https://visualgo.net/en/mst" target="_blank">Minimum Spanning Trees: Kruskal's + Prim's Algorithms</a>   
+					by visualgo.net
+					</i>                                  
+					</li>
+					
+					
+					
+					</ul>
+					   
+					
+					<li><strong>Shortest Path Algorithms</strong></li> 
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L4-2: Shortest Path Algorithms</a>
+					</i> 					          
+					</li>					
+					<li><font color="#76448A">Book Chapter</font>:   
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 22: Single-Source Shortest Paths</a>,  <a href="#">Chapter 23: All-Pairs Shortest Paths</a>      
+					</i>          
+					</li>   
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 4.4: Shortest Paths in a Graph</a>   
+					</i>           
+					</li>    
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/44sp/" target="_blank">Chapter 4.4: Shortest Paths</a>   
+					</i>                    
+					</li>     
+
+					<li><font color="#e59866">Visualization / Animation</font>:   
+					<i><a href="https://visualgo.net/en/sssp" target="_blank">Single Source Shortest Paths (SSSP): Bellman-Ford + Dijkstra</a>   
+					by visualgo.net
+					</i>                                    
+					</li>					
+					
+					<li><font color="#e59866">Visualization / Animation</font>:   
+					<i>
+					<a href="https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html" target="_blank">Dijkstra</a> by David Galles (U. San Francisco)
+					</i>                                    
+					</li>     
+					
+					    
+					</ul>    
+					    
+					      
+						
+						
+						      
+					
+					         
+					<!--
+					<li><font color="#FF3300">Recitation / Lab</font>: Decision Trees, Ensembles, SVM</li>	
+					<li><font color="#FF3300">Homework 3</font>: TBA</li>	
+					<li><font color="#FF3300"><strong>MIDTERM</strong></font> (Date: TBA)</li>	      					
+					-->   
+					</ul>
+					
+					
+					
+					
+						 
+					<br>
+
+			
+					<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<!--<strong><font color="#FF3300">FINAL EXAM</font></strong> [25/04, Thursday (3 Hours)] (<font color="#FF3300">NO LECTURE</font>)-->
+					<strong><font color="#FF3300">MIDTERM EXAM</font></strong> [08/09, Monday (08:30 - 09:45) @ WDR 1005 (<strong><font color="red">TENTATIVE</font></strong>)]    
+					</p>       
+      
+					     
+					   
+					
+					   
+					        
+					<br>   
+					<li><strong>Week 5</strong> &nbsp;&nbsp;[15/09 - 18/09] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Optimization</i>; <i>Mathematical Modelling</i>; <i>Linear Programming</i>; <i>Duality</i>; <i>Maximum Flow</i>)</li>      
+					<ul>   
+					<li><strong>Linear Programming</strong></li>  
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L5-1: Linear Programming</a>
+					</i> 					          
+					</li>
+					
+					<li><font color="#76448A">Book Chapter</font>:           
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 29: Linear Programming</a>   
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 11.6: Linear Programming and Rounding</a>   
+					</i>          
+					</li>
+					
+			       
+					
+					
+					</ul>
+					
+										       
+					<li><strong>Duality</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L5-2: Duality</a>
+					</i> 					          
+					</li>
+					
+					<li><font color="#76448A">Book Chapter</font>:             
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 29.4: Duality</a>   
+					</i>       
+					</li>					
+					<!--<li><font color="#D4AC0D">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter ???</a>   
+					</i>          
+					</li>
+					-->     
+					</ul>  
+					        
+					        
+			
+					
+					<li><strong>Maximum Flow</strong></li>  
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L5-3: Maximum Flow</a>
+					</i> 					          
+					</li>
+					
+					<li><font color="#76448A">Book Chapter</font>:           
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 26: Maximum Flow</a>   
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 7: Network Flow</a>   
+					</i>          
+					</li>					    
+					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/64maxflow/" target="_blank">Chapter 6.4: Maximum Flow</a>   
+					</i>                    
+					</li>     
+					
+     					
+					</ul> 
+					    
+					  
+					
+				   
+					       
+					<!--   
+					<li><font color="#FF3300">Recitation / Lab</font>: PCA, LDA, <i>k</i>-means</li>	   
+					<li><font color="#FF3300">Homework 4</font>: TBA</li>	
+					-->   
+					</ul>   
+					
+					
+					
+					<!--
+					<br>	  
+					<p style="border-width:5px; border-style:solid; border-color:#D35400; padding: 0.5em;">
+					<strong><font color="#FF3300">REMINDER</font></strong> [17/04, Thursday]: Last day to withdraw with a W grade of second 7-week classes; Last day to change grading basis of second 7-week classes. &nbsp;&nbsp; 
+					{ <i>Source</i>: <a href="https://www.dukekunshan.edu.cn/about/academic-calendar/" target="_blank">Academic Calendar</a> } 
+					</p>    
+					-->
+					  
+					  
+					<br>	  
+					<p style="border-width:5px; border-style:solid; border-color:#D35400; padding: 0.5em;">
+					<strong><font color="#FF3300">REMINDER</font></strong> [18/09, Thursday]: Last day to withdraw with a W grade of first 7-week classes; Last day to change grading basis of first 7-week classes. &nbsp;&nbsp; 
+					{ <i>Source</i>: <a href="https://www.dukekunshan.edu.cn/about/academic-calendar/" target="_blank">Academic Calendar</a> } 
+					</p>  
+      
+					      
+										
+					<br>     
+					<!-- Bishop Book - Chapter 8 -->          
+					<li><strong>Week 6</strong> &nbsp;&nbsp;[22/09 - 25/09] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Randomized Algorithms</i>, <i>Hash Tables</i>)</li>   
+					<ul>    
+					<li><strong>Randomized Algorithms</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L6-1: Randomized Algorithms</a>
+					</i> 					          
+					</li>					
+					<li><font color="#76448A">Book Chapter</font>:           
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 5.3: Randomized Algorithms</a>   
+					</i>           
+					</li>	
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 13: Randomized Algorithms</a>   
+					</i>          
+					</li>
+					
+					
+					
+					</ul>        
+					
+					  
+					     
+					
+					
+					<li><strong>Hash Tables</strong></li>
+					<ul style="margin-left : -15px;">     
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L6-2: Hash Tables</a>
+					</i> 					          
+					</li>					
+					<li><font color="#76448A">Book Chapter</font>:           
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 11: Hash Tables</a>   
+					</i>               
+					</li>	    
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 13.6: Hashing</a>   
+					</i>          
+					</li>  
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/34hash/" target="_blank">Chapter 3.4: Hash Tables</a>   
+					</i>                    
+					</li>
+					    
+					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Jason Ku (Spring 2020) - <a href="https://www.youtube.com/watch?v=Nu8YGneFCWE" target="_blank">Hashing</a>
+					</i>        
+					</li>
+					      
+					<li><font color="#e59866">Visualization / Animation</font>:   
+					<i><a href="https://liveexample.pearsoncmg.com/dsanimation/SeparateChainingeBook.html" target="_blank">Separate Chaining</a>,
+					<a href="https://yongdanielliang.github.io/animation/web/LinearProbing.html" target="_blank">Linear Probing</a>,
+					<a href="https://yongdanielliang.github.io/animation/web/QuadraticProbing.html" target="_blank">Quadratic Probing</a>      
+					by Y. Daniel Liang
+					</i>                                
+					</li>
+					
+					   
+					</ul>
+									
+					   
+					<!--
+					<li><font color="#FF3300">Recitation / Lab</font>: Graphical Models</li>	   
+					<li><font color="#FF3300">Homework 5</font>: TBA</li>	
+					-->    
+					</ul> 
+    
+             
+			 
+			            
+			           
+	                    
+					<br>                  
+					<li><strong>Week 7</strong> &nbsp;&nbsp;[29/09, 30/09, 09/10, 10/10] &nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>P</i>; <i>NP</i>; <i>NP-Completeness</i>; <i>Approximation Algorithms</i>)</li>   
+					<ul>      
+					<li><strong>P and NP</strong></li>
+					<ul style="margin-left : -15px;"> 
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L7-1: P and NP</a>
+					</i> 					          
+					</li>			   
+					<li><font color="#76448A">Book Chapter</font>:      
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 34: NP-Completeness</a> (34.1, 34.2)    
+					</i>       
+					</li>    					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 8: NP and Computational Intractability</a> (8.1, 8.2, 8.3)  
+					</i>              
+					</li>	
+					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/66intractability/" target="_blank">Chapter 6: Intractability</a>   
+					</i>                    
+					</li>  
+					
+					      					
+					
+					<li><font color="#BA4A00">External Lecture Videos</font>:
+					<i>Introduction to Algorithms: 6.006 (MIT) by Erik Demaine (Spring 2020) - <a href="https://www.youtube.com/watch?v=JbafQJx1CIA" target="_blank">Complexity</a>
+					</i>        
+					</li>    
+					
+					</ul> 	          
+					
+					
+					<li><strong>NP-Completeness</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L7-2: NP-Completeness</a>
+					</i> 					          
+					</li>						
+					<li><font color="#76448A">Book Chapter</font>:            
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 34: NP-Completeness</a> (34.3, 34.4, 34.5)  
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 8: NP and Computational Intractability</a>   
+					</i>          
+					</li>
+					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithms by Robert Sedgewick, Kevin Wayne - <a href="https://algs4.cs.princeton.edu/66intractability/" target="_blank">Chapter 6: Intractability</a>   
+					</i>                    
+					</li>  
+  
+					</ul> 
+					
+    					
+					<li><strong>Approximation Algorithms</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Lecture Slides</font>:						
+					<i><a href="#">L7-3: Approximation Algorithms</a>
+					</i> 					          
+					</li>						
+					
+					<li><font color="#76448A">Book Chapter</font>:           
+					<i>Introduction to Algorithms by Thomas Cormen et al. - <a href="#">Chapter 35: Approximation Algorithms</a>   
+					</i>       
+					</li>					
+					<li><font color="#76448A">Book Chapter</font> (<font color="red">Optional</font>):   
+					<i>Algorithm Design by John Kleinberg, Eva Tardos - <a href="#">Chapter 11: Approximation Algorithms</a>   
+					</i>               
+					</li>
+					
+					</ul> 
+
+					<!--
+					<li><font color="#FF3300">Recitation / Lab</font>: HMMs</li>	   
+					<li><font color="#FF3300">Homework 6</font>: TBA</li>	 
+					<li><font color="#FF3300">Project Presentations</font> (Date: TBA)</li>
+					<li><font color="#FF3300"><strong>FINAL</strong></font> (Date: TBA)</li>					
+					-->    
+					</ul>     
+					
+					
+							<br>     
+		
+					<!--<li><strong><font color="#FF3300">Holiday</font></strong> [01/05, Wednesday]: International Labor Day</li>-->
+					<!--
+					<p style="border-width:5px; border-style:solid; border-color:#2ECC71; padding: 0.5em;">
+					<strong><font color="#FF3300">HOLIDAY</font></strong> [01/05, Thursday - 04/05, Sunday]: International Labor Day (<font color="#FF3300">NO CLASSES</font>)]  
+					</p>          
+					-->      
+
+
+    
+					
+						<p style="border-width:5px; border-style:solid; border-color:#3498DB ; padding: 0.5em;">
+					<!--<strong><font color="#FF3300">FINAL EXAM</font></strong> [25/04, Thursday (3 Hours)] (<font color="#FF3300">NO LECTURE</font>)-->
+					<strong><font color="#FF3300">FINAL EXAM</font></strong> [13/10, Monday (15:30 - 18:30) @ WDR 1005]       
+					</p>
+					    
+					    
+   				</li>        
+				           
+		        
+				
+				</ul>  
+
+	<br>
+	
+		<hr/>    
+		       
+	   
+		<h2>Grading</h2>  
+		    
+		<ul>   
+		<li><strong>Homework Assignments</strong>: 30%</li>
+		<ul>    
+		<li>Mathematical, Conceptual, or Programming related</li>
+		<li>Submit on Canvas; 7 in total</li>   
+		</ul>      
+		  
+		<!--<li><strong>Quizzes</strong>: 10%</li>        -->
+		 
+		<li><strong>Weekly Journal</strong>: 10% (x <font color="red">Class Attendance Ratio</font> x <font color="red">Readiness Assurance Quiz Attendance Ratio</font>)</li>     
+		<ul>    
+		<li>Each week, write a page or so about what you have learned</li>
+		<li>Submit on Canvas; 2 points off for each missing journal, capped at 10</li>
+		</ul> 
+		  
+		<li><strong>Midterm</strong>: 25%</li> 		
+		<li><strong>Final</strong>: 35%</li> 	
+		<!--<li><strong>Project</strong>: 20%</li> 	-->
+		<ul>    
+		<!-- example report + presentation rubricks for ML: https://www.cs.toronto.edu/~huang/courses/csc2515_2020f/Lectures.html -->
+		<!--<li>Report Rubrick (TBA)</li>
+		<li>Presentation Rubrick (TBA)</li> -->
+		</ul> 
+	
+		
+		</ul> 
+		
+		    
+		
+		<br>            
+	      
+		<hr/>    
+		       
+	         
+		<h2>Reference Courses</h2>  
+		    
+		<ul>         
+		<li><strong>6.006</strong>: <a href="http://courses.csail.mit.edu/6.006/fall11/" target="_blank">Introduction to Algorithms</a> (MIT) [ <font color="#FF3300">Fall 2011</font> by Erik Demaine, Srini Devadas: <a href="http://courses.csail.mit.edu/6.006/fall11/notes.shtml" target="_blank">Lecture Slides & Videos</a>; <font color="#FF3300">Spring 2020</font> by Erik Demaine, Jason Ku, Justin Solomon: <a href="https://learning-modules.mit.edu/materials/index.html?uuid=/course/6/sp20/6.006#materials" target="_target">Lecture Slides</a> & <a href="https://www.youtube.com/watch?v=ZA-tUyM_y7s&list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY" target="_blank">Videos</a> ]</li>
+     
+		<li><strong>COMPSCI 330</strong>: <a href="https://courses.cs.duke.edu//spring20/compsci330/" target="_blank">Design and Analysis of Algorithms</a> by Rong Ge (Duke U.) [ <font color="#FF3300">Spring 2020</font>: <a href="https://courses.cs.duke.edu//spring20/compsci330/" target="_blank">Lecture Slides</a> ]</li>
+		
+		<li><strong>CSE 373</strong>: <a href="https://www3.cs.stonybrook.edu/~skiena/373/" target="_blank">Analysis of Algorithms</a> by Steven Skiena (Stony Brook U.) [ <font color="#FF3300">Fall 2020/2021</font>: <a href="https://www3.cs.stonybrook.edu/~skiena/373/videos/" target="_blank">Lecture Slides & Videos</a> ]</li>		
+  
+		<li><strong>COS 423</strong>: <a href="https://www.cs.princeton.edu/courses/archive/spring18/cos423/" target="_blank">Theory of Algorithms</a> by Kevin Wayne (Princeton U.) [ <font color="#FF3300">Spring 2018</font>: <a href="https://www.cs.princeton.edu/courses/archive/spring18/cos423/lectures.php" target="_blank">Lecture Slides</a> ]</li>	  
+			
+		     
+			
+		<li><strong>CIS 320</strong>: <a href="https://www.seas.upenn.edu/~cis320/" target="_blank">Introduction to Algorithms</a> by Aaron Roth (U. Penn) [ <font color="#FF3300">Fall 2021</font>: <a href="https://www.seas.upenn.edu/~cis320/" target="_blank">Lecture Notes</a> ]</li>        
+
+		<li><strong>CS 4820</strong>: <a href="https://courses.cs.cornell.edu/cs4820/" target="_blank">Introduction to Analysis of Algorithms</a> by Robert David (Bobby) Kleinberg (Cornell U.) [ <font color="#FF3300">Spring 2021</font>: <a href="https://www.cs.cornell.edu/courses/cs4820/2021sp/" target="_blank">Lecture Notes</a> ]</li>            
+          
+    	    
+		
+					
+		<li><strong>CS 125</strong>: <a href="https://people.seas.harvard.edu/~cs125/" target="_blank">Algorithms & Complexity</a> by Jelani Nelson (Harvard U.) [ <font color="#FF3300">Fall 2016</font>: <a href="https://people.seas.harvard.edu/~cs125/fall16/schedule.htm" target="_blank">Lecture Notes</a> ]</li>    
+
+
+		            
+		<li><strong>CS 120</strong>: <a href="https://salil.seas.harvard.edu/classes/intro-algorithms-and-their-limitations-fall21" target="_blank">Introduction to Algorithms and their Limitations</a> by Salil Vadhan (Harvard U.) [ <font color="#FF3300">Fall 2021</font>: <a href="https://salil.seas.harvard.edu/classes/cs120-intro-algorithms-and-their-limitations/materials/schedule-lecture-notes-and" target="_blank">Lecture Notes</a> ]</li>    
+
+
+		
+		                
+		     
+			
+		</ul>      
+		                      
+		        
+      
+	                   
+		
+		
+  	<br>
+	  
+		<hr/>    
+		
+	
+	<h2>Other Books</h2>
+	   
+	
+	<strong><font color="#FF3300">Quick / Easy Reads</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<!--<li><a href="https://www.manning.com/books/grokking-algorithms" target="_blank">Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People</a>, Aditya Bhargava (1st Edition), 2018, Manning</li>-->
+		<li><a href="https://www.manning.com/books/grokking-algorithms-second-edition" target="_blank">Grokking Algorithms</a>, Aditya Bhargava (2nd Edition), 2024, Manning</li>
+		
+		      
+		<li><a href="https://mitpress.mit.edu/books/algorithms-unlocked" target="_blank">Algorithms Unlocked</a>, Thomas H. Cormen (1st Edition), 2013, MIT Press</li>		
+		
+		<li><a href="https://algorithmstoliveby.com/" target="_blank">Algorithms to Live By: The Computer Science of Human Decisions</a>, Brian Christian, Tom Griffiths (1st Edition), 2016, Henry Holt and Co. [ <a href="https://www.youtube.com/watch?v=OwKj-wgXteo" target="_blank">Video Lecture</a> ]</li>		
+        		
+		    
+		<li><a href="https://mitpress.mit.edu/books/algorithms" target="_blank">Algorithms</a>, Panos Louridas (1st Edition), 2020, MIT Press</li>		
+		
+		<li><a href="https://mitpress.mit.edu/books/real-world-algorithms" target="_blank">Real-World Algorithms: A Beginner's Guide</a>, Panos Louridas (1st Edition), 2017, MIT Press</li>	
+		
+		<li><a href="https://press.princeton.edu/books/paperback/9780691209067/nine-algorithms-that-changed-the-future" target="_blank">Nine Algorithms that Changed the Future: the Ingenious Ideas that Drive Today's Computers</a>, John MacCormick (1st Edition), 2012, Princeton University Press</li>	
+
+		<li><a href="https://mitpress.mit.edu/books/what-algorithms-want" target="_blank">What Algorithms Want: Imagination in the Age of Computing</a>, Ed Finn (1st Edition), 2017, MIT Press</li>	
+		
+		
+	</ul>
+	
+	
+      
+	      
+	
+      </br>      
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://deitel.com/intro-to-python-for-computer-science-and-data-science/" target="_blank">Introducing Python for Computer Science and Data Scientists</a>, Paul Deitel, Harvey Deitel (1st Edition), 2020, Pearson   
+		<li><a href="https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-third-edition" target="_blank">Introduction to Computation and Programming Using Python: With Application to Computational Modeling and Understanding Data</a>, John V. Guttag (3rd Edition), 2021, MIT Press
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		
+		
+		
+		<li><a href="https://www.amazon.com/Programmers-Guide-Computer-Science-self-taught/dp/195120400X/" target="_blank">A Programmer's Guide to Computer Science (Vol. 1)</a>,  William M. Springer II (1st Edition), 2019, Jaxson Media</li>		
+		
+		<li><a href="https://www.amazon.com/Programmers-Guide-Computer-Science-Vol/dp/1951204042/" target="_blank">A Programmer's Guide to Computer Science (Vol. 2)</a>,  William M. Springer II (1st Edition), 2020, Jaxson Media</li>	      	
+      		
+		
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		
+		<li><a href="https://automatetheboringstuff.com/" target="_blank">Automate The Boring Stuff With Python</a>, Al Sweigart (2nd Edition), 2019, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	      
+
+
+		
+		<li><a href="https://inventwithpython.com/beyond/" target="_blank">Beyond the Basic Stuff with Python</a>, Al Sweigart (1st Edition), 2020, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	  
+		
+
+		        
+		
+				
+		<li><a href="https://www.amazon.com/Python-Programming-Context-Bradley-Miller/dp/1284175553/" target="_blank">Python Programming in Context</a>, Bradley N. Miller, David L. Ranum, Julie Anderson (3rd Edition), 2019, Jones & Bartlett Learning</li>		
+               
+			
+		<li><a href="https://mcsp.wartburg.edu/zelle/python/ppics3/index.html" target="_blank">Python Programming: An Introduction to Computer Science</a>, John Zelle (3rd Edition), 2016, Franklin, Beedle & Associates</li>	
+    		
+			     
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>	
+		<li><a href="https://www.packtpub.com/product/clean-code-in-python-second-edition/9781800560215" target="_blank">Clean Code in Python: Develop Maintainable and Efficient Code</a>, Mariano Anaya (2nd Edition), 2021, Packt</li>	
+
+		<li><a href="https://www.amazon.com/Self-Taught-Computer-Scientist-Beginners-Science/dp/1119724414/" target="_blank">The Self-Taught Computer Scientist: The Beginner's Guide to Data Structures & Algorithms</a>, Cory Althoff (1st Edition), 2021, Wiley</li>	
+		    
+
+		<li><a href="https://nostarch.com/big-book-small-python-projects" target="_blank">The Big Book of Small Python Projects: 81 Easy Practice Programs</a>, Al Sweigart (1st Edition), 2021, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+		
+		<li><a href="https://inventwithpython.com/invent4thed/" target="_blank">Invent Your Own Computer Games with Python</a>, Al Sweigart (4th Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+
+		<li><a href="https://inventwithpython.com/cracking/" target="_blank">Cracking Codes with Python: An Introduction to Building and Breaking Ciphers</a>, Al Sweigart (1st Edition), 2018, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	
+
+        		
+
+      		
+	</ul>
+	
+	
+	
+	    
+		</br>                    
+	<strong><font color="#FF3300">Foundations of Computer Science</font></strong>:     
+	<ul style="margin-left : -13px;">
+	      
+    
+	
+	
+		<li>
+		<a href="https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203" target="_blank">Connecting Discrete Mathematics and Computer Science</a>, David Liben-Nowell (2nd Edition), 2022, Cambridge University      
+		</li> 
+ 
+		
+		<li>
+		<a href="https://www-cs-faculty.stanford.edu/~knuth/gkp.html" target="_blank">Concrete Mathematics: A Foundation for Computer Science</a>, Ronald L. Graham, Donald E. Knuth, Oren Patashnik (2nd Edition), 1994, Addison-Wesley
+		</li> 		
+		
+			<li>
+		<a href="https://courses.csail.mit.edu/6.042/spring18/mcs.pdf" target="_blank">Mathematics for Computer Science</a>, Eric Lehman, F. Thomson Leighton, Albert R. Meyer (1st Edition), 2017 (2018R), Samurai Media (<font color="#FF3300">Free Book</font>) [ <strong>6.042</strong>: <a href="https://courses.csail.mit.edu/6.042/" target="_blank">Mathematics for Computer Science</a> (MIT) - <a href="https://learning-modules.mit.edu/materials/index.html?uuid=/course/6/sp18/6.042#materials" target="_blank">Materials</a> ]
+		</li>     
+      
+	  
+	  
+		<li>
+		<a href="https://www.ams.jhu.edu/ers/books/mathematics-a-discrete-introduction/" target="_blank">Mathematics: A Discrete Introduction</a>, Edward A. Scheinerman (3rd Edition), 2012, Cengage Learning
+		</li> 	  
+	  
+	      
+		<li>
+		<a href="https://www.mheducation.com/highered/product/discrete-mathematics-applications-rosen/M9781259676512.html" target="_blank">Discrete Mathematics and Its Applications</a>, Kenneth H. Rosen (8th Edition), 2019, McGraw-Hill
+		</li>     
+		           
+			 
+			 
+		<li>
+		<a href="http://discrete.openmathbooks.org/dmoi3.html" target="_blank">Discrete Mathematics: An Open Introduction</a>, Oscar Levin (3rd Edition), 2021 (<font color="#FF3300">Free Book</font>)
+		</li>       
+ 	
+
+		<li>
+		<a href="https://press.princeton.edu/books/hardcover/9780691179292/essential-discrete-mathematics-for-computer-science" target="_blank">Essential Discrete Mathematics for Computer Science</a>, Harry Lewis, Rachel Zax (1st Edition), 2019, Princeton University 
+		</li> 
+
+		
+		<li>
+		<a href="https://www.cambridge.org/highereducation/books/connecting-discrete-mathematics-and-computer-science/5BF486220B85F2EFAE7A1B05419F1203" target="_blank">Connecting Discrete Mathematics and Computer Science</a>, David Liben-Nowell (1st Edition), 2022, Cambridge University Press      
+		</li> 
+
+		
+			 
+		<li>
+		<a href="https://www.people.vcu.edu/~rhammack/BookOfProof/" target="_blank">Book of Proof</a>, Richard H. Hammack (3rd Edition), 2018 (<font color="#FF3300">Free Book</font>)
+		</li>  
+
+     
+		
+			 
+		<li>
+		<a href="https://www.appliedcombinatorics.org/appcomb/" target="_blank">Applied Combinatorics</a>, Mitchel T. Keller, William T. Trotter (3rd Edition), 2021 (<font color="#FF3300">Free Book</font>)
+		</li>    		
+			 
+		    
+		
+		<li>
+		<a href="https://www.amazon.com/Zvezdelina-Stankova/e/B00J4868R8/" target="_blank">A Decade of the Berkeley Math Circle: The American Experience</a> (<a href="https://bookstore.ams.org/mcl-1" target="_blank">Volume 1</a>, <a href="https://bookstore.ams.org/mcl-14" target="_blank">Volume 2</a>), Zvezdelina Stankova, Tom Rike (Eds), 2008, American Mathematical Society
+		</li>  
+		
+		
+
+		<li>
+		<a href="http://www1.maths.leeds.ac.uk/~khouston/httlam.html" target="_blank">How to Think Like a Mathematician: A Companion to Undergraduate Mathematics</a>, Kevin Houston (1st Edition), 2009, Cambridge University Press
+		</li> 	  
+		
+		     
+		
+		<li>
+		<a href="https://www.amazon.com/Art-Problem-Solving-Vol-Beyond/dp/0977304582" target="_blank">The Art of Problem Solving (Vol. 2): And Beyond</a>, Richard Rusczyk, Sandor Lehoczky (7th Edition), 2006, AoPS Incorporated
+		</li>		
+		    
+		
+		<li>
+		<a href="https://www.amazon.com/Art-Problem-Solving-Vol-Basics/dp/0977304566" target="_blank">The Art of Problem Solving (Vol. 1)</a>, Sandor Lehoczky, Richard Rusczyk (7th Edition), 2006, AoPS Incorporated
+		</li>
+		     
+		
+		
+		
+		<li>
+		<a href="https://www.amazon.com/Mathematics-Elementary-Approach-Ideas-Methods/dp/0195105192" target="_blank">What Is Mathematics? An Elementary Approach to Ideas and Methods</a>, Richard Courant, Herbert Robbins (2nd Edition), 1996, Oxford University Press
+		</li> 	
+      
+
+	  
+	   
+ 	
+      
+	       
+
+
+           
+
+	</ul> 
+	
+
+
+
+
+
+
+    	
+	
+	
+      
+   
+	<br>
+		<hr/>      
+		
+	   
+      
+	<h2>Other Materials / Resources</h2>
+	
+	
+	               
+	        
+	   
+	<strong><font color="#FF3300">Cheat Sheets</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		
+		<li><a href="https://algs4.cs.princeton.edu/cheatsheet/" target="_blank">Algorithms and Data Structures Cheat Sheet</a> from <a href="https://algs4.cs.princeton.edu/" target="_blank">Algorithms</a> (4th Ed.) by Robert Sedgewick (Princeton U.) and Kevin Wayne (Princeton U.)</li>   
+		      
+		<li><a href="http://web.mit.edu/broder/Public/asymptotics-cheatsheet.pdf" target="_blank">The Asymptotic Cheat Sheet</a> by Tom Leighton (MIT) and Ronitt Rubinfeld (MIT)</li>
+		
+		<li><a href="https://people.cs.umass.edu/~cmusco/personal_site/pdfs/bigO_cheat_sheet.pdf" target="_blank">Big-O Cheat Sheet</a> by Cameron Musco (UMass Amherst)</li>
+		
+		<li><a href="https://www.cs.princeton.edu/courses/archive/fall05/cos341/cheat.pdf" target="_blank">Theoretical Computer Science Cheat Sheet</a> by Steve Seiden (LSU)</li>
+				
+		<!-- (V.0.6 / December 19, 2017) -->      
+		<li><a href="http://statistics.zone/" target="_blank">Probability and Statistics Cookbook</a> by Matthias Vallentin</li>
+		
+	</ul>     
+	
+	
+	
+
+	<strong><font color="#FF3300">Algorithm Visualization / Animation</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		    
+		<li><a href="https://visualgo.net/en" target="_blank">VISUALALGO</a>: Visualising Data Structures and Algorithms through Animation</li>
+		
+		<li><a href="https://bost.ocks.org/mike/algorithms/" target="_blank">Visualizing Algorithms</a> by Mike Bostock</li>
+		
+		<li><a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">Sorting Algorithms Animations</a></li>
+		
+		<li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Data Structure and Algorithm Visualizations</a> by David Galles (U. San Francisco)</li>
+		   
+		<li><a href="https://algorithm-visualizer.org" target="_blank">Algorithm Visualizer</a> by Jason Park</li>
+
+
+      
+	</ul>
+
+    
+	<strong><font color="#FF3300">Miscellaneous</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		    
+		<li><a href="https://xlinux.nist.gov/dads/" target="_blank">Dictionary of Algorithms and Data Structures</a> by NIST, US</li>
+		   
+
+      
+	</ul>
+	
+    
+
+
+
+		
+   
+	<strong><font color="#FF3300">General</font></strong>: 
+	
+	
+	<ul style="margin-left : -13px;">	 				
+<!--		<li>Philip W. L. Fong, 2004. <a href="http://www.mathcs.emory.edu/~lxiong/papers/fong04how.pdf" target="_blank">How to Read a CS Research Paper?</a> + 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140.	
+		</li>		      
+		-->
+		
+		        
+		<li>An overview of <a href="https://pyviz.org/" target="_blank">Python Data Visualization libraries</a>
+		
+		<li>Philip W. L. Fong, 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a Computer Science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140  	
+		</li>	   
+		<li><a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html" target="_blank">You and Your Research</a> by Richard Hamming (Bell Labs / NPS). Bell Communications Research Colloquium Seminar, 7 March 1986  
+		</li>				
+		<li>An Online LaTeX Editor: <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>   
+		</li>	
+		<li>LaTeX Tutorial (Overleaf): <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a>   
+		</li>	
+		<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank">The Not So Short Introduction to LaTeX</a> by Tobias Oetiker, Hubert Partl, Irene Hyna, Elisabeth Schlegl, 2021 
+		</li>	          
+		<li>     
+		<a href="https://www.youtube.com/watch?v=Unzc731iCUY" target="_blank">How To Speak</a> / Present (Video) by Patrick Winston (MIT)
+		</li>       
+		              
+		    
+		   
+	</ul>
+	   
+	<br>   
+
+
+<!--   
+  	<br>
+	     
+		<hr/>    
+		
+	
+	<h2>Cevrimici Kaynaklar (Online Resources)</h2>		      
+	
+	<ul style="margin-left : -13px;">	 			
+		<li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>: Machine Learning by Andrew Ng</li>	
+		<li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF" target="_blank">Youtube</a>: DeepMind x UCL | Deep Learning Lecture Series 2020</li>	
+	</ul>	
+-->       		  
+		   
+		  
+		
+		
+
+				
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
