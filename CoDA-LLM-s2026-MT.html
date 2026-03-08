@@ -1,0 +1,1447 @@
+	<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk"> 
+<meta name="author" content="Zhe Chen">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Mustafa MISIR - [ CoDA-LLM ] LLMs as Algorithm Co-Designers @ Spring 2025-2026 (TBA), Duke Kunshan University</title></head>
+          
+  
+
+<body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4906190-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GK222RBJ36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GK222RBJ36');
+</script>
+
+
+
+  
+            
+          
+<table align="center" border="0" cellpadding="4" cellspacing="2" width="80%">
+      
+<tbody><tr><td align="right">   
+</td></tr> 
+         
+<tr><td style="text-align:justify;">    
+             
+<img src="DKU_Logo_whitebackdrop-perc15-v2.png" style="width:25%" align="right">  
+    
+<h1>Co-Designing Algorithms with LLMs (CoDA-LLM)</h1>       
+<!--<h2>Spring 2024-2025 / Signature Work Mini-Term (4 days, 12 + 12 hours)</h2> -->
+<h2>Spring 2025-2026 (4 days, 12 + 12 hours)</h2>     
+
+                      
+
+               
+   
+				               
+	<h3><font color="#FF3300">Course Period</font>: March 9 - 12, 2026</h3>   
+	<ul style="margin-left : -13px;">	
+		<li><strong>Lectures</strong>: Monday / Tuesday / Wednesday / Thursday @ 09:00-12:00 (Classroom: AB 3107)</li>
+		<li><strong>Labs</strong>: Monday / Tuesday / Wednesday / Thursday @ 14:00-17:00 (Classroom: AB 3107)</li>         
+	</ul>                  
+                
+	       
+	<strong>Instructor</strong>: <a href="http://mustafamisir.github.io" target="_blank">Mustafa MISIR</a> (Office: WDR 2106), <a href="mailto:mustafa.misir [at] dukekunshan.edu.cn">mustafa.misir [at] dukekunshan.edu.cn</a> / <a href="mailto:mm940[at] duke.edu">mm940 [at] duke.edu</a> </br>
+	
+	<!--<strong>Lab Instructor</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA <br>
+	
+	<strong>Teaching Assistant</strong>: <a href="#" target="_blank">TBA</a> (Office: TBA), TBA   -->        
+	
+	</h2>           
+	<br/>
+	<!--<br/>   -->   
+	     
+	
+	
+	     
+<style>   
+.wrapingimage  
+{       
+float: right;                 
+margin: 30px 0px 3px 40px;   
+border: 0px;    
+width:18%;                   
+}                     
+</style>           
+
+
+	<div class="wrapingimage">       
+	<!--<p style="text-align:center;">   -->  
+	<!--<img src="COMPSCI309-Elements-of-Machine-Learning-Course-Map-v3.png" style="width:70%">-->
+	<!--<img src="AutoML-SW-MiniTerm-Spring2023-MustafaMisir-Poster.png" style="width:100%">-->
+	<!--<img src="canva-genAI-course-Untitled design-v.png" style="width:100%">-->
+	<img src="canva-genAI-course-Untitled design-v2-NoText.png" style="width:100%">
+    <!--</p> -->     
+	</div>  
+	
+	      
+	    
+<br/>  
+<a href="https://algs4.cs.princeton.edu/" target="_blank">Algorithms</a> drive innovation across domains such as computer science, medicine, and logistics, yet their development is often time-consuming and demanding. 
+This intensive mini-term course introduces undergraduates to a new perspective: collaborating with <a href="https://www.ibm.com/think/topics/large-language-models" target="_blank">Large Language Models (LLMs)</a>, under <a href="https://www.ibm.com/think/topics/generative-ai" target="_blank">Generative Artificial Intelligence (GenAI)</a>, in the design and refinement of algorithms. 
+
+<br/><br/>   
+No prior background is required.  
+Each day combines conceptual instruction with hands-on labs / practice sessions where students prompt LLMs to generate algorithms, evaluate their performance, and refine them iteratively. 
+Emphasis is placed on teamwork, critical analysis and practical applications offering a structured yet exploratory opportunity to engage with the emerging frontier of human-AI collaboration.
+
+
+
+          
+
+<br/><br/>  
+    
+     
+
+	
+                  
+<font color="blue"><u>By the end of this course, <strong>you will be able to</strong></u></font>:
+
+<ol style="margin-left : -13px;">	         
+	<li><font color="#FF3300"><strong>apply</strong></font> algorithmic thinking to classical computational problems</li>
+	<li><font color="#FF3300"><strong>collaborate</strong></font> with large language models in algorithm design</li>
+	<li><font color="#FF3300"><strong>evaluate</strong></font> and <font color="#FF3300"><strong>iterate</strong></font> on algorithmic solutions through testing and reflection</li>    
+</ol>         
+              
+
+               
+   
+<font color="#FF3300">Follow</font> <a href="https://canvas.duke.edu" target="_blank"><strong>Canvas</strong></a> for <strong>announcements</strong> and <strong>discussions</strong>
+<br>       
+     
+
+
+     
+		    
+<h3>Pre-requisites</h3>      
+	<ul style="margin-left : -13px;">
+		<!--<li>STATS 102: Introduction to Data Science</li>
+		<li>STATS 201: Introduction to Machine Learning for Social Science</li>
+		<li>ENVIR 208: Environmental Data Analytics</li>
+		<li>/ Consent of the Instructor</li>      
+		-->
+		<li>None</li>
+	</ul>         
+  
+<!--
+<h3>Co/Pre-requisites</h3>
+	<ul style="margin-left : -13px;">
+		<li>MATH 304: Numerical Analysis and Optimization</li>
+		<li>MATH 305: Advanced Linear Algebra</li>	
+	</ul>  
+ 
+<h3>Anti-requisites</h3>
+	<ul style="margin-left : -13px;">
+		<li>MATH 405: Mathematics of Data Analysis and Machine Learning</li>      
+		<li>COMPSCI 309: Elements of Machine Learning</li>      	
+	</ul>  
+-->
+	      
+	     
+	<!--
+	The following chart shows how STATS 302 fits to the DKU curriculum, where the abbreviations indicate the course types, i.e. D: <i>Divisional</i>, DF: <i>Divisional Foundation</i>, ID: <i>Interdisciplinary</i> and E: <i>Elective</i>. Refer to the <a href="https://undergrad.dukekunshan.edu.cn/en/undergraduate-bulletin" target="_blank">DKU Undergraduate Bulletin</a> for more details.       
+	
+	<br><br>     
+	       
+	<img src="STATS302-Principles-ML-Course-Map-v2.png" style="width:100%">
+	-->
+
+	        
+	<!--<br>  --> <br>    
+	
+		<hr/>
+
+			
+	<br>	        
+	There is <font color="#FF3300"><u>no official textbook</u></font> for this course. Still, the following books can be used as references.   
+		  
+					     
+	<h2>Reference Books</h2>   
+               
+			      
+             
+			 
+			         
+	    
+	<strong><font color="green">Algorithms & Computational Problem Solving</font></strong>: 
+	<ul style="margin-left : -13px;">
+
+
+		<li><a href="https://www.wiley.com/en-us/The+Art+and+Craft+of+Problem+Solving%2C+3rd+Edition-p-9781119094845" target="_blank">The Art and Craft of Problem Solving</a>, Paul Zeitz (3rd Edition), 2016, Wiley</li> 	
+		
+		<li><a href="https://www.amazon.com/Project-Origami-Thomas-Hull/dp/1466567910/" target="_blank">Project Origami: Activities for Exploring Mathematics</a>, Thomas Hull  (2nd Edition), 2016, AK Peters / CRC</li> 		
+   
+		
+		<li><a href="https://natureofcode.com/" target="_blank">The Nature of Code: Simulating Natural Systems /+with JavaScript</a>, Daniel Shiffman  (1st Edition), 2012/2024</li> 		
+		    
+		<li><a href="https://global.oup.com/academic/product/algorithmic-puzzles-9780199740444" target="_blank">Algorithmic Puzzles</a>, Anany Levitin, Maria Levitin (1st Edition), 2011, Oxford University</li> 		
+		    		   	
+	      
+		    
+		<li><a href="https://global.oup.com/academic/product/alcuins-recreational-mathematics-9780198925309" target="_blank">Alcuin's Recreational Mathematics: River Crossings and other Timeless Puzzles</a>, Marcel Danesi (1st Edition), 2025, Oxford University</li> 	
+
+
+		<li><a href="https://langorigami.com/publication/origami-design-secrets-2nd-edition/" target="_blank">Origami Design Secrets: Mathematical Methods for an Ancient Art</a>, Robert James Lang (1st Edition), 2017, CRC</li> 
+
+  
+  
+ 		<li><a href="https://mitpress.mit.edu/9780262534307/programming-for-the-puzzled/" target="_blank">Programming for the Puzzled</a>, Srini Devadas (1st Edition), 2017, MIT</li> 
+
+   
+ 		<li><a href="https://wwnorton.com/books/9780393020236" target="_blank">The Colossal Book of Mathematics: Classic Puzzles, Paradoxes, and Problems</a>, Martin Gardner (1st Edition), 2001, Norton</li>    
+    
+
+
+
+
+
+		
+    	<li><a href="https://nostarch.com/algorithmic-thinking-2nd-edition" target="_blank">Algorithmic Thinking: Learn Algorithms to Level Up Your Coding Skills</a>, Daniel Zingaro (2nd Edition), 2023</li>     
+
+    
+  
+			
+		
+
+
+
+
+		<li><a href="https://www.manning.com/books/grokking-algorithms-second-edition" target="_blank">Grokking Algorithms</a>, Aditya Bhargava (2nd Edition), 2024, Manning</li>
+
+   
+		<li><a href="https://mitpress.mit.edu/books/algorithms-unlocked" target="_blank">Algorithms Unlocked</a>, Thomas H. Cormen (1st Edition), 2013, MIT Press</li>		
+  
+  
+ 		<li><a href="https://link.springer.com/book/10.1007/978-981-96-8097-9" target="_blank">First Course in Algorithms Through Puzzles</a>, Ryuhei Uehara (2nd Edition), 2026, Springer</li> 
+		
+		
+
+
+ 		<li><a href="https://www.wiley.com/en-us/Essential+Algorithms%3A+A+Practical+Approach+to+Computer+Algorithms+Using+Python+and+C%23%2C+2nd+Edition-p-9781119575993" target="_blank">Essential Algorithms: A Practical Approach to Computer Algorithms Using Python and C#</a>, Rod Stephens (2nd Edition), 2019, Wiley</li>
+
+
+
+
+
+	  
+       
+     
+	</ul>	
+
+	
+        
+	   
+	<strong><font color="green">Generative AI (GenAI) / Large Language Models (LLMs)</font></strong>: 
+	<ul style="margin-left : -13px;">	 
+	      
+	  
+    
+	<li><a href="https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/" target="_blank">Hands-On Large Language Models</a>, Jay Alammar, Maarten Grootendorst (1st Edition), 2024, O'Reilly [ <a href="https://github.com/HandsOnLLM/Hands-On-Large-Language-Models" target="_blank">Source Code</a> ]</li>
+
+	
+  
+	<li><a href="https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/" target="_blank">Generative Deep Learning: Teaching Machines To Paint, Write, Compose, and Play</a>, David Foster (2nd Edition), 2023, O'Reilly</li> 
+
+	     
+	<li><a href="https://www.oreilly.com/library/view/designing-large-language/9781098150495/" target="_blank">Designing Large Language Model Applications: A Holistic Approach to LLMs</a>, Suhas Pai (1st Edition), 2025, O'Reilly</li> 
+
+	<li><a href="https://www.oreilly.com/library/view/llms-in-production/9781633437203/" target="_blank">LLMs in Production: From Language Models to Successful Products</a>, Christopher Brousseau, Matt Sharp (1st Edition), 2025, O'Reilly</li> 
+
+	<li><a href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/" target="_blank">AI Engineering: Building Applications with Foundation Models</a>, Chip Huyen (1st Edition), 2025, O'Reilly</li>  
+	          
+
+	<li><a href="https://www.manning.com/books/build-a-large-language-model-from-scratch" target="_blank">Build a Large Language Model (From Scratch)	Build a Large Language Model</a>, Sebastian Raschka, Julie Brierley (1st Edition), 2024, Manning</li>  
+	
+	<li><a href="https://www.packtpub.com/en-us/product/llm-engineers-handbook-9781836200062" target="_blank">LLM Engineer's Handbook: Master the Art of Engineering Large Language Models from Concept to Production</a>, Maxime Labonne, Paul Iusztin (1st Edition), 2024, Packt</li>      
+	
+	
+	<li><a href="https://link.springer.com/book/10.1007/978-3-031-65647-7" target="_blank">Large Language Models: A Deep Dive: Bridging Theory and Practice</a>, Uday Kamath, Kevin Keenan, Garrett Somers, Sarah Sorenson (1st Edition), 2024, Springer</li> 
+
+
+	<li><a href="https://www.oreilly.com/library/view/ai-and-machine/9781492078180/" target="_blank">AI and Machine Learning for Coders: A Programmer's Guide to Artificial Intelligence</a>, Laurence Moroney (1st Edition), 2020, O'Reilly</li>      
+
+
+  	<li><a href="https://www.manning.com/books/ai-for-everyday-it" target="_blank">AI for Everyday IT: Accelerate Workplace Productivity</a>, Chrissy LeMaire, Brandon Abshire (1st Edition), 2025, Manning</li> 
+	
+  	<li><a href="https://www.manning.com/books/how-large-language-models-work" target="_blank">How Large Language Models Work</a>, Edward Raff, Drew Farris, Stella Biderman (1st Edition), 2025, Manning</li> 	
+
+
+  	<li><a href="https://www.manning.com/books/ai-powered-search" target="_blank">AI-Powered Search</a>, Trey Grainger, Doug Turnbull, Max Irwin (1st Edition), 2025, Manning</li> 
+
+
+
+
+          
+		  
+		  
+		  
+		  
+
+
+
+
+
+
+	      
+  
+	   
+	<li><a href="https://www.manning.com/books/the-complete-obsolete-guide-to-generative-ai" target="_blank">The Complete Obsolete Guide to Generative AI</a>, David Clinton (1st Edition), 2024, Manning</li> 	
+	
+	
+	<li><a href="https://www.manning.com/books/introduction-to-generative-ai" target="_blank">Introduction to Generative AI</a>, Numa Dhamani, Maggie Engler (1st Edition), 2024, Manning</li> 	
+	
+	
+	
+	<li><a href="https://www.amazon.com/Generative-Artificial-Intelligence-Everyone-Needs/dp/0197773540" target="_blank">Generative Artificial Intelligence: What Everyone Needs to Know</a>, Jerry Kaplan (1st Edition), 2024, Oxford University</li> 	
+	    
+
+	
+		         
+	<li><a href="https://www.manning.com/books/learn-generative-ai-with-pytorch" target="_blank">Learn Generative AI with PyTorch</a>, Mark Liu (1st Edition), 2024, Manning</li> 	
+
+  
+	<li><a href="https://store.hbr.org/product/generative-ai-the-insights-you-need-from-harvard-business-review/10697" target="_blank">Generative AI: The Insights You Need from Harvard Business Review</a>, Ethan Mollick, David De Cremer, Tsedal Neeley, Prabhakant Sinha (1st Edition), 2024, HBR</li> 
+
+ 	<li><a href="https://store.hbr.org/product/generative-ai-tools-for-preparing-your-team-for-the-future/10752" target="_blank">Generative AI: Tools for Preparing Your Team for the Future</a>, Ethan Mollick, David De Cremer, Tsedal Neeley, Prabhakant Sinha (1st Edition), 2024, HBR</li>   
+          
+		  
+		 
+		    
+
+  	<li><a href="https://www.amazon.com/What-ChatGPT-Doing-Does-Work/dp/1579550819/ref=sims_dp_d_dex_ai_speed_loc_mtl_v4_d_sccl_2_4/144-3226918-1663936" target="_blank">What Is ChatGPT Doing ... and Why Does It Work?</a>, Stephen Wolfram (1st Edition), 2023, Wolfram</li>        
+	   
+	   
+  	<li><a href="https://www.manning.com/books/build-a-large-language-model-from-scratch" target="_blank">Build a Large Language Model (From Scratch)</a>, Sebastian Raschka (1st Edition), 2024, Manning</li>  	
+
+
+  	<li><a href="https://superstudy.guide/transformers-large-language-models/" target="_blank">Super Study Guide: Transformers and Large Language Models</a>, SAfshine Amidi, Shervine Amidi (1st Edition), 2024, Independently published</li>      
+	
+     
+	
+		    
+  	<li><a href="https://www.amazon.com/Building-LLMs-Production-Reliability-Fine-Tuning/dp/B0D4FFPFW8/ref=pd_sim_d_sccl_2_1/140-6823301-2474816h" target="_blank">Building LLMs for Production: Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG</a>, Louis-Francois Bouchard, Louie Peters (1st Edition), 2024</li>  			
+	<!--, Independently published-->      
+
+   
+  	<li><a href="https://www.taylorfrancis.com/books/mono/10.1201/9781003474173/artificial-intelligence-large-language-models-kutub-thakur-helen-barker-al-sakib-khan-pathan" target="_blank">Artificial Intelligence and Large Language Models: An Introduction to the Technological Future</a>, Kutub Thakur, Helen G. Barker, Al-Sakib Khan Pathan (1st Edition), 2024, CRC</li>  
+
+
+     
+  	<li><a href="https://www.oreilly.com/library/view/generative-ai-on/9781098159214/" target="_blank">Generative AI on AWS: Building Context-Aware Multimodal Reasoning Applications</a>, Chris Fregly, Antje Barth, Shelbee Eigenbrode (1st Edition), 2023, O'Reilly</li> 	 
+	 
+	       
+	 
+  	<li><a href="https://mitpress.mit.edu/9780262049252/chatgpt-and-the-future-of-ai/" target="_blank">ChatGPT and the Future of AI: The Deep Language Revolution</a>, Terrence J. Sejnowski (1st Edition), 2024, MIT</li>  
+
+    
+  	<li><a href="https://www.amazon.com/dp/B0BSJ9XMQ8/" target="_blank">The ChatGPT Millionaire: Making Money Online has never been this EASY</a>, Neil Dagger (1st Edition), 2023</li> 
+
+	
+
+<!--
+	<br>   		 
+	Mark Liu - Machine Learning, Animated-Chapman and Hall_CRC (2023).pdf
+    
+	<br>
+	Ben Auffarth - Generative AI with LangChain_ Build large language model (LLM) apps with Python, ChatGPT and other LLMs-Packt (2023).pdf
+-->
+    
+
+		
+	</ul>  
+	
+
+
+
+
+
+	
+	
+	     
+	
+	<strong><font color="#FF3300">Natural Language Processing</font></strong>: 
+	<ul style="margin-left : -13px;">
+
+
+		<li><a href="https://www.manning.com/books/natural-language-processing-in-action-second-edition" target="_blank">Natural Language Processing in Action</a>, Hobson Lane, Maria Dyshel (2nd Edition), 2024, Manning</li> 	
+		
+		<li><a href="https://www.cambridge.org/core/books/deep-learning-for-natural-language-processing/54D23147D52F30B63AF2ED473676DEF0" target="_blank">Deep Learning for Natural Language Processing</a>, Mihai Surdeanu, Marco Antonio Valenzuela-Escarcega (1st Edition), 2024, Cambridge University Press</li> 
+		
+		<li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition</a>, Dan Jurafsky, James H. Martin (3rd Edition), 2020, Prentice Hall (<font color="#FF3300">Free Book</font>)</li>	
+			
+
+		<li><a href="https://link.springer.com/book/10.1007/978-981-99-1999-4" target="_blank">Natural Language Processing. A Textbook with Python Implementation</a>, Raymond S. T. Lee (1st Edition), 2024, Springer</li> 
+		
+		<li><a href="https://mitpress.mit.edu/9780262042840/" target="_blank">Introduction to Natural Language Processing</a>, Jacob Eisenstein (1st Edition), 2019, MIT Press (<font color="#FF3300">Free</font> <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf" target="_blank">Draft</a>)</li> 		
+
+    
+
+     
+	</ul>	
+	
+
+	
+	
+	
+	<strong><font color="#FF3300">Transformers</font></strong>: 
+	<ul style="margin-left : -13px;">      
+	
+		<li><a href="https://www.oreilly.com/library/view/natural-language-processing/9781098136789/" target="_blank">Natural Language Processing with Transformers</a>, Lewis Tunstall, Leandro von Werra, Thomas Wolf (1st/Revised Edition), 2022, O'Reilly</li> 	
+				
+		<li><a href="https://github.com/CRCTransformers/deepdive-book" target="_blank">Transformers for Machine Learning: A Deep Dive</a>, Uday Kamath, Kenneth L. Graham, Wael Emara (1st Edition), 2022, O'Reilly</li> 		
+		
+		<li><a href="https://www.manning.com/books/transformers-in-action" target="_blank">Transformers in Action</a>, Nicole Koenigstein (1st Edition), 2024, Manning</li> 	
+
+           
+		<li><a href="https://www.oreilly.com/library/view/hands-on-generative-ai/9781098149239/" target="_blank">Hands-On Generative AI with Transformers and Diffusion Models</a>, Pedro Cuenca, Apolinario Passos, Omar Sanseviero, Jonathan Whitaker (1st Edition), 2023/2024, O'Reilly</li> 	
+	    
+		
+		
+		<li><a href="https://ldlbook.com/" target="_blank">Learning Deep Learning: Theory and Practice of Neural Networks, Computer Vision, NLP, and Transformers using TensorFlow</a>, Magnus Ekman (1st Edition), 2021, Addison-Wesley <!--[ <a href="https://ldlbook.com/downloads/" target="_blank">Source Code</a> - <font color="#FF3300">Cheat Sheets</font>: <a href="https://ldlbook.com/Cheat_Sheet_0.pdf" target="_blank">0</a>, <a href="https://ldlbook.com/Cheat_Sheet_1.pdf" target="_blank">1</a>, <a href="https://ldlbook.com/Cheat_Sheet_2.pdf" target="_blank">2</a>, <a href="https://ldlbook.com/Cheat_Sheet_3.pdf" target="_blank">3</a> ]-->      
+		</li>  
+    </ul>	
+      
+	  
+	  
+	
+
+     
+
+
+	<strong><font color="#FF3300">Prompt Engineering</font></strong>: 
+	<ul style="margin-left : -13px;">
+		<li><a href="https://www.amazon.com/Prompt-Engineering-Generative-AI-Future-Proof/dp/109815343X/" target="_blank">Prompt Engineering for Generative AI</a>, James Phoenix, Mike Taylor (1st Edition), 2024, O'Reilly</li>   
+		    
+		<li><a href="https://www.oreilly.com/library/view/prompt-engineering-for/9781098156145/" target="_blank">Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications</a>, John Berryman, Albert Ziegler (1st Edition), 2024, O'Reilly</li>        
+
+		
+		
+	</ul>	     	  
+	
+	
+	<strong><font color="#FF3300">AI Agents</font></strong>: 
+	<ul style="margin-left : -13px;">
+	
+	      
+
+
+			<li><a href="https://www.manning.com/books/ai-agents-in-action" target="_blank">AI Agents in Action</a>, Micheal Lanham (1st Edition), 2025, Manning</li> 
+
+			<li><a href="https://www.amazon.com/Rise-Agents-Integrating-Blockchain-Technologies/dp/0135352940" target="_blank">The Rise of AI Agents: Integration of AI, Blockchain Technologies and Quantum Computing</a>, Petar Radanliev (1st Edition), 2025, Addison-Wesley</li>   
+	</ul>     
+	         
+		
+
+		
+		
+	<strong><font color="#FF3300">LLM Application Development</font></strong>: 
+	<ul style="margin-left : -13px;">
+		
+		<li><a href="https://www.oreilly.com/library/view/learning-langchain/9781098167271/" target="_blank">Learning LangChain</a>, Mayo Oshin, Nuno Campos (1st Edition), 2025, O'Reilly</li>
+		
+		<li><a href="https://www.pinecone.io/learn/series/langchain/" target="_blank">LangChain AI Handbook</a>, James Briggs, Francisco Ingham (1st Edition), 2023</li>
+		
+		<li><a href="https://www.oreilly.com/library/view/developing-apps-with/9781098152475/" target="_blank">Developing Apps with GPT-4 and ChatGPT</a>, Olivier Caelen, Marie-Alice Blete (1st Edition), 2023, O'Reilly</li>
+
+		<li><a href="https://www.oreilly.com/library/view/what-is-llmops/9781098154301/" target="_blank">What Is LLMOps? Large Language Models in Production</a>, Abi Aryan (1st Edition), 2024, O'Reilly</li>	
+
+
+		<li><a href="https://www.amazon.com/Large-Language-Model-Based-Solutions-Cost-Effective/dp/1394240724" target="_blank">Large Language Model-Based Solutions: How to Deliver Value with Cost-Effective Generative AI Applications</a>, Shreyas Subramanian (1st Edition), 2024, Wiley</li>	
+    
+		
+		           
+	</ul>    		
+	
+	  
+	             
+    
+	<strong><font color="#FF3300">GenAI in Software Development & Programming</font></strong>: 
+	<ul style="margin-left : -13px;">
+	
+		<li><a href="https://www.manning.com/books/learn-ai-assisted-python-programming" target="_blank">Learn AI-Assisted Python Programming: With GitHub Copilot and ChatGPT</a>, Leo Porter, Daniel Zingaro (1st Edition), 2023, Manning</li>   
+		
+		<li><a href="https://www.oreilly.com/library/view/ai-assisted-programming/9781098164553/" target="_blank">AI-Assisted Programming: Better Planning, Coding, Testing, and Deployment</a>, Tom Taulli (1st Edition), 2024, O'Reilly</li>  	
+	
+
+		<li><a href="https://www.manning.com/books/ai-powered-developer" target="_blank">AI-Powered Developer: Build great software with ChatGPT and Copilot</a>, Nathan B. Crocker (1st Edition), 2024, Manning</li>  
+		
+
+		<li><a href="https://www.manning.com/books/ai-assisted-testing" target="_blank">AI-Assisted Testing</a>, Mark Winteringham (1st Edition), 2024, Manning</li>  
+  
+		<li><a href="https://www.amazon.com/Generative-Analysis-Object-Oriented-Software-Engineering-ebook/dp/B0CXNN6X1M/" target="_blank">Generative Analysis: The Power of Generative AI for Object-Oriented Software Engineering with UML</a>,  Jim Arlow, Ila Neustadt (1st Edition), 2024, Addison-Wesley</li> 
+		
+		<li><a href="https://link.springer.com/book/10.1007/978-3-031-55642-5" target="_blank">Generative AI for Effective Software Development</a>, Anh Nguyen-Duc, Pekka Abrahamsson, Foutse Khomh (Eds.-1st Edition), 2024, Springer</li> 
+		   
+     
+	</ul>	
+
+
+             
+
+	<strong><font color="#FF3300">GenAI in Healthcare</font></strong>: 
+	<ul style="margin-left : -13px;">
+	      
+	
+		<li><a href="https://www.amazon.com/AI-Revolution-Medicine-GPT-4-Beyond/dp/0138200130/" target="_blank">The AI Revolution in Medicine: GPT-4 and Beyond</a>, Peter Lee, Carey Goldberg, Isaac Kohane (1st Edition), 2023, Pearson</li>   
+
+		<li><a href="https://www.wiley.com/en-us/The+Predictive+Edge%3A+Outsmart+the+Market+using+Generative+AI+and+ChatGPT+in+Financial+Forecasting-p-9781394242719" target="_blank">LLMs and Generative AI for Healthcare: The Next Frontier</a>, Kerrie Holley, Manish Mathur (1st Edition), 2024, O'Reilly</li>   
+		
+		<li><a href="https://robertpearlmd.com/chatgptmd/" target="_blank">ChatGPT, MD: How AI-Empowered Patients & Doctors Can Take Back Control of American Medicine</a>, Robert Pearl (1st Edition), 2024</li> 		        
+		    
+		
+	</ul>	
+       
+	   
+	<strong><font color="#FF3300">GenAI for Enterprises</font></strong>: 
+	<ul style="margin-left : -13px;">
+		<li><a href="https://kavita-ganesan.com/the-business-case-for-ai/" target="_blank">The Business Case for AI: A Leader's Guide to AI Strategies, Best Practices & Real-World Applications</a>, Kavita Ganesan (1st Edition), 2022, Opinosis Analytics</li>   
+
+		<li><a href="https://www.oreilly.com/library/view/llm-adoption-in/9781098151652/" target="_blank">LLM Adoption in the Enterprise</a>, Isabelle Nguyen (1st Edition), 2024, O'Reilly</li>  		
+		     
+
+	</ul>	
+	
+	
+	
+	    
+		
+	<strong><font color="#FF3300">GenAI in Product Management</font></strong>: 
+	<ul style="margin-left : -13px;">
+		<li><a href="https://www.amazon.com/Reimagined-Building-Products-Generative-AI/dp/B0CT2TWPJB/" target="_blank">Building Products with Generative AI</a>, Shyvee Shi, Caitlin Cai, Yiwen Rong (1st Edition), 2024, PeakPioneer LLC</li>   
+	</ul>	
+	    		      
+				    
+
+	  
+
+	<strong><font color="#FF3300">GenAI in Finance</font></strong>: 
+	<ul style="margin-left : -13px;">
+		<li><a href="https://www.wiley.com/en-us/The+Predictive+Edge%3A+Outsmart+the+Market+using+Generative+AI+and+ChatGPT+in+Financial+Forecasting-p-9781394242719" target="_blank">The Predictive Edge: Outsmart the Market using Generative AI and ChatGPT in Financial Forecasting</a>, Alejandro Lopez-Lira (1st Edition), 2024, Wiley</li>   
+	</ul>	
+	
+	
+	<strong><font color="#FF3300">GenAI in Marketing & Advertising</font></strong>: 
+	<ul style="margin-left : -13px;">
+
+		<li><a href="https://www.degruyterbrill.com/document/doi/10.1515/9781501519765/html?srsltid=AfmBOopwruj55V5Rxo_i1B9IrQZECHMQ08XqjLbFldQOQME32Q2tZpyb" target="_blank">Using AI in Marketing: An Introduction</a>, Greg Kihlstrom (1st Edition), 2024, Mercury Learning and Information</li> 
+		
+	</ul>     
+	
+
+	               
+		   
+		 
+	<strong><font color="#FF3300">GenAI in Education</font></strong>: 
+	<ul style="margin-left : -13px;">
+		<li><a href="https://www.learntechlib.org/primary/p/223928/" target="_blank">Exploring New Horizons: Generative Artificial Intelligence and Teacher Education</a>, Michael Searson, Elizabeth Langran, Jason Trumble (Eds. - 1st Edition), 2024, AACE</li> 
+		
+		
+		<li><a href="https://www.cambridge.org/us/universitypress/subjects/education/education-policy-strategy-and-reform/generative-ai-computer-science-education-challenges-and-opportunities?format=PB&isbn=9781009581707" target="_blank">Generative AI in Computer Science Education</a>, Diana Franklin, Paul Denny, David A. Gonzalez-Maldonado, Minh Tran (1st Edition), 2025, Cambridge University</li> 		
+  
+
+		<li><a href="https://sciety.org/articles/activity/10.35542/osf.io/7dr9j" target="_blank">Critical Thinking and Ethics in the Age of Generative AI in Education</a>, Pedro Noguera (Eds.), 2025, USC Center for Generative AI & Society (<font color="#FF3300">Free Book</font>)</li> 		
+  
+  
+  		<li><a href="https://www.routledge.com/Using-Generative-AI-Effectively-in-Higher-Education-Sustainable-and-Ethical-Practices-for-Learning-Teaching-and-Assessment/Beckingham-Lawrence-Powell-Hartley/p/book/9781032773988?srsltid=AfmBOoqif-mHmWWcsXAknKMtHD9E6hdaBrSYAcrVWrysnANocni6OiwH" target="_blank">Using Generative AI Effectively in Higher Education</a>, Sue Beckingham, Jenny Lawrence, Stephen Powell, Peter Hartley (Eds.), 2024, Routledge</li> 
+		
+  		<li><a href="https://link.springer.com/book/10.1007/978-3-031-67991-9" target="_blank">Generative AI and Education: Digital Pedagogies, Teaching Innovation and Learning Design</a>, B. Mairead Pratschke (1st Edition), 2024, Springer</li> 			
+
+      
+  		<li><a href="https://link.springer.com/book/10.1007/978-3-031-65691-0" target="_blank">General Aspects of Applying Generative AI in Higher Education</a>, Mohamed Lahby, Yassine Maleh, Antonio Bucchiarone, Satu Elisa Schaeffer (Eds.), 2024, Springer</li> 
+		    
+	
+	
+	</ul>	
+          
+    
+  
+  <!--
+	<br>
+	TBA to the daily course details / resources / reading-video materials
+		<ul style="margin-left : -15px;"> 
+			<li><font color="green">External Lecture</font>: <i><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g&ab_channel=AndrejKarpathy" target="_blank">Introduction to Large Language Models</a></i> (Nov. 2023) by Andrej Karpathy [ <a href="https://drive.google.com/file/d/1pxx_ZI7O-Nwl7ZLNk5hI3WzAsTLwvNU7/view" target="_blank">Slides</a> ]</li>  					
+			      
+
+		</ul>     
+     
+  -->      
+    
+	<br>         
+		<hr/>             
+			 
+			
+		<h2>Lecture Notes / Slides</h2>          
+		    
+				<ul style="margin-left : -13px;">	
+
+				         
+					<li><strong>Day 0</strong> - <strong>REVIEWS</strong> (<font color="#FF3300">Optional</font>)</li>  
+					<ul>  
+					<li><strong>Python Programming</strong></li>     
+					<ul style="margin-left : -15px;">       
+					<li><font color="green">External Course</font>:
+					<i>6.00: <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/" target="_blank">Introduction to Computer Science and Programming</a> </i> (MIT) [ <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/video-lectures/" target="_blank">Lecture Videos</a> ] 
+					</i>
+					</li> 
+
+					<li><font color="green">External Course</font>: <i>CS 50: <a href="https://cs50.harvard.edu/" target="_blank">Introduction to Computer Science</a></i> (Harvard U.) [ <a href="https://cs50.harvard.edu/x/2022/weeks/" target="_blank">Lecture Slides & Videos</a> ]</li>  					
+					
+					<li><font color="green">External Course</font>: <i>CMU 15-112: <a href="https://www.cs.cmu.edu/~mdtaylor/n21/" target="_blank">Fundamentals of Programming and Computer Science</a></i> (CMU) [ <a href="https://www.cs.cmu.edu/~mdtaylor/n21/schedule.html" target="_blank">Lecture Slides & Videos</a> ]</li>  					
+					          
+		      
+      			  
+					
+					</ul>      
+					
+					                
+    
+					<li><strong>Machine Learning</strong></li>      
+					<ul style="margin-left : -15px;">       
+					
+					<li><font color="green">External Course</font>: <i>Coursera: <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning</a> by (Andrew Ng, Stanford U.)
+					</i>
+					</li>            
+					
+					<li><font color="green">External Course</font>:
+					<i>CS229: <a href="http://cs229.stanford.edu/" target="_blank">Machine Learning</a> (Stanford U.) </i>  [ <a href="https://www.youtube.com/watch?v=jGwO_UgTS7I" target="_blank">Lecture Videos</a> ]      
+					</li>   
+ 
+
+					<li><font color="green">External Course</font>:
+					<i>CS4780: <a href="https://www.cs.cornell.edu/courses/cs4780/2018fa/" target="_blank">Machine Learning for Intelligent Systems</a> (Kilian Weinberger, Cornell U.) </i>  [ <a href="https://www.youtube.com/playlist?list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS" target="_blank">Lecture Videos</a> ]					
+					</li>  
+   
+
+					<li><font color="green">External Course</font>:
+					<i>CS156: <a href="https://work.caltech.edu/lectures.html" target="_blank">Learning Systems</a> (Yaser S. Abu-Mostafa, Caltech) </i> [ Learning from Data: <a href="https://www.youtube.com/playlist?list=PLD63A284B7615313A" target="_blank">Lecture Videos</a> ]					 
+					</li> 
+					
+					
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I., 2019. <a href="https://hdsr.mitpress.mit.edu/pub/wot7mkc1/" target="_blank">Artificial intelligence-the revolution hasn't happened yet</a>. Harvard Data Science Review, 1(1)
+					</i>   
+					</li>
+					
+					
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I. and Mitchell, T.M., 2015. <a href="https://science.sciencemag.org/content/349/6245/255.abstract" target="_blank">Machine learning: Trends, perspectives, and prospects</a>. Science, 349(6245), pp.255-260  
+					</i>					
+					</li>
+					<!--<li><font color="blue">Article</font>:
+					<i>Breiman, L., 2001. <a href="https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full" target="_blank">Statistical modeling: The two cultures</a>. Statistical Science, 16(3), pp.199-231     
+					</i>     
+					</li>	  
+					
+					<li><font color="blue">Article</font>:
+					<i>Minsky, M., 1961. <a href="https://courses.csail.mit.edu/6.803/pdf/steps.pdf" target="_blank">Steps Toward Artificial Intelligence</a>. Proceedings of the IRE, 49(1), pp.8-30     
+					</i>          
+					</li>
+					     
+					
+					<li><font color="blue">Video</font>:
+					<i><a href="https://www.youtube.com/watch?v=7bsEN8mwUB8" target="_blank">Shakey the Robot</a>: The First Robot to Embody Artificial Intelligence (1966-1972) by SRI International       
+					</i>     
+					</li> 
+					-->       
+
+					
+					</ul>  
+					
+					  
+      
+					
+					
+					</ul> 					      
+					<br>        
+				
+		    
+				
+					<li><strong>Day 1</strong> &nbsp;&nbsp;[09/03, Monday] <!--&nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>History</i>, <i>Terminology and Basics</i>)-->      
+					</li>
+					<ul>           
+					<li><strong>About MT 101-008 / CoDA-LLM</strong></li>                         
+					<li><strong>Introduction to Algorithms</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Course</font>: COMPSCI 308 - Design and Analysis of Algorithms (DKU), <a href="compsci308-f2025-s1.html" target="_blank">Fall / S1: 2025-26</a>       
+					</i>   
+					</li>      
+					</ul>
+					
+					
+					<li><strong>Introduction to LLMs</strong></li>
+					<!--<ul style="margin-left : -15px;">           
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I., 2019. <a href="https://hdsr.mitpress.mit.edu/pub/wot7mkc1/" target="_blank">Artificial intelligence-the revolution hasn't happened yet</a>. Harvard Data Science Review, 1(1)
+					</i>   
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Jordan, M.I. and Mitchell, T.M., 2015. <a href="https://science.sciencemag.org/content/349/6245/255.abstract" target="_blank">Machine learning: Trends, perspectives, and prospects</a>. Science, 349(6245), pp.255-260  
+					</i>					
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Breiman, L., 2001. <a href="https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full" target="_blank">Statistical modeling: The two cultures</a>. Statistical Science, 16(3), pp.199-231     
+					</i>     
+					</li>	  
+					
+					<li><font color="blue">Article</font>:
+					<i>Minsky, M., 1961. <a href="https://courses.csail.mit.edu/6.803/pdf/steps.pdf" target="_blank">Steps Toward Artificial Intelligence</a>. Proceedings of the IRE, 49(1), pp.8-30     
+					</i>          
+					</li>
+					
+					<li><font color="blue">Video</font>:
+					<i><a href="https://www.youtube.com/watch?v=7bsEN8mwUB8" target="_blank">Shakey the Robot</a>: The First Robot to Embody Artificial Intelligence (1966-1972) by SRI International       
+					</i>     
+					</li>    
+					    
+
+					      
+					</ul>
+					 -->     
+					 
+
+					      
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Article</font>:
+					<i>Naveed, H., Khan, A.U., Qiu, S. et al. 2025. <a href="https://dl.acm.org/doi/abs/10.1145/3744746" target="_blank">A Comprehensive Overview of Large Language Models</a>. ACM Transactions on Intelligent Systems and Technology, 16(5), ACM      
+					</i>   
+					</li>      
+	    
+				
+					
+					<li><font color="green">External Lecture</font>: <i><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g&ab_channel=AndrejKarpathy" target="_blank">Introduction to Large Language Models</a></i> (Nov. 2023) by Andrej Karpathy [ <a href="https://drive.google.com/file/d/1pxx_ZI7O-Nwl7ZLNk5hI3WzAsTLwvNU7/view" target="_blank">Slides</a> ]</li> 
+					</ul>     
+ 
+					     
+							 
+					
+					              
+					        
+					      
+					<li><font color="#FF3300">Practice</font>: Algorithm Intuition and First Prompts
+					</li>
+					<ul style="margin-left : -15px;">
+					<li>Manual Problem Solving</li>
+					<li>LLM-generated Pseudocodes</li>
+					</ul>	      
+					</ul>              
+					          
+					
+					
+					          
+					    
+					    
+					<br>   
+					<li><strong>Day 2</strong> &nbsp;&nbsp;[10/03, Tuesday] <!--&nbsp;&nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Classification Problem</i>; <i>Regression Problem</i>)-->
+					</li>
+					<ul>     
+					<li><strong>LLM for Algorithm Design</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Yao, Y., Guo, P. et al. 2026. <a href="https://dl.acm.org/doi/pdf/10.1145/3787585" target="_blank">A Systematic Survey on Large Language Models for Algorithm Design</a>. ACM Computing Surveys, 58(8), ACM      
+					</i>   
+					</li>					
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Zhang, R., Xie, Z. et al. 2026. <a href="https://arxiv.org/abs/2412.17287 " target="_blank">LLM4AD: A Platform for Algorithm Design with Large Language Model</a>. arXiv preprint arXiv:2412.17287</i> [ <a href="http://www.llm4ad.com/" target="_blank">LLM4AD Tool</a> ]    
+					</li> 
+					
+					</ul>    				
+		
+					
+					    
+					<li><strong>Algorithm Design Strategies</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Course</font>: COMPSCI 308 - Design and Analysis of Algorithms (DKU), <a href="compsci308-f2025-s1.html" target="_blank">Fall / S1: 2025-26</a>       
+					</i>   
+					</li>      
+					</ul>					
+				      
+					
+					<li><font color="#FF3300">Practice</font>: Prompting for Algorithm Design
+					</li>
+					<ul style="margin-left : -15px;">
+					<li>Manual Algorithm Strategy Design</li>
+					<li>Prompt-based Algorithm Refinement</li>
+					</ul>	      
+					</ul>  
+					         
+					
+					
+					
+		  
+					    
+					<br>     
+					<li><strong>Day 3</strong> &nbsp;&nbsp;[11/03, Wednesday] <!--<strong>Artificial Neural Networks</strong> &nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Feed-forward Neural Networks</i>; <i>Regression Problem</i>; <i>Classification Problem</i>)-->
+					</li>
+					<ul>
+					<li><strong>Algorithm Evaluation and Testing</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="green">Course</font>: COMPSCI 308 - Design and Analysis of Algorithms (DKU), <a href="compsci308-f2025-s1.html" target="_blank">Fall / S1: 2025-26</a>       
+					</i>   
+					</li> 
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Yao, Y., Guo, P. et al. 2026. <a href="https://dl.acm.org/doi/pdf/10.1145/3787585" target="_blank">A Systematic Survey on Large Language Models for Algorithm Design</a>. ACM Computing Surveys, 58(8), ACM      
+					</i>   
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Zhang, R., Xie, Z. et al. 2026. <a href="https://arxiv.org/abs/2412.17287 " target="_blank">LLM4AD: A Platform for Algorithm Design with Large Language Model</a>. arXiv preprint arXiv:2412.17287</i> [ <a href="http://www.llm4ad.com/" target="_blank">LLM4AD Tool</a> ]    
+					</li> 
+					</ul>
+					
+			 
+					      
+				
+					<li><font color="#FF3300">Practice</font>: Iterative Algorithm Refinement
+					</li>
+					<ul style="margin-left : -15px;">
+					<li>Generate-Test-Revise Loop with LLMs</li>
+					<li>Failure Diagnosis and Algorithm Revision</li>
+					</ul>	      
+					</ul>              
+					          
+							  
+					
+				    
+					   
+			      
+					    
+					   
+					
+					   
+					<br>     
+					<li><strong>Day 4</strong> &nbsp;&nbsp;[12/03, Thursday] <!--<strong>Artificial Neural Networks</strong> &nbsp;(<font color="#FF3300">Keywords</font>: <i>Supervised Learning</i>; <i>Feed-forward Neural Networks</i>; <i>Regression Problem</i>; <i>Classification Problem</i>)-->
+					</li>
+					<ul>
+					<li><strong>Human-AI Algorithm Co-Design</strong></li>
+					<ul style="margin-left : -15px;">   
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Yao, Y., Guo, P. et al. 2026. <a href="https://dl.acm.org/doi/pdf/10.1145/3787585" target="_blank">A Systematic Survey on Large Language Models for Algorithm Design</a>. ACM Computing Surveys, 58(8), ACM      
+					</i>   
+					</li>
+					<li><font color="blue">Article</font>:
+					<i>Liu, F., Zhang, R., Xie, Z. et al. 2026. <a href="https://arxiv.org/abs/2412.17287 " target="_blank">LLM4AD: A Platform for Algorithm Design with Large Language Model</a>. arXiv preprint arXiv:2412.17287</i> [ <a href="http://www.llm4ad.com/" target="_blank">LLM4AD Tool</a> ]    
+					</li> 					
+					</ul>
+					  
+			 
+					      
+				
+					<li><font color="#FF3300">Practice</font>:  End-to-End Algorithm Design
+
+					</li>
+					<ul style="margin-left : -15px;">
+					<li>Complete Design on a Chosen Problem</li>
+					</ul>	      
+					</ul>              
+					          
+							  
+					
+					</ul>   
+					     
+					   
+		
+					
+								
+					</ul>       
+   				</li>        
+				           
+		   
+				
+				</ul>  
+
+	<br>    
+	
+<!--		<hr/>    
+		       
+	   
+		<h2>Grading</h2>  
+		    
+		<ul>   
+		<li><strong>Homework</strong>: 20%</li>
+		<ul>    
+		<li>Mathematical, Conceptual, or Programming related</li>
+		<li>Submit on Sakai; 6 in total, the lowest score is dropped</li>   
+		</ul>      
+		
+		
+		<li><strong>Weekly Journal</strong>: 10%</li> 
+		<ul>    
+		<li>Each week, write a page or so about what you have learned</li>
+		<li>Submit on Sakai; 2 points off for each missing journal, capped at 10</li>
+		</ul> 
+		  
+		<li><strong>Midterm</strong>: 20%</li> 		
+		<li><strong>Final</strong>: 30%</li> 	
+		<li><strong>Project</strong>: 20%</li> 	
+		<ul>    
+		<!-- example report + presentation rubricks for ML: https://www.cs.toronto.edu/~huang/courses/csc2515_2020f/Lectures.html -->
+<!--		<li>Report Rubrick (TBA)</li>
+		<li>Presentation Rubrick (TBA)</li> 
+		</ul> 
+	
+		
+		</ul> 
+		
+-->    		
+
+
+		<hr/>    
+		       
+			   
+		<h2>GenAI Models</h2>  
+		      
+			        
+		<ul>   
+			<!--
+			<li><a href="https://llama.meta.com/" target="_blank">Llama 3.1</a> Models (<font color="green">Open Source</font>, 405B / 70B / 8B Parameters) by Meta (<font color="#FF3300">Free</font>)</li>    
+			<li><a href="https://azure.microsoft.com/en-us/products/phi-3" target="_blank">Phi-3-mini</a> (SLM - 3.8B Parameters) by Microsoft (<font color="#FF3300">Free</font>)</li> 
+			<li>TBA</li>
+			-->
+			<li><a href="https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight" target="_blank">Open-Weight Models</a> (<font color="#FF3300">Free</font>)</li>   
+			<li><a href="https://ollama.com/" target="_blank">Ollama</a>: Locally-deployed GenAI Tool (<font color="#FF3300">Free</font>)</li>
+			
+		</ul>	      
+		
+		
+		<!--
+		models: https://ollama.com/library  
+		
+		and other open source models: https://medium.com/@omkamal/ollama-the-landscape-for-a-powerful-llm-from-meta-ai-6792d7dad718
+		
+		  
+		
+	       
+		<h2>GenAI Tools</h2>  
+		      
+	        
+		<ul>      
+			<li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a> (GPT-3.5 / GPT-4o) by OpenAI (<font color="#FF3300">Free</font>)</li> 
+			<li><a href="https://huggingface.co/chat/" target="_blank">HuggingChat</a> (Llama 3.1 - 70B / 405B, etc.) by Hugging Face (<font color="#FF3300">Free</font>)</li>  	
+			<li><a href="https://gemini.google.com" target="_blank">Gemini</a> by Google (<font color="#FF3300">Free</font>)</li>    
+			<li><a href="https://www.anthropic.com/news/claude-3-5-sonnet" target="_blank">Claude 3.5 Sonnet</a> by Anthropic (<font color="#FF3300">Free</font>)</li>    		
+			<li><a href="https://ollama.com/" target="_blank">Ollama</a> (Run LLMs Locally: Llama 3.1, Phi 3 Mini/Medium, etc.) by Jeffrey Morgan, Michael Chiang (<font color="#FF3300">Free</font>)</li>			
+		    
+		</ul>		        
+		-->      
+	
+
+			   
+			   
+      
+			    
+	  	<br>
+		<hr/>    
+		       
+	       
+		<h2>Reference Courses</h2>  
+		    
+			  
+		<ul>
+			<li><strong>6.883</strong>: <a href="https://www.mit.edu/~idrori/metalearningmitfall2020.html" target="_blank">Meta Learning</a> (MIT) - Fall 2020</li>
+			<li><strong>CS4787</strong>: <a href="https://www.cs.cornell.edu/courses/cs4787/2021sp/" target="_blank">Principles of Large-Scale Machine Learning</a> (Cornell U.) - Spring 2021</li>
+
+
+
+	         
+			<li><strong>705.608.81</strong>: <a href="https://apps.ep.jhu.edu/syllabus/fall-2025/705.608.81" target="_blank">Applied Generative AI</a> (JHU) - Fall 2025</li>
+			
+			
+			<li><strong>CS 601.471/671</strong>: <a href="https://self-supervised.cs.jhu.edu/sp2025/" target="_blank">NLP: Self-supervised Models</a> (JHU) - Spring 2025</li>			
+
+			<li><strong>MET CS 788</strong>: <a href="https://www.bu.edu/csmet/files/2025/04/METCS-788-Syllabus.pdf" target="_blank">Generative AI</a> (Boston U.) - Summer 2025</li>		
+
+			
+			<li><strong>17-630</strong>: <a href="https://www.cs.cmu.edu/~breaux/prompting/" target="_blank">Prompt Engineering</a> (CMU) - Spring 2025</li>			
+			      
+		</ul>		
+			
+			
+	      
+			    
+         
+		          
+		         
+		
+		
+  	<br>
+	     
+		<hr/>    
+		
+	           
+	<h2>Other Books</h2>
+	     
+		 
+		 
+		 
+		 
+		 
+		 
+
+
+
+
+	
+	     
+		     
+		 
+	<strong><font color="#FF3300">Artificial Intelligence / Machine Learning - Quick / Easy Reads</font></strong>: 
+	<ul style="margin-left : -13px;">	
+	
+		
+		<li><a href="http://selfassemblingbrain.com/" target="_blank">The Self-Assembling Brain: How Neural Networks Grow Smarter</a>, Peter Robin Hiesinger (1st Edition), 2021, Princeton University Press</li>
+
+         		 
+
+		<li><a href="https://press.princeton.edu/books/paperback/9780691235134/behind-deep-blue" target="_blank">Behind Deep Blue: Building the Computer That Defeated the World Chess Champion</a>, JFeng-hsiung Hsu (2nd Edition), 2002 / 2022, Princeton University Press [ Video: <a href="https://www.youtube.com/watch?v=HwF229U2ba8" target="_blank">Deep Blue | Down the Rabbit Hole</a> ]</li>	
+
+		<li><a href="https://www.aisuperpowers.com/" target="_blank">AI Superpowers: China, Silicon Valley, and the New World Order</a>, Kai-Fu Lee (1st Edition), 2018, Houghton Mifflin Harcour [ <a href="https://www.youtube.com/watch?v=gsFFipyt6Ns" target="_blank">Video Lecture</a> ]</li>
+		
+				
+		<li><a href="https://www.ai2041.com/" target="_blank">AI 2041: Ten Visions for Our Future</a>, Kai-Fu Lee, Chen Qiufan (1st Edition), 2021, Currency</li>
+		     
+	         
+		    
+		<li><a href="https://space.mit.edu/home/tegmark/ai.html" target="_blank">Life 3.0: Being Human in the Age of Artificial Intelligence</a>, Max Tegmark (1st Edition), 2018, Vintage [ <a href="https://www.youtube.com/watch?v=1MqukDzhlqA" target="_blank">Video Lecture</a> ]</li>
+		<li><a href="https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies" target="_blank">Superintelligence: Paths, Dangers, Strategies</a>, Nick Bostrom (1st Edition), 2014, Oxford University Press [ <a href="https://www.youtube.com/watch?v=jupxhH9mE-g" target="_blank">Video Lecture</a> ]</li>
+		   
+		<li><a href="https://web.media.mit.edu/~minsky/" target="_blank">The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind</a>, Marvin Minsky (1st Edition), 2006, Simon & Schuster (<font color="#FF3300">Free Book</font>) <!--[ <a href="https://www.youtube.com/watch?v=-pb3z2w9gDg&list=PLUl4u3cNGP61E-vNcDV0w5xpsIBYNJDkU" target="_blank">Video Lectures</a>: MIT 6.868J The Society of Mind (<a href="https://ocw.mit.edu/courses/6-868j-the-society-of-mind-fall-2011/" target="_blank">Fall 2011</a>) ] </li>-->	  
+		
+		<li><a href="https://www.amazon.com/exec/obidos/ISBN=0671657135/marvinminskyA/" target="_blank">The Society of Mind</a>, Marvin Minsky (1st Edition), 1988, Simon & Schuster [ <a href="https://www.youtube.com/watch?v=-pb3z2w9gDg&list=PLUl4u3cNGP61E-vNcDV0w5xpsIBYNJDkU" target="_blank">Video Lectures</a>: MIT 6.868J The Society of Mind (<a href="https://ocw.mit.edu/courses/6-868j-the-society-of-mind-fall-2011/" target="_blank">Fall 2011</a>) ] </li>	
+		
+		     
+		<li><a href="https://mitpress.mit.edu/books/machines-us" target="_blank">Machines like Us: Toward AI with Common Sense</a>, Ronald J. Brachman, Hector Levesque (1st Edition), 2022, MIT Press</li>			
+     
+
+     		
+		<li><a href="AThousandBrains.com" target="_blank">A Thousand Brains: A New Theory of Intelligence</a>, Jeff Hawkins (2nd Edition), 2022, Basic Books [ <a href="https://www.youtube.com/watch?v=5LFo36g4Lug" target="_blank">Video Lecture</a> ] </li>	
+		
+		    
+		<li><a href="https://www.hup.harvard.edu/catalog.php?isbn=9780674983519" target="_blank">The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do</a>, Erik J. Larson (1st Edition), 2021, Belknap Press</li>			
+		
+		<li><a href="https://www.amazon.com/Genius-Makers-Mavericks-Brought-Facebook/dp/1524742678" target="_blank">Genius Makers: The Mavericks Who Brought AI to Google, Facebook, and the World</a>, Cade Metz (1st Edition), 2021, Dutton</li>	
+          
+
+		<li><a href="https://mitpress.mit.edu/books/what-computers-still-cant-do" target="_blank">What Computers Still Can't Do: A Critique of Artificial Reason</a>, Hubert L. Dreyfus (1st Edition), 1992, MIT Press</li>	
+      
+  
+  		<li><a href="https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742" target="_blank">A Brief History of Artificial Intelligence: What It Is, Where We Are, and Where We Are Going</a>, Michael Wooldridge (1st Edition), 2021, Flatiron Books</li>	
+		
+		
+		<li><a href="https://yalebooks.yale.edu/book/9780300264630/atlas-of-ai/" target="_blank">Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence</a>, Kate Crawford (1st Edition), 2021, Yale University Press</li>	
+		   
+		    
+      
+
+		<li><a href="https://mitpress.mit.edu/books/linguistics-age-ai" target="_blank">Linguistics for the Age of AI</a>, Marjorie Mcshane, Sergei Nirenburg (1st Edition), 2021, MIT Press</li>
+		
+		<li><a href="https://mitpress.mit.edu/books/ai-assistants" target="_blank">AI Assistants</a>, Roberto Pieraccini (1st Edition), 2021, MIT Press</li>
+		
+		      
+
+		<li><a href="https://mitpress.mit.edu/books/how-humans-judge-machines" target="_blank">How Humans Judge Machines</a>, Cesar A. Hidalgo, Diana Orghian, Jordi Albo Canals, Filipa de Almeida, Natalia Martin (1st Edition), 2021, MIT Press</li>
+        
+    
+		<li><a href="https://mitpress.mit.edu/books/your-wit-my-command" target="_blank">Your Wit Is My Command: Building AIs with a Sense of Humor</a>, Tony Veale (1st Edition), 2021, MIT Press</li>
+	   
+	    
+		<li><a href="https://www.wiley.com/en-us/Machine+Hallucinations:+Architecture+and+Artificial+Intelligence-p-9781119748847" target="_blank">Machine Hallucinations: Architecture and Artificial Intelligence</a>, Neil Leach, Matias del Campo (1st Edition), 2022, Wiley</li>		
+		      
+		
+		<li><a href="https://global.oup.com/academic/product/the-future-of-the-professions-9780198841890" target="_blank">The Future of the Professions: How Technology Will Transform the Work of Human Experts</a>, Richard Susskind and Daniel Susskind (1st Edition), 2016, Oxford University</li>			
+		
+    
+	    <li><a href="https://wordpress.deeplearning.ai/wp-content/uploads/2022/10/eBook-How-to-Build-a-Career-in-AI.pdf" target="_blank">How to Build Your Career in AI</a>, Andrew Ng (1st Edition), 2022, DeepLearning.AI (<font color="#FF3300">Free Book</font>)</li>      		
+				             
+	</ul>	
+	    
+	
+	
+	
+	    
+	<br/> 		 
+	<strong><font color="#FF3300">Machine Learning</font></strong>: 		 
+	<ul style="margin-left : -13px;">	    
+	<li><a href="https://www.statlearning.com/" target="_blank">Introduction to Statistical Learning</a>, Gareth James, Daniela Witten, Trevor Hastie, Rob Tibshirani (1st / 2nd Edition), 2017 (Corrected 7th Printing) / 2021, Springer (<font color="#FF3300">Free Book</font>) [ <a href="https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/" target="_blank">Slides and Videos</a> ]</li> 
+	<!--<ul>     
+	<li><a href="https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/" target="_blank"><font color="#FF3300">Slides and Videos</font></a></li>    
+	</ul>
+	-->
+	<li><a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher Bishop (1st Edition), 2006, Springer (<font color="#FF3300">Free Book</font>) [ <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/05/prml-web-sol-2009-09-08.pdf" target="_blank">Solution Manual</a> (2009) ]</li>
+	<!--<ul>    
+	<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/05/prml-web-sol-2009-09-08.pdf" target="_blank"><font color="#FF3300">Solution Manual</font></a> (2009)</li>    
+	</ul>-->
+	<li><a href="https://probml.github.io/pml-book/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy (1st Edition), 2021, MIT Press (<font color="#FF3300">Free Book</font>)</li>          
+	<li><a href="https://probml.github.io/pml-book/" target="_blank">Machine Learning: A Probabilistic Perspective</a>, Kevin P. Murphy (1st Edition), 2012, MIT Press (<font color="#FF3300">Free Book</font>)</li> 
+	<li><a href="https://algorithmsbook.com/" target="_blank">Algorithms for Decision Making</a>, Mykel J. Kochenderfer, Tim A. Wheeler, Kyle H. Wray (1st Edition), 2022, MIT Press (<font color="#FF3300">Free Book</font>)</li> 	      	
+	
+	<li><a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Carl Edward Rasmussen, Christopher K. I. Williams (1st Edition), 2006, MIT Press (<font color="#FF3300">Free Book</font>)</li>           
+	<li><a href="https://mitpress.mit.edu/books/probabilistic-graphical-models" target="_blank">Probabilistic Graphical Models</a>, Daphne Koller, Nir Friedman (1st Edition), 2009, MIT Press</li>
+	
+	<li><a href="https://www.amazon.com/Machine-Learning-Zhi-Hua-Zhou/dp/9811519668/" target="_blank">Machine Learning</a>, Zhi-Hua Zhou (1st Edition), 2021, Springer</li>    
+      	
+	<li><a href="https://mitpress.mit.edu/books/introduction-machine-learning-third-edition" target="_blank">Introduction to Machine Learning</a>, Ethem Alpaydin (3rd Edition), 2014, MIT Press</li>
+	<li><a href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html" target="_blank">Understanding Machine Learning: From Theory to Algorithms</a>, Ehai Shalev-Shwartz, Shai Ben-David (1st Edition), 2014, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>		
+	<li><a href="http://amlbook.com/" target="_blank">Learning from Data</a>, Yaser S. Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin (1st Edition), 2012, AMLBook</li>		
+	<li><a href="https://seat.massey.ac.nz/personal/s.r.marsland/MLBook.html" target="_blank">Machine Learning: an Algorithmic Perspective</a>, Stephen Marshland (2nd Edition), 2015, CRC Press</li>	   
+	<li><a href="https://www.cambridge.org/core/books/machine-learning-refined/4C67BE1614871170CBCAF4DADE81A5D1" target="_blank">Machine Learning Refined: Foundations, Algorithms, and Applications</a>, Jeremy Watt, Reza Borhani, Aggelos K. Katsaggelos (1st Edition), 2016, Cambridge University Press</li>	
+	<li><a href="https://cs.nyu.edu/~mohri/mlbook/" target="_blank">Foundations of Machine Learning</a>, Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar (2nd Edition), 2018, MIT Press (<font color="#FF3300">Free Book</font>)</li>	
+	<!--<li><a href="https://www.cs.ubc.ca/~murphyk/MLbook/" target="_blank">Machine Learning: a Probabilistic Perspective</a>, Kevin P. Murphy (1st Edition), 2012, MIT Press</li>	-->     
+	<li><a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell (1st Edition), 1997, McGraw Hill Press</li>
+	<li><a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning</a>, Hal Daume III  (2nd Edition), 2017 (<font color="#FF3300">Free Book</font>)</li>
+
+	<li><a href="http://www.dcs.gla.ac.uk/~srogers/firstcourseml/" target="_blank">A First Course in Machine Learning</a>, Simon Rogers, Mark Girolami (2nd Edition), 2017, Chapman and Hall/CRC Press [ <a href="http://www.dcs.gla.ac.uk/~srogers/firstcourseml/" target="_blank">Source Code</a> ]</li>	
+	             
+	       
+	
+	<li><a href="http://smlbook.org/" target="_blank">Machine Learning: A First Course for Engineers and Scientists</a>, Andreas Lindholm, Niklas Wahlstrom, Fredrik Lindsten, Thomas B. Schon (1st Edition), 2022, Cambridge University Press (<font color="#FF3300">Free Book</font>) [ <a href="http://www.it.uu.se/edu/course/homepage/sml/lectures" target="_blank">Lecture Slides</a> ]</li>
+	          
+	      
+	
+	<li><a href="https://alex.smola.org/drafts/thebook.pdf" target="_blank">Introduction to Machine Learning</a>, Alex Smola, S.V.N. Vishwanathan (1st Edition), 2008, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>
+
+	<li><a href="https://mlstory.org/" target="_blank">Patterns, Predictions, and Actions: A Story about Machine Learning</a>, Moritz Hardt, Benjamin Recht (1st Edition), 2022, Princeton University Press (<font color="#FF3300">Free Preprint</font>)</li>	    	
+	
+	
+	
+	<li><a href="https://www.cambridge.org/cn/academic/subjects/computer-science/pattern-recognition-and-machine-learning/machine-learning-fundamentals-concise-introduction" target="_blank">Machine Learning Fundamentals: A Concise Introduction</a>, Hui Jiang (1st Edition), 2022, Cambridge University Press</li>	   
+
+	<li><a href="https://www.wiley.com/en-us/Machine+Learning%3A+a+Concise+Introduction-p-9781119439196" target="_blank">Machine Learning: A Concise Introduction</a>, Steven W. Knox (1st Edition), 2018, Wiley</li>	   
+	
+	
+	
+	<li><a href="http://www.cs.ucl.ac.uk/staff/d.barber/brml/" target="_blank">Bayesian Reasoning and Machine Learning</a>, David Barber (1st Edition), 2012/2020, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>
+		      
+		
+	
+	<li><a href="https://www.wiley.com/en-us/An+Elementary+Introduction+to+Statistical+Learning+Theory-p-9780470641835" target="_blank">An Elementary Introduction to Statistical Learning Theory</a>, Sanjeev Kulkarni, Gilbert Harman (1st Edition), 2011, Wiley</li>
+	  
+	       
+	<li><a href="https://link.springer.com/book/10.1007/978-0-387-21736-9" target="_blank">All of Statistics: A Concise Course in Statistical Inference</a>, Larry Wasserman (1st Edition), 2004, Springer [ <a href="https://www.stat.cmu.edu/~larry/all-of-statistics/index.html" target="_blank">Datasets</a> ]</li>	
+	       
+
+ 
+        
+        
+	
+	<li><a href="http://appliedpredictivemodeling.com/" target="_blank">Applied Predictive Modeling</a>,  Max Kuhn, Kjell Johnson (2nd Edition), 2018, Springer</li>	     
+	<li><a href="http://themlbook.com/" target="_blank">The Hundred-Page Machine Learning Book</a>, Andriy Burkov, 2019 (<font color="#FF3300">Free Book - Draft Version</font>)</li>		   
+	<li><a href="https://machinelearningmastery.com/machine-learning-with-python/" target="_blank">Machine Learning Mastery With Python</a>, Jason Brownlee, 2016</li>			
+	<li><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Reinforcement Learning: an Introduction</a>, Richard S. Sutton ve Andrew G. Barto (2nd Edition), 2020, MIT Press (<font color="#FF3300">Free Book</font>)</li>       
+	<li><a href="https://www.crcpress.com/Artificial-Intelligence-With-an-Introduction-to-Machine-Learning-Second/Neapolitan-Jiang/p/book/9781138502383" target="_blank">Artificial Intelligence: With an Introduction to Machine Learning</a>, Richard E. Neapolitan, Xia Jiang (2nd Edition), 2018, CRC Press</li>     
+	
+	<li><a href="https://link.springer.com/book/10.1007/978-3-031-79167-3" target="_blank">Applying Reinforcement Learning on Real-World Data with Practical Examples in Python</a>, Philip Osborne, Kajal Singh, Matthew E. Taylor, 2022, Springer (<font color="#FF3300">Free Book</font>)</li>        	
+		     
+	<li><a href="https://www.amazon.com/dp/B09ZCKR4H6" target="_blank">The StatQuest Illustrated Guide To Machine Learning</a>, Josh Starmer (1st Edition), 2022 [ <a href="https://www.youtube.com/c/joshstarmer" target="_blank">Video Lectures</a> ]</li>	
+	      
+	<li><a href="https://nostarch.com/machine-learning-q-and-ai" target="_blank">Machine Learning Q and AI: 30 Essential Questions and Answers on Machine Learning and AI</a>, Sebastian Raschka (1st Edition), 2024, No Starch Press [ <a href="https://github.com/rasbt/MachineLearning-QandAI-book" target="_blank">Code Repository</a> ]</li>	
+	
+      	
+    		
+	<li><a href="https://artoffeatureengineering.com/" target="_blank">The Art of Feature Engineering: Essentials for Machine Learning</a>, Pablo Duboue (1st Edition), 2020, Cambridge University Press</li>	
+
+	<li><a href="https://www.amazon.com/Feature-Engineering-Selection-Chapman-Science/dp/1032090855" target="_blank">Feature Engineering and Selection: A Practical Approach for Predictive Models</a>, Max Kuhn, Kjell Johnson (1st Edition), 2021, Chapman & Hall/CRC Press</li>	
+	     
+	<li><a href="https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/" target="_blank">Feature Engineering for Machine Learning: Principles and Techniques for Data Scientists</a>, Alice Zheng, Amanda Casari (1st Edition), 2018, O'Reilly Press</li>		
+      
+	
+	
+	<li><a href="https://www.deeplearning.ai/machine-learning-yearning/" target="_blank">Machine Learning Yearning</a>, Andrew Ng (1st Edition), 2020, deeplearning.ai (<font color="#FF3300">Free Book - Draft Version</font>)</li>	        
+	<li><a href="https://mitpress.mit.edu/books/machine-learning" target="_blank">Machine Learning: The New AI</a>,  Ethem Alpaydin (1st Edition), 2016, MIT Press</li>
+             
+		
+	<li><a href="http://www.mlebook.com/" target="_blank">Machine Learning Engineering</a>, Andriy Burkov (1st Edition), 2020, True Positive Inc. (<font color="#FF3300">Free Book</font>)</li>
+		
+	<li><a href="https://www.manning.com/books/deep-learning-with-python" target="_blank">Deep Learning with Python</a>, Francois Chollet (2nd Edition), Manning Press (<font color="#FF3300">Free Book</font>)</li>           
+	<li><a href="https://www.deeplearningbook.org/" target="_blank">Deep Learning</a>, Ian Goodfellow, Yoshua Bengio, Aaron Courville (1st Edition), 2016, MIT Press (<font color="#FF3300">Free Book</font>)</li>       
+
+	<li><a href="https://www.bishopbook.com/" target="_blank">Deep Learning: Foundations and Concepts</a>, Christopher M. Bishop, Hugh Bishop (1st Edition), 2024, Springer (<font color="#FF3300">Free Book</font>)</li>  
+    	
+	<li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank">Neural Networks and Deep Learning</a>, Michael Nielsen, 2019 (<font color="#FF3300">Free Book</font>)</li>	     
+	<li><a href="https://www.springer.com/gp/book/9783319944623" target="_blank">Neural Networks and Deep Learning: A Textbook</a>, Charu C. Aggarwal (1st Edition), 2018, Springer</li>  
+	<li><a href="http://services.cambridge.org/af/academic/subjects/physics/statistical-physics/machine-learning-neural-networks-introduction-scientists-and-engineers" target="_blank">Machine Learning with Neural Networks: an Introduction for Scientists and Engineers</a>, Bernhard Mehlig (1st Edition), 2022, Cambridge University Press</li>
+	
+	
+      
+	<li><a href="https://ldlbook.com/" target="_blank">Learning Deep Learning: Theory and Practice of Neural Networks, Computer Vision, NLP, and Transformers using TensorFlow</a>, Magnus Ekman (1st Edition), 2021, Addison-Wesley [ <a href="https://ldlbook.com/downloads/" target="_blank">Source Code</a> - <font color="#FF3300">Cheat Sheets</font>: <a href="https://ldlbook.com/Cheat_Sheet_0.pdf" target="_blank">0</a>, <a href="https://ldlbook.com/Cheat_Sheet_1.pdf" target="_blank">1</a>, <a href="https://ldlbook.com/Cheat_Sheet_2.pdf" target="_blank">2</a>, <a href="https://ldlbook.com/Cheat_Sheet_3.pdf" target="_blank">3</a> ]</li>  
+      
+    
+
+	<li><a href="https://d2l.ai/" target="_blank">Dive into Deep Learning</a>, Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola, 2020 (<font color="#FF3300">Free Book</font>)</li>  
+    
+	<li><a href="https://udlbook.github.io/udlbook/" target="_blank">Understanding Deep Learning</a>, Simon J.D. Prince (1st Edition), 2024 (<font color="#FF3300">Free Book</font>)  [ <a href="https://udlbook.github.io/udlbook/" target="_blank">Code Repository</a> ]</li>  
+    
+           
+
+
+ 	<li><a href="https://hagan.okstate.edu/NNDesign.pdf" target="_blank">Neural Network Design</a>, Martin T Hagan, Howard B Demuth, Mark H Beale, Orlando De Jesus (2nd Edition), 2014 (<font color="#FF3300">Free Book</font>)</li>  
+
+
+ 	<!--<li><a href="https://www.cambridge.org/core/books/deep-learning-for-natural-language-processing/54D23147D52F30B63AF2ED473676DEF0" target="_blank">Deep Learning for Natural Language Processing</a>, Mihai Surdeanu, Marco Antonio Valenzuela-Escarcega (1st Edition), 2024, Cambridge University Press</li> 
+	-->
+
+
+
+
+
+ 	<li><a href="https://www.cambridge.org/core/books/mathematical-aspects-of-deep-learning/8D9B41D1E9BB8CA515E93412EECC2A7E" target="_blank">Mathematical Aspects of Deep Learning</a>, Philipp Grohs, Gitta Kutyniok (1st Ediiton / Eds.), 2023, Cambridge University Press</li>  
+    
+	       
+	      
+	<li><a href="https://www.routledge.com/Artificial-Intelligence-and-Causal-Inference/Xiong/p/book/9780367859404" target="_blank">Artificial Intelligence and Causal Inference</a>, Momiao Xiong (1st Edition), 2022, Chapman and Hall/CRC Press</li>       
+     
+	
+	<li><a href="https://people.eecs.berkeley.edu/~jrs/papers/machlearn.pdf" target="_blank">Concise Machine Learning</a>, Jonathan Richard Shewchuk (Ed: May 3, 2022), 2022, UC Berkeley - ML Lecture Notes (<font color="#FF3300">Free Book</font>)</li>	          
+	
+	
+	<li><a href="https://www.springer.com/gp/book/9789811367939" target="_blank">Advances in Deep Learning</a>, M. Arif Wani, Farooq Ahmad Bhat, Saduf Afzal ve Asif Iqbal Khan, 2020, Springer</li>  
+	<li><a href="https://www.manning.com/books/grokking-deep-learning" target="_blank">Grokking Deep Learning</a>, Andrew W. Trask (1st Edition), 2019, Manning</li>
+	<li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/" target="_blank">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</a>, Aurelien Geron (2nd Edition), 2019, O'Reilly</li>	
+	<!--<li><a href="http://shop.oreilly.com/product/0636920030515thdo" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. MUller, Sarah Guido (1st Edition), 2017, O'Reilly</li>-->   
+	<li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</a>, Trevor Hastie, Robert Tibshirani, Jerome Friedman (2nd Edition), 2009, Springer (<font color="#FF3300">Free Book</font>)</li>  
+	<!--<li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition</a>, Dan Jurafsky, James H. Martin (3rd Edition), 2020, Prentice Hall (<font color="#FF3300">Free Book</font>)</li>	
+	-->
+	
+	
+        
+	<li><a href="https://cseweb.ucsd.edu/~jmcauley/pml/" target="_blank">Personalized Machine Learning</a>, Julian McAuley (1st Edition), 2022, Cambridge University Press</li>	
+	 
+		
+	<li><a href="https://www.amazon.com/Hands-Introduction-Machine-Learning/dp/1009123300/" target="_blank">A Hands-On Introduction to Machine Learning</a>, Chirag Shah (1st Edition), 2023, Cambridge University Press</li>	
+	
+	<li><a href="https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969/" target="_blank">Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications</a>, Chip Huyen (1st Edition), 2022, O'Reilly Press</li>	    	
+
+	<li><a href="https://livebook.manning.com/book/distributed-machine-learning-patterns" target="_blank">Distributed Machine Learning Patterns</a>, Yuan Tang (1st Edition), 2024, Manning Publications [ <a href="https://github.com/terrytangyuan/distributed-ml-patterns" target="_blank">Code Repository</a> ]</li>		
+    	
+	<li><a href="https://www.wiley.com/en-us/Machine+Learning+Theory+and+Applications%3A+Hands+on+Use+Cases+with+Python+on+Classical+and+Quantum+Machines-p-9781394220625" target="_blank">Machine Learning Theory and Applications: Hands-on Use Cases with Python on Classical and Quantum Machines</a>, Xavier Vasques (1st Edition), 2024, Wiley</li>		  
+	     		
+
+      
+	<li><a href="https://www.cambridge.org/core/books/statistical-physics-of-data-assimilation-and-machine-learning/C7B0B53520067857AE59EAEFC418DA1A" target="_blank">The Statistical Physics of Data Assimilation and Machine Learning</a>, Henry D. I. Abarbanel (1st Edition), 2022, Cambridge University Press</li>
+
+	<li><a href="https://www.amazon.com/Ensemble-Methods-Foundations-Algorithms-Recognition/dp/1439830037" target="_blank">Ensemble Methods: Foundations and Algorithms</a>, Zhi-Hua Zhou (1st Edition), 2012, CRC Press</li>      
+        
+	<li><a href="https://mitpress.mit.edu/9780262048903/the-ai-playbook/" target="_blank">The AI Playbook: Mastering the Rare Art of Machine Learning Deployment</a>, Eric Siegel (1st Edition), 2024, MIT Press</li>  		
+	    	    
+	<li><a href="https://www.amazon.com/Data-Driven-Fluid-Mechanics-Combining-Principles/dp/1108842143/" target="_blank">Data-Driven Fluid Mechanics: Combining First Principles and Machine Learning</a>, Miguel A. Mendez, Andrea Ianiro, Bernd R. Noack, Steven L. Brunton (1st Edition), 2023, Cambridge University Press</li> 	    			
+	
+	<li><a href="https://mitpress.mit.edu/books/probabilistic-machine-learning-civil-engineers" target="_blank">Probabilistic Machine Learning for Civil Engineers</a>, James-A. Goulet (1st Edition), 2020, MIT Press</li>
+	<li><a href="https://mml-book.github.io/" target="_blank">Mathematics for Machine Learning</a>, Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong (1st Edition), 2020, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>        
+	<li><a href="https://www.springer.com/gp/book/9783030403430" target="_blank">Linear Algebra and Optimization for Machine Learning: A Textbook</a>, Charu C. Aggarwal (1st Edition), 2020, Springer</li>	       
+	<li><a href="https://mitpress.mit.edu/books/optimization-machine-learning" target="_blank">Optimization for Machine Learning</a>, Suvrit Sra, Sebastian Nowozin, Stephen J. Wright (Edited - 1st Edition), 2011, MIT Press</li>  
+	<li><a href="https://web.stanford.edu/~boyd/cvxbook/" target="_blank">Convex Optimization</a>, Stephen Boyd, Lieven Vandenberghe (1st Edition), 2004, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>  
+	      
+	<li><a href="https://www.amazon.com/Introduction-Optimization-Applications-Analytics-Mathematics/dp/0367425505/" target="_blank">An Introduction to Optimization: With Applications in Machine Learning and Data Analytics</a>, Jeffrey Paul Wheeler (1st Edition), 2023, CRC Press</li>  
+		
+	<li><a href="https://www.sciencedirect.com/book/9780123814791/data-mining-concepts-and-techniques" target="_blank">Data Mining: Concepts and Techniques</a>, Jiawei Han, Micheline Kamber, Jian Pei (3rd Edition), 2012, Morgan Kaufmann</li>
+	<li><a href="http://www.dataminingbook.info/" target="_blank">Data Mining and Analysis: Fundamental Concepts and Algorithms</a>, Mohammed J. Zaki ve Wagner Meira, Jr. (1st Edition), 2014, Cambridge University Press (<font color="#FF3300">Free Book</font>)</li>	
+	<li><a href="https://www.cs.waikato.ac.nz/ml/weka/book.html" target="_blank">Data Mining: Practical Machine Learning Tools and Techniques</a>, Ian H. Witten, Eibe Frank, Mark A. Hall, Christopher J. Pal (4th Edition), 2016, Morgan Kaufmann Press</li>
+	<li><a href="https://www.springer.com/gp/book/9783319141411" target="_blank">Data Mining: The Textbook</a>, Charu C. Aggarwal (1st Edition), 2015, Springer Press</li>
+	<li><a href="https://textbook.coleridgeinitiative.org/" target="_blank">Big Data and Social Science: Data Science Methods and Tools for Research and Practice</a>, Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, Julia Lane (2nd Edition - Ed.), 2020, CRC Press (<font color="#FF3300">Free Book</font>)</li>  	
+	<li><a href="http://charuaggarwal.net/clusterbook.pdf" target="_blank">Data Clustering</a>, Chandan K. Reddy, Charu C. Aggarwal  (1st Edition - Ed.), 2014, CRC Press (<font color="#FF3300">Free Book</font>)</li>  
+
+	<li><a href="https://dl.acm.org/doi/book/10.1145/3310205" target="_blank">Data Cleaning</a>, Ihab F. Ilyas, Xu Chu (1st Edition), 2019, ACM</li>  
+	
+	
+	<li><a href="https://www.amazon.com/Image-Processing-Machine-Learning-Foundations-ebook/dp/B0CRGGF9DL/" target="_blank">Image Processing and Machine Learning, Volume 1: Foundations of Image Processing</a>, Erik Cuevas, Alma Nayeli Rodriguez (1st Edition), 2024, CRC Press</li>  
+	
+	    
+	<li><a href="https://www.amazon.com/Image-Processing-Machine-Learning-Advanced-ebook/dp/B0CRGZH1J7/" target="_blank">Image Processing and Machine Learning, Volume 2: Advanced Topics in Image Analysis and Machine Learning</a>, Erik Cuevas, Alma Nayeli Rodriguez (1st Edition), 2024, CRC Press</li>  	
+	  
+      
+
+ 	  
+	</ul>  
+
+
+
+
+
+
+    	
+	           
+	     
+<!--	<br/>
+	
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://deitel.com/intro-to-python-for-computer-science-and-data-science/" target="_blank">Introducing Python for Computer Science and Data Scientists</a>, Paul Deitel, Harvey Deitel (1st Edition), 2020, Pearson  
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>				
+	</ul>
+-->
+
+	<br/>
+	<strong><font color="#FF3300">Python Programming</font></strong>: 
+	<ul style="margin-left : -13px;">	    
+		<li><a href="https://deitel.com/intro-to-python-for-computer-science-and-data-science/" target="_blank">Introducing Python for Computer Science and Data Scientists</a>, Paul Deitel, Harvey Deitel (1st Edition), 2020, Pearson   
+		<li><a href="https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-third-edition" target="_blank">Introduction to Computation and Programming Using Python: With Application to Computational Modeling and Understanding Data</a>, John V. Guttag (3rd Edition), 2021, MIT Press [ <a href="https://github.com/guttag/Intro-to-Computation-and-Programming" target="_blank">Source Code in Python</a> ]</li>
+		
+		<li><a href="https://www.pearson.com/us/higher-education/program/Gaddis-My-Lab-Programming-with-Pearson-e-Text-Access-Card-for-Starting-out-with-Python-5th-Edition/PGM2889368.html" target="_blank">Starting out with Python</a>, Tony Gaddis (5th Edition), 2021, Pearson</li>	
+        
+	      	
+		<li><a href="https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html" target="_blank">Python Programming and Numerical Methods: A Guide for Engineers and Scientists </a>, Qingkai Kong, Timmy Siauw, Alexandre Bayen (1st Edition), 2020, Academic Press (<font color="#FF3300">Free Book</font>)</li>       			
+		     
+			 
+		<li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">Think Python: How to Think Like a Computer Scientist</a>, Allen B. Downey (2nd Edition), 2016, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.camden.rutgers.edu/python_resources/python3_book/" target="_blank">How to Think Like a Computer Scientist: Learning with Python 3</a>, Peter Wentworth, Jeffrey Elkner, Allen B. Downey, Chris Meyers (3rd Edition), 2012 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://python.swaroopch.com/" target="_blank">A Byte of Python</a>, Swaroop C. H. (4th Edition), 2016 (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="http://projectpython.net/" target="_blank">Project Python</a>, Devin Balkcom, 2011 (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="https://www.py4e.com/book" target="_blank">Python for Everybody: Exploring Data in Python 3</a>, Charles Severance, 2016 (<font color="#FF3300">Free Book</font>)</li>
+		
+		      
+		<li><a href="https://automatetheboringstuff.com/" target="_blank">Automate The Boring Stuff With Python</a>, Al Sweigart (2nd Edition), 2019, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	      
+
+		<li><a href="https://inventwithpython.com/beyond/" target="_blank">Beyond the Basic Stuff with Python: Best Practices for Writing Clean Code</a>, Al Sweigart (1st Edition), 2020, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	  
+     		
+				
+		<li><a href="https://www.amazon.com/Python-Programming-Context-Bradley-Miller/dp/1284175553/" target="_blank">Python Programming in Context</a>, Bradley N. Miller, David L. Ranum, Julie Anderson (3rd Edition), 2019, Jones & Bartlett Learning</li>		
+               
+			   
+			        
+		<li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank">A Hands-On, Project-Based Introduction to Programming</a>, Eric Matthes (2nd Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>		
+		<li><a href="https://www.oreilly.com/library/view/learn-python-3/9780134693866/" target="_blank">Learn Python 3 the Hard Way</a>, Zed A. Shaw (1st Edition), 2017, Addison-Wesley</li>	
+		<li><a href="http://shop.oreilly.com/product/0636920252528.do" target="_blank">Introducing Python: Modern Computing in Simple Packages</a>, Bill Lubanovic (2nd Edition), 2019, O'Reilly Press</li>		
+		<li><a href="https://www.packtpub.com/product/clean-code-in-python-second-edition/9781800560215" target="_blank">Clean Code in Python: Develop Maintainable and Efficient Code</a>, Mariano Anaya (2nd Edition), 2021, Packt</li>			
+		
+		      
+		<li><a href="https://www.amazon.com/Self-Taught-Computer-Scientist-Beginners-Science/dp/1119724414/" target="_blank">The Self-Taught Computer Scientist: The Beginner's Guide to Data Structures & Algorithms</a>, Cory Althoff (1st Edition), 2021, Wiley</li>	
+      		
+		
+		<li><a href="https://nostarch.com/big-book-small-python-projects" target="_blank">The Big Book of Small Python Projects: 81 Easy Practice Programs</a>, Al Sweigart (1st Edition), 2021, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+		
+		<li><a href="https://inventwithpython.com/invent4thed/" target="_blank">Invent Your Own Computer Games with Python</a>, Al Sweigart (4th Edition), 2016, No Starch Press (<font color="#FF3300">Free Book</font>)</li>			
+
+		<li><a href="https://inventwithpython.com/cracking/" target="_blank">Cracking Codes with Python: An Introduction to Building and Breaking Ciphers</a>, Al Sweigart (1st Edition), 2018, No Starch Press (<font color="#FF3300">Free Book</font>)</li>	
+
+		
+	</ul>
+	      
+				
+		 
+	<br/>		
+	<strong><font color="#FF3300">Python Programming for Data Science / Analytics</font></strong>: 
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">Python Data Science Handbook: Essential Tools for Working with Data</a>, Jake VanderPlas (1st Edition), 2017, O'Reilly Press</li>			
+		<li><a href="http://shop.oreilly.com/product/0636920050896.do" target="_blank">Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython</a>, Wes McKinney (2nd Edition), 2017, O'Reilly Press</li>		
+		<li><a href="http://shop.oreilly.com/product/0636920179337.do" target="_blank">Data Science from Scratch: First Principles with Python</a>, Joel Grus (2nd Edition), 2019, O'Reilly Press</li>		
+		<li><a href="https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/" target="_blank">Introduction to Machine Learning with Python: A Guide for Data Scientists</a>, Andreas C. Muller, Sarah Guido (1st Edition), 2017, O'Reilly Press</li>
+	</ul>
+      
+	
+	<br/>     
+	<strong><font color="#FF3300">Data Visualization</font></strong>:     
+	<ul style="margin-left : -13px;">	 				
+		<li><a href="https://kieranhealy.org/publications/dataviz/" target="_blank">Data Visualization: A Practical Introduction</a>, Kieran Healy (1st Edition), 2019, Princeton University Press</li>			
+		<li><a href="https://www.cs.ubc.ca/~tmm/vadbook/" target="_blank">Visualization Analysis and Design</a>, Tamara Munzner (1st Edition), 2014, CRC Press</li>	
+		
+		<li><a href="https://cup.columbia.edu/book/better-data-visualizations/9780231193115" target="_blank">Better Data Visualizations: A Guide for Scholars, Researchers, and Wonks</a>, Jonathan Schwabish (1st Edition), 2021, Columbia University Press</li>	
+		
+		<li><a href="https://www.edwardtufte.com/tufte/books_vdqi" target="_blank">The Visual Display of Quantitative Information</a>, Edward R. Tufte (2nd Edition), 2001, Graphics Press</li>		
+		<li><a href="https://serialmentor.com/dataviz/index.html" target="_blank">Fundamentals of Data Visualization - A Primer on Making Informative and Compelling Figures</a>, Claus O. Wilke (1st Edition), 2019, O'Reilly Press (<font color="#FF3300">Free Book</font>)</li>
+		<li><a href="http://shop.oreilly.com/product/0636920041320.do" target="_blank">Making Data Visual - A Practical Guide to Using Visualization for Insight</a>, Danyel Fisher, Miriah Meyer (1st Edition), 2018, O'Reilly Press</li>
+
+		<li><a href="https://www.storytellingwithdata.com/books" target="_blank">Storytelling with Data: A Data Visualization Guide for Business Professionals</a>, Cole Nussbaumer Knaflic (1st Edition), 2015, Wiley</li>
+
+		        
+	</ul>
+
+   
+	<br>
+		<hr/>      
+		
+	   
+      
+	<h2>Other Materials / Resources</h2>
+	
+	<ul style="margin-left : -13px;">	 				
+<!--		<li>Philip W. L. Fong, 2004. <a href="http://www.mathcs.emory.edu/~lxiong/papers/fong04how.pdf" target="_blank">How to Read a CS Research Paper?</a> + 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a computer science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140.	
+		</li>		      
+		-->
+		        
+		<li>Google <a href="https://developers.google.com/machine-learning/glossary/generative" target="_blank">Generative AI Glossary</a>
+		</li>
+		
+		<li>Google <a href="https://developers.google.com/machine-learning/glossary" target="_blank">Machine Learning Glossary</a>
+		</li>
+
+         
+		<li>A Long <a href="https://github.com/soulmachine/machine-learning-cheat-sheet" target="_blank">Machine Learning Cheat Sheet</a>
+		</li>
+		
+		<li>An overview of <a href="https://pyviz.org/" target="_blank">Python Data Visualization libraries</a>
+		
+		<li>Philip W. L. Fong, 2009. <a href="https://dl.acm.org/doi/10.1145/1595453.1595493" target="_blank">Reading a Computer Science research paper</a>. ACM SIGCSE Bulletin, 41(2), pp.138-140  	
+		</li>	   
+		<li><a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html" target="_blank">You and Your Research</a> by Richard Hamming (Bell Labs / NPS). Bell Communications Research Colloquium Seminar, 7 March 1986  
+		</li>				
+		<li>An Online LaTeX Editor: <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>   
+		</li>	
+		<li>LaTeX Tutorial (Overleaf): <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="_blank">Learn LaTeX in 30 minutes</a>   
+		</li>	
+		<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf" target="_blank">The Not So Short Introduction to LaTeX</a> by Tobias Oetiker, Hubert Partl, Irene Hyna, Elisabeth Schlegl, 2021 
+		</li>			
+		<li>     
+		<a href="https://www.youtube.com/watch?v=Unzc731iCUY" target="_blank">How To Speak</a> / Present (Video) by Patrick Winston (MIT)
+		</li>       
+		    
+		        
+	</ul>
+	   
+	<br>   
+
+
+<!--   
+  	<br>
+	     
+		<hr/>    
+		
+	
+	<h2>Cevrimici Kaynaklar (Online Resources)</h2>		      
+	
+	<ul style="margin-left : -13px;">	 			
+		<li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>: Machine Learning by Andrew Ng</li>	
+		<li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF" target="_blank">Youtube</a>: DeepMind x UCL | Deep Learning Lecture Series 2020</li>	
+	</ul>	
+-->       		  
+		   
+		  
+		
+		
+
+				
+
+</i></td></tr></tbody></table>
+
+<script src="Zhe%20Chen%20%28%E9%99%88%E5%93%B2%29%20-%20Publications_files/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100886966); }catch(e){}</script> 
+
+
+
+</body></html>
